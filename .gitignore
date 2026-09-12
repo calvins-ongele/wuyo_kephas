@@ -1,0 +1,16 @@
+# Ignore specific files 
+.env
+
+# Ignore an entire folder (always end with a forward slash)
+IanMain/
+WUYO/
+email_system/
+node_modules/
+dist/
+.vscode/
+vendor/
+
+# Ignore all files with a specific extension
+*.log
+*.txt
+*.tmp
