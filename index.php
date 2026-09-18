@@ -1,17 +1,20 @@
 <?php 
 
 require __DIR__ . "/vendor/autoload.php"; 
+ini_set('memory_limit', '512M');
+set_time_limit(300); // ini_set('max_execution_time', '300');
 
 //environment variables
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
- 
+
 require 'config.php';
 require 'util/Auth.php';
 $is_under_maintenace = 0;
 $approved_ips = ['41.90.210.158', '41.90.210.124', '41.90.211.21'];
- 
+
+//https://demo.templatemonster.com/demo/511124.html
   
     if ( strpos($_SERVER['REQUEST_URI'], '.php') !== false )  {
         die("

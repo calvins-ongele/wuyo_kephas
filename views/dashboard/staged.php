@@ -262,7 +262,8 @@
                                        <td title="<?= $row['user_email'] ?>" style="font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 12px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; color: var(--accent);"><?= $row['user_email'] ?></td>
                                        <td><span style="display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 99px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; background: rgba(245, 158, 11, 0.12); <?= $row['status'] == 'pending' ? 'background: rgb(245, 158, 11)' : 'background:rgb(34, 197, 94)' ?>; font-family: &quot;JetBrains Mono&quot;, monospace;">
                                              <span style="width: 5px; height: 5px; border-radius: 50%; 
-                        <?= $row['status'] == 'pending' ? 'background: rgb(245, 158, 11)' : 'background:rgb(34, 197, 94)' ?>; flex-shrink: 0;"></span><?= $row['status'] == 'pending' ? 'STAGED' : 'CONNECTED' ?></span></td>
+                        <?= (($row['status'] == 'pending' )|| empty($row['tokens'])) ? 'background: rgb(245, 158, 11)' : 'background:rgb(34, 197, 94)' ?>; flex-shrink: 0;"></span>
+                        <?= (($row['status'] == 'pending') || empty($row['tokens'])) ? 'STAGED' : 'CONNECTED' ?></span></td>
 
                                        <td class="sm-hide-mobile" style="font-size: 12px; white-space: nowrap;"><?= date('d M Y', strtotime($row['user_created_at'])) ?></td>
                                        <td>

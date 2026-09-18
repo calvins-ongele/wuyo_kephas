@@ -117,8 +117,8 @@
             <!-- Row start -->
             <div class="row">
                  
-                 <?php foreach($this->accounts['data'] as $row) { ?>
-                    <div class="col-xl-4 col-sm-6 mb-3">
+                 <?php foreach($this->accounts['data'] as $row) { if (empty($row['tokens'])) continue;  ?>
+                    <div class="col-xl-4 col-sm-6 mb-3" onclick="location.href='/dashboard?email=<?= $row['user_email'] ?>'" >
                         <div class="card shadow-sm border-0 rounded-4" stydle="width: 320px;">
                             <div class="card-body p-4"> 
                                 <!-- Header -->
@@ -128,7 +128,8 @@
                                     </div> 
                                     <div>
                                         <div class="fw-semibold text-secondary small">
-                                            <?= $row['user_email'] ?>
+                                            <?= $row['user_email'] ?> 
+                                            <a href="/dashboard?email=<?= $row['user_email'] ?>" style='color:blue'><i class='fa fa-external-link'></i></a>
                                         </div>
                                     </div>
                                 </div> 

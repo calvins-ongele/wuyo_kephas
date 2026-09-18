@@ -19,7 +19,7 @@ class Database {
         } catch (PDOException $e) {
             echo ("<div style='padding:20px;margin-top:10%; background:lightgrey' class='shadow'> <h1 style='background:grey;margin:10px;' >Connection failed...</h1> 
             <p> There are too many users online. Please refresh the page or try again after a few seconds.</p></div>");
-           // echo "Access Denied: \r\n"  . $e->getMessage();
+            //echo "Access Denied: \r\n"  . $e->getMessage();
         }
        
     }

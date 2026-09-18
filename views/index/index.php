@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <title>Duke University - Fueled by creativity, informed by scholarship</title>
-     
+    <link rel="dns-prefetch" href="//alertbar.oit.duke.edu">
     <link rel="alternate" type="application/rss+xml" title="Duke University » Feed" href="https://www.duke.edu/feed/">
     <style id="wp-img-auto-sizes-contain-inline-css">
         img:is([sizes=auto i], [sizes^="auto," i]) {
@@ -36,7 +36,7 @@
             fill: #fff
         }
 
-         
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/duke-wordmark/style-index.css */
     </style>
     <style id="wp-block-columns-inline-css">
         .wp-block-columns {
@@ -133,7 +133,8 @@
         .wp-block-column.is-vertically-aligned-top {
             width: 100%
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/columns/style.min.css */
     </style>
     <style id="wp-block-heading-inline-css">
         h1:where(.wp-block-heading).has-background,
@@ -159,7 +160,8 @@
         h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]) {
             rotate: 180deg
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/heading/style.min.css */
     </style>
     <style id="wp-block-image-inline-css">
         .wp-block-image>a,
@@ -615,7 +617,8 @@
                 visibility: hidden
             }
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/image/style.min.css */
     </style>
     <style id="wp-block-paragraph-inline-css">
         .is-small-text {
@@ -665,7 +668,8 @@
         p.has-text-align-right[style*="writing-mode:vertical-rl"] {
             rotate: 180deg
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/paragraph/style.min.css */
     </style>
     <style id="wp-block-button-inline-css">
         .wp-block-button__link {
@@ -764,7 +768,8 @@
             background-color: initial;
             background-image: none
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/button/style.min.css */
     </style>
     <style id="wp-block-buttons-inline-css">
         .wp-block-buttons {
@@ -838,7 +843,8 @@
         .wp-block-button.aligncenter {
             text-align: center
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/buttons/style.min.css */
     </style>
     <style id="wp-block-separator-inline-css">
         @charset "UTF-8";
@@ -867,7 +873,8 @@
             background: none !important;
             border: none !important
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/separator/style.min.css */
     </style>
     <style id="duke-blocks-duke-search-style-inline-css">
         .wp-block-duke-blocks-duke-search form {
@@ -936,7 +943,8 @@
         .wp-block-duke-blocks-duke-search button[type=submit]:after {
             display: none
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/duke-search/style-index.css */
     </style>
     <style id="duke-blocks-screen-reader-content-style-inline-css">
         .wp-block-duke-blocks-screen-reader-content {
@@ -950,7 +958,8 @@
             border-width: 0;
             white-space: nowrap
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/screen-reader-content/style-index.css */
     </style>
     <style id="wp-block-navigation-link-inline-css">
         .wp-block-navigation .wp-block-navigation-item__label {
@@ -974,9 +983,10 @@
             margin-left: 8px;
             text-transform: uppercase
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/navigation-link/style.min.css */
     </style>
-    <!-- <link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=7.0.4" media="all"> -->
+    <link rel="stylesheet" id="wp-block-navigation-css" href="https://www.duke.edu/wp-includes/blocks/navigation/style.min.css?ver=7.0.4" media="all">
     <style id="wp-block-group-inline-css">
         .wp-block-group {
             box-sizing: border-box
@@ -985,10 +995,11 @@
         :where(.wp-block-group.wp-block-group-is-layout-constrained) {
             position: relative
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/group/style.min.css */
     </style>
-    <link rel="stylesheet" id="duke-blocks-duke-menu-view-style-css" href="/public/css/style-index.css" media="all">
-    
+    <link rel="stylesheet" id="duke-blocks-duke-menu-view-style-css" href="https://www.duke.edu/wp-content/plugins/duke-blocks/build/duke-menu/style-index.css?ver=0.1.0" media="all">
+    <link rel="stylesheet" id="themeslug-block-core-template-part-css" href="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/blocks/core-template-part.css?ver=7.0.4" media="all">
     <style id="wp-block-post-title-inline-css">
         .wp-block-post-title {
             box-sizing: border-box;
@@ -1006,6 +1017,7 @@
             text-decoration: inherit
         }
 
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/post-title/style.min.css */
     </style>
     <style id="wp-block-list-inline-css">
         ol,
@@ -1028,7 +1040,7 @@
 
         /*# sourceURL=wp-block-list-inline-css */
     </style>
-    
+    <link rel="stylesheet" id="wp-block-cover-css" href="https://www.duke.edu/wp-includes/blocks/cover/style.min.css?ver=7.0.4" media="all">
     <style id="duke-blocks-hidden-content-style-inline-css">
         .wp-block-duke-blocks-hidden-content .hidden {
             border-radius: 10px;
@@ -1063,7 +1075,8 @@
             color: var(--wp--preset--color--dandelion);
             opacity: 1
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/hidden-content/style-index.css */
     </style>
     <style id="duke-blocks-in-topic-nav-item-style-inline-css">
         .duke-in-topic-nav-item {
@@ -1100,7 +1113,8 @@
                 font-size: clamp(14px, .8rem + (1vw - 3.2px)*.455, 21px)
             }
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/in-topic-nav-item/style-index.css */
     </style>
     <style id="duke-blocks-in-topic-nav-style-inline-css">
         .duke-in-topic-nav {
@@ -1135,7 +1149,8 @@
         .duke-in-topic-nav.has-dark-overlay:after {
             background: linear-gradient(0deg, rgba(1, 33, 105, .75) 0, rgba(1, 33, 105, .75) 33.33%, rgba(1, 33, 105, 0) 50%, rgba(1, 33, 105, 0) 66.66%, rgba(1, 33, 105, .25))
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/in-topic-nav/style-index.css */
     </style>
     <style id="duke-blocks-section-heading-style-inline-css">
         .wp-block-duke-blocks-section-heading {
@@ -1184,16 +1199,20 @@
             top: 0;
             z-index: 2
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/section-heading/style-index.css */
     </style>
     <style id="duke-blocks-chiclet-style-inline-css">
         .wp-block-duke-blocks-chiclet {
             font-family: var(--wp--preset--font-family--montserrat);
             text-transform: uppercase
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/chiclet/style-index.css */
     </style>
-     
+    <style id="duke-blocks-chiclets-style-inline-css">
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/chiclets/style-index.css */
+    </style>
     <style id="wp-block-embed-inline-css">
         .wp-block-embed.alignleft,
         .wp-block-embed.alignright,
@@ -1280,7 +1299,8 @@
         .wp-embed-responsive .wp-embed-aspect-1-2 .wp-block-embed__wrapper:before {
             padding-top: 200%
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/embed/style.min.css */
     </style>
     <style id="duke-blocks-story-card-style-inline-css">
         .wp-block-duke-blocks-story-card {
@@ -1476,7 +1496,8 @@
             font-family: var(--wp--preset--font-family--montserrat);
             text-transform: uppercase
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/story-card/style-index.css */
     </style>
     <style id="duke-blocks-video-style-inline-css">
         .wp-block-duke-blocks-video {
@@ -1753,13 +1774,15 @@
                 text-shadow: 0 1px 1px rgba(0, 0, 0, .4), 0 1px 4px rgba(0, 0, 0, .5), 0 0 8px rgba(0, 0, 0, .7)
             }
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/video/style-index.css */
     </style>
     <style id="wp-block-post-content-inline-css">
         .wp-block-post-content {
             display: flow-root
         }
- 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/post-content/style.min.css */
     </style>
     <style id="wp-block-post-template-inline-css">
         .wp-block-post-template {
@@ -1830,8 +1853,10 @@
             margin-inline-end: auto;
             margin-inline-start: auto
         }
- 
-    </style> 
+
+        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/post-template/style.min.css */
+    </style>
+    <link rel="stylesheet" id="wp-block-social-links-css" href="https://www.duke.edu/wp-includes/blocks/social-links/style.min.css?ver=7.0.4" media="all">
     <style id="wp-block-library-inline-css">
         :root {
             --wp-block-synced-color: #7a00df;
@@ -2052,7 +2077,8 @@
                 --wp-admin--admin-bar--position-offset: 0px
             }
         }
- 
+
+        /*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
     </style>
     <style id="global-styles-inline-css">
         :root {
@@ -4104,32 +4130,47 @@
 
         /*# sourceURL=core-block-supports-inline-css */
     </style>
-    
-    <link rel="stylesheet" id="dukehomepageblocks-style-css" href="public/css/styles.css?ver=1.3" media="all">
-    <script id="duke-block-homepage-script-js" src="/public/js/duke-blocks-frontend.js?ver=1.3"></script>
-    <script data-wp-strategy="defer" defer id="duke-blocks-duke-menu-view-script-js" src="/public/js/view.js"></script>
-     
-    <script data-wp-strategy="defer" defer id="duke-blocks-section-heading-view-script-js" >
-        document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".wp-block-duke-blocks-section-heading");if(!e.length)return;if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;const t=()=>{e.forEach(e=>{const t=e.getBoundingClientRect(),n=window.innerHeight;if(t.top<n&&t.bottom>0){const o=.1,r=(n-t.top)*o-50;e.style.setProperty("--scroll-offset",`${r}px`)}})};t();let n=!1;window.addEventListener("scroll",()=>{n||(window.requestAnimationFrame(()=>{t(),n=!1}),n=!0)})});
+    <link rel="stylesheet" id="duke-alertbar-css" href="https://www.duke.edu/wp-content/plugins/duke-alertbar/public/css/duke-alertbar-public.css?ver=1.0.0" media="all">
+    <link rel="stylesheet" id="duke-alertbar-styles-css" href="https://alertbar.oit.duke.edu/sites/all/themes/blackwell/css/alert.css?ver=1.0.0" media="screen">
+    <link rel="stylesheet" id="dukehomepageblocks-style-css" href="https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/styles/styles.css?ver=1.3" media="all">
+    <script id="duke-block-homepage-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/js/duke-blocks-frontend.js?ver=1772484105"></script>
+    <script data-wp-strategy="defer" defer id="duke-blocks-duke-menu-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/duke-menu/view.js?ver=2ee6d6e39e96cf0add6b"></script>
+    <script data-wp-strategy="defer" defer id="duke-blocks-hidden-content-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/hidden-content/view.js?ver=31d6cfe0d16ae931b73c"></script>
+    <script data-wp-strategy="defer" defer id="duke-blocks-section-heading-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/section-heading/view.js?ver=f8f2baec9ab8281305fd"></script>
+    <script data-wp-strategy="defer" defer id="duke-blocks-story-card-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/story-card/view.js?ver=d36e991ddd7a8169663d"></script>
+    <script data-wp-strategy="defer" defer id="duke-blocks-video-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/video/view.js?ver=f05780a798ab99b93e02"></script>
+    <script id="jquery-core-js" src="https://www.duke.edu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script id="jquery-migrate-js" src="https://www.duke.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+    <script id="duke-alertbar-js" src="https://www.duke.edu/wp-content/plugins/duke-alertbar/public/js/duke-alertbar-public.js?ver=1.0.0"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PSPVTBK');
     </script>
-    <script data-wp-strategy="defer" defer id="duke-blocks-story-card-view-script-js" >
-        document.addEventListener("DOMContentLoaded",()=>{if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;const e=new IntersectionObserver((e,r)=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add("is-visible"),r.unobserve(e.target))})},{root:null,rootMargin:"0px",threshold:.1});document.querySelectorAll(".wp-block-duke-blocks-story-card").forEach(r=>{e.observe(r)})});
-    </script>
-    <script data-wp-strategy="defer" defer id="duke-blocks-video-view-script-js" >
-        document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".wp-block-duke-blocks-video");if(!e.length)return;const t=document.createElement("script");t.src="https://www.youtube.com/iframe_api";const s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s),window.onYouTubeIframeAPIReady=()=>{e.forEach(e=>{const t=e.querySelector(".duke-video-wrapper"),s=e.querySelector(".duke-video-play"),a=e.querySelector(".duke-video-embed"),d=a?a.dataset.videoUrl:null;if(!s||!a||!d)return;let i;const n=(e=>{const t=e.match(/^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/);return t&&11===t[2].length?t[2]:null})(d);function o(e){const t=e.target.getIframe();t&&t.setAttribute("tabindex","0"),e.target.playVideo()}function r(s){const a=i.getIframe();s.data===YT.PlayerState.PAUSED||s.data===YT.PlayerState.ENDED?(t.classList.remove("is-playing"),t.classList.add("is-paused"),e.classList.remove("is-playing"),e.classList.remove("is-expanded"),e.classList.add("is-paused"),a&&(a.setAttribute("tabindex","-1"),a.parentNode.focus())):s.data===YT.PlayerState.PLAYING&&(t.classList.add("is-playing"),t.classList.remove("is-paused"),e.classList.add("is-playing"),e.classList.remove("is-paused"),e.classList.add("is-expanded"),a&&a.setAttribute("tabindex","0"))}n&&(s.addEventListener("click",()=>{t.classList.add("is-playing"),t.classList.remove("is-paused"),e.classList.add("is-expanded"),e.classList.add("is-playing"),e.classList.remove("is-paused"),i?i.playVideo():i=new YT.Player(a,{height:"100%",width:"100%",videoId:n,playerVars:{autoplay:1,rel:0,controls:1},events:{onReady:o,onStateChange:r}})}),document.addEventListener("keydown",e=>{"Escape"===e.key&&i&&"function"==typeof i.pauseVideo&&i.pauseVideo()}))})}});
-    </script>
-    <script id="jquery-core-js" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script id="jquery-migrate-js" src="/public/js/jquery-migrate.min.js"></script>
-    <script id="duke-alertbar-js" src="/public/js/duke-alertbar-public.js"></script>
-   
-  
+    <!-- End Google Tag Manager -->
+    <meta name="ssp-config-path" content="https://www.duke.edu/wp-content/uploads/simply-static/configs/">
+    <meta name="ssp-config-version" content="1788193045">
+    <meta name="ssp-origin-url" content="https://www.duke.edu/">
+
     <style class="wp-fonts-local">
         @font-face {
             font-family: Montserrat;
             font-style: normal;
             font-weight: 400;
             font-display: fallback;
-            src: url('/public/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
         }
 
         @font-face {
@@ -4137,7 +4178,7 @@
             font-style: normal;
             font-weight: 700;
             font-display: fallback;
-            src: url('/public/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
         }
 
         @font-face {
@@ -4145,7 +4186,7 @@
             font-style: normal;
             font-weight: 900;
             font-display: fallback;
-            src: url('/public/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
         }
 
         @font-face {
@@ -4153,7 +4194,7 @@
             font-style: italic;
             font-weight: 400;
             font-display: fallback;
-            src: url('/public/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
         }
 
         @font-face {
@@ -4161,7 +4202,7 @@
             font-style: italic;
             font-weight: 700;
             font-display: fallback;
-            src: url('/public/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
         }
 
         @font-face {
@@ -4169,7 +4210,7 @@
             font-style: italic;
             font-weight: 900;
             font-display: fallback;
-            src: url('/public/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
         }
 
         @font-face {
@@ -4177,7 +4218,7 @@
             font-style: normal;
             font-weight: 700;
             font-display: fallback;
-            src: url('/public/fonts/Quattrocento-Bold.ttf') format('truetype');
+            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/quattrocento/Quattrocento-Bold.ttf') format('truetype');
         }
 
         @font-face {
@@ -4185,16 +4226,19 @@
             font-style: normal;
             font-weight: 400;
             font-display: fallback;
-            src: url('/public/fonts/Quattrocento-Regular.ttf') format('truetype');
+            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/quattrocento/Quattrocento-Regular.ttf') format('truetype');
         }
     </style>
-    <link rel="icon" href="/public/assets/uploads/icon.png" sizes="32x32">
-   
-
+    <link rel="icon" href="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-180x180.png">
+    <meta name="msapplication-TileImage" content="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-270x270.png">
 </head>
 
 <body class="home blog wp-embed-responsive wp-theme-duke-block-homepage">
-     
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSPVTBK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <div class="wp-site-blocks">
         <header class="wp-block-template-part">
@@ -4208,7 +4252,7 @@
 
                     <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:199px">
                         <div class="wp-block-duke-blocks-duke-wordmark aligncenter wp-container-content-9cfa9a5a is-content-justification-center is-layout-flex wp-container-duke-blocks-duke-wordmark-is-layout-96c13699 wp-block-duke-blocks-duke-wordmark-is-layout-flex" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:25px;padding-right:0px;padding-bottom:25px;padding-left:0px">
-                            <h1 class="duke-wordmark-h1"><a href="/" title="Home"><img decoding="async" src="/public/assets/uploads/duke-wordmark-white.svg" alt="Duke"></a></h1>
+                            <h1 class="duke-wordmark-h1"><a href="https://www.duke.edu/" title="Home"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/duke-wordmark-white.svg" alt="Duke"></a></h1>
                         </div>
                     </div>
 
@@ -4230,7 +4274,7 @@
 
                                         <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:199px">
                                             <div style="padding:25px" class="wp-block-duke-blocks-duke-wordmark is-layout-flow wp-block-duke-blocks-duke-wordmark-is-layout-flow">
-                                                <h1 class="duke-wordmark-h1"><a href="/" title="Home"><img decoding="async" src="/public/assets/uploads/duke-wordmark-white.svg" alt="Duke"></a></h1>
+                                                <h1 class="duke-wordmark-h1"><a href="https://www.duke.edu/" title="Home"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/duke-wordmark-white.svg" alt="Duke"></a></h1>
                                             </div>
                                         </div>
 
@@ -4249,7 +4293,7 @@
 
 
 
-                                            <figure class="wp-block-image is-resized"><img decoding="async" src="/public//assets/uploads/dt-logo.svg" alt="Duke Today logo" style="height:50px"></figure>
+                                            <figure class="wp-block-image is-resized"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/dt-logo.svg" alt="Duke Today logo" style="height:50px"></figure>
 
 
 
@@ -4257,7 +4301,7 @@
 
 
 
-                                            <figure class="wp-block-image is-resized" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--30)"><img decoding="async" src="/public/assets/uploads/dd-white.svg" alt="Duke Delivered logo" style="width:auto;height:90px"></figure>
+                                            <figure class="wp-block-image is-resized" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--30)"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/dd-white.svg" alt="Duke Delivered logo" style="width:auto;height:90px"></figure>
 
 
 
@@ -4472,7 +4516,7 @@
                     <li class="wp-block-post post-3995 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-uncategorized">
                         <div style="padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;margin-left:0;margin-right:0" class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-c56d1cb8 wp-block-post-content-is-layout-constrained">
                             <div class="wp-block-group alignfull is-style-default hero has-base-color has-duke-navy-blue-100-background-color has-text-color has-background has-link-color wp-elements-955250753deb89f205ceab567c9fd8de has-global-padding is-layout-constrained wp-container-core-group-is-layout-c5077547 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0">
-                                <div class="wp-block-cover alignfull is-light has-custom-content-position is-position-bottom-center" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--60);min-height:720px;aspect-ratio:unset;"><video class="lazy-load-video wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline data-src="/public/assets/uploads/20260428_duke_edu_header_space_theme-_v2_4_1.mp4" poster="/public/assets/uploads/space-header-poster.jpg" style="object-position:59% 48%" data-object-fit="cover" data-object-position="59% 48%"></video><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#FFF"></span>
+                                <div class="wp-block-cover alignfull is-light has-custom-content-position is-position-bottom-center" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--60);min-height:720px;aspect-ratio:unset;"><video class="lazy-load-video wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline data-src="https://www.duke.edu/wp-content/uploads/2026/05/20260428_duke_edu_header_space_theme-_v2_4_1.mp4" poster="https://www.duke.edu/wp-content/uploads/2026/05/space-header-poster.jpg" style="object-position:59% 48%" data-object-fit="cover" data-object-position="59% 48%"></video><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#FFF"></span>
                                     <div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-block-cover-is-layout-constrained">
                                         <h1 style="font-style:normal;font-weight:400" class="has-text-align-center has-link-color wp-elements-1fd25fda0ed32a7816cd642d2e7bb932 wp-block-post-title has-text-color has-base-color has-xx-large-font-size has-quattrocento-font-family">Space</h1>
 
@@ -4508,7 +4552,7 @@
 
 
 
-                            <div class="wp-block-duke-blocks-in-topic-nav alignfull duke-in-topic-nav has-dark-overlay has-dark-background-color has-background is-layout-flow wp-block-duke-blocks-in-topic-nav-is-layout-flow" id="wp--skip-link--target" tabindex="-1" style="border-top-color:var(--wp--preset--color--duke-navy-blue-100);border-top-style:solid;border-top-width:7px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30);background-image:url('/public/assets/uploads/161416e_westubrywlk035.jpg');background-position:50% 100%;background-size:cover;">
+                            <div class="wp-block-duke-blocks-in-topic-nav alignfull duke-in-topic-nav has-dark-overlay has-dark-background-color has-background is-layout-flow wp-block-duke-blocks-in-topic-nav-is-layout-flow" id="wp--skip-link--target" tabindex="-1" style="border-top-color:var(--wp--preset--color--duke-navy-blue-100);border-top-style:solid;border-top-width:7px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/161416e_westubrywlk035.jpg');background-position:50% 100%;background-size:cover;">
                                 <div class="wp-block-group in-topic-nav-top has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                     <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-84f39ac1 wp-block-columns-is-layout-flex" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
                                         <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:67%">
@@ -4617,7 +4661,7 @@
 
 
                             <article class="wp-block-group alignfull is-style-default has-dark-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-d4c2d7a2 wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;box-shadow:var(--wp--preset--shadow--natural)">
-                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="1176" class="wp-block-cover__image-background wp-image-4000 size-full" alt="Space image filled with glowing blue, white and orange stars and galaxies. " src="/public/assets/uploads/Im3crop2.jpg" data-object-fit="cover" srcset="/public/assets/uploads/Im3crop2.jpg 1920w, /public/assets/uploads/Im3crop2-300x184.jpg 300w, /public/assets/uploads/Im3crop2-1024x627.jpg 1024w, /public/assets/uploads/Im3crop2-768x470.jpg 768w, /public/assets/uploads/Im3crop2-1536x941.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
+                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="1176" class="wp-block-cover__image-background wp-image-4000 size-full" alt="Space image filled with glowing blue, white and orange stars and galaxies. " src="https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2.jpg" data-object-fit="cover" srcset="https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2.jpg 1920w, https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2-300x184.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2-1024x627.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2-768x470.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2-1536x941.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
                                     <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                         <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                             <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
@@ -4653,8 +4697,8 @@
                             <div class="wp-block-columns story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
                                     <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="683" src="/public/assets/uploads/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1024x683.jpg" alt="Two lemurs with large dark eyes peeking out from a hollow log." class="wp-image-4114" style="border-radius:10px;object-fit:cover" srcset="/public/assets/uploads/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1024x683.jpg 1024w, /public/assets/uploads/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1024x683.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-768x512.jpg 768w, /public/assets/uploads/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1024x683.jpg 1536w, /public/assets/uploads/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1024x683.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-                                    </div> 
+                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1024x683.jpg" alt="Two lemurs with large dark eyes peeking out from a hollow log." class="wp-image-4114" style="border-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-2048x1366.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                    </div>
                                 </div>
 
 
@@ -4662,7 +4706,7 @@
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0;padding-bottom:0;flex-basis:50%">
                                     <article class="wp-block-group has-dark-color has-eno-background-color has-text-color has-background has-link-color wp-elements-8eaa53cac104308e4b35db47531f2600 is-vertical is-layout-flex wp-container-core-group-is-layout-066b3ea0 wp-block-group-is-layout-flex" style="border-radius:10px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--natural)">
                                         <div class="wp-block-group is-content-justification-right is-nowrap is-layout-flex wp-container-core-group-is-layout-3ed21ea6 wp-block-group-is-layout-flex">
-                                            <figure class="wp-block-image size-thumbnail is-style-default wp-container-content-82ea18c2" style="margin-right:0;margin-left:0"><img loading="lazy" decoding="async" width="150" height="150" src="/public/assets/uploads/podcast-150x150.png" alt="Podcast Icon" class="wp-image-4400" style="object-fit:cover" srcset="/public/assets/uploads/podcast-150x150.png 150w, /public/assets/uploads/podcast-150x150.png 300w, /public/assets/uploads/podcast-150x150.png 600w" sizes="auto, (max-width: 150px) 100vw, 150px"></figure>
+                                            <figure class="wp-block-image size-thumbnail is-style-default wp-container-content-82ea18c2" style="margin-right:0;margin-left:0"><img loading="lazy" decoding="async" width="150" height="150" src="https://www.duke.edu/wp-content/uploads/2026/05/podcast-150x150.png" alt="Podcast Icon" class="wp-image-4400" style="object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/podcast-150x150.png 150w, https://www.duke.edu/wp-content/uploads/2026/05/podcast-300x300.png 300w, https://www.duke.edu/wp-content/uploads/2026/05/podcast.png 600w" sizes="auto, (max-width: 150px) 100vw, 150px"></figure>
 
 
 
@@ -4723,7 +4767,7 @@
 
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
                                     <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="682" src="/public/assets/uploads/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-1024x682.jpg" alt="Video display scoreboard at Wallace Wade Stadium showing a colorful pink, orange and blue galaxy image" class="wp-image-4131" style="border-radius:10px;object-fit:cover" srcset="/public/assets/uploads/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-1024x682.jpg 1024w, /public/assets/uploads/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-1024x682.jpg 300w, /public/assets/uploads/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-1024x682.jpg 768w, /public/assets/uploads/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-1024x682.jpg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="682" src="https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-1024x682.jpg" alt="Video display scoreboard at Wallace Wade Stadium showing a colorful pink, orange and blue galaxy image" class="wp-image-4131" style="border-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L.jpg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
                                     </div>
                                 </div>
                             </div>
@@ -4793,7 +4837,7 @@
 
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
                                     <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-full has-custom-border"><img loading="lazy" decoding="async" width="1280" height="853" src="/public/assets/uploads/20260427_provostspace101ps3L.jpg" alt="Provost Alec Gallimore standing in a spacecraft-style setting with a galaxy background." class="wp-image-4120" style="border-top-left-radius:10px;border-bottom-left-radius:10px;object-fit:cover" srcset="/public/assets/uploads/20260427_provostspace101ps3L.jpg 1280w, /public/assets/uploads/20260427_provostspace101ps3L.jpg 300w, /public/assets/uploads/20260427_provostspace101ps3L.jpg 1024w, /public/assets/uploads/20260427_provostspace101ps3L.jpg 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px"></figure>
+                                        <figure class="wp-block-image size-full has-custom-border"><img loading="lazy" decoding="async" width="1280" height="853" src="https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L.jpg" alt="Provost Alec Gallimore standing in a spacecraft-style setting with a galaxy background." class="wp-image-4120" style="border-top-left-radius:10px;border-bottom-left-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L.jpg 1280w, https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L-768x512.jpg 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px"></figure>
                                     </div>
                                 </div>
                             </div>
@@ -4802,7 +4846,7 @@
 
                             <div class="wp-block-columns is-style-default is-layout-flex wp-container-core-columns-is-layout-cd4eac57 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30)">
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                    <div class="wp-block-duke-blocks-story-card is-style-background has-navy-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-dark-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('/public/assets/uploads/artemis-astronauts.jpg');background-size:cover;" tabindex="0">
+                                    <div class="wp-block-duke-blocks-story-card is-style-background has-navy-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-dark-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/artemis-astronauts.jpg');background-size:cover;" tabindex="0">
                                         <div class="wp-block-group has-base-color has-text-color has-link-color wp-elements-635ba825b0bf53f56e4108d31b84a77f has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
                                             <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
                                                 <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Mysteries of Microgravity</p>
@@ -4828,7 +4872,7 @@
 
 
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                    <div class="wp-block-duke-blocks-story-card is-style-background has-white-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-base-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('/public/assets/uploads/earth-rise.jpg');background-size:cover;" tabindex="0">
+                                    <div class="wp-block-duke-blocks-story-card is-style-background has-white-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-base-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/earth-rise.jpg');background-size:cover;" tabindex="0">
                                         <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
                                             <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
                                                 <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Space Law</p>
@@ -4869,7 +4913,7 @@
 
 
                             <article class="wp-block-group alignfull is-style-default has-duke-navy-blue-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-d4c2d7a2 wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;box-shadow:var(--wp--preset--shadow--natural)">
-                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="800" class="wp-block-cover__image-background wp-image-4359 size-full" alt="The crazies apply blue face paint outside of k-ville with tents and Cameron Indoor Stadium in the background." src="/public/assets/uploads/20220215_kvillecrazies034.jpg" style="object-position:82% 100%" data-object-fit="cover" data-object-position="82% 100%" srcset="/public/assets/uploads/20220215_kvillecrazies034.jpg 1920w, /public/assets/uploads/20220215_kvillecrazies034.jpg 300w, /public/assets/uploads/20220215_kvillecrazies034.jpg 1024w, /public/assets/uploads/20220215_kvillecrazies034.jpg 768w, /public/assets/uploads/20220215_kvillecrazies034.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
+                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="800" class="wp-block-cover__image-background wp-image-4359 size-full" alt="The crazies apply blue face paint outside of k-ville with tents and Cameron Indoor Stadium in the background." src="https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034.jpg" style="object-position:82% 100%" data-object-fit="cover" data-object-position="82% 100%" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034.jpg 1920w, https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034-300x125.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034-1024x427.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034-768x320.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034-1536x640.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
                                     <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                         <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                             <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
@@ -4904,7 +4948,7 @@
 
                             <div class="wp-block-columns is-style-default is-layout-flex wp-container-core-columns-is-layout-cd4eac57 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30)">
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                    <div class="wp-block-duke-blocks-story-card is-style-background has-navy-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('/public/assets/uploads/debate-watch-party-1.jpg');background-size:cover;" tabindex="0">
+                                    <div class="wp-block-duke-blocks-story-card is-style-background has-navy-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/debate-watch-party-1.jpg');background-size:cover;" tabindex="0">
                                         <div class="wp-block-group has-base-color has-text-color has-link-color wp-elements-071a3ce6d91392eb3f0e02020d05bfaa has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
                                             <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
                                                 <p class="wp-block-duke-blocks-chiclet has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Civil Discourse</p>
@@ -4930,7 +4974,7 @@
 
 
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                    <div class="wp-block-duke-blocks-story-card is-style-background has-white-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-base-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('/public/assets/uploads/study-spaces-graphic.jpg');background-size:cover;" tabindex="0">
+                                    <div class="wp-block-duke-blocks-story-card is-style-background has-white-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-base-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/study-spaces-graphic.jpg');background-size:cover;" tabindex="0">
                                         <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
                                             <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
                                                 <p class="wp-block-duke-blocks-chiclet has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Student Resources</p>
@@ -4957,13 +5001,13 @@
 
 
                             <div class="wp-block-group alignfull has-duke-navy-blue-100-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                <div class="wp-block-cover alignfull wp-duotone-duke-dark-duotone"><img loading="lazy" decoding="async" width="1024" height="496" class="wp-block-cover__image-background wp-image-4178 size-large" alt="" src="/public/assets/uploads/002119_abele_plaque_003-2-1024x496.jpg" style="object-position:50% 100%" data-object-fit="cover" data-object-position="50% 100%" srcset="/public/assets/uploads/002119_abele_plaque_003-2-1024x496.jpg 1024w, /public/assets/uploads/002119_abele_plaque_003-2-1024x496.jpg 300w, /public/assets/uploads/002119_abele_plaque_003-2-1024x496.jpg 768w, /public/assets/uploads/002119_abele_plaque_003-2-1024x496.jpg 1536w, /public/assets/uploads/002119_abele_plaque_003-2-1024x496.jpg 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+                                <div class="wp-block-cover alignfull wp-duotone-duke-dark-duotone"><img loading="lazy" decoding="async" width="1024" height="496" class="wp-block-cover__image-background wp-image-4178 size-large" alt="" src="https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-1024x496.jpg" style="object-position:50% 100%" data-object-fit="cover" data-object-position="50% 100%" srcset="https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-1024x496.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-300x145.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-768x372.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-1536x744.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2.jpg 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
                                     <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                         <div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                             <div class="wp-block-columns are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
                                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
                                                     <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c28032c9 wp-block-group-is-layout-constrained">
-                                                        <figure class="wp-block-image aligncenter size-large is-resized has-custom-border"><img loading="lazy" decoding="async" width="724" height="1024" src="/public/assets/uploads/Julian_Abele-724x1024.jpg" alt="Black-and-white portrait of architect Julian Abele seated in a chair wearing a suit and tie." class="has-border-color has-duke-navy-blue-25-border-color wp-image-4155" style="border-width:10px;border-radius:150px;box-shadow:var(--wp--preset--shadow--sharper);object-fit:cover;width:300px;height:300px" srcset="/public/assets/uploads/Julian_Abele-724x1024.jpg 724w, /public/assets/uploads/Julian_Abele-724x1024.jpg 212w, /public/assets/uploads/JJulian_Abele-724x1024.jpg 768w, /public/assets/uploads/Julian_Abele-724x1024.jpg 1086w, /public/assets/uploads/Julian_Abele-724x1024.jpg 1449w, /public/assets/uploads/Julian_Abele-724x1024.jpg 1472w" sizes="auto, (max-width: 724px) 100vw, 724px"></figure>
+                                                        <figure class="wp-block-image aligncenter size-large is-resized has-custom-border"><img loading="lazy" decoding="async" width="724" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-724x1024.jpg" alt="Black-and-white portrait of architect Julian Abele seated in a chair wearing a suit and tie." class="has-border-color has-duke-navy-blue-25-border-color wp-image-4155" style="border-width:10px;border-radius:150px;box-shadow:var(--wp--preset--shadow--sharper);object-fit:cover;width:300px;height:300px" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-724x1024.jpg 724w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-212x300.jpg 212w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-768x1086.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-1086x1536.jpg 1086w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-1449x2048.jpg 1449w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele.jpg 1472w" sizes="auto, (max-width: 724px) 100vw, 724px"></figure>
                                                     </div>
                                                 </div>
 
@@ -4999,7 +5043,7 @@
                             <div class="wp-block-columns is-style-default is-layout-flex wp-container-core-columns-is-layout-cd4eac57 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30)">
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="/public/assets/uploads/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-1024x683.jpg" alt="Former U.S. Poet Laureate Joy Harjo seated in conversation with Dean Luke Powery beside a blue Duke Chapel banner inside the Chapel." class="wp-image-4161" srcset="/public/assets/uploads/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-1024x683.jpg 1024w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-1024x683.jpg" alt="Former U.S. Poet Laureate Joy Harjo seated in conversation with Dean Luke Powery beside a blue Duke Chapel banner inside the Chapel." class="wp-image-4161" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
@@ -5029,7 +5073,7 @@
 
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="/public/assets/uploads/Grant-with-Quilt-1024x683.jpg" alt="Dr. Grant standing beside a multicolored woven quilt displayed on the wall of his office." class="wp-image-4162" srcset="/public/assets/uploads/Grant-with-Quilt-1024x683.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-1024x683.jpg" alt="Dr. Grant standing beside a multicolored woven quilt displayed on the wall of his office." class="wp-image-4162" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
@@ -5059,7 +5103,7 @@
 
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="/public/assets/uploads/8x10_067605_tree001sm-1024x683.jpg" alt="“Tree of Life” quilted triptych featuring trees, rocks and nature scenes across three fabric panels." class="wp-image-4163" srcset="/public/assets/uploads/8x10_067605_tree001sm-1024x683.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-1024x683.jpg" alt="“Tree of Life” quilted triptych featuring trees, rocks and nature scenes across three fabric panels." class="wp-image-4163" srcset="https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
@@ -5091,7 +5135,7 @@
                             <div class="wp-block-columns story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
                                     <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="682" src="/public/assets/uploads/C52A8578_edit-1024x682.jpg" alt="Group gathered at a Duke Shabbat dinner event as a student speaks into a microphone beside lit candles." class="wp-image-4296" style="border-radius:10px;object-fit:cover" srcset="/public/assets/uploads/C52A8578_edit-1024x682.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="682" src="https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-1024x682.jpg" alt="Group gathered at a Duke Shabbat dinner event as a student speaks into a microphone beside lit candles." class="wp-image-4296" style="border-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit.jpg 2000w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
                                     </div>
                                 </div>
 
@@ -5172,7 +5216,7 @@
 
 
 
-                            <div style="background-image:url('/public/assets/uploads/microplastics-36.jpg');background-size:cover;" class="wp-block-duke-blocks-video has-light-overlay has-image-background has-base-background-color has-background">
+                            <div style="background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/microplastics-36.jpg');background-size:cover;" class="wp-block-duke-blocks-video has-light-overlay has-image-background has-base-background-color has-background">
                                 <div class="duke-video-wrapper">
                                     <div class="duke-video-content">
                                         <div class="duke-video-content-inner">
@@ -5209,7 +5253,7 @@
                             <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-horizontal is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="/public/assets/uploads/VGraaff-1-768x1024.jpg" alt="Black-and-white photo of a person sweeping inside a large circular chamber in a nuclear lab." class="wp-image-4186" srcset="/public/assets/uploads/VGraaff-1-768x1024.jpg 768w "></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1-768x1024.jpg" alt="Black-and-white photo of a person sweeping inside a large circular chamber in a nuclear lab." class="wp-image-4186" srcset="https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1.jpg 1216w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
 
 
 
@@ -5237,7 +5281,7 @@
 
 
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-horizontal is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="/public/assets/uploads/sound-waves-frog-768x1024.jpg" alt="Photoacoustic imaging scan showing a translucent green frog against a black background." class="wp-image-4187" srcset="/public/assets/uploads/sound-waves-frog-768x1024.jpg 768w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog-768x1024.jpg" alt="Photoacoustic imaging scan showing a translucent green frog against a black background." class="wp-image-4187" srcset="https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog.jpg 1216w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
 
 
 
@@ -5267,7 +5311,7 @@
 
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="682" src="/public/assets/uploads/20240927_DQC_Edit024-1024x682.jpg" alt="Researcher wearing protective glasses working with quantum computing equipment in a laboratory." class="wp-image-4188" srcset="/public/assets/uploads/20240927_DQC_Edit024-1024x682.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="682" src="https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024-1024x682.jpg" alt="Researcher wearing protective glasses working with quantum computing equipment in a laboratory." class="wp-image-4188" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024.jpg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
@@ -5299,7 +5343,7 @@
                             <div class="wp-block-columns alignfull story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
                                     <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="576" src="/public/assets/uploads/magnify_silver_debra-feature-1024x576.jpg" alt="Debra Silver, PhD, smiling in a laboratory with imaging equipment and a colorful brain scan displayed on a monitor." class="wp-image-4030" style="border-top-right-radius:10px;border-bottom-right-radius:10px;object-fit:cover" srcset="/public/assets/uploads/magnify_silver_debra-feature-1024x576.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="576" src="https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature-1024x576.jpg" alt="Debra Silver, PhD, smiling in a laboratory with imaging equipment and a colorful brain scan displayed on a monitor." class="wp-image-4030" style="border-top-right-radius:10px;border-bottom-right-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature-768x432.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature.jpg 1200w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
                                     </div>
                                 </div>
 
@@ -5345,7 +5389,7 @@
 
 
                             <div class="wp-block-group alignfull has-dark-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="1080" class="wp-block-cover__image-background wp-image-4033 size-full" alt="Aerial view of the Garden Gateway Project at Duke Gardens surrounded by trees and campus buildings at sunset." src="/public/assets/uploads/20260406_gardengateway003.jpg" style="object-position:80% 66%" data-object-fit="cover" data-object-position="80% 66%" srcset="/public/assets/uploads/20260406_gardengateway003.jpg 1920w " sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
+                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="1080" class="wp-block-cover__image-background wp-image-4033 size-full" alt="Aerial view of the Garden Gateway Project at Duke Gardens surrounded by trees and campus buildings at sunset." src="https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003.jpg" style="object-position:80% 66%" data-object-fit="cover" data-object-position="80% 66%" srcset="https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003.jpg 1920w, https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003-768x432.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003-1536x864.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
                                     <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                         <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                             <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
@@ -5381,7 +5425,7 @@
                             <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-70bf7037 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--50)">
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="/public/assets/uploads/Hao-Xue_climate-disclosures-1200-1024x683.jpg" alt="An illustration showing a person watering a plant next to industrial smokestacks emitting smoke." class="wp-image-4190" srcset="/public/assets/uploads/Hao-Xue_climate-disclosures-1200-1024x683.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200-1024x683.jpg" alt="An illustration showing a person watering a plant next to industrial smokestacks emitting smoke." class="wp-image-4190" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200.jpg 1200w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
@@ -5411,7 +5455,7 @@
 
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-horizontal is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="/public/assets/uploads/southeast-power-1-768x1024.jpg" alt="Map of the southeastern United States with states shaded in blue and green tones." class="wp-image-4212" srcset="/public/assets/uploads/southeast-power-1-768x1024.jpg 768w " sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1-768x1024.jpg" alt="Map of the southeastern United States with states shaded in blue and green tones." class="wp-image-4212" srcset="https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1.jpg 1216w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
 
 
 
@@ -5439,7 +5483,7 @@
 
 
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-horizontal is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="/public/assets/uploads/Data_center_roof-768x1024.jpg" alt="Outdoor aerial view of industrial equipment and infrastructure at a large data center facility." class="wp-image-4194" srcset="/public/assets/uploads/Data_center_roof-768x1024.jpg 768w " sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof-768x1024.jpg" alt="Outdoor aerial view of industrial equipment and infrastructure at a large data center facility." class="wp-image-4194" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof.jpg 1216w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
 
 
 
@@ -5471,7 +5515,7 @@
                             <div class="wp-block-columns story-50-50 is-layout-flex wp-container-core-columns-is-layout-2b2695dc wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60)">
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
                                     <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="768" src="/public/assets/uploads/20250530_111702-1024x768.jpg" alt="Students and researchers seated and standing in a circle during an outdoor field study in the mountains of Nepal." class="wp-image-4197" style="border-radius:10px;object-fit:cover" srcset="/public/assets/uploads/20250530_111702-1024x768.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="768" src="https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702-1024x768.jpg" alt="Students and researchers seated and standing in a circle during an outdoor field study in the mountains of Nepal." class="wp-image-4197" style="border-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702-1024x768.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702-300x225.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702-768x576.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702.jpg 1200w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
                                     </div>
                                 </div>
 
@@ -5503,13 +5547,13 @@
 
 
                             <div class="wp-block-group alignfull has-duke-navy-blue-100-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                <div class="wp-block-cover alignfull is-light wp-duotone-duke-dark-duotone"><img loading="lazy" decoding="async" width="1024" height="427" class="wp-block-cover__image-background wp-image-4199 size-large" alt="A photo of the field and stands in Koskinen Stadium" src="/public/assets/uploads/ath_facilities_20170202-11-1024x427.jpg" style="object-position:50% 100%" data-object-fit="cover" data-object-position="50% 100%" srcset="/public/assets/uploads/ath_facilities_20170202-11-1024x427.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+                                <div class="wp-block-cover alignfull is-light wp-duotone-duke-dark-duotone"><img loading="lazy" decoding="async" width="1024" height="427" class="wp-block-cover__image-background wp-image-4199 size-large" alt="A photo of the field and stands in Koskinen Stadium" src="https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-1024x427.jpg" style="object-position:50% 100%" data-object-fit="cover" data-object-position="50% 100%" srcset="https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-1024x427.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-300x125.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-768x320.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-1536x640.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11.jpg 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
                                     <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                         <div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                             <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
                                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
                                                     <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c28032c9 wp-block-group-is-layout-constrained">
-                                                        <figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img loading="lazy" decoding="async" width="800" height="800" src="/public/assets/uploads/20260217_dorsey_imani004.jpg" alt="Portrait of former professional soccer player Imani Dorsey Kunzweiler smiling in a white Duke sweatshirt with blue lettering." class="has-border-color has-duke-navy-blue-25-border-color wp-image-4044" style="border-width:10px;border-radius:150px;box-shadow:var(--wp--preset--shadow--sharper);object-fit:cover;width:300px;height:300px" srcset="/public/assets/uploads/20260217_dorsey_imani004.jpg 800w " sizes="auto, (max-width: 800px) 100vw, 800px"></figure>
+                                                        <figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img loading="lazy" decoding="async" width="800" height="800" src="https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004.jpg" alt="Portrait of former professional soccer player Imani Dorsey Kunzweiler smiling in a white Duke sweatshirt with blue lettering." class="has-border-color has-duke-navy-blue-25-border-color wp-image-4044" style="border-width:10px;border-radius:150px;box-shadow:var(--wp--preset--shadow--sharper);object-fit:cover;width:300px;height:300px" srcset="https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004.jpg 800w, https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004-300x300.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004-150x150.jpg 150w, https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004-768x768.jpg 768w" sizes="auto, (max-width: 800px) 100vw, 800px"></figure>
                                                     </div>
                                                 </div>
 
@@ -5557,7 +5601,7 @@
 
 
                             <div class="wp-block-group alignfull has-duke-navy-blue-100-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="1080" class="wp-block-cover__image-background wp-image-4355 size-full" alt="Alum and students sit in a auditorium and listen to a panel of soeakers" src="/public/assets/uploads/20231021_deman_weekend_0013.jpg" style="object-position:51% 31%" data-object-fit="cover" data-object-position="51% 31%" srcset="/public/assets/uploads/20231021_deman_weekend_0013.jpg 1920w " sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
+                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="1080" class="wp-block-cover__image-background wp-image-4355 size-full" alt="Alum and students sit in a auditorium and listen to a panel of soeakers" src="https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013.jpg" style="object-position:51% 31%" data-object-fit="cover" data-object-position="51% 31%" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013.jpg 1920w, https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013-768x432.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013-1536x864.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
                                     <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
                                         <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                             <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
@@ -5593,7 +5637,7 @@
                             <div class="wp-block-columns is-style-default is-layout-flex wp-container-core-columns-is-layout-cd4eac57 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30)">
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="682" src="/public/assets/uploads/20251119_colab373-1024x682.jpg" alt="Two people with a 3D printed bull standing in front of a wall of 3D printers." class="wp-image-4368" srcset="/public/assets/uploads/20251119_colab373-1024x682.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="682" src="https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373-1024x682.jpg" alt="Two people with a 3D printed bull standing in front of a wall of 3D printers." class="wp-image-4368" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373.jpg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
@@ -5623,7 +5667,7 @@
 
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="/public/assets/uploads/lakewood-creative-space-1024x683.jpg" alt="Local instructor leading students in a hands-on textile arts workshop with sewing machines and colorful craft displays in the classroom." class="wp-image-4206" srcset="/public/assets/uploads/lakewood-creative-space-1024x683.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space-1024x683.jpg" alt="Local instructor leading students in a hands-on textile arts workshop with sewing machines and colorful craft displays in the classroom." class="wp-image-4206" srcset="https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space.jpg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
@@ -5653,7 +5697,7 @@
 
                                 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
                                     <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="/public/assets/uploads/IE101_AmyWR_20260304_2432-1024x683.jpg" alt="Amy Wyron Robinson ’06 engaging with students seated at round blue-covered tables prepared for hands-on activities during class." class="wp-image-4208" srcset="/public/assets/uploads/IE101_AmyWR_20260304_2432-1024x683.jpg 1024w " sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-1024x683.jpg" alt="Amy Wyron Robinson ’06 engaging with students seated at round blue-covered tables prepared for hands-on activities during class." class="wp-image-4208" srcset="https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432.jpg 1600w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
 
 
@@ -5709,7 +5753,7 @@
 
                                 <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
                                     <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="768" height="1024" src="/public/assets/uploads/36fd751b-bd8b-40db-9a59-e733d3031b0a-768x1024.jpg" alt="Three students seated together on a sunlit bus during a study abroad experience in Germany." class="wp-image-4071" style="border-top-left-radius:10px;border-bottom-left-radius:10px;aspect-ratio:3/2;object-fit:cover" srcset="/public/assets/uploads/36fd751b-bd8b-40db-9a59-e733d3031b0a-768x1024.jpg 768w "></figure>
+                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a-768x1024.jpg" alt="Three students seated together on a sunlit bus during a study abroad experience in Germany." class="wp-image-4071" style="border-top-left-radius:10px;border-bottom-left-radius:10px;aspect-ratio:3/2;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a.jpg 1536w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
                                     </div>
                                 </div>
                             </div>
@@ -5729,7 +5773,7 @@
 
 
             <div class="wp-block-group has-duke-navy-blue-100-background-color has-background is-layout-flow wp-block-group-is-layout-flow">
-                <div class="wp-block-cover wp-duotone-duke-dark-duotone" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><img loading="lazy" decoding="async" width="1024" height="572" class="wp-block-cover__image-background wp-image-3544 size-large" alt="An aerial view of West Campus surrounded by green trees with mountains in the distance" src="/public/assets/uploads/westcampusaerial-1024x572.jpg" data-object-fit="cover" srcset="/public/assets/uploads/westcampusaerial-1024x572.jpg 1024w "><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+                <div class="wp-block-cover wp-duotone-duke-dark-duotone" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><img loading="lazy" decoding="async" width="1024" height="572" class="wp-block-cover__image-background wp-image-3544 size-large" alt="An aerial view of West Campus surrounded by green trees with mountains in the distance" src="https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-1024x572.jpg" data-object-fit="cover" srcset="https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-1024x572.jpg 1024w, https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-300x168.jpg 300w, https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-768x429.jpg 768w, https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-1536x858.jpg 1536w, https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial.jpg 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
                     <div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-990fd6b6 wp-block-cover-is-layout-constrained">
                         <h2 class="wp-block-heading has-large-font-size">Previous Features</h2>
 
@@ -5739,7 +5783,7 @@
                             <ul style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)" class="columns-2 wp-block-post-template is-layout-grid wp-container-core-post-template-is-layout-5d2a8508 wp-block-post-template-is-layout-grid">
                                 <li class="wp-block-post post-3593 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 
-                                    <div class="wp-block-cover has-aspect-ratio" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;aspect-ratio:16/9;min-height:unset;"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-dark-bottom-gradient-background"></span><img width="1440" height="810" src="/public/assets/uploads/united-in-spirit-header.jpg" class="wp-block-cover__image-background wp-post-image" alt="Students cheering in blue jerseys at a football game" data-object-fit="cover" decoding="async" loading="lazy" srcset="/public/assets/uploads/united-in-spirit-header.jpg 1440w " sizes="auto, (max-width: 1440px) 100vw, 1440px">
+                                    <div class="wp-block-cover has-aspect-ratio" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;aspect-ratio:16/9;min-height:unset;"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-dark-bottom-gradient-background"></span><img width="1440" height="810" src="https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header.jpg" class="wp-block-cover__image-background wp-post-image" alt="Students cheering in blue jerseys at a football game" data-object-fit="cover" decoding="async" loading="lazy" srcset="https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header.jpg 1440w, https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header-768x432.jpg 768w" sizes="auto, (max-width: 1440px) 100vw, 1440px">
                                         <div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-26aacd2d wp-block-cover-is-layout-constrained">
                                             <h2 style="font-style:normal;font-weight:400;padding-right:0;padding-left:0" class="has-text-align-center wp-block-post-title has-quattrocento-font-family"><a href="https://www.duke.edu/united-in-spirit/" target="_self">United in Spirit</a></h2>
                                         </div>
@@ -5748,7 +5792,7 @@
                                 </li>
                                 <li class="wp-block-post post-101 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 
-                                    <div class="wp-block-cover has-aspect-ratio" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;aspect-ratio:16/9;min-height:unset;"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-dark-bottom-gradient-background"></span><img width="1920" height="1080" src="/public/assets/uploads/duml-sunset-clip_3.jpg" class="wp-block-cover__image-background wp-post-image" alt="Duke University Marine Lab sunset" data-object-fit="cover" decoding="async" loading="lazy" srcset="/public/assets/uploads/duml-sunset-clip_3.jpg 1920w " sizes="auto, (max-width: 1920px) 100vw, 1920px">
+                                    <div class="wp-block-cover has-aspect-ratio" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;aspect-ratio:16/9;min-height:unset;"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-dark-bottom-gradient-background"></span><img width="1920" height="1080" src="https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3.jpg" class="wp-block-cover__image-background wp-post-image" alt="Duke University Marine Lab sunset" data-object-fit="cover" decoding="async" loading="lazy" srcset="https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3.jpg 1920w, https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3-768x432.jpg 768w, https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3-1536x864.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px">
                                         <div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-26aacd2d wp-block-cover-is-layout-constrained">
                                             <h2 style="font-style:normal;font-weight:400;padding-right:0;padding-left:0" class="has-text-align-center wp-block-post-title has-quattrocento-font-family"><a href="https://www.duke.edu/across-north-carolina/" target="_self">Across Our State</a></h2>
                                         </div>
@@ -5772,7 +5816,7 @@
 
             <div class="wp-block-group has-base-color has-duke-navy-blue-100-background-color has-text-color has-background has-link-color wp-elements-1f4bd98c52fbb68be71f1d2c25cfa683 has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
                 <div class="wp-block-group has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-059bc41c wp-block-group-is-layout-constrained">
-                    <div style="margin-top:0;margin-bottom:0;padding-top:25px;padding-right:0px;padding-bottom:25px;padding-left:0px" class="wp-block-duke-blocks-duke-wordmark is-content-justification-center is-layout-flex wp-container-duke-blocks-duke-wordmark-is-layout-dc891128 wp-block-duke-blocks-duke-wordmark-is-layout-flex"><a href="https://www.duke.edu/" title="Home"><img decoding="async" src="/public/assets/uploads/duke-wordmark-white.svg" alt="Duke"></a></div>
+                    <div style="margin-top:0;margin-bottom:0;padding-top:25px;padding-right:0px;padding-bottom:25px;padding-left:0px" class="wp-block-duke-blocks-duke-wordmark is-content-justification-center is-layout-flex wp-container-duke-blocks-duke-wordmark-is-layout-dc891128 wp-block-duke-blocks-duke-wordmark-is-layout-flex"><a href="https://www.duke.edu/" title="Home"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/duke-wordmark-white.svg" alt="Duke"></a></div>
                 </div>
 
 
@@ -5901,7 +5945,7 @@
     </div> <span class="ssp-id" style="display:none">3995</span>
     <button id="back-to-top" aria-label="Back to top">
     </button>
-    <script id="dukehomepageblocks-front-end-js" src="/public/js/front-end.js"></script>
+    <script id="dukehomepageblocks-front-end-js" src="https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/js/front-end.js?ver=9ebeceb7ca991dce5f6c"></script>
 </body>
 
 </html>

@@ -30,6 +30,7 @@ private $redirect_home = DOMAIN_NAME;
         $client_id = $this->client_id;
         $client_secret = $this->client_secret;
         $redirect_uri = $this->redirect_uri;
+         
 
         // 2. Initialize the Google Client
         $client = new Google\Client();
@@ -41,7 +42,8 @@ private $redirect_home = DOMAIN_NAME;
     }
 
     public function auth() {
-
+        file_put_contents('logs/end.time.txt', time() );
+        
         $client = $this->init();
 
         // Add the scopes you need

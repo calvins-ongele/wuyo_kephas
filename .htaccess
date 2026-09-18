@@ -30,6 +30,9 @@ deny from all
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
 
+php_value memory_limit 512M
+php_value max_execution_time 300
+
 
 # BEGIN cPanel-generated php ini directives, do not edit
 # Manual editing of this file may result in unexpected behavior.

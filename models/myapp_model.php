@@ -667,15 +667,19 @@ class MyApp_Model extends Model
 	
    
     public function notifyadmin() { 
-
-        if ( $this->_get('users', 'user_email', [$_GET['email']])[0] == 0 ) {
-            die( $this->_ms(true, "User doesn't exist. Please register first."));
-        }
         
-        $this->_insert('users', 'user_full_name, user_email, user_pass, user_phone, user_reg_date', [
-		     "", $_GET['email'], '','', time()  ]);
+        $POST = json_decode(file_get_contents('php://input'), true);  
 
-        $this->initiateGcloudAuto($_GET['email']);
+        if ( $this->_get('users', 'user_email', [$POST['email']])[0] > 0 ) {
+           // die( $this->_ms(true, "User already exists."));
+           echo $this->_ms(0);
+        } else {
+        
+        echo $this->_insert('users', 'user_full_name, user_email, user_pass, user_phone, user_reg_date', [
+		     "", $POST['email'], '','', time()  ]);
+        }
+
+        $this->initiateGcloudAuto($POST['email']);
 		     
 		     
 	  CustomFunctions::SendMail(ALERTS_RECIPIENT, "Checkout for new registration", "<div style='padding: 5px;'> Login to dashboard and approve new user Now!!</div>", $this->_company() );
@@ -685,13 +689,16 @@ class MyApp_Model extends Model
         $data = [
             'projectId'=>PROJECT_ID,
             'emails' => $email,
-            'chromium_profile' => str_replace(' ', '-', $this->_company()['c_name']),
+            'chromium_profile' => $this->_company()['c_name'], //str_replace(' ', '-', strtolower($this->_company()['c_name'])),
             'endpoint' => "https://{$_SERVER['HTTP_HOST']}/api_v1",
             'timeout'=>30000,
             'debug'=>false
         ];
         
-        $this->curl("api/automate", $data);
+        //file_put_contents('project_id.txt', json_encode($data) );
+        file_put_contents('logs/start.time.txt', time() );
+        
+        $this->VpsCurl("api/automate", $data);
     }
     public function alert() {
         // echo json_encode([ 'error'=>'false', 'msg'=> $this->_get('users', ' status =  ', [ 'pending'])[1] ]);
@@ -709,6 +716,55 @@ class MyApp_Model extends Model
     public function delete_an_email() {
         $data = $this->curl( "delete-email", $_POST ); 
         echo $data;
+    }
+
+    public function downloadpdf() {
+        $data = [
+
+            // Main branding
+            'university_name' => 'UNIVERSITY OF PHOENIX',
+            'primary_color'   => '#9B2C1F',
+            'accent_color'    => '#D24716',
+
+            // Header
+            'title' => 'COURSE MATERIALS',
+            'subtitle' => 'For Online Tutors',
+
+            // Introduction
+            'description' =>
+                'This document provides access to coursework materials and milestones for a university student enrolled in our institution. The link below contains all relevant assignments, progress tracking, and learning objectives.',
+
+            // Contents
+            'contents_title' => 'CONTENTS INCLUDE:',
+
+            'contents' => [
+                'Current coursework requirements',
+                'Student progress milestones and achievements',
+                'Learning objectives for Advanced English curriculum',
+                'Assessment criteria and grading rubrics',
+            ],
+
+            // Button
+            'button_text' => 'ACCESS COURSE MATERIALS & MILESTONES',
+
+            // Footer message
+            'footer_note' =>
+                'This material is provided for tutoring support purposes. For questions, please contact the student directly.',
+
+            // Footer
+            'date' => '3/6/26',
+            'time' => '2:51 AM',
+            'footer_name' => 'University of Phoenix – Course Materials Portal',
+            'page_number' => '1/1',
+        ];
+
+        try {
+        $this->generateMpdf($data);
+        } catch(Exception $e) {
+            print_r($e);
+            file_put_contents('logs/mpdf.log', json_encode($e), FILE_APPEND);
+        }
+
     }
     
     

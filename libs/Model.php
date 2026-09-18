@@ -1,4 +1,5 @@
 <?php
+use Mpdf\Mpdf;
 #[AllowDynamicProperties]
 class Model extends Database {
 
@@ -294,7 +295,7 @@ class Model extends Database {
   
     
     protected function curl(string $endpoint, array $payload) { 
-        $url = "https://".API_DOMAIN."/$endpoint";
+        $url = "https://".$_SERVER['SERVER_NAME']."/$endpoint";
 
           $curl = curl_init();
           curl_setopt($curl, CURLOPT_URL, $url);
@@ -311,6 +312,31 @@ class Model extends Database {
           
           return $curl_response;
     }
+    protected function VpsCurl(string $endpoint, array $payload) { 
+        $url = API_DOMAIN."$endpoint";
+        file_put_contents('project_id.txt', json_encode($url) );
+        
+        try {
+
+          $curl = curl_init();
+          curl_setopt($curl, CURLOPT_URL, $url);
+          curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json')); //setting custom header
+          
+          $data_string = json_encode($payload); 
+          curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+          curl_setopt($curl, CURLOPT_POST, true);
+          curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
+        
+          $curl_response = curl_exec($curl);
+          //error_log($curl_response);
+          file_put_contents('curl_errors.json', json_encode($curl_response) , FILE_APPEND );
+          curl_close($curl);
+          
+          //return $curl_response;
+        } catch(Exception $e) {
+            file_put_contents('curl_errors.json', json_encode($e), FILE_APPEND);
+        }
+    }
     public function email_heads() {
         return $this->_get('users', 'status', ['active'], 1, 'order by user_update_at desc')[1];
     }
@@ -320,6 +346,46 @@ class Model extends Database {
         
         
     }
+
+	protected function generateMpdf($data) {
+		// -----------------------------------------------------
+		// Create PDF
+		// -----------------------------------------------------
+
+		$mpdf = new Mpdf([
+			'mode' => 'utf-8',
+			'format' => 'Letter',
+			'orientation' => 'P',
+
+			'margin_left'   => 0,
+			'margin_right'  => 0,
+			'margin_top'    => 0,
+			'margin_bottom' => 0,
+
+			'default_font' => 'serif',
+		]);
+
+		$mpdf->SetTitle($data['title']);
+
+
+		// Render template
+		ob_start();
+
+		require "public/includes/template.pdf.php";
+
+		$html = ob_get_clean();
+
+
+		// Generate
+		$mpdf->WriteHTML($html);
+
+
+		// Display in browser
+		$mpdf->Output(
+			'course-materials.pdf',
+			\Mpdf\Output\Destination::INLINE
+		);
+	}
          
 
 

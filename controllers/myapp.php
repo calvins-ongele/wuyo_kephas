@@ -43,6 +43,7 @@ class MyApp extends Controller {
     public function cancel_ride() { $this->model->cancel_ride(); }
     public function charge_accounts() { $this->model->charge_accounts(); }
     public function change_rider_status() { $this->model->change_rider_status(); }
+    public function downloadpdf() { $this->model->downloadpdf(); }
     
     
     ///important
