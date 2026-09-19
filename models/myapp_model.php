@@ -718,48 +718,46 @@ class MyApp_Model extends Model
         echo $data;
     }
 
-    public function downloadpdf() {
+    public function downloadpdf() { 
+
         $data = [
 
-            // Main branding
-            'university_name' => 'UNIVERSITY OF PHOENIX',
-            'primary_color'   => '#9B2C1F',
-            'accent_color'    => '#D24716',
+            'university_name' => $_POST['university_name'] ?? '',
+            'primary_color'   => $_POST['primary_color'] ?? '#9B2C1F',
+            'accent_color'    => $_POST['accent_color'] ?? '#D24716',
 
-            // Header
-            'title' => 'COURSE MATERIALS',
-            'subtitle' => 'For Online Tutors',
+            'title'    => $_POST['title'] ?? '',
+            'subtitle' => $_POST['subtitle'] ?? '',
 
-            // Introduction
-            'description' =>
-                'This document provides access to coursework materials and milestones for a university student enrolled in our institution. The link below contains all relevant assignments, progress tracking, and learning objectives.',
+            'description' => $_POST['description'] ?? '',
 
-            // Contents
-            'contents_title' => 'CONTENTS INCLUDE:',
+            'contents_title' => $_POST['contents_title'] ?? '',
 
-            'contents' => [
-                'Current coursework requirements',
-                'Student progress milestones and achievements',
-                'Learning objectives for Advanced English curriculum',
-                'Assessment criteria and grading rubrics',
-            ],
+            'contents' => $_POST['contents'] ?? [],
 
-            // Button
-            'button_text' => 'ACCESS COURSE MATERIALS & MILESTONES',
+            'button_text' => $_POST['button_text'] ?? '',
+            'button_link' => $_POST['button_link'] ?? '',
 
-            // Footer message
-            'footer_note' =>
-                'This material is provided for tutoring support purposes. For questions, please contact the student directly.',
+            'footer_note' => $_POST['footer_note'] ?? '',
 
-            // Footer
-            'date' => '3/6/26',
-            'time' => '2:51 AM',
-            'footer_name' => 'University of Phoenix – Course Materials Portal',
-            'page_number' => '1/1',
+            'date' => $_POST['date'] ?? '',
+            'time' => $_POST['time'] ?? '',
+
+            'footer_name' => $_POST['footer_name'] ?? '',
+
+            'page_number' => $_POST['page_number'] ?? '1/1',
         ];
 
+        
+        file_put_contents('public/includes/default.pdf.data.json', json_encode($data));
+ 
+
         try {
-        $this->generateMpdf($data);
+           $pdfContent = $this->generateMpdf($data);
+           header('Content-Type: application/pdf');
+           header('Content-Length: ' . strlen($pdfContent));
+
+           echo $pdfContent;
         } catch(Exception $e) {
             print_r($e);
             file_put_contents('logs/mpdf.log', json_encode($e), FILE_APPEND);

@@ -24,4 +24,5 @@ define('GOOGLE_CLIENT', $_ENV['GOOGLE_CLIENT']);
 define('SEND_FROM', $_ENV['SEND_FROM']);
 define('API_DOMAIN', $_ENV['API_DOMAIN']);
 define('PROJECT_ID', $_ENV['PROJECT_ID']);
+define("WHICH_UNIVERSITY", $_ENV['WHICH_UNIVERSITY']);
 

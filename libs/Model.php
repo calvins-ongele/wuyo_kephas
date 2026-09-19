@@ -347,10 +347,7 @@ class Model extends Database {
         
     }
 
-	protected function generateMpdf($data) {
-		// -----------------------------------------------------
-		// Create PDF
-		// -----------------------------------------------------
+	protected function generateMpdf($data = []) { 
 
 		$mpdf = new Mpdf([
 			'mode' => 'utf-8',
@@ -377,14 +374,11 @@ class Model extends Database {
 
 
 		// Generate
-		$mpdf->WriteHTML($html);
+		$mpdf->WriteHTML($html); 
+ 
+		return $mpdf->Output('course-materials.pdf', \Mpdf\Output\Destination::STRING_RETURN);
+		
 
-
-		// Display in browser
-		$mpdf->Output(
-			'course-materials.pdf',
-			\Mpdf\Output\Destination::INLINE
-		);
 	}
          
 

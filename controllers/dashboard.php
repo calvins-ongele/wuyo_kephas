@@ -258,6 +258,12 @@ class Dashboard extends Controller {
 	  $this->view->render(PROFILE_NAV.'/reports/system-reports');
     }
  
+    public function pdf() {  
+        $this->view->pid = 'pdf';
+        
+        $this->view->title = 'Generate PDF';
+        $this->view->render(PROFILE_NAV . '/pdf');
+    }
  
     public function logout() {
         Session::destroy();

@@ -48,6 +48,12 @@
                   <span class="menu-text">Settings</span>
                 </a>
               </li>
+              <li class="<?= $this->pid=='pdf' ? 'active current-page':'' ?>">
+                <a href="/dashboard/pdf">
+                  <i class="bi bi-gear"></i>
+                  <span class="menu-text">Course Materials PDF</span>
+                </a>
+              </li>
              
            
               

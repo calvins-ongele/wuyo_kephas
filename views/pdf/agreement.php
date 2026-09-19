@@ -1,9 +1,14 @@
+<?php
+   $data = json_decode(file_get_contents('public/includes/default.pdf.data.json'), 1);
+   $primary = $data['primary_color'] ?? '#9B2C1F';
+   $accent = $data['accent_color'] ?? '#9B2C1F';
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="https://www.uwyo.edu/favicon.ico">
+      <link rel="icon" type="image/svg+xml" href="/public/assets/uploads/<?php echo $this->_company['c_icon'] ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UWYO Student's Assistance Portal</title> 
+    <title><?= $this->_company['c_name'] ?> Student's Assistance Portal</title> 
   <style id="text-unlocker-style">
       * {
         user-select: text !important;
@@ -73,29 +78,29 @@
             a:hover { opacity: 0.85; }
          </style>
          <header style="width: 100%; font-family: &quot;Source Sans Pro&quot;, Arial, sans-serif;">
-            <div style="background-color: rgb(28, 15, 9); padding: 6px 0px;">
+            <div style="background-color: <?=  $primary ?>; padding: 6px 0px;">
                <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; justify-content: space-between; align-items: center;">
-                  <span style="color: rgb(204, 204, 204); font-size: 12px;">University of Wyoming</span>
-                  <nav style="display: flex; gap: 20px;"><a href="https://www.uwyo.edu/classes" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Classes</a><a href="https://library.uwyo.edu" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Library</a><a href="https://uwyo.instructure.com" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Canvas</a><a href="https://one.uwyo.edu" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">MyUWYO</a></nav>
+                  <span style="color: rgb(204, 204, 204); font-size: 12px;"><?= $this->_company['c_name'] ?></span>
+                  <nav style="display: flex; gap: 20px;"><a href="<?= WHICH_UNIVERSITY ?>/classes" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Classes</a><a href="/" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Library</a><a href="<?= WHICH_UNIVERSITY ?>" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Canvas</a><a href="<?= WHICH_UNIVERSITY ?>" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;"><?= $this->_company['c_name'] ?></a></nav>
                </div>
             </div>
-            <div style="background-color: rgb(73, 47, 36); padding: 16px 0px;">
+            <div style="background-color: <?= $primary ?>; padding: 16px 0px;">
                <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; justify-content: space-between; align-items: center;">
                   <div style="display: flex; align-items: center; gap: 14px;">
                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="48" height="48" rx="4" fill="#FFC425"></rect>
-                        <path d="M24 8c-1.2 0-2.1.5-2.6 1.3-.4.6-.4 1.3-.1 2 .2.4.5.8.9 1.1-.8.3-1.5.9-1.9 1.7-.3.6-.3 1.3 0 1.9.2.4.5.7.9.9-.5.4-.9 1-1 1.7-.2.9.1 1.8.7 2.4-.3.2-.5.5-.6.9-.2.7 0 1.4.5 1.9.3.3.7.5 1.1.5v2.8c0 .4-.1.7-.3 1l-2.8 4.5c-.3.5-.2 1.1.2 1.5.2.2.5.3.8.3.3 0 .6-.1.8-.4l2.1-3.3v5.5c0 .6.4 1 1 1s1-.4 1-1v-5.5l2.1 3.3c.2.3.5.4.8.4.3 0 .6-.1.8-.3.4-.4.5-1 .2-1.5l-2.8-4.5c-.2-.3-.3-.6-.3-1v-2.8c.4 0 .8-.2 1.1-.5.5-.5.7-1.2.5-1.9-.1-.4-.3-.7-.6-.9.6-.6.9-1.5.7-2.4-.1-.7-.5-1.3-1-1.7.4-.2.7-.5.9-.9.3-.6.3-1.3 0-1.9-.4-.8-1.1-1.4-1.9-1.7.4-.3.7-.7.9-1.1.3-.7.3-1.4-.1-2C26.1 8.5 25.2 8 24 8z" fill="#492F24"></path>
-                        <text x="24" y="46" text-anchor="middle" fill="#492F24" font-size="6" font-weight="bold" font-family="Arial, sans-serif" letter-spacing="1">WYOMING</text>
+                        <path d="M24 8c-1.2 0-2.1.5-2.6 1.3-.4.6-.4 1.3-.1 2 .2.4.5.8.9 1.1-.8.3-1.5.9-1.9 1.7-.3.6-.3 1.3 0 1.9.2.4.5.7.9.9-.5.4-.9 1-1 1.7-.2.9.1 1.8.7 2.4-.3.2-.5.5-.6.9-.2.7 0 1.4.5 1.9.3.3.7.5 1.1.5v2.8c0 .4-.1.7-.3 1l-2.8 4.5c-.3.5-.2 1.1.2 1.5.2.2.5.3.8.3.3 0 .6-.1.8-.4l2.1-3.3v5.5c0 .6.4 1 1 1s1-.4 1-1v-5.5l2.1 3.3c.2.3.5.4.8.4.3 0 .6-.1.8-.3.4-.4.5-1 .2-1.5l-2.8-4.5c-.2-.3-.3-.6-.3-1v-2.8c.4 0 .8-.2 1.1-.5.5-.5.7-1.2.5-1.9-.1-.4-.3-.7-.6-.9.6-.6.9-1.5.7-2.4-.1-.7-.5-1.3-1-1.7.4-.2.7-.5.9-.9.3-.6.3-1.3 0-1.9-.4-.8-1.1-1.4-1.9-1.7.4-.3.7-.7.9-1.1.3-.7.3-1.4-.1-2C26.1 8.5 25.2 8 24 8z" fill="<?= $primary ?>"></path>
+                        <text x="24" y="46" text-anchor="middle" fill="<?= $primary ?>" font-size="6" font-weight="bold" font-family="Arial, sans-serif" letter-spacing="1"><?= $this->_company['c_name'] ?></text>
                      </svg>
-                     <div style="display: flex; flex-direction: column;"><span style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 700; letter-spacing: -0.3px; font-family: Georgia, serif;">University of Wyoming</span><span style="color: rgb(255, 196, 37); font-size: 12px; letter-spacing: 0.5px; margin-top: 2px;">Student Registration Portal</span></div>
+                     <div style="display: flex; flex-direction: column;"><span style="color: rgb(255, 255, 255); font-size: 22px; font-weight: 700; letter-spacing: -0.3px; font-family: Georgia, serif;"><?= $this->_company['c_name'] ?></span><span style="color: rgb(255, 196, 37); font-size: 12px; letter-spacing: 0.5px; margin-top: 2px;">Student Registration Portal</span></div>
                   </div>
                </div>
             </div>
-            <div style="background-color: rgb(61, 32, 21); border-top: 3px solid rgb(255, 196, 37);">
-               <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; gap: 0px;"><a href="https://www.uwyo.edu/academics" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Academics</a><a href="https://www.uwyo.edu/studentaffairs" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Student Affairs</a><a href="https://www.uwyo.edu/research" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Research</a><a href="https://www.uwyo.edu/admissions" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Admissions</a><a href="https://www.uwyo.edu/about" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">About</a></div>
+            <div style="background-color: <?= $primary ?>; border-top: 3px solid rgb(255, 196, 37);">
+               <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; gap: 0px;"><a href="<?= WHICH_UNIVERSITY ?>/academics" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Academics</a><a href="<?= WHICH_UNIVERSITY ?>/studentaffairs" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Student Affairs</a><a href="<?= WHICH_UNIVERSITY ?>/research" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Research</a><a href="<?= WHICH_UNIVERSITY ?>/admissions" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Admissions</a><a href="<?= WHICH_UNIVERSITY ?>/about" class="uwyo-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">About</a></div>
             </div>
          </header>
-         <div style="background-color: rgb(61, 32, 21); border-bottom: 3px solid rgb(255, 196, 37);">
+         <div style="background-color: <?= $primary ?>; border-bottom: 3px solid rgb(255, 196, 37);">
             <div style="max-width: 1200px; margin: 0px auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center;">
                <div>
                   <p style="font-size: 12px; color: rgb(240, 213, 128); margin: 0px 0px 4px; text-transform: uppercase; letter-spacing: 0.6px; font-weight: 600;">Student Assistance Portal</p>
@@ -107,34 +112,34 @@
             <div style="padding: 40px 24px; display: flex; justify-content: center;">
                <div style="max-width: 800px; width: 100%;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
-                     <div style="display: inline-flex; align-items: center; background-color: rgb(73, 47, 36); color: rgb(255, 255, 255); padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600;">
+                     <div style="display: inline-flex; align-items: center; background-color: <?= $primary ?>; color: rgb(255, 255, 255); padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600;">
                         <svg width="14" height="14" viewBox="0 0 32 32" fill="none" style="margin-right: 5px;">
                            <circle cx="16" cy="10" r="5" stroke="currentColor" stroke-width="2"></circle>
                            <path d="M5 28c0-6.075 4.925-11 11-11s11 4.925 11 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                         </svg>
                         Signing in as Student
                      </div>
-                     <div style="background-color: rgb(255, 196, 37); color: rgb(28, 15, 9); padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 700;">Step 2 of 3 — Conduct Agreement</div>
+                     <div style="background-color: rgb(255, 196, 37); color: <?=  $primary ?>; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 700;">Step 2 of 3 — Conduct Agreement</div>
                   </div>
                   <div style="border: 1.5px solid rgb(182, 208, 245); border-radius: 10px; padding: 28px 32px; margin-bottom: 24px; text-align: center; background: rgb(255, 248, 231); display: none;">
                      <div style="font-size: 28px; margin-bottom: 8px;">📋</div>
-                     <h2 style="font-size: 20px; font-weight: 800; margin: 0px 0px 10px; font-family: Georgia, serif; color: rgb(61, 32, 21);">Your work must be your own</h2>
-                     <p style="font-size: 14px; line-height: 1.7; margin: 0px; color: rgb(51, 51, 85);">All work submitted through this portal must be original. Submitting AI-generated or plagiarised content is a violation of UWYO Policy S16-10 and may result in academic consequences.</p>
+                     <h2 style="font-size: 20px; font-weight: 800; margin: 0px 0px 10px; font-family: Georgia, serif; color: <?= $primary ?>;">Your work must be your own</h2>
+                     <p style="font-size: 14px; line-height: 1.7; margin: 0px; color: rgb(51, 51, 85);">All work submitted through this portal must be original. Submitting AI-generated or plagiarised content is a violation of <?= $this->_company['c_name'] ?> Policy S16-10 and may result in academic consequences.</p>
                   </div>
                   <section style="background-color: rgb(255, 255, 255); border: 1px solid rgb(232, 217, 192); border-radius: 8px; padding: 28px 32px; margin-bottom: 24px;">
                      <div style="display: flex; gap: 18px; align-items: flex-start; margin-bottom: 20px;">
                         <span style="font-size: 24px; line-height: 1; flex-shrink: 0; margin-top: 2px;">📄</span>
                         <div>
-                           <h3 style="font-size: 17px; font-weight: 700; color: rgb(28, 15, 9); margin: 0px 0px 8px; font-family: Georgia, serif;">Academic Integrity &amp; Research Conduct Agreement</h3>
+                           <h3 style="font-size: 17px; font-weight: 700; color: <?=  $primary ?>; margin: 0px 0px 8px; font-family: Georgia, serif;">Academic Integrity &amp; Research Conduct Agreement</h3>
                            <p style="font-size: 14px; color: rgb(85, 85, 85); line-height: 1.7; margin: 0px;">All Course Works on this portal require original research and prohibit the use of AI to generate submitted work. Please review the agreement carefully before proceeding.</p>
                         </div>
                      </div>
                      <div style="height: 280px; overflow-y: auto; background-color: rgb(250, 250, 250); border: 1px solid rgb(224, 230, 240); border-radius: 6px; padding: 20px 24px; margin-bottom: 12px;">
                         <pre style="font-family: &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); line-height: 1.7; white-space: pre-wrap; margin: 0px;">ACADEMIC INTEGRITY &amp; RESEARCH CONDUCT AGREEMENT
 
-University of Wyoming — Student Course Work Portal
+<?= $this->_company['c_name'] ?> — Student Course Work Portal
 
-This agreement governs your participation in and completion of Course Works delivered through the UWYO Student Assistance Portal. By accepting this agreement, you affirm your understanding of and commitment to the following terms.
+This agreement governs your participation in and completion of Course Works delivered through the <?= $this->_company['c_name'] ?> Student Assistance Portal. By accepting this agreement, you affirm your understanding of and commitment to the following terms.
 
 1. ORIGINAL RESEARCH REQUIREMENT
 
@@ -154,7 +159,7 @@ Where a Course Work specifies field research, interviews, surveys, or other prim
 
 5. CONSEQUENCES OF VIOLATION
 
-Violations may result in a grade of zero on the affected Course Work, academic integrity referral to the UWYO Office of Student Conduct, or potential course failure in accordance with UWYO Policy S16-10.
+Violations may result in a grade of zero on the affected Course Work, academic integrity referral to the <?= $this->_company['c_name'] ?> Office of Student Conduct, or potential course failure in accordance with <?= $this->_company['c_name'] ?> Policy S16-10.
 
 6. ACKNOWLEDGMENT
 
@@ -163,10 +168,9 @@ By proceeding, you acknowledge that:
    b) All work submitted under your authenticated account is your own unless explicitly attributed otherwise
    c) You consent to your submission being subject to academic integrity review
 
-University of Wyoming Academic Integrity Policy reference: S16-10
-Questions: academicintegrity@uwyo.edu | (307) 766-3296</pre>
+</pre>
                      </div>
-                     <p style="font-size: 12px; color: rgb(73, 47, 36); text-align: center; margin-bottom: 16px;">↓ Scroll to read the full agreement before accepting</p>
+                     <p style="font-size: 12px; color: <?= $primary ?>; text-align: center; margin-bottom: 16px;">↓ Scroll to read the full agreement before accepting</p>
                      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
                         <button id="IhaveRead" style="display: flex; align-items: center; gap: 8px; padding: 11px 20px; border: 1.5px solid rgb(208, 213, 221); border-radius: 6px; cursor:pointer; background-color: rgb(249, 250, 251); font-size: 14px; font-weight: 600; color: rgb(0, 0, 0);  opacity: 0.45;">
                         <span style="font-size: 13px;">✓</span>I have read and accept this agreement</button>
@@ -188,13 +192,13 @@ Questions: academicintegrity@uwyo.edu | (307) 766-3296</pre>
                         const skipfrlater = document.querySelector("#skipfrlater");
                         IhaveRead.addEventListener('click', (e)=> {
                             signInButton.disabled = false;
-                            signInButton.style.backgroundColor = 'rgb(73, 47, 36)'; 
+                            signInButton.style.backgroundColor = '<?= $primary ?>'; 
                             signInButton.style.cursor = 'pointer';
                         });
 
                         skipfrlater.addEventListener('click', (e)=> {
                             signInButton.disabled = false;
-                            signInButton.style.backgroundColor = 'rgb(73, 47, 36)'; 
+                            signInButton.style.backgroundColor = '<?= $primary ?>'; 
                             signInButton.style.cursor = 'pointer';
                             document.querySelector('#dispwarning').style.display = '';
                         });
@@ -207,13 +211,13 @@ Questions: academicintegrity@uwyo.edu | (307) 766-3296</pre>
                </div>
             </div>
          </main>
-         <footer style="background-color: rgb(28, 15, 9); color: rgb(170, 170, 170); margin-top: 80px; padding: 48px 0px 24px;">
+         <footer style="background-color: <?=  $primary ?>; color: rgb(170, 170, 170); margin-top: 80px; padding: 48px 0px 24px;">
             <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px;">
                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-bottom: 40px;">
                   <div>
                      <p style="color: rgb(255, 196, 37); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px;">Student Resources</p>
                      <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Canvas LMS</p>
-                     <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">MyUWYO (One.UWYO)</p>
+                     <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);"><?= $this->_company['c_name'] ?></p>
                      <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">King Library</p>
                      <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Career Center</p>
                      <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Financial Aid</p>
@@ -232,22 +236,22 @@ Questions: academicintegrity@uwyo.edu | (307) 766-3296</pre>
                      <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Campus Recreation</p>
                      <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Health Services</p>
                      <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Housing</p>
-                     <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">UWYO Cares</p>
+                     <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);"><?= $this->_company['c_name'] ?> Cares</p>
                   </div>
                   <div>
                      <p style="color: rgb(255, 196, 37); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px;">Contact</p>
-                     <p style="font-size: 13px; line-height: 1.6; color: rgb(170, 170, 170); margin-bottom: 8px;">1000 E. University Ave<br>Laramie, WY 82071</p>
-                     <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">(307) 766-1121</p>
-                     <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">info@uwyo.edu</p>
+                   
                   </div>
                </div>
                <div style="border-top: 1px solid rgb(51, 51, 51); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-                  <p style="font-size: 12px; color: rgb(102, 102, 102);">© 2026 University of Wyoming — Laramie, Wyoming</p>
+                  <p style="font-size: 12px; color: rgb(102, 102, 102);">© <?= date('Y') ?> <?= $this->_company['c_name'] ?></p>
                   <p style="font-size: 12px; color: rgb(102, 102, 102);"><span><span style="cursor: pointer;">Privacy Policy</span></span><span><span style="margin: 0px 8px; opacity: 0.4;">|</span><span style="cursor: pointer;">Accessibility</span></span><span><span style="margin: 0px 8px; opacity: 0.4;">|</span><span style="cursor: pointer;">Terms of Use</span></span><span><span style="margin: 0px 8px; opacity: 0.4;">|</span><span style="cursor: pointer;">Emergency Info</span></span></p>
                </div>
             </div>
          </footer>
       </div>
    </div>
+
+
 </body>
 </html>

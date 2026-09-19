@@ -1,341 +1,466 @@
 <?php
-$primary = $data['primary_color'];
-$accent  = $data['accent_color'];
+
+if (!isset($data)) {
+    $data = json_decode(file_get_contents('default.pdf.data.json'), 1);
+}
+
+$primary = $data['primary_color'] ?? '#9B2C1F';
+$accent  = $data['accent_color'] ?? '#D24716';
+
 ?>
 
 <!DOCTYPE html>
-
 <html>
 
 <head>
 
     <style>
-        * {
-            box-sizing: border-box;
+        @page {
+            margin: 0;
+            padding: 0;
         }
 
         html,
         body {
             margin: 0;
             padding: 0;
-            background: #ebe8e0;
+
             font-family: "Times New Roman", serif;
+
             color: #111;
         }
 
 
-        /* --------------------------------------------------
+        /* =========================================================
    PAGE
--------------------------------------------------- */
+========================================================= */
+main {
+    background:#ece8e1;
+            padding:10px 20px 0 20px;
+}
 
         .page {
             width: 100%;
-            height: 100%;
-            background: white;
+            height: 279mm;
+
             position: relative;
+
+            background: #ffffff;
+
+            overflow: hidden;
         }
 
 
-        /* --------------------------------------------------
-   TOP UNIVERSITY BAR
--------------------------------------------------- */
+        /* =========================================================
+   UNIVERSITY HEADER
+========================================================= */
 
         .university-header {
-            height: 34px;
+
+            width: 100%;
+
+            height: 10.5mm;
+
             background: <?= $primary ?>;
-            color: white;
+
+            color: #ffffff;
 
             text-align: center;
 
             font-size: 14px;
             font-weight: bold;
 
-            padding-top: 8px;
+            padding-top: 2.7mm;
+
         }
 
 
-        /* --------------------------------------------------
-   MAIN CONTENT
--------------------------------------------------- */
+        /* =========================================================
+   MAIN AREA
+========================================================= */
 
-        .content {
-            padding-left: 11px;
-            padding-right: 11px;
-        }
+      .main {
+        
+    padding-left: 4mm;
+    padding-right: 4mm;
 
-
-        /* --------------------------------------------------
-   TITLE SECTION
--------------------------------------------------- */
-
-        .title-section {
-            position: relative;
-
-            text-align: center;
-
-            padding-top: 57px;
-            padding-bottom: 20px;
-        }
+    /*
+       Reserve space for the fixed footer.
+       This prevents the button/content from
+       colliding with the footer.
+    */
+    padding-bottom: 38mm;
+}
 
 
-        /*
- Small lines beside title
+        /* =========================================================
+   TITLE AREA
+========================================================= */
+       /* =========================================================
+   TITLE
+========================================================= */
+
+.title-area {
+    margin-top: 15mm;
+    width: 100%;
+}
+
+.title-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.title-left {
+    width: 30%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.title-middle {
+    width: 40%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.title-right {
+    width: 30%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+
+/*
+    IMPORTANT:
+    These are actual table cells with fixed widths.
+    No empty DIV whose dimensions mPDF can collapse.
 */
 
-        .title-line-left,
-        .title-line-right {
-            position: absolute;
+.decorative-line-left {
+    width: 82px;
+    height: 4px;
+    background: <?= $primary ?>;;
+}
 
-            top: 57px;
-
-            height: 4px;
-
-            background: #cc0000;
-        }
-
-        .title-line-left {
-            left: 0;
-            width: 82px;
-        }
-
-        .title-line-right {
-            right: 0;
-            width: 82px;
-        }
+.decorative-line-right {
+    width: 82px;
+    height: 4px;
+    background: <?= $primary ?>;;
+}
 
 
-        .title {
-            color: #cc0000;
+.title {
+    color: <?= $primary ?>;;
 
-            font-size: 16px;
-            font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
 
-            margin: 0;
-        }
+    line-height: 1.2;
+}
 
+.subtitle {
+    margin-top: 3mm;
 
-        .subtitle {
-            color: #00a651;
+    color: #00a651;
 
-            font-size: 14px;
-
-            font-style: italic;
-
-            margin-top: 11px;
-        }
+    font-size: 14px;
+    font-style: italic;
+}
 
 
-        /*
- Red separator underneath title
-*/
+.title-separator {
+    width: 100%;
+
+    height: 4px;
+
+    background: <?= $primary ?>;;
+
+    margin-top: 7mm;
+}
+
+        /* =========================================================
+   RED SEPARATOR
+========================================================= */
 
         .title-separator {
-            height: 4px;
 
-            background: #cc0000;
+            width: 100%;
 
-            margin-top: 20px;
+            height: 1mm;
+
+            background: <?= $primary ?>;;
+
+            margin-top: 7mm;
+
         }
 
 
-        /* --------------------------------------------------
+        /* =========================================================
    DESCRIPTION
--------------------------------------------------- */
-
+========================================================= */
         .description {
+            margin-top: 18mm;
+
+            margin-left: 1.5mm;
+            margin-right: 1.5mm;
+
             font-size: 14px;
-
-            line-height: 1.42;
-
-            margin-top: 49px;
-
-            margin-left: 10px;
-            margin-right: 10px;
+            line-height: 1.45;
         }
 
 
-        /* --------------------------------------------------
-   CONTENTS BOX
--------------------------------------------------- */
+        /* =========================================================
+   CONTENTS SECTION
+========================================================= */
+    
+        .contents-section {
+    margin-top: 14mm;
 
-        .contents-wrapper {
-            position: relative;
+    margin-left: 12mm;
+    margin-right: 12mm;
+}
 
-            margin-top: 45px;
+.contents-box-wrapper {
+    border: 0.35mm solid <?= $accent ?>;;
 
-            margin-left: 33px;
-            margin-right: 33px;
+    border-radius: 7mm;
 
-            height: 165px;
+    height: 47mm;
 
-            border: 1px solid #96665e;
-
-            border-radius: 26px;
-
-            padding: 36px 40px 20px 40px;
-        }
+    padding: 9mm 10mm 5mm 10mm;
+}
 
 
         /*
- Orange title sitting over the border
+    Heading is centered independently of the box.
 */
 
-        .contents-title {
-            position: absolute;
+.contents-heading {
+    width: 67%;
 
-            top: -17px;
+    height: 9.5mm;
 
-            left: 73px;
-            right: 73px;
+    margin-left: auto;
+    margin-right: auto;
 
-            height: 37px;
+    margin-top: -4.8mm;
 
-            background: <?= $accent ?>;
+    background: <?= $accent ?>;
 
-            color: white;
+    color: #ffffff;
 
-            border-radius: 6px;
+    border-radius: 1.5mm;
 
-            text-align: center;
+    text-align: center;
 
-            padding-top: 9px;
+    font-size: 14px;
 
-            font-size: 14px;
-        }
+    padding-top: 2.3mm;
+    z-index: 1000;
+}
 
+/*
+    IMPORTANT:
 
-        /* --------------------------------------------------
-   BULLET LIST
--------------------------------------------------- */
+    42mm content height
+    + 10mm top padding
+    + 5mm bottom padding
+    ≈ 57mm total height
+*/
+
+.contents-box {
+
+    border: 0.35mm solid <?= $accent ?>;;
+
+    border-radius: 7mm;
+
+    height: 42mm;
+
+    padding: 10mm 10mm 5mm 10mm;
+    margin-top:-30px!important;
+}
+.contents-list {
+    list-style: none;
+
+    margin: 3mm 0 0 0;
+
+    padding: 0;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+}
+
+.contents-list li {
+    padding-left: 6mm;
+}
+
+.contents-list .bullet {
+    color: <?= $accent ?>;
+
+    display: inline-block;
+
+    width: 6mm;
+
+    margin-left: -6mm;
+}
+
+        /* =========================================================
+   CONTENT LIST
+========================================================= */
 
         .contents-list {
-            margin: 0;
 
-            padding-left: 20px;
+            margin: 3mm 0 0 0;
+
+            padding-left: 8mm;
 
             font-size: 14px;
 
             line-height: 1.55;
+
         }
 
 
         .contents-list li {
-            padding-left: 2px;
+
+            padding-left: 1mm;
+
         }
 
-
-        /*
- Make bullets hollow red circles
-*/
 
         .contents-list li::marker {
-            color: #cc0000;
+
+            color: <?= $primary ?>;
+
         }
 
 
-        /* --------------------------------------------------
+        /* =========================================================
    ACCESS BUTTON
--------------------------------------------------- */
+========================================================= */
+.access-wrap {
+    text-align: center;
 
-        .access-button {
-            width: 415px;
+    margin-top: 8mm;
 
-            height: 35px;
+    margin-bottom: 0;
+}
 
-            background: <?= $accent ?>;
+.access-button {
+    width: 135mm;
 
-            margin: 22px auto 0 auto;
+    /* height: 9.5mm; */
 
-            color: white;
+    margin-left: auto;
+    margin-right: auto;
 
-            text-align: center;
+    background: <?= $accent ?>;
 
-            font-size: 14px;
+    color: #ffffff;
 
-            text-decoration: underline;
+    font-size: 14px;
 
-            padding-top: 9px;
-        }
+    text-decoration: underline;
 
+    text-align: center;
 
-        /* --------------------------------------------------
+    /* padding-top: 2.4mm; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.access-button a {
+    color:white;
+}
+        /* =========================================================
    FOOTER
--------------------------------------------------- */
+========================================================= */
+.footer {
+    position: absolute;
 
-        .footer {
-            position: absolute;
+    left: 7mm;
+    right: 7mm;
 
-            left: 0;
-            right: 0;
+    bottom: 5mm;
 
-            bottom: 13px;
+    padding-top: 0;
+}
 
-            padding-left: 11px;
-            padding-right: 11px;
+
+        /* footer red line */
+
+   .footer-line {
+    width: 100%;
+
+    height: 1mm;
+
+    background: <?= $primary ?>;;
+
+    margin-bottom: 3mm;
+}
+
+
+.footer-note {
+    font-size: 13px;
+
+    font-style: italic;
+
+    line-height: 1.35;
+
+    padding: 0 2mm 4mm 2mm;
+
+    border-bottom: 0.3mm solid <?= $accent ?>;;
+}
+
+
+.footer-info {
+    width: 100%;
+
+    margin-top: 6mm;
+
+    font-size: 10px;
+
+    color: #777;
+}
+        .footer-info-table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
         }
 
 
-        /*
- Footer red separator
-*/
+        .footer-left {
 
-        .footer-line {
-            height: 3px;
+            width: 30%;
 
-            background: #cc0000;
+            text-align: left;
 
-            margin-bottom: 11px;
         }
 
 
-        /*
- Footer message
-*/
+        .footer-center {
 
-        .footer-note {
-            font-size: 13px;
+            width: 40%;
 
-            font-style: italic;
-
-            line-height: 1.35;
-
-            padding-bottom: 11px;
-
-            border-bottom: 1px solid #f0a08d;
-        }
-
-
-        /*
- Bottom information
-*/
-
-        .footer-bottom {
-            margin-top: 25px;
-
-            font-size: 10px;
-
-            color: #777;
-
-            position: relative;
-        }
-
-
-        .footer-date {
-            position: absolute;
-
-            left: 0;
-        }
-
-
-        .footer-name {
             text-align: center;
+
         }
 
 
-        .footer-page {
-            position: absolute;
+        .footer-right {
 
-            right: 0;
+            width: 30%;
+
+            text-align: right;
+
         }
     </style>
 
@@ -343,164 +468,264 @@ $accent  = $data['accent_color'];
 
 
 <body>
+    <main>
 
     <div class="page">
 
 
-        <!-- =========================================
+        <!-- =====================================================
          UNIVERSITY HEADER
-    ========================================== -->
+    ====================================================== -->
 
         <div class="university-header">
 
-            <?= htmlspecialchars($data['university_name']) ?>
+            <?= htmlspecialchars($data['university_name'] ?? '') ?>
 
         </div>
 
 
-        <div class="content">
+        <div class="main">
 
 
-            <!-- =========================================
+            <!-- =================================================
              TITLE
-        ========================================== -->
+        ================================================== -->
+            <div class="title-area">
 
-            <div class="title-section">
+    <table class="title-table">
 
-                <div class="title-line-left"></div>
+        <tr>
 
-                <div class="title-line-right"></div>
+            <!-- LEFT LINE -->
+            <td class="title-left">
 
+                <table
+                    style="
+                        width:82px;
+                        border-collapse:collapse;
+                    "
+                >
+                    <tr>
+                        <td
+                            style="
+                                width:82px;
+                                height:4px;
+                                background:<?= $primary ?>;
+                                font-size:1px;
+                                line-height:1px;
+                            "
+                        >
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+
+
+            <!-- TITLE -->
+            <td class="title-middle">
 
                 <div class="title">
 
-                    <?= htmlspecialchars($data['title']) ?>
+                    <?= htmlspecialchars(
+                        $data['title'] ?? ''
+                    ) ?>
 
                 </div>
-
 
                 <div class="subtitle">
 
-                    <?= htmlspecialchars($data['subtitle']) ?>
+                    <?= htmlspecialchars(
+                        $data['subtitle'] ?? ''
+                    ) ?>
 
                 </div>
 
-
-                <div class="title-separator"></div>
-
-            </div>
+            </td>
 
 
+            <!-- RIGHT LINE -->
+            <td class="title-right">
 
-            <!-- =========================================
+                <table
+                    align="right"
+                    style="
+                        width:82px;
+                        border-collapse:collapse;
+                    "
+                >
+                    <tr>
+                        <td
+                            style="
+                                width:82px;
+                                height:4px;
+                                background:<?= $primary ?>;
+                                font-size:1px;
+                                line-height:1px;
+                            "
+                        >
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+
+    <div class="title-separator"></div>
+
+</div>
+
+
+            <!-- =================================================
              DESCRIPTION
-        ========================================== -->
+        ================================================== -->
 
             <div class="description">
 
-                <?= nl2br(htmlspecialchars($data['description'])) ?>
+                <?= nl2br(
+                    htmlspecialchars($data['description'] ?? '')
+                ) ?>
 
             </div>
 
 
 
-            <!-- =========================================
+            <!-- =================================================
              CONTENTS
-        ========================================== -->
+        ================================================== -->
 
-            <div class="contents-wrapper">
+       <div class="contents-section">
 
-
-                <div class="contents-title">
-
-                    <?= htmlspecialchars($data['contents_title']) ?>
-
-                </div>
+    <div class="contents-box-wrapperx">
 
 
-                <ul class="contents-list">
+        <!-- FLOATING TITLE -->
 
-                    <?php foreach ($data['contents'] as $item): ?>
+        <div class="contents-heading">
 
-                        <li>
-                            <?= htmlspecialchars($item) ?>
-                        </li>
-
-                    <?php endforeach; ?>
-
-                </ul>
-
-            </div>
-
-
-
-            <!-- =========================================
-             ACCESS BUTTON
-        ========================================== -->
-
-            <div class="access-button">
-
-                <?= htmlspecialchars($data['button_text']) ?>
-
-            </div>
-
+            <?= htmlspecialchars(
+                $data['contents_title'] ?? ''
+            ) ?>
 
         </div>
 
 
+        <!-- ROUNDED BOX -->
 
-        <!-- =========================================
-         FOOTER
-    ========================================== -->
+        <div class="contents-box">
 
-        <div class="footer">
+            <ul class="contents-list">
 
+                <?php foreach (
+                    ($data['contents'] ?? []) as $item
+                ): ?>
 
-            <div class="footer-line"></div>
+                    <li>
 
+                        <span class="bullet">○</span>
 
-            <div class="footer-note">
+                        <?= htmlspecialchars($item) ?>
 
-                <?= htmlspecialchars($data['footer_note']) ?>
+                    </li>
 
-            </div>
+                <?php endforeach; ?>
 
-
-            <div class="footer-bottom">
-
-
-                <span class="footer-date">
-
-                    <?= htmlspecialchars($data['date']) ?>
-
-                    ,
-
-                    <?= htmlspecialchars($data['time']) ?>
-
-                </span>
-
-
-                <div class="footer-name">
-
-                    <?= htmlspecialchars($data['footer_name']) ?>
-
-                </div>
-
-
-                <span class="footer-page">
-
-                    <?= htmlspecialchars($data['page_number']) ?>
-
-                </span>
-
-
-            </div>
+            </ul>
 
         </div>
 
 
     </div>
 
+
+    <!-- ACCESS BUTTON -->
+
+    <div class="access-wrap">
+
+       
+        <div href="<?= $data['button_link'] ?? ''  ?>" class="access-button">
+<a href="<?= $data['button_link'] ?? ''  ?>">
+            <?= htmlspecialchars(
+                $data['button_text'] ?? ''
+            ) ?>
+     </a>
+        </div>
+   
+
+    </div>
+
+</div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+     <div class="footer">
+
+    <div class="footer-line"></div>
+
+    <div class="footer-note">
+
+        <?= htmlspecialchars(
+            $data['footer_note'] ?? ''
+        ) ?>
+
+    </div>
+
+
+    <div class="footer-info">
+
+        <table class="footer-info-table">
+
+            <tr>
+
+                <td class="footer-left">
+
+                    <?= htmlspecialchars($data['date'] ?? '') ?>,
+                    <?= htmlspecialchars($data['time'] ?? '') ?>
+
+                </td>
+
+
+                <td class="footer-center">
+
+                    <?= htmlspecialchars(
+                        $data['footer_name'] ?? ''
+                    ) ?>
+
+                </td>
+
+
+                <td class="footer-right">
+
+                    <?= htmlspecialchars(
+                        $data['page_number'] ?? ''
+                    ) ?>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+    </div>
+
+    </main>
 </body>
 
 </html>
