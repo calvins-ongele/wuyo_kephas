@@ -1057,7 +1057,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
 
 <body>
    <div id="root">
-      <div style="font-family: &quot;Source Sans Pro&quot;, Arial, sans-serif; min-height: 100vh; background-color: rgb(242, 245, 249);">
+      <div style="font-family: 'Source Sans Pro', Arial, sans-serif; min-height: 100vh; background-color: rgb(242, 245, 249);">
          <style>
             @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
@@ -1080,7 +1080,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                opacity: 0.85;
             }
          </style>
-         <header style="width: 100%; font-family: &quot;Source Sans Pro&quot;, Arial, sans-serif;">
+         <header style="width: 100%; font-family: 'Source Sans Pro', Arial, sans-serif;">
             <div style="background-color: <?= $primary ?>; padding: 6px 0px;">
                <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; justify-content: space-between; align-items: center;">
                   <span style="color: rgb(204, 204, 204); font-size: 12px;"><?= $this->_company['c_name'] ?></span>
