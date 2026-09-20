@@ -665,12 +665,21 @@ class MyApp_Model extends Model
 	   echo $this->_update('blog', 'blog_views', 'blog_ID', [ $view + 1, $_POST['id']]);
 	}
 	
+    public function emailstatus() {
+        $POST = json_decode(file_get_contents('php://input'), true); 
+        $user = $this->_get('users', 'user_email', [$POST['email']], 0);
+
+        if ($user[1]['status']??'' == 'active') die($this->_ms(0));
+
+        die($this->_ms(1));
+    }
    
     public function notifyadmin() { 
         
         $POST = json_decode(file_get_contents('php://input'), true);  
+        $user = $this->_get('users', 'user_email', [$POST['email']], 0);
 
-        if ( $this->_get('users', 'user_email', [$POST['email']])[0] > 0 ) {
+        if ( $user[0] > 0 ) {
            // die( $this->_ms(true, "User already exists."));
            echo $this->_ms(0);
         } else {
