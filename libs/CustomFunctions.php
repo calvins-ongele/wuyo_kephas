@@ -996,12 +996,9 @@ class CustomFunctions
 
 
                         <span class='footer-page'>
-
                             " . htmlspecialchars($data['page_number']) . "
 
                         </span>
-
-
                     </div>
 
                 </div>
@@ -1013,7 +1010,14 @@ class CustomFunctions
 
             </html>";
     }
-
+public static function Loading($height='25px', $loading = "Loading") {
+    return "
+    <center style='display:flex;justify-content:center!important;'>
+        <img src='/public/assets/system/loading.webp' style='height:$height;''>
+        <span>$loading</span>
+    </center>
+    ";
+}
 
 
 

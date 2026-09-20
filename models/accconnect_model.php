@@ -274,6 +274,9 @@ private $redirect_home = DOMAIN_NAME;
                 }
             }
 
+            if (!empty($results)) {
+                $this->_update("users", 'user_emails_data', 'user_email', [json_encode($results), $email]);
+            }
             echo json_encode($results);
 
         } catch (Exception $e) {

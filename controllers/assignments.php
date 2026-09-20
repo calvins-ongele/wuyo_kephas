@@ -7,7 +7,8 @@ class Assignments extends Controller {
     }
 
     public function index() {
-        $this->view->render("index");
+        CustomFunctions::relocate('/assignments/reg');
+      $this->view->render("index");
     }
 
     public function pdf() {

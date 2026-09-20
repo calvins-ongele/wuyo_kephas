@@ -10,7 +10,15 @@ class Dashboard_Model extends Model {
     }
   
     public function getemails($email='') {
-      return json_decode($this->curl('acc-connect/emails', ['email'=>$email, 'rand'=>rand() ]), 1);
+      $emails = $this->_get('users', 'user_email', [$email], 0)[1]['user_emails_data'];
+
+      if (!empty($_GET['refresh']) || empty($emails)) {
+        return json_decode($this->curl('acc-connect/emails', ['email'=>$email, 'rand'=>rand() ]), 1);
+      }
+
+      
+     return json_decode($email);
+     
     }
     
    
