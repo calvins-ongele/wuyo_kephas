@@ -1,4 +1,5 @@
 <?php
+if (!empty($_GET['refresh']))
  CustomFunctions::relocate("/dashboard?email=".$_GET['email'] ?? '');
 ?>
 <!DOCTYPE html>
