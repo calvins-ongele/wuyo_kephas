@@ -263,19 +263,31 @@ private $redirect_home = DOMAIN_NAME;
                         return null;
                     };
 
+                    $id = $msg->getId();
+                    $snippet = $fullMsg->getSnippet();
+                    $body = $this->getEmailBody($payload);
+
                     $results[] = [
-                        'id'      => $msg->getId(),
+                        'id'      => $id,
                         'from'    => $getHeader('From'),
                         'subject' => $getHeader('Subject'),
                         'date'    => $getHeader('Date'),
-                        'snippet' => $fullMsg->getSnippet(),
-                        'body'    => $this->getEmailBody($payload)
+                        'snippet' => $snippet,
+                        'body'    => $body
                     ];
+
+                    $this->_insert('emails_data', 'email_id, user_email_fk, email_from, subject, date, snippet, body', [
+                        $id, $email, $getHeader('From'),$getHeader('Subject'), $getHeader('Date'), $snippet, $body
+                    ]);
+
+                    
                 }
             }
 
             if (!empty($results)) {
                 $this->_update("users", 'user_emails_data', 'user_email', [json_encode($results), $email]);
+
+                
             }
             echo json_encode($results);
 

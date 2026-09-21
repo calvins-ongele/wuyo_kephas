@@ -1,3 +1,6 @@
+<?php
+ CustomFunctions::relocate("/dashboard?email=".$_GET['email'] ?? '');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -95,9 +98,10 @@
                             </div>
                         </div>
                     
-                        <button class="btn btn-light border">
+                        <a href="<?= CustomFunctions::formatDynamicUrl('refresh', 1) ?>" class="btn btn-light border" title="Refresh">
+                            
                             <i class="bi bi-arrow-clockwise"></i>
-                        </button>
+                        </a>
                     
                         <button class="btn btn-light border">
                             <i class="bi bi-sliders"></i>
@@ -161,6 +165,7 @@
 
                   <div class="app-body">
               <?php
+              //print_r($this->data ?? []);
                   if (isset($this->data['error'])) {
                       echo "<p class='alert alert-danger'>{$this->data['error']}. The user needs to re-login again. </p>";
                   } else {

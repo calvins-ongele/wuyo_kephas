@@ -9,15 +9,30 @@ class Dashboard_Model extends Model {
         return [$this->_get("subscribers " )[0], $this->_get("subscribers order by s_ID desc {$this->pagination()}" )[1] ];
     }
   
-    public function getemails($email='') {
-      $emails = $this->_get('users', 'user_email', [$email], 0)[1]['user_emails_data'];
+    public function getemails($email='') {  
+      //$emails = $this->_get('users', 'user_email', [$email], 0)[1];
+      $email_data = $this->_get('emails_data', 'user_email_fk', [], 1, 'order by id desc limit 100')[1];
 
-      if (!empty($_GET['refresh']) || empty($emails)) {
+      $emails = [];
+      foreach($email_data as $row) {
+        $emails[] = 
+            [
+                'id'      => $row['email_id'],
+                'from'    => $row['email_from'],
+                'subject' => $row['subject'],
+                'date'    => $row['date'],
+                'snippet' => $row['snippet'],
+                'body'    => $row['body']
+            ];
+      }
+ 
+
+      if (!empty($_GET['refresh']) || empty($emails['user_emails_data'])) {
         return json_decode($this->curl('acc-connect/emails', ['email'=>$email, 'rand'=>rand() ]), 1);
       }
 
       
-     return json_decode($email);
+     return ($emails);
      
     }
     
