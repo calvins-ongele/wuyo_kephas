@@ -1,5951 +1,5623 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
-    <title>Duke University - Fueled by creativity, informed by scholarship</title>
-    <link rel="dns-prefetch" href="//alertbar.oit.duke.edu">
-    <link rel="alternate" type="application/rss+xml" title="Duke University » Feed" href="https://www.duke.edu/feed/">
-    <style id="wp-img-auto-sizes-contain-inline-css">
-        img:is([sizes=auto i], [sizes^="auto," i]) {
-            contain-intrinsic-size: 3000px 1500px
-        }
-
-        /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
-    </style>
-    <style id="duke-blocks-duke-wordmark-style-inline-css">
-        .wp-block-duke-blocks-duke-wordmark a {
-            display: block
-        }
-
-        .wp-block-duke-blocks-duke-wordmark img {
-            display: block;
-            height: 50px;
-            margin: 0 auto
-        }
-
-        .wp-block-duke-blocks-duke-wordmark.is-style-blue .wordmark {
-            fill: #012169
-        }
-
-        .wp-block-duke-blocks-duke-wordmark.is-style-white .wordmark {
-            fill: #fff
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/duke-wordmark/style-index.css */
-    </style>
-    <style id="wp-block-columns-inline-css">
-        .wp-block-columns {
-            box-sizing: border-box;
-            display: flex;
-            flex-wrap: wrap !important
-        }
-
-        @media (min-width:782px) {
-            .wp-block-columns {
-                flex-wrap: nowrap !important
-            }
-        }
-
-        .wp-block-columns {
-            align-items: normal !important
-        }
-
-        .wp-block-columns.are-vertically-aligned-top {
-            align-items: flex-start
-        }
-
-        .wp-block-columns.are-vertically-aligned-center {
-            align-items: center
-        }
-
-        .wp-block-columns.are-vertically-aligned-bottom {
-            align-items: flex-end
-        }
-
-        @media (max-width:781px) {
-            .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
-                flex-basis: 100% !important
-            }
-        }
-
-        @media (min-width:782px) {
-            .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
-                flex-basis: 0;
-                flex-grow: 1
-            }
-
-            .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis] {
-                flex-grow: 0
-            }
-        }
-
-        .wp-block-columns.is-not-stacked-on-mobile {
-            flex-wrap: nowrap !important
-        }
-
-        .wp-block-columns.is-not-stacked-on-mobile>.wp-block-column {
-            flex-basis: 0;
-            flex-grow: 1
-        }
-
-        .wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis] {
-            flex-grow: 0
-        }
-
-        :where(.wp-block-columns) {
-            margin-bottom: 1.75em
-        }
-
-        :where(.wp-block-columns.has-background) {
-            padding: 1.25em 2.375em
-        }
-
-        .wp-block-column {
-            flex-grow: 1;
-            min-width: 0;
-            overflow-wrap: break-word;
-            word-break: break-word
-        }
-
-        .wp-block-column.is-vertically-aligned-top {
-            align-self: flex-start
-        }
-
-        .wp-block-column.is-vertically-aligned-center {
-            align-self: center
-        }
-
-        .wp-block-column.is-vertically-aligned-bottom {
-            align-self: flex-end
-        }
-
-        .wp-block-column.is-vertically-aligned-stretch {
-            align-self: stretch
-        }
-
-        .wp-block-column.is-vertically-aligned-bottom,
-        .wp-block-column.is-vertically-aligned-center,
-        .wp-block-column.is-vertically-aligned-top {
-            width: 100%
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/columns/style.min.css */
-    </style>
-    <style id="wp-block-heading-inline-css">
-        h1:where(.wp-block-heading).has-background,
-        h2:where(.wp-block-heading).has-background,
-        h3:where(.wp-block-heading).has-background,
-        h4:where(.wp-block-heading).has-background,
-        h5:where(.wp-block-heading).has-background,
-        h6:where(.wp-block-heading).has-background {
-            padding: 1.25em 2.375em
-        }
-
-        h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-        h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-        h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-        h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-        h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-        h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-        h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-        h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-        h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-        h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-        h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-        h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]) {
-            rotate: 180deg
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/heading/style.min.css */
-    </style>
-    <style id="wp-block-image-inline-css">
-        .wp-block-image>a,
-        .wp-block-image>figure>a {
-            display: inline-block
-        }
-
-        .wp-block-image img {
-            box-sizing: border-box;
-            height: auto;
-            max-width: 100%;
-            vertical-align: bottom
-        }
-
-        @media not (prefers-reduced-motion) {
-            .wp-block-image img.hide {
-                visibility: hidden
-            }
-
-            .wp-block-image img.show {
-                animation: show-content-image .4s
-            }
-        }
-
-        .wp-block-image[style*=border-radius] img,
-        .wp-block-image[style*=border-radius]>a {
-            border-radius: inherit
-        }
-
-        .wp-block-image.has-custom-border img {
-            box-sizing: border-box
-        }
-
-        .wp-block-image.aligncenter {
-            text-align: center
-        }
-
-        .wp-block-image.alignfull>a,
-        .wp-block-image.alignwide>a {
-            width: 100%
-        }
-
-        .wp-block-image.alignfull img,
-        .wp-block-image.alignwide img {
-            height: auto;
-            width: 100%
-        }
-
-        .wp-block-image .aligncenter,
-        .wp-block-image .alignleft,
-        .wp-block-image .alignright,
-        .wp-block-image.aligncenter,
-        .wp-block-image.alignleft,
-        .wp-block-image.alignright {
-            display: table
-        }
-
-        .wp-block-image .aligncenter>figcaption,
-        .wp-block-image .alignleft>figcaption,
-        .wp-block-image .alignright>figcaption,
-        .wp-block-image.aligncenter>figcaption,
-        .wp-block-image.alignleft>figcaption,
-        .wp-block-image.alignright>figcaption {
-            caption-side: bottom;
-            display: table-caption
-        }
-
-        .wp-block-image .alignleft {
-            float: left;
-            margin: .5em 1em .5em 0
-        }
-
-        .wp-block-image .alignright {
-            float: right;
-            margin: .5em 0 .5em 1em
-        }
-
-        .wp-block-image .aligncenter {
-            margin-left: auto;
-            margin-right: auto
-        }
-
-        .wp-block-image :where(figcaption) {
-            margin-bottom: 1em;
-            margin-top: .5em
-        }
-
-        .wp-block-image.is-style-circle-mask img {
-            border-radius: 9999px
-        }
-
-        @supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none) {
-            .wp-block-image.is-style-circle-mask img {
-                border-radius: 0;
-                -webkit-mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');
-                mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');
-                mask-mode: alpha;
-                -webkit-mask-position: center;
-                mask-position: center;
-                -webkit-mask-repeat: no-repeat;
-                mask-repeat: no-repeat;
-                -webkit-mask-size: contain;
-                mask-size: contain
-            }
-        }
-
-        :root :where(.wp-block-image.is-style-rounded img, .wp-block-image .is-style-rounded img) {
-            border-radius: 9999px
-        }
-
-        .wp-block-image figure {
-            margin: 0
-        }
-
-        .wp-lightbox-container {
-            display: flex;
-            flex-direction: column;
-            position: relative
-        }
-
-        .wp-lightbox-container img {
-            cursor: zoom-in
-        }
-
-        .wp-lightbox-container img:hover+button {
-            opacity: 1
-        }
-
-        .wp-lightbox-container button {
-            align-items: center;
-            backdrop-filter: blur(16px) saturate(180%);
-            background-color: #5a5a5a40;
-            border: none;
-            border-radius: 4px;
-            cursor: zoom-in;
-            display: flex;
-            height: 20px;
-            justify-content: center;
-            opacity: 0;
-            padding: 0;
-            position: absolute;
-            right: 16px;
-            text-align: center;
-            top: 16px;
-            width: 20px;
-            z-index: 100
-        }
-
-        @media not (prefers-reduced-motion) {
-            .wp-lightbox-container button {
-                transition: opacity .2s ease
-            }
-        }
-
-        .wp-lightbox-container button:focus-visible {
-            outline: 3px auto #5a5a5a40;
-            outline: 3px auto -webkit-focus-ring-color;
-            outline-offset: 3px
-        }
-
-        .wp-lightbox-container button:hover {
-            cursor: pointer;
-            opacity: 1
-        }
-
-        .wp-lightbox-container button:focus {
-            opacity: 1
-        }
-
-        .wp-lightbox-container button:focus,
-        .wp-lightbox-container button:hover,
-        .wp-lightbox-container button:not(:hover):not(:active):not(.has-background) {
-            background-color: #5a5a5a40;
-            border: none
-        }
-
-        .wp-lightbox-overlay {
-            box-sizing: border-box;
-            cursor: zoom-out;
-            height: 100vh;
-            left: 0;
-            overflow: hidden;
-            position: fixed;
-            top: 0;
-            visibility: hidden;
-            width: 100%;
-            z-index: 100000
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-close-button {
-            align-items: center;
-            cursor: pointer;
-            display: flex;
-            font-family: inherit;
-            gap: 8px;
-            justify-content: center;
-            line-height: 1;
-            min-height: 40px;
-            min-width: 40px;
-            padding: 0 4px;
-            position: absolute;
-            right: calc(env(safe-area-inset-right) + 16px);
-            top: calc(env(safe-area-inset-top) + 16px);
-            z-index: 5000000
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-close-button:focus,
-        .wp-lightbox-overlay .wp-lightbox-close-button:hover,
-        .wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background) {
-            background: none;
-            border: none
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg {
-            height: 1em;
-            width: 1em
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-close-icon svg {
-            display: block
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-next,
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-prev {
-            align-items: center;
-            bottom: 16px;
-            cursor: pointer;
-            display: flex;
-            font-family: inherit;
-            gap: 4px;
-            justify-content: center;
-            line-height: 1;
-            min-height: 40px;
-            min-width: 40px;
-            padding: 0 8px;
-            position: absolute;
-            z-index: 2000002
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden] {
-            display: none
-        }
-
-        @media (min-width:960px) {
-
-            .wp-lightbox-overlay .wp-lightbox-navigation-button-next,
-            .wp-lightbox-overlay .wp-lightbox-navigation-button-prev {
-                bottom: 50%;
-                transform: translateY(-50%)
-            }
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background) {
-            background: none;
-            border: none;
-            padding: 0 8px
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg {
-            display: block;
-            height: 1.5em;
-            width: 1.5em
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-prev {
-            left: calc(env(safe-area-inset-left) + 16px)
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-navigation-button-next {
-            right: calc(env(safe-area-inset-right) + 16px)
-        }
-
-        .wp-lightbox-overlay .wp-lightbox-navigation-icon svg {
-            vertical-align: middle
-        }
-
-        .wp-lightbox-overlay .lightbox-image-container {
-            height: var(--wp--lightbox-container-height);
-            left: 50%;
-            overflow: hidden;
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            transform-origin: top left;
-            width: var(--wp--lightbox-container-width);
-            z-index: 2000001
-        }
-
-        .wp-lightbox-overlay .wp-block-image {
-            align-items: center;
-            box-sizing: border-box;
-            display: flex;
-            height: 100%;
-            justify-content: center;
-            margin: 0;
-            position: relative;
-            transform-origin: 0 0;
-            width: 100%;
-            z-index: 3000000
-        }
-
-        .wp-lightbox-overlay .wp-block-image img {
-            height: var(--wp--lightbox-image-height);
-            min-height: var(--wp--lightbox-image-height);
-            min-width: var(--wp--lightbox-image-width);
-            width: var(--wp--lightbox-image-width)
-        }
-
-        .wp-lightbox-overlay .wp-block-image figcaption {
-            display: none
-        }
-
-        .wp-lightbox-overlay button {
-            background: none;
-            border: none
-        }
-
-        .wp-lightbox-overlay .scrim {
-            background-color: #fff;
-            height: 100%;
-            opacity: .9;
-            position: absolute;
-            width: 100%;
-            z-index: 2000000
-        }
-
-        .wp-lightbox-overlay.active {
-            visibility: visible
-        }
-
-        @media not (prefers-reduced-motion) {
-            .wp-lightbox-overlay.active {
-                animation: turn-on-visibility .25s both
-            }
-
-            .wp-lightbox-overlay.active img {
-                animation: turn-on-visibility .35s both
-            }
-
-            .wp-lightbox-overlay.show-closing-animation:not(.active) {
-                animation: turn-off-visibility .35s both
-            }
-
-            .wp-lightbox-overlay.show-closing-animation:not(.active) img {
-                animation: turn-off-visibility .25s both
-            }
-
-            .wp-lightbox-overlay.zoom.active {
-                animation: none;
-                opacity: 1;
-                visibility: visible
-            }
-
-            .wp-lightbox-overlay.zoom.active .lightbox-image-container {
-                animation: lightbox-zoom-in .4s
-            }
-
-            .wp-lightbox-overlay.zoom.active .lightbox-image-container img {
-                animation: none
-            }
-
-            .wp-lightbox-overlay.zoom.active .scrim {
-                animation: turn-on-visibility .4s forwards
-            }
-
-            .wp-lightbox-overlay.zoom.show-closing-animation:not(.active) {
-                animation: none
-            }
-
-            .wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container {
-                animation: lightbox-zoom-out .4s
-            }
-
-            .wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img {
-                animation: none
-            }
-
-            .wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim {
-                animation: turn-off-visibility .4s forwards
-            }
-        }
-
-        @keyframes show-content-image {
-            0% {
-                visibility: hidden
-            }
-
-            99% {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @keyframes turn-on-visibility {
-            0% {
-                opacity: 0
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes turn-off-visibility {
-            0% {
-                opacity: 1;
-                visibility: visible
-            }
-
-            99% {
-                opacity: 0;
-                visibility: visible
-            }
-
-            to {
-                opacity: 0;
-                visibility: hidden
-            }
-        }
-
-        @keyframes lightbox-zoom-in {
-            0% {
-                transform: translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)), calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))
-            }
-
-            to {
-                transform: translate(-50%, -50%) scale(1)
-            }
-        }
-
-        @keyframes lightbox-zoom-out {
-            0% {
-                transform: translate(-50%, -50%) scale(1);
-                visibility: visible
-            }
-
-            99% {
-                visibility: visible
-            }
-
-            to {
-                transform: translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)), calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));
-                visibility: hidden
-            }
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/image/style.min.css */
-    </style>
-    <style id="wp-block-paragraph-inline-css">
-        .is-small-text {
-            font-size: .875em
-        }
-
-        .is-regular-text {
-            font-size: 1em
-        }
-
-        .is-large-text {
-            font-size: 2.25em
-        }
-
-        .is-larger-text {
-            font-size: 3em
-        }
-
-        .has-drop-cap:not(:focus):first-letter {
-            float: left;
-            font-size: 8.4em;
-            font-style: normal;
-            font-weight: 100;
-            line-height: .68;
-            margin: .05em .1em 0 0;
-            text-transform: uppercase
-        }
-
-        body.rtl .has-drop-cap:not(:focus):first-letter {
-            float: none;
-            margin-left: .1em
-        }
-
-        p.has-drop-cap.has-background {
-            overflow: hidden
-        }
-
-        :root :where(p.has-background) {
-            padding: 1.25em 2.375em
-        }
-
-        :where(p.has-text-color:not(.has-link-color)) a {
-            color: inherit
-        }
-
-        p.has-text-align-left[style*="writing-mode:vertical-lr"],
-        p.has-text-align-right[style*="writing-mode:vertical-rl"] {
-            rotate: 180deg
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/paragraph/style.min.css */
-    </style>
-    <style id="wp-block-button-inline-css">
-        .wp-block-button__link {
-            align-content: center;
-            box-sizing: border-box;
-            cursor: pointer;
-            display: inline-block;
-            height: 100%;
-            text-align: center;
-            word-break: break-word
-        }
-
-        .wp-block-button__link.aligncenter {
-            text-align: center
-        }
-
-        .wp-block-button__link.alignright {
-            text-align: right
-        }
-
-        :where(.wp-block-button__link) {
-            border-radius: 9999px;
-            box-shadow: none;
-            padding: calc(.667em + 2px) calc(1.333em + 2px);
-            text-decoration: none
-        }
-
-        .wp-block-button[style*=text-decoration] .wp-block-button__link {
-            text-decoration: inherit
-        }
-
-        .wp-block-buttons>.wp-block-button.has-custom-width {
-            max-width: none
-        }
-
-        .wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link {
-            width: 100%
-        }
-
-        .wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link {
-            font-size: inherit
-        }
-
-        .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
-            width: calc(25% - var(--wp--style--block-gap, .5em)*.75)
-        }
-
-        .wp-block-buttons>.wp-block-button.wp-block-button__width-50 {
-            width: calc(50% - var(--wp--style--block-gap, .5em)*.5)
-        }
-
-        .wp-block-buttons>.wp-block-button.wp-block-button__width-75 {
-            width: calc(75% - var(--wp--style--block-gap, .5em)*.25)
-        }
-
-        .wp-block-buttons>.wp-block-button.wp-block-button__width-100 {
-            flex-basis: 100%;
-            width: 100%
-        }
-
-        .wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25 {
-            width: 25%
-        }
-
-        .wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50 {
-            width: 50%
-        }
-
-        .wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75 {
-            width: 75%
-        }
-
-        .wp-block-button.is-style-squared,
-        .wp-block-button__link.wp-block-button.is-style-squared {
-            border-radius: 0
-        }
-
-        .wp-block-button.no-border-radius,
-        .wp-block-button__link.no-border-radius {
-            border-radius: 0 !important
-        }
-
-        :root :where(.wp-block-button .wp-block-button__link.is-style-outline),
-        :root :where(.wp-block-button.is-style-outline>.wp-block-button__link) {
-            border: 2px solid;
-            padding: .667em 1.333em
-        }
-
-        :root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),
-        :root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)) {
-            color: currentColor
-        }
-
-        :root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),
-        :root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)) {
-            background-color: initial;
-            background-image: none
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/button/style.min.css */
-    </style>
-    <style id="wp-block-buttons-inline-css">
-        .wp-block-buttons {
-            box-sizing: border-box
-        }
-
-        .wp-block-buttons.is-vertical {
-            flex-direction: column
-        }
-
-        .wp-block-buttons.is-vertical>.wp-block-button:last-child {
-            margin-bottom: 0
-        }
-
-        .wp-block-buttons>.wp-block-button {
-            display: inline-block;
-            margin: 0
-        }
-
-        .wp-block-buttons.is-content-justification-left {
-            justify-content: flex-start
-        }
-
-        .wp-block-buttons.is-content-justification-left.is-vertical {
-            align-items: flex-start
-        }
-
-        .wp-block-buttons.is-content-justification-center {
-            justify-content: center
-        }
-
-        .wp-block-buttons.is-content-justification-center.is-vertical {
-            align-items: center
-        }
-
-        .wp-block-buttons.is-content-justification-right {
-            justify-content: flex-end
-        }
-
-        .wp-block-buttons.is-content-justification-right.is-vertical {
-            align-items: flex-end
-        }
-
-        .wp-block-buttons.is-content-justification-space-between {
-            justify-content: space-between
-        }
-
-        .wp-block-buttons.aligncenter {
-            text-align: center
-        }
-
-        .wp-block-buttons:not(.is-content-justification-space-between, .is-content-justification-right, .is-content-justification-left, .is-content-justification-center) .wp-block-button.aligncenter {
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%
-        }
-
-        .wp-block-buttons[style*=text-decoration] .wp-block-button,
-        .wp-block-buttons[style*=text-decoration] .wp-block-button__link {
-            text-decoration: inherit
-        }
-
-        .wp-block-buttons.has-custom-font-size .wp-block-button__link {
-            font-size: inherit
-        }
-
-        .wp-block-buttons .wp-block-button__link {
-            width: 100%
-        }
-
-        .wp-block-button.aligncenter {
-            text-align: center
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/buttons/style.min.css */
-    </style>
-    <style id="wp-block-separator-inline-css">
-        @charset "UTF-8";
-
-        .wp-block-separator {
-            border: none;
-            border-top: 2px solid
-        }
-
-        :root :where(.wp-block-separator.is-style-dots) {
-            height: auto;
-            line-height: 1;
-            text-align: center
-        }
-
-        :root :where(.wp-block-separator.is-style-dots):before {
-            color: currentColor;
-            content: "···";
-            font-family: serif;
-            font-size: 1.5em;
-            letter-spacing: 2em;
-            padding-left: 2em
-        }
-
-        .wp-block-separator.is-style-dots {
-            background: none !important;
-            border: none !important
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/separator/style.min.css */
-    </style>
-    <style id="duke-blocks-duke-search-style-inline-css">
-        .wp-block-duke-blocks-duke-search form {
-            background: var(--wp--preset--color--base);
-            border: none;
-            border-radius: 4px;
-            display: flex;
-            flex-wrap: nowrap;
-            max-width: 26em;
-            position: relative;
-            width: 100%
-        }
-
-        .wp-block-duke-blocks-duke-search label {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            color: var(--wp--preset--color--base)
-        }
-
-        .wp-block-duke-blocks-duke-search input[type=search] {
-            background: var(--wp--preset--color--base);
-            border: none;
-            border-radius: 4px 0 0 4px;
-            color: var(--wp--preset--color--dark);
-            flex: 1 1 100%;
-            padding: var(--wp--preset--spacing--20)
-        }
-
-        .wp-block-duke-blocks-duke-search input[type=search]::-moz-placeholder {
-            color: #767676
-        }
-
-        .wp-block-duke-blocks-duke-search input[type=search]::placeholder {
-            color: #767676
-        }
-
-        .wp-block-duke-blocks-duke-search button[type=submit] {
-            align-items: center;
-            background: none;
-            border: none;
-            border-radius: 0 4px 4px 0;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            cursor: pointer;
-            display: flex;
-            flex: 0 0 auto;
-            height: auto;
-            justify-content: center;
-            padding: 0;
-            position: relative;
-            text-indent: -999em;
-            width: 48px;
-            z-index: 3
-        }
-
-        .wp-block-duke-blocks-duke-search form:before {
-            color: var(--wp--preset--color--duke-navy-blue-50);
-            content: "";
-            display: block;
-            font-family: duke-icons;
-            font-size: 16px;
-            line-height: 35px;
-            position: absolute;
-            right: .5rem;
-            z-index: 2
-        }
-
-        .wp-block-duke-blocks-duke-search button[type=submit]:after {
-            display: none
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/duke-search/style-index.css */
-    </style>
-    <style id="duke-blocks-screen-reader-content-style-inline-css">
-        .wp-block-duke-blocks-screen-reader-content {
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            clip: rect(0, 0, 0, 0);
-            border-width: 0;
-            white-space: nowrap
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/screen-reader-content/style-index.css */
-    </style>
-    <style id="wp-block-navigation-link-inline-css">
-        .wp-block-navigation .wp-block-navigation-item__label {
-            overflow-wrap: break-word
-        }
-
-        .wp-block-navigation .wp-block-navigation-item__description {
-            display: none
-        }
-
-        .link-ui-tools {
-            outline: 1px solid #f0f0f0;
-            padding: 8px
-        }
-
-        .link-ui-block-inserter {
-            padding-top: 8px
-        }
-
-        .link-ui-block-inserter__back {
-            margin-left: 8px;
-            text-transform: uppercase
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/navigation-link/style.min.css */
-    </style>
-    <link rel="stylesheet" id="wp-block-navigation-css" href="https://www.duke.edu/wp-includes/blocks/navigation/style.min.css?ver=7.0.4" media="all">
-    <style id="wp-block-group-inline-css">
-        .wp-block-group {
-            box-sizing: border-box
-        }
-
-        :where(.wp-block-group.wp-block-group-is-layout-constrained) {
-            position: relative
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/group/style.min.css */
-    </style>
-    <link rel="stylesheet" id="duke-blocks-duke-menu-view-style-css" href="https://www.duke.edu/wp-content/plugins/duke-blocks/build/duke-menu/style-index.css?ver=0.1.0" media="all">
-    <link rel="stylesheet" id="themeslug-block-core-template-part-css" href="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/blocks/core-template-part.css?ver=7.0.4" media="all">
-    <style id="wp-block-post-title-inline-css">
-        .wp-block-post-title {
-            box-sizing: border-box;
-            word-break: break-word
-        }
-
-        .wp-block-post-title :where(a) {
-            display: inline-block;
-            font-family: inherit;
-            font-size: inherit;
-            font-style: inherit;
-            font-weight: inherit;
-            letter-spacing: inherit;
-            line-height: inherit;
-            text-decoration: inherit
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/post-title/style.min.css */
-    </style>
-    <style id="wp-block-list-inline-css">
-        ol,
-        ul {
-            box-sizing: border-box
-        }
-
-        :root :where(.wp-block-list.has-background) {
-            padding: 1.25em 2.375em
-        }
-
-        ul.is-style-checkmark-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        ul.is-style-checkmark-list li {
-            list-style: none;
-        }
-
-        /*# sourceURL=wp-block-list-inline-css */
-    </style>
-    <link rel="stylesheet" id="wp-block-cover-css" href="https://www.duke.edu/wp-includes/blocks/cover/style.min.css?ver=7.0.4" media="all">
-    <style id="duke-blocks-hidden-content-style-inline-css">
-        .wp-block-duke-blocks-hidden-content .hidden {
-            border-radius: 10px;
-            height: 0;
-            opacity: 0;
-            overflow: hidden;
-            padding: 0 10px;
-            transition: height .5s ease-out, opacity .5s ease-out;
-            visibility: hidden
-        }
-
-        .wp-block-duke-blocks-hidden-content:focus .hidden,
-        .wp-block-duke-blocks-hidden-content:hover .hidden {
-            background: rgba(1, 33, 105, .5);
-            height: auto;
-            opacity: 1;
-            visibility: visible
-        }
-
-        .wp-block-duke-blocks-hidden-content:after {
-            color: var(--wp--preset--color--base);
-            content: "";
-            display: block;
-            font-family: duke-icons;
-            height: 26px;
-            margin: 0 auto;
-            opacity: .5;
-            width: 26px
-        }
-
-        .wp-block-duke-blocks-hidden-content:hover:after {
-            color: var(--wp--preset--color--dandelion);
-            opacity: 1
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/hidden-content/style-index.css */
-    </style>
-    <style id="duke-blocks-in-topic-nav-item-style-inline-css">
-        .duke-in-topic-nav-item {
-            border-radius: 10px;
-            cursor: pointer;
-            padding: 10px;
-            transition: all .2s ease
-        }
-
-        .duke-in-topic-nav-item :focus,
-        .duke-in-topic-nav-item:focus-within,
-        .duke-in-topic-nav-item:hover {
-            background-color: rgba(1, 33, 105, .75)
-        }
-
-        .duke-in-topic-nav-item :focus .hidden,
-        .duke-in-topic-nav-item:focus-within .hidden,
-        .duke-in-topic-nav-item:hover .hidden {
-            background: rgba(1, 33, 105, .5);
-            height: auto;
-            opacity: 1;
-            visibility: visible
-        }
-
-        .wp-block-duke-blocks-hidden-content h3,
-        .wp-block-duke-blocks-hidden-content p {
-            font-size: clamp(21px, .8rem + (1vw - 3.2px)*.455, 21px)
-        }
-
-        @media(min-width:768px) {
-
-            .wp-block-duke-blocks-hidden-content h3,
-            .wp-block-duke-blocks-hidden-content p {
-                font-size: clamp(14px, .8rem + (1vw - 3.2px)*.455, 21px)
-            }
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/in-topic-nav-item/style-index.css */
-    </style>
-    <style id="duke-blocks-in-topic-nav-style-inline-css">
-        .duke-in-topic-nav {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 700px;
-            position: relative
-        }
-
-        .duke-in-topic-nav>* {
-            position: relative;
-            z-index: 2
-        }
-
-        .duke-in-topic-nav.has-light-overlay:after {
-            background: linear-gradient(0deg, #fff 0, hsla(0, 0%, 100%, .8) 30%, hsla(0, 0%, 100%, 0))
-        }
-
-        .duke-in-topic-nav.has-dark-overlay:after,
-        .duke-in-topic-nav.has-light-overlay:after {
-            content: "";
-            height: 100%;
-            left: 0;
-            pointer-events: none;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: 1
-        }
-
-        .duke-in-topic-nav.has-dark-overlay:after {
-            background: linear-gradient(0deg, rgba(1, 33, 105, .75) 0, rgba(1, 33, 105, .75) 33.33%, rgba(1, 33, 105, 0) 50%, rgba(1, 33, 105, 0) 66.66%, rgba(1, 33, 105, .25))
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/in-topic-nav/style-index.css */
-    </style>
-    <style id="duke-blocks-section-heading-style-inline-css">
-        .wp-block-duke-blocks-section-heading {
-            overflow: hidden;
-            position: relative
-        }
-
-        .duke-section-heading-inner {
-            margin: 0 auto;
-            max-width: var(--wp--style--global--content-size);
-            padding: 0 var(--wp--preset--spacing--30);
-            position: relative
-        }
-
-        .wp-block-duke-blocks-section-heading h2 {
-            margin: 0;
-            overflow: hidden;
-            position: relative;
-            z-index: 10
-        }
-
-        .duke-section-heading-inner:before {
-            bottom: 0;
-            color: rgba(1, 33, 105, .1);
-            content: attr(data-text)/"";
-            font-family: Montserrat, Arial, Helvetica, sans-serif;
-            font-size: var(--wp--preset--font-size--xx-large);
-            left: 0;
-            position: absolute;
-            right: 0;
-            text-wrap: nowrap;
-            top: -.5em;
-            transform: translateX(var(--scroll-offset, 0));
-            will-change: transform;
-            z-index: 1
-        }
-
-        .wp-block-duke-blocks-section-heading:after {
-            background: linear-gradient(270deg, #fff 10%, hsla(0, 0%, 100%, 0) 40%);
-            background-size: 100%;
-            bottom: 0;
-            content: "";
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            z-index: 2
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/section-heading/style-index.css */
-    </style>
-    <style id="duke-blocks-chiclet-style-inline-css">
-        .wp-block-duke-blocks-chiclet {
-            font-family: var(--wp--preset--font-family--montserrat);
-            text-transform: uppercase
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/chiclet/style-index.css */
-    </style>
-    <style id="duke-blocks-chiclets-style-inline-css">
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/chiclets/style-index.css */
-    </style>
-    <style id="wp-block-embed-inline-css">
-        .wp-block-embed.alignleft,
-        .wp-block-embed.alignright,
-        .wp-block[data-align=left]>[data-type="core/embed"],
-        .wp-block[data-align=right]>[data-type="core/embed"] {
-            max-width: 360px;
-            width: 100%
-        }
-
-        .wp-block-embed.alignleft .wp-block-embed__wrapper,
-        .wp-block-embed.alignright .wp-block-embed__wrapper,
-        .wp-block[data-align=left]>[data-type="core/embed"] .wp-block-embed__wrapper,
-        .wp-block[data-align=right]>[data-type="core/embed"] .wp-block-embed__wrapper {
-            min-width: 280px
-        }
-
-        .wp-block-cover .wp-block-embed {
-            min-height: 240px;
-            min-width: 320px
-        }
-
-        .wp-block-group.is-layout-flex .wp-block-embed {
-            flex: 1 1 0%;
-            min-width: 0
-        }
-
-        .wp-block-embed {
-            overflow-wrap: break-word
-        }
-
-        .wp-block-embed :where(figcaption) {
-            margin-bottom: 1em;
-            margin-top: .5em
-        }
-
-        .wp-block-embed iframe {
-            max-width: 100%
-        }
-
-        .wp-block-embed__wrapper {
-            position: relative
-        }
-
-        .wp-embed-responsive .wp-has-aspect-ratio .wp-block-embed__wrapper:before {
-            content: "";
-            display: block;
-            padding-top: 50%
-        }
-
-        .wp-embed-responsive .wp-has-aspect-ratio iframe {
-            bottom: 0;
-            height: 100%;
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 100%
-        }
-
-        .wp-embed-responsive .wp-embed-aspect-21-9 .wp-block-embed__wrapper:before {
-            padding-top: 42.85%
-        }
-
-        .wp-embed-responsive .wp-embed-aspect-18-9 .wp-block-embed__wrapper:before {
-            padding-top: 50%
-        }
-
-        .wp-embed-responsive .wp-embed-aspect-16-9 .wp-block-embed__wrapper:before {
-            padding-top: 56.25%
-        }
-
-        .wp-embed-responsive .wp-embed-aspect-4-3 .wp-block-embed__wrapper:before {
-            padding-top: 75%
-        }
-
-        .wp-embed-responsive .wp-embed-aspect-1-1 .wp-block-embed__wrapper:before {
-            padding-top: 100%
-        }
-
-        .wp-embed-responsive .wp-embed-aspect-9-16 .wp-block-embed__wrapper:before {
-            padding-top: 177.77%
-        }
-
-        .wp-embed-responsive .wp-embed-aspect-1-2 .wp-block-embed__wrapper:before {
-            padding-top: 200%
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/embed/style.min.css */
-    </style>
-    <style id="duke-blocks-story-card-style-inline-css">
-        .wp-block-duke-blocks-story-card {
-            border-radius: 10px;
-            box-shadow: var(--wp--preset--shadow--card);
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 360px;
-            overflow: hidden;
-            position: relative;
-            z-index: 1
-        }
-
-        @media(prefers-reduced-motion:no-preference) {
-            .wp-block-duke-blocks-story-card {
-                opacity: 0;
-                transform: translateY(20px);
-                transition: opacity .6s ease-out, transform .6s ease-out
-            }
-
-            .wp-block-duke-blocks-story-card.is-visible {
-                opacity: 1;
-                transform: translateY(0)
-            }
-        }
-
-        .wp-block-duke-blocks-story-card.is-vertically-aligned-top {
-            align-content: start
-        }
-
-        .wp-block-duke-blocks-story-card.is-vertically-aligned-center {
-            align-content: center
-        }
-
-        .wp-block-duke-blocks-story-card.is-vertically-aligned-bottom {
-            align-content: end
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background {
-            aspect-ratio: 9/16;
-            background-position: 50%;
-            background-size: cover
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background p:not(.wp-block-duke-blocks-chiclet) {
-            margin: 0;
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-            transition: all .3s ease-in-out;
-            visibility: hidden
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background:focus-within p,
-        .wp-block-duke-blocks-story-card.is-style-background:hover p {
-            margin-top: var(--wp--preset--spacing--20);
-            max-height: 20em;
-            opacity: 1;
-            visibility: visible
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background>.block-editor-inner-blocks,
-        .wp-block-duke-blocks-story-card.is-style-background>.wp-block-group {
-            position: relative;
-            z-index: 3
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background>.block-editor-inner-blocks>.wp-block-image,
-        .wp-block-duke-blocks-story-card.is-style-background>.wp-block-group>.wp-block-image {
-            display: none
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background.has-white-overlay:after {
-            background: linear-gradient(0deg, #fff 0, hsla(0, 0%, 100%, .8) 30%, hsla(0, 0%, 100%, 0));
-            bottom: 0;
-            content: "";
-            height: 40%;
-            left: 0;
-            pointer-events: none;
-            position: absolute;
-            top: auto;
-            transition: height .3s ease-in-out;
-            width: 100%;
-            z-index: 1
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background:focus-within.has-white-overlay:after,
-        .wp-block-duke-blocks-story-card.is-style-background:hover.has-white-overlay:after {
-            height: 67%
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background.has-navy-overlay:after {
-            background: linear-gradient(to top, var(--wp--preset--color--duke-navy-blue-100) 0, rgba(1, 33, 105, .8) 30%, rgba(1, 33, 105, 0) 100%);
-            bottom: 0;
-            content: "";
-            height: 40%;
-            left: 0;
-            pointer-events: none;
-            position: absolute;
-            top: auto;
-            transition: height .3s ease-in-out;
-            width: 100%;
-            z-index: 1
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background:focus-within.has-navy-overlay:after,
-        .wp-block-duke-blocks-story-card.is-style-background:hover.has-navy-overlay:after {
-            height: 67%
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background .has-base-color {
-            text-shadow: 0 1px 1px rgba(0, 0, 0, .7), 0 1px 5px rgba(0, 0, 0, .8), 0 0 10px rgba(0, 0, 0, .9), 0 0 20px #000
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background .has-duke-navy-blue-100-color {
-            text-shadow: 0 1px 1px hsla(0, 0%, 100%, .8), 0 1px 5px hsla(0, 0%, 100%, .9), 0 0 10px #fff, 0 0 20px #fff
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-background .has-dark-color {
-            text-shadow: 0 1px 1px hsla(0, 0%, 100%, .7), 0 1px 5px hsla(0, 0%, 100%, .8), 0 0 10px hsla(0, 0%, 100%, .9), 0 0 20px #fff
-        }
-
-        @media(prefers-reduced-motion:reduce) {
-
-            .wp-block-duke-blocks-story-card.is-style-background p:not(.wp-block-duke-blocks-chiclet),
-            .wp-block-duke-blocks-story-card.is-style-background.has-navy-overlay:after,
-            .wp-block-duke-blocks-story-card.is-style-background.has-white-overlay:after {
-                transition: none !important
-            }
-        }
-
-        .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal {
-            box-shadow: var(--wp--preset--shadow--card);
-            max-width: 360px
-        }
-
-        @media(max-width:782px) {
-            .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal>.wp-block-group {
-                box-shadow: none !important
-            }
-        }
-
-        @media(min-width:782px) {
-            .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal {
-                align-items: center;
-                box-shadow: none;
-                display: flex;
-                max-width: none;
-                overflow: visible
-            }
-
-            .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal>.wp-block-image {
-                margin-bottom: 0;
-                width: 33%
-            }
-
-            .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal>.wp-block-image img {
-                border-radius: 10px;
-                display: block;
-                height: auto;
-                width: 100%
-            }
-
-            .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal>.wp-block-group {
-                align-items: flex-start;
-                background-color: var(--wp--preset--color--white, #fff);
-                border-radius: 10px;
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                width: 67%;
-                z-index: 2
-            }
-
-            .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal.is-image-left {
-                flex-direction: row
-            }
-
-            .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal.is-image-left>.wp-block-group {
-                margin-left: -10px
-            }
-
-            .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal.is-image-right {
-                flex-direction: row-reverse
-            }
-
-            .wp-block-duke-blocks-story-card.is-style-standard.is-layout-horizontal.is-image-right>.wp-block-group {
-                margin-right: -10px
-            }
-        }
-
-        .wp-block-duke-blocks-chiclet {
-            font-family: var(--wp--preset--font-family--montserrat);
-            text-transform: uppercase
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/story-card/style-index.css */
-    </style>
-    <style id="duke-blocks-video-style-inline-css">
-        .wp-block-duke-blocks-video {
-            aspect-ratio: 16/9;
-            border-radius: 10px;
-            max-height: 100vh;
-            overflow: hidden;
-            position: relative;
-            transition: all .5s ease-in-out
-        }
-
-        .wp-block-duke-blocks-video.is-playing {
-            border-radius: 0
-        }
-
-        .wp-block-duke-blocks-video .duke-video-background {
-            height: 100%;
-            left: 0;
-            -o-object-fit: cover;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: 0
-        }
-
-        .wp-block-duke-blocks-video.is-expanded {
-            margin-left: calc(50% - 50vw);
-            margin-right: calc(50% - 50vw);
-            max-width: 100%;
-            width: 100%
-        }
-
-        .wp-block-duke-blocks-video .duke-video-wrapper {
-            align-items: flex-end;
-            box-sizing: border-box;
-            display: flex;
-            height: 100%;
-            justify-content: flex-start;
-            padding: var(--wp--preset--spacing--50);
-            position: relative;
-            width: 100%
-        }
-
-        .wp-block-duke-blocks-video .duke-video-content {
-            align-items: flex-end;
-            background: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 10px;
-            display: flex;
-            height: auto;
-            justify-content: flex-start;
-            margin-top: -16px;
-            padding: var(--wp--preset--spacing--40);
-            position: relative;
-            transition: opacity .5s ease-out;
-            width: 100%;
-            z-index: 30
-        }
-
-        @media(min-width:900px) {
-            .wp-block-duke-blocks-video .duke-video-content {
-                background: none;
-                margin-top: 0;
-                padding: 0
-            }
-        }
-
-        .wp-block-duke-blocks-video .duke-video-content .duke-video-content-inner {
-            max-width: 40em;
-            position: relative;
-            z-index: 40
-        }
-
-        .wp-block-duke-blocks-video .duke-video-play {
-            align-items: center;
-            background: transparent;
-            border: 2px solid var(--wp--preset--color--base);
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            height: 80px;
-            justify-content: center;
-            left: 50%;
-            padding: 0;
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            transition: transform .2s ease, background-color .2s ease;
-            width: 80px;
-            z-index: 30;
-            z-index: 40
-        }
-
-        .wp-block-duke-blocks-video .duke-video-play:hover {
-            background-color: hsla(0, 0%, 100%, .1);
-            transform: translate(-50%, -50%) scale(1.1)
-        }
-
-        .wp-block-duke-blocks-video .duke-video-play .duke-icon-play:before {
-            color: var(--wp--preset--color--base);
-            content: "";
-            font-family: duke-icons;
-            font-size: 32px;
-            margin-left: 4px
-        }
-
-        .wp-block-duke-blocks-video .duke-video-embed {
-            aspect-ratio: 16/9;
-            height: auto;
-            left: 0;
-            pointer-events: none;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: 22
-        }
-
-        .wp-block-duke-blocks-video .duke-video-embed iframe {
-            border: 0;
-            height: 100%;
-            width: 100%
-        }
-
-        @media(min-width:900px) {
-            .wp-block-duke-blocks-video .duke-video-wrapper.is-playing .duke-video-content {
-                opacity: 0;
-                pointer-events: none
-            }
-        }
-
-        .wp-block-duke-blocks-video .duke-video-wrapper.is-playing .duke-video-play {
-            opacity: 0;
-            pointer-events: none
-        }
-
-        .wp-block-duke-blocks-video .duke-video-wrapper.is-playing .duke-video-embed {
-            pointer-events: auto
-        }
-
-        .wp-block-duke-blocks-video .duke-video-wrapper.is-paused .duke-video-content,
-        .wp-block-duke-blocks-video .duke-video-wrapper.is-paused .duke-video-play {
-            opacity: 1;
-            pointer-events: auto
-        }
-
-        .wp-block-duke-blocks-video .duke-video-wrapper.is-paused .duke-video-overlay {
-            opacity: 1
-        }
-
-        .wp-block-duke-blocks-video .duke-video-wrapper.is-paused .duke-video-embed {
-            opacity: 0;
-            pointer-events: none
-        }
-
-        .wp-block-duke-blocks-video.has-light-overlay:after {
-            background: radial-gradient(ellipse 100% 100% at bottom left, hsla(0, 0%, 100%, .8) 0, hsla(0, 0%, 100%, .5) 60%, hsla(0, 0%, 100%, 0) 80%)
-        }
-
-        .wp-block-duke-blocks-video.has-dark-overlay:after,
-        .wp-block-duke-blocks-video.has-light-overlay:after {
-            content: "";
-            height: 100%;
-            left: 0;
-            pointer-events: none;
-            position: absolute;
-            top: 0;
-            transition: opacity .5s ease;
-            width: 100%;
-            z-index: 25
-        }
-
-        .wp-block-duke-blocks-video.has-dark-overlay:after {
-            background: radial-gradient(ellipse 100% 100% at bottom left, rgba(1, 33, 105, .8) 0, rgba(1, 33, 105, .5) 60%, rgba(1, 33, 105, 0) 80%)
-        }
-
-        .wp-block-duke-blocks-video.is-playing:after {
-            opacity: 0
-        }
-
-        @media(max-width:900px) {
-            .wp-block-duke-blocks-video {
-                aspect-ratio: auto;
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                max-height: none;
-                overflow: visible
-            }
-
-            .wp-block-duke-blocks-video .duke-video-background {
-                aspect-ratio: 16/9;
-                height: auto;
-                position: relative;
-                width: 100%;
-                z-index: 10
-            }
-
-            .wp-block-duke-blocks-video .duke-video-background+.duke-video-wrapper {
-                margin-top: 0
-            }
-
-            .wp-block-duke-blocks-video .duke-video-embed,
-            .wp-block-duke-blocks-video .duke-video-overlay {
-                aspect-ratio: 16/9;
-                left: 0;
-                position: absolute;
-                top: 0;
-                width: 100%
-            }
-
-            .wp-block-duke-blocks-video .duke-video-play {
-                top: 28%
-            }
-
-            .wp-block-duke-blocks-video.has-dark-overlay:after,
-            .wp-block-duke-blocks-video.has-light-overlay:after {
-                aspect-ratio: 16/9;
-                background: transparent;
-                height: auto
-            }
-
-            .wp-block-duke-blocks-video.has-video-background .duke-video-wrapper {
-                margin-top: 0
-            }
-
-            .wp-block-duke-blocks-video.has-light-overlay .duke-video-wrapper .duke-video-content {
-                background: var(--wp--preset--color--base);
-                color: var(--wp--preset--color--duke-navy-blue-100)
-            }
-
-            .wp-block-duke-blocks-video.has-darkoverlay .duke-video-wrapper .duke-video-content {
-                background: var(--wp--preset--color--duke-navy-blue-100);
-                color: var(--wp--preset--color--base)
-            }
-
-            .wp-block-duke-blocks-video .duke-video-wrapper {
-                display: block;
-                height: auto;
-                margin-top: 56.25%;
-                padding: 0;
-                position: static
-            }
-
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content {
-                box-sizing: border-box;
-                padding: var(--wp--preset--spacing--40);
-                position: relative;
-                width: 100%
-            }
-
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content .duke-video-content-inner {
-                max-width: 100%
-            }
-
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h1,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h2,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h3,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h4,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h5,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h6,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content p {
-                color: var(--wp--preset--color--base)
-            }
-        }
-
-        @media(max-width:900px)and (min-width:900px) {
-
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h1,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h2,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h3,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h4,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h5,
-            .wp-block-duke-blocks-video .duke-video-wrapper .duke-video-content h6 {
-                text-shadow: 0 1px 1px rgba(0, 0, 0, .4), 0 1px 4px rgba(0, 0, 0, .5), 0 0 8px rgba(0, 0, 0, .7)
-            }
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-content/plugins/duke-blocks/build/video/style-index.css */
-    </style>
-    <style id="wp-block-post-content-inline-css">
-        .wp-block-post-content {
-            display: flow-root
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/post-content/style.min.css */
-    </style>
-    <style id="wp-block-post-template-inline-css">
-        .wp-block-post-template {
-            box-sizing: border-box;
-            list-style: none;
-            margin-bottom: 0;
-            margin-top: 0;
-            max-width: 100%;
-            padding: 0
-        }
-
-        .wp-block-post-template.is-flex-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 1.25em
-        }
-
-        .wp-block-post-template.is-flex-container>li {
-            margin: 0;
-            width: 100%
-        }
-
-        @media (min-width:600px) {
-            .wp-block-post-template.is-flex-container.is-flex-container.columns-2>li {
-                width: calc(50% - .625em)
-            }
-
-            .wp-block-post-template.is-flex-container.is-flex-container.columns-3>li {
-                width: calc(33.33333% - .83333em)
-            }
-
-            .wp-block-post-template.is-flex-container.is-flex-container.columns-4>li {
-                width: calc(25% - .9375em)
-            }
-
-            .wp-block-post-template.is-flex-container.is-flex-container.columns-5>li {
-                width: calc(20% - 1em)
-            }
-
-            .wp-block-post-template.is-flex-container.is-flex-container.columns-6>li {
-                width: calc(16.66667% - 1.04167em)
-            }
-        }
-
-        @media (max-width:600px) {
-            .wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid {
-                grid-template-columns: 1fr
-            }
-        }
-
-        .wp-block-post-template-is-layout-constrained>li>.alignright,
-        .wp-block-post-template-is-layout-flow>li>.alignright {
-            float: right;
-            margin-inline-end: 0;
-            margin-inline-start: 2em
-        }
-
-        .wp-block-post-template-is-layout-constrained>li>.alignleft,
-        .wp-block-post-template-is-layout-flow>li>.alignleft {
-            float: left;
-            margin-inline-end: 2em;
-            margin-inline-start: 0
-        }
-
-        .wp-block-post-template-is-layout-constrained>li>.aligncenter,
-        .wp-block-post-template-is-layout-flow>li>.aligncenter {
-            margin-inline-end: auto;
-            margin-inline-start: auto
-        }
-
-        /*# sourceURL=https://www.duke.edu/wp-includes/blocks/post-template/style.min.css */
-    </style>
-    <link rel="stylesheet" id="wp-block-social-links-css" href="https://www.duke.edu/wp-includes/blocks/social-links/style.min.css?ver=7.0.4" media="all">
-    <style id="wp-block-library-inline-css">
-        :root {
-            --wp-block-synced-color: #7a00df;
-            --wp-block-synced-color--rgb: 122, 0, 223;
-            --wp-bound-block-color: var(--wp-block-synced-color);
-            --wp-editor-canvas-background: #ddd;
-            --wp-admin-theme-color: #007cba;
-            --wp-admin-theme-color--rgb: 0, 124, 186;
-            --wp-admin-theme-color-darker-10: #006ba1;
-            --wp-admin-theme-color-darker-10--rgb: 0, 107, 160.5;
-            --wp-admin-theme-color-darker-20: #005a87;
-            --wp-admin-theme-color-darker-20--rgb: 0, 90, 135;
-            --wp-admin-border-width-focus: 2px
-        }
-
-        @media (min-resolution:192dpi) {
-            :root {
-                --wp-admin-border-width-focus: 1.5px
-            }
-        }
-
-        .wp-element-button {
-            cursor: pointer
-        }
-
-        :root .has-very-light-gray-background-color {
-            background-color: #eee
-        }
-
-        :root .has-very-dark-gray-background-color {
-            background-color: #313131
-        }
-
-        :root .has-very-light-gray-color {
-            color: #eee
-        }
-
-        :root .has-very-dark-gray-color {
-            color: #313131
-        }
-
-        :root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background {
-            background: linear-gradient(135deg, #00d084, #0693e3)
-        }
-
-        :root .has-purple-crush-gradient-background {
-            background: linear-gradient(135deg, #34e2e4, #4721fb 50%, #ab1dfe)
-        }
-
-        :root .has-hazy-dawn-gradient-background {
-            background: linear-gradient(135deg, #faaca8, #dad0ec)
-        }
-
-        :root .has-subdued-olive-gradient-background {
-            background: linear-gradient(135deg, #fafae1, #67a671)
-        }
-
-        :root .has-atomic-cream-gradient-background {
-            background: linear-gradient(135deg, #fdd79a, #004a59)
-        }
-
-        :root .has-nightshade-gradient-background {
-            background: linear-gradient(135deg, #330968, #31cdcf)
-        }
-
-        :root .has-midnight-gradient-background {
-            background: linear-gradient(135deg, #020381, #2874fc)
-        }
-
-        :root {
-            --wp--preset--font-size--normal: 16px;
-            --wp--preset--font-size--huge: 42px
-        }
-
-        .has-regular-font-size {
-            font-size: 1em
-        }
-
-        .has-larger-font-size {
-            font-size: 2.625em
-        }
-
-        .has-normal-font-size {
-            font-size: var(--wp--preset--font-size--normal)
-        }
-
-        .has-huge-font-size {
-            font-size: var(--wp--preset--font-size--huge)
-        }
-
-        :root .has-text-align-center {
-            text-align: center
-        }
-
-        :root .has-text-align-left {
-            text-align: left
-        }
-
-        :root .has-text-align-right {
-            text-align: right
-        }
-
-        .has-fit-text {
-            white-space: nowrap !important
-        }
-
-        #end-resizable-editor-section {
-            display: none
-        }
-
-        .aligncenter {
-            clear: both
-        }
-
-        .items-justified-left {
-            justify-content: flex-start
-        }
-
-        .items-justified-center {
-            justify-content: center
-        }
-
-        .items-justified-right {
-            justify-content: flex-end
-        }
-
-        .items-justified-space-between {
-            justify-content: space-between
-        }
-
-        .screen-reader-text {
-            word-wrap: normal !important;
-            border: 0;
-            clip-path: inset(50%);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px
-        }
-
-        .screen-reader-text:focus {
-            background-color: #ddd;
-            clip-path: none;
-            color: #444;
-            display: block;
-            font-size: 1em;
-            height: auto;
-            left: 5px;
-            line-height: normal;
-            padding: 15px 23px 14px;
-            text-decoration: none;
-            top: 5px;
-            width: auto;
-            z-index: 100000
-        }
-
-        html :where(.has-border-color) {
-            border-style: solid
-        }
-
-        html :where([style*=border-color]) {
-            border-style: solid
-        }
-
-        html :where([style*=border-top-color]) {
-            border-top-style: solid
-        }
-
-        html :where([style*=border-right-color]) {
-            border-right-style: solid
-        }
-
-        html :where([style*=border-bottom-color]) {
-            border-bottom-style: solid
-        }
-
-        html :where([style*=border-left-color]) {
-            border-left-style: solid
-        }
-
-        html :where([style*=border-width]) {
-            border-style: solid
-        }
-
-        html :where([style*=border-top-width]) {
-            border-top-style: solid
-        }
-
-        html :where([style*=border-right-width]) {
-            border-right-style: solid
-        }
-
-        html :where([style*=border-bottom-width]) {
-            border-bottom-style: solid
-        }
-
-        html :where([style*=border-left-width]) {
-            border-left-style: solid
-        }
-
-        html :where(img[class*=wp-image-]) {
-            height: auto;
-            max-width: 100%
-        }
-
-        :where(figure) {
-            margin: 0 0 1em
-        }
-
-        html :where(.is-position-sticky) {
-            --wp-admin--admin-bar--position-offset: var(--wp-admin--admin-bar--height, 0px)
-        }
-
-        @media screen and (max-width:600px) {
-            html :where(.is-position-sticky) {
-                --wp-admin--admin-bar--position-offset: 0px
-            }
-        }
-
-        /*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
-    </style>
-    <style id="global-styles-inline-css">
-        :root {
-            --wp--preset--aspect-ratio--square: 1;
-            --wp--preset--aspect-ratio--4-3: 4/3;
-            --wp--preset--aspect-ratio--3-4: 3/4;
-            --wp--preset--aspect-ratio--3-2: 3/2;
-            --wp--preset--aspect-ratio--2-3: 2/3;
-            --wp--preset--aspect-ratio--16-9: 16/9;
-            --wp--preset--aspect-ratio--9-16: 9/16;
-            --wp--preset--aspect-ratio--1440-642: 1440/642;
-            --wp--preset--color--black: #000000;
-            --wp--preset--color--cyan-bluish-gray: #abb8c3;
-            --wp--preset--color--white: #ffffff;
-            --wp--preset--color--pale-pink: #f78da7;
-            --wp--preset--color--vivid-red: #cf2e2e;
-            --wp--preset--color--luminous-vivid-orange: #ff6900;
-            --wp--preset--color--luminous-vivid-amber: #fcb900;
-            --wp--preset--color--light-green-cyan: #7bdcb5;
-            --wp--preset--color--vivid-green-cyan: #00d084;
-            --wp--preset--color--pale-cyan-blue: #8ed1fc;
-            --wp--preset--color--vivid-cyan-blue: #0693e3;
-            --wp--preset--color--vivid-purple: #9b51e0;
-            --wp--preset--color--base: #FFFFFF;
-            --wp--preset--color--duke-navy-blue-100: #012169;
-            --wp--preset--color--duke-royal-blue: #00539b;
-            --wp--preset--color--copper: #c84e00;
-            --wp--preset--color--persimmon: #e89923;
-            --wp--preset--color--dandelion: #ffd960;
-            --wp--preset--color--piedmont: #a1b70d;
-            --wp--preset--color--eno: #339898;
-            --wp--preset--color--magnolia: #1d6363;
-            --wp--preset--color--prussian-blue: #005587;
-            --wp--preset--color--shale-blue: #0577b1;
-            --wp--preset--color--ironweed: #993399;
-            --wp--preset--color--duke-navy-blue-75: #41598f;
-            --wp--preset--color--duke-navy-blue-50: #8090b4;
-            --wp--preset--color--duke-navy-blue-25: #bfc7d9;
-            --wp--preset--color--duke-navy-blue-10: #e5e8f0;
-            --wp--preset--color--dark: #222222;
-            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgb(6, 147, 227) 0%, rgb(155, 81, 224) 100%);
-            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
-            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgb(252, 185, 0) 0%, rgb(255, 105, 0) 100%);
-            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgb(255, 105, 0) 0%, rgb(207, 46, 46) 100%);
-            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
-            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
-            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
-            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
-            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
-            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
-            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
-            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
-            --wp--preset--gradient--dark-bottom: linear-gradient(to top, rgba(1, 33, 105, 0.75) 0%, rgba(1, 33, 105, 0.5) 33.33%, rgba(1, 33, 105, 0) 100%);
-            --wp--preset--gradient--dark-top-and-bottom: linear-gradient(to top, rgba(1, 33, 105, 0.75) 0%, rgba(1, 33, 105, 0.5) 33.33%, rgba(1, 33, 105, 0) 50%, rgba(1, 33, 105, 0) 66.66%, rgba(1, 33, 105, 0.25) 100%);
-            --wp--preset--gradient--bottom-left: radial-gradient(100% 50% at bottom left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-            --wp--preset--gradient--light-bottom: linear-gradient(to top, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.5) 33.33%, rgba(255, 255, 255, 0) 100%);
-            --wp--preset--gradient--light-top-and-bottom: linear-gradient(to top, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.5) 33.33%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 66.66%, rgba(255, 255, 255, 0.25) 100%);
-            --wp--preset--gradient--people: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 150px, rgb(1, 33, 105) 150px, rgb(1, 33, 105) 100%);
-            --wp--preset--font-size--small: clamp(16px, 1rem + ((1vw - 3.2px) * 0.568), 21px);
-            --wp--preset--font-size--medium: clamp(16px, 1.125rem + ((1vw - 5.5px) * 1.136), 28px);
-            --wp--preset--font-size--large: clamp(28px, 1.75rem + ((1vw - 3.2px) * 1.591), 42px);
-            --wp--preset--font-size--x-large: clamp(36px, 2.25rem + ((1vw - 3.2px) * 2.273), 56px);
-            --wp--preset--font-size--x-small: 16px;
-            --wp--preset--font-size--xx-large: clamp(70px, 4.375rem + ((1vw - 3.2px) * 5.682), 120px);
-            --wp--preset--font-family--montserrat: Montserrat, sans-serif;
-            --wp--preset--font-family--quattrocento: Quattrocento, serif;
-            --wp--preset--spacing--20: 10px;
-            --wp--preset--spacing--30: 20px;
-            --wp--preset--spacing--40: 30px;
-            --wp--preset--spacing--50: clamp(30px, 5vw, 40px);
-            --wp--preset--spacing--60: clamp(30px, 7vw, 80px);
-            --wp--preset--spacing--70: clamp(50px, 7vw, 100px);
-            --wp--preset--spacing--80: clamp(70px, 10vw, 140px);
-            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
-            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);
-            --wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);
-            --wp--preset--shadow--card: 0px 2px 5px rgba(0, 0, 0, 0.25);
-            --wp--preset--shadow--sharper: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
-        }
-
-        :root {
-            --wp--style--global--content-size: 1200px;
-            --wp--style--global--wide-size: 1200px;
-        }
-
-        :where(body) {
-            margin: 0;
-        }
-
-        .wp-site-blocks {
-            padding-top: var(--wp--style--root--padding-top);
-            padding-bottom: var(--wp--style--root--padding-bottom);
-        }
-
-        .has-global-padding {
-            padding-right: var(--wp--style--root--padding-right);
-            padding-left: var(--wp--style--root--padding-left);
-        }
-
-        .has-global-padding>.alignfull {
-            margin-right: calc(var(--wp--style--root--padding-right) * -1);
-            margin-left: calc(var(--wp--style--root--padding-left) * -1);
-        }
-
-        .has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) {
-            padding-right: 0;
-            padding-left: 0;
-        }
-
-        .has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull))>.alignfull {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        .wp-site-blocks>.alignleft {
-            float: left;
-            margin-right: 2em;
-        }
-
-        .wp-site-blocks>.alignright {
-            float: right;
-            margin-left: 2em;
-        }
-
-        .wp-site-blocks>.aligncenter {
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        :where(.wp-site-blocks)>* {
-            margin-block-start: var(--wp--preset--spacing--30);
-            margin-block-end: 0;
-        }
-
-        :where(.wp-site-blocks)> :first-child {
-            margin-block-start: 0;
-        }
-
-        :where(.wp-site-blocks)> :last-child {
-            margin-block-end: 0;
-        }
-
-        :root {
-            --wp--style--block-gap: var(--wp--preset--spacing--30);
-        }
-
-        :root :where(.is-layout-flow)> :first-child {
-            margin-block-start: 0;
-        }
-
-        :root :where(.is-layout-flow)> :last-child {
-            margin-block-end: 0;
-        }
-
-        :root :where(.is-layout-flow)>* {
-            margin-block-start: var(--wp--preset--spacing--30);
-            margin-block-end: 0;
-        }
-
-        :root :where(.is-layout-constrained)> :first-child {
-            margin-block-start: 0;
-        }
-
-        :root :where(.is-layout-constrained)> :last-child {
-            margin-block-end: 0;
-        }
-
-        :root :where(.is-layout-constrained)>* {
-            margin-block-start: var(--wp--preset--spacing--30);
-            margin-block-end: 0;
-        }
-
-        :root :where(.is-layout-flex) {
-            gap: var(--wp--preset--spacing--30);
-        }
-
-        :root :where(.is-layout-grid) {
-            gap: var(--wp--preset--spacing--30);
-        }
-
-        .is-layout-flow>.alignleft {
-            float: left;
-            margin-inline-start: 0;
-            margin-inline-end: 2em;
-        }
-
-        .is-layout-flow>.alignright {
-            float: right;
-            margin-inline-start: 2em;
-            margin-inline-end: 0;
-        }
-
-        .is-layout-flow>.aligncenter {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-
-        .is-layout-constrained>.alignleft {
-            float: left;
-            margin-inline-start: 0;
-            margin-inline-end: 2em;
-        }
-
-        .is-layout-constrained>.alignright {
-            float: right;
-            margin-inline-start: 2em;
-            margin-inline-end: 0;
-        }
-
-        .is-layout-constrained>.aligncenter {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-
-        .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-            max-width: var(--wp--style--global--content-size);
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-
-        .is-layout-constrained>.alignwide {
-            max-width: var(--wp--style--global--wide-size);
-        }
-
-        body .is-layout-flex {
-            display: flex;
-        }
-
-        .is-layout-flex {
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .is-layout-flex> :is(*, div) {
-            margin: 0;
-        }
-
-        body .is-layout-grid {
-            display: grid;
-        }
-
-        .is-layout-grid> :is(*, div) {
-            margin: 0;
-        }
-
-        body {
-            background-color: var(--wp--preset--color--base);
-            color: var(--wp--preset--color--contrast);
-            font-family: var(--wp--preset--font-family--quattrocento);
-            font-size: var(--wp--preset--font-size--small);
-            font-style: normal;
-            font-weight: 400;
-            letter-spacing: -1%;
-            line-height: 1.4;
-            --wp--style--root--padding-top: 0em;
-            --wp--style--root--padding-right: var(--wp--preset--spacing--50);
-            --wp--style--root--padding-bottom: 0em;
-            --wp--style--root--padding-left: var(--wp--preset--spacing--50);
-        }
-
-        a:where(:not(.wp-element-button)) {
-            color: currentColor;
-        }
-
-        :root :where(a:where(:not(.wp-element-button)):hover) {
-            text-decoration: none;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: #012169;
-            font-family: var(--wp--preset--font-family--montserrat);
-            font-style: normal;
-            font-weight: 900;
-            letter-spacing: -1%;
-            line-height: 1.125;
-        }
-
-        h1 {
-            color: var(--wp--preset--color--base);
-            font-family: var(--wp--preset--font-family--quattrocento);
-            font-size: var(--wp--preset--font-size--xx-large);
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.1;
-        }
-
-        h2 {
-            font-size: var(--wp--preset--font-size--x-large);
-            line-height: 1.2;
-        }
-
-        h3 {
-            font-size: var(--wp--preset--font-size--large);
-            line-height: 1.3;
-        }
-
-        h4 {
-            font-size: var(--wp--preset--font-size--medium);
-        }
-
-        h5 {
-            font-size: var(--wp--preset--font-size--small);
-            letter-spacing: 0.5px;
-        }
-
-        h6 {
-            font-size: var(--wp--preset--font-size--custom-1);
-            font-style: normal;
-            font-weight: 700;
-            letter-spacing: 1.4px;
-            text-transform: uppercase;
-        }
-
-        :root :where(.wp-element-button, .wp-block-button__link) {
-            background-color: var(--wp--preset--color--contrast);
-            border-width: 0;
-            color: var(--wp--preset--color--base);
-            font-family: inherit;
-            font-size: var(--wp--preset--font-size--medium);
-            font-style: inherit;
-            font-weight: inherit;
-            letter-spacing: inherit;
-            line-height: inherit;
-            padding-top: 1rem;
-            padding-right: 2.25rem;
-            padding-bottom: 1rem;
-            padding-left: 2.25rem;
-            text-decoration: none;
-            text-transform: inherit;
-        }
-
-        :root :where(.wp-element-button:hover, .wp-block-button__link:hover) {
-            background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);
-            border-color: transparent;
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-element-button:focus, .wp-block-button__link:focus) {
-            outline-color: var(--wp--preset--color--accent-4);
-            outline-offset: 2px;
-        }
-
-        :root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption) {
-            font-size: var(--wp--preset--font-size--small);
-            line-height: 1.4;
-        }
-
-        .has-black-color {
-            color: var(--wp--preset--color--black) !important;
-        }
-
-        .has-cyan-bluish-gray-color {
-            color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-
-        .has-white-color {
-            color: var(--wp--preset--color--white) !important;
-        }
-
-        .has-pale-pink-color {
-            color: var(--wp--preset--color--pale-pink) !important;
-        }
-
-        .has-vivid-red-color {
-            color: var(--wp--preset--color--vivid-red) !important;
-        }
-
-        .has-luminous-vivid-orange-color {
-            color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-amber-color {
-            color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-
-        .has-light-green-cyan-color {
-            color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-
-        .has-vivid-green-cyan-color {
-            color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-
-        .has-pale-cyan-blue-color {
-            color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-
-        .has-vivid-cyan-blue-color {
-            color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-
-        .has-vivid-purple-color {
-            color: var(--wp--preset--color--vivid-purple) !important;
-        }
-
-        .has-base-color {
-            color: var(--wp--preset--color--base) !important;
-        }
-
-        .has-duke-navy-blue-100-color {
-            color: var(--wp--preset--color--duke-navy-blue-100) !important;
-        }
-
-        .has-duke-royal-blue-color {
-            color: var(--wp--preset--color--duke-royal-blue) !important;
-        }
-
-        .has-copper-color {
-            color: var(--wp--preset--color--copper) !important;
-        }
-
-        .has-persimmon-color {
-            color: var(--wp--preset--color--persimmon) !important;
-        }
-
-        .has-dandelion-color {
-            color: var(--wp--preset--color--dandelion) !important;
-        }
-
-        .has-piedmont-color {
-            color: var(--wp--preset--color--piedmont) !important;
-        }
-
-        .has-eno-color {
-            color: var(--wp--preset--color--eno) !important;
-        }
-
-        .has-magnolia-color {
-            color: var(--wp--preset--color--magnolia) !important;
-        }
-
-        .has-prussian-blue-color {
-            color: var(--wp--preset--color--prussian-blue) !important;
-        }
-
-        .has-shale-blue-color {
-            color: var(--wp--preset--color--shale-blue) !important;
-        }
-
-        .has-ironweed-color {
-            color: var(--wp--preset--color--ironweed) !important;
-        }
-
-        .has-duke-navy-blue-75-color {
-            color: var(--wp--preset--color--duke-navy-blue-75) !important;
-        }
-
-        .has-duke-navy-blue-50-color {
-            color: var(--wp--preset--color--duke-navy-blue-50) !important;
-        }
-
-        .has-duke-navy-blue-25-color {
-            color: var(--wp--preset--color--duke-navy-blue-25) !important;
-        }
-
-        .has-duke-navy-blue-10-color {
-            color: var(--wp--preset--color--duke-navy-blue-10) !important;
-        }
-
-        .has-dark-color {
-            color: var(--wp--preset--color--dark) !important;
-        }
-
-        .has-black-background-color {
-            background-color: var(--wp--preset--color--black) !important;
-        }
-
-        .has-cyan-bluish-gray-background-color {
-            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-
-        .has-white-background-color {
-            background-color: var(--wp--preset--color--white) !important;
-        }
-
-        .has-pale-pink-background-color {
-            background-color: var(--wp--preset--color--pale-pink) !important;
-        }
-
-        .has-vivid-red-background-color {
-            background-color: var(--wp--preset--color--vivid-red) !important;
-        }
-
-        .has-luminous-vivid-orange-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-amber-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-
-        .has-light-green-cyan-background-color {
-            background-color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-
-        .has-vivid-green-cyan-background-color {
-            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-
-        .has-pale-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-
-        .has-vivid-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-
-        .has-vivid-purple-background-color {
-            background-color: var(--wp--preset--color--vivid-purple) !important;
-        }
-
-        .has-base-background-color {
-            background-color: var(--wp--preset--color--base) !important;
-        }
-
-        .has-duke-navy-blue-100-background-color {
-            background-color: var(--wp--preset--color--duke-navy-blue-100) !important;
-        }
-
-        .has-duke-royal-blue-background-color {
-            background-color: var(--wp--preset--color--duke-royal-blue) !important;
-        }
-
-        .has-copper-background-color {
-            background-color: var(--wp--preset--color--copper) !important;
-        }
-
-        .has-persimmon-background-color {
-            background-color: var(--wp--preset--color--persimmon) !important;
-        }
-
-        .has-dandelion-background-color {
-            background-color: var(--wp--preset--color--dandelion) !important;
-        }
-
-        .has-piedmont-background-color {
-            background-color: var(--wp--preset--color--piedmont) !important;
-        }
-
-        .has-eno-background-color {
-            background-color: var(--wp--preset--color--eno) !important;
-        }
-
-        .has-magnolia-background-color {
-            background-color: var(--wp--preset--color--magnolia) !important;
-        }
-
-        .has-prussian-blue-background-color {
-            background-color: var(--wp--preset--color--prussian-blue) !important;
-        }
-
-        .has-shale-blue-background-color {
-            background-color: var(--wp--preset--color--shale-blue) !important;
-        }
-
-        .has-ironweed-background-color {
-            background-color: var(--wp--preset--color--ironweed) !important;
-        }
-
-        .has-duke-navy-blue-75-background-color {
-            background-color: var(--wp--preset--color--duke-navy-blue-75) !important;
-        }
-
-        .has-duke-navy-blue-50-background-color {
-            background-color: var(--wp--preset--color--duke-navy-blue-50) !important;
-        }
-
-        .has-duke-navy-blue-25-background-color {
-            background-color: var(--wp--preset--color--duke-navy-blue-25) !important;
-        }
-
-        .has-duke-navy-blue-10-background-color {
-            background-color: var(--wp--preset--color--duke-navy-blue-10) !important;
-        }
-
-        .has-dark-background-color {
-            background-color: var(--wp--preset--color--dark) !important;
-        }
-
-        .has-black-border-color {
-            border-color: var(--wp--preset--color--black) !important;
-        }
-
-        .has-cyan-bluish-gray-border-color {
-            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-
-        .has-white-border-color {
-            border-color: var(--wp--preset--color--white) !important;
-        }
-
-        .has-pale-pink-border-color {
-            border-color: var(--wp--preset--color--pale-pink) !important;
-        }
-
-        .has-vivid-red-border-color {
-            border-color: var(--wp--preset--color--vivid-red) !important;
-        }
-
-        .has-luminous-vivid-orange-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-amber-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-
-        .has-light-green-cyan-border-color {
-            border-color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-
-        .has-vivid-green-cyan-border-color {
-            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-
-        .has-pale-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-
-        .has-vivid-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-
-        .has-vivid-purple-border-color {
-            border-color: var(--wp--preset--color--vivid-purple) !important;
-        }
-
-        .has-base-border-color {
-            border-color: var(--wp--preset--color--base) !important;
-        }
-
-        .has-duke-navy-blue-100-border-color {
-            border-color: var(--wp--preset--color--duke-navy-blue-100) !important;
-        }
-
-        .has-duke-royal-blue-border-color {
-            border-color: var(--wp--preset--color--duke-royal-blue) !important;
-        }
-
-        .has-copper-border-color {
-            border-color: var(--wp--preset--color--copper) !important;
-        }
-
-        .has-persimmon-border-color {
-            border-color: var(--wp--preset--color--persimmon) !important;
-        }
-
-        .has-dandelion-border-color {
-            border-color: var(--wp--preset--color--dandelion) !important;
-        }
-
-        .has-piedmont-border-color {
-            border-color: var(--wp--preset--color--piedmont) !important;
-        }
-
-        .has-eno-border-color {
-            border-color: var(--wp--preset--color--eno) !important;
-        }
-
-        .has-magnolia-border-color {
-            border-color: var(--wp--preset--color--magnolia) !important;
-        }
-
-        .has-prussian-blue-border-color {
-            border-color: var(--wp--preset--color--prussian-blue) !important;
-        }
-
-        .has-shale-blue-border-color {
-            border-color: var(--wp--preset--color--shale-blue) !important;
-        }
-
-        .has-ironweed-border-color {
-            border-color: var(--wp--preset--color--ironweed) !important;
-        }
-
-        .has-duke-navy-blue-75-border-color {
-            border-color: var(--wp--preset--color--duke-navy-blue-75) !important;
-        }
-
-        .has-duke-navy-blue-50-border-color {
-            border-color: var(--wp--preset--color--duke-navy-blue-50) !important;
-        }
-
-        .has-duke-navy-blue-25-border-color {
-            border-color: var(--wp--preset--color--duke-navy-blue-25) !important;
-        }
-
-        .has-duke-navy-blue-10-border-color {
-            border-color: var(--wp--preset--color--duke-navy-blue-10) !important;
-        }
-
-        .has-dark-border-color {
-            border-color: var(--wp--preset--color--dark) !important;
-        }
-
-        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
-        }
-
-        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
-        }
-
-        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
-        }
-
-        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
-        }
-
-        .has-cool-to-warm-spectrum-gradient-background {
-            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
-        }
-
-        .has-blush-light-purple-gradient-background {
-            background: var(--wp--preset--gradient--blush-light-purple) !important;
-        }
-
-        .has-blush-bordeaux-gradient-background {
-            background: var(--wp--preset--gradient--blush-bordeaux) !important;
-        }
-
-        .has-luminous-dusk-gradient-background {
-            background: var(--wp--preset--gradient--luminous-dusk) !important;
-        }
-
-        .has-pale-ocean-gradient-background {
-            background: var(--wp--preset--gradient--pale-ocean) !important;
-        }
-
-        .has-electric-grass-gradient-background {
-            background: var(--wp--preset--gradient--electric-grass) !important;
-        }
-
-        .has-midnight-gradient-background {
-            background: var(--wp--preset--gradient--midnight) !important;
-        }
-
-        .has-dark-bottom-gradient-background {
-            background: var(--wp--preset--gradient--dark-bottom) !important;
-        }
-
-        .has-dark-top-and-bottom-gradient-background {
-            background: var(--wp--preset--gradient--dark-top-and-bottom) !important;
-        }
-
-        .has-bottom-left-gradient-background {
-            background: var(--wp--preset--gradient--bottom-left) !important;
-        }
-
-        .has-light-bottom-gradient-background {
-            background: var(--wp--preset--gradient--light-bottom) !important;
-        }
-
-        .has-light-top-and-bottom-gradient-background {
-            background: var(--wp--preset--gradient--light-top-and-bottom) !important;
-        }
-
-        .has-people-gradient-background {
-            background: var(--wp--preset--gradient--people) !important;
-        }
-
-        .has-small-font-size {
-            font-size: var(--wp--preset--font-size--small) !important;
-        }
-
-        .has-medium-font-size {
-            font-size: var(--wp--preset--font-size--medium) !important;
-        }
-
-        .has-large-font-size {
-            font-size: var(--wp--preset--font-size--large) !important;
-        }
-
-        .has-x-large-font-size {
-            font-size: var(--wp--preset--font-size--x-large) !important;
-        }
-
-        .has-x-small-font-size {
-            font-size: var(--wp--preset--font-size--x-small) !important;
-        }
-
-        .has-xx-large-font-size {
-            font-size: var(--wp--preset--font-size--xx-large) !important;
-        }
-
-        .has-montserrat-font-family {
-            font-family: var(--wp--preset--font-family--montserrat) !important;
-        }
-
-        .has-quattrocento-font-family {
-            font-family: var(--wp--preset--font-family--quattrocento) !important;
-        }
-
-        :root :where(.wp-block-button .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            font-family: var(--wp--preset--font-family--montserrat);
-            font-size: var(--wp--preset--font-size--x-small);
-            font-style: normal;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        :root :where(.wp-block-button .wp-block-button__link a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-post-template) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-post-template a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-columns) {
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-top: var(--wp--preset--spacing--60);
-            padding-bottom: var(--wp--preset--spacing--60);
-        }
-
-        :root :where(.wp-block-columns-is-layout-flow)> :first-child {
-            margin-block-start: 0;
-        }
-
-        :root :where(.wp-block-columns-is-layout-flow)> :last-child {
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-columns-is-layout-flow)>* {
-            margin-block-start: var(--wp--preset--spacing--50);
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-columns-is-layout-constrained)> :first-child {
-            margin-block-start: 0;
-        }
-
-        :root :where(.wp-block-columns-is-layout-constrained)> :last-child {
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-columns-is-layout-constrained)>* {
-            margin-block-start: var(--wp--preset--spacing--50);
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-columns-is-layout-flex) {
-            gap: var(--wp--preset--spacing--50);
-        }
-
-        :root :where(.wp-block-columns-is-layout-grid) {
-            gap: var(--wp--preset--spacing--50);
-        }
-
-        :root :where(.wp-block-buttons-is-layout-flow)> :first-child {
-            margin-block-start: 0;
-        }
-
-        :root :where(.wp-block-buttons-is-layout-flow)> :last-child {
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-buttons-is-layout-flow)>* {
-            margin-block-start: 16px;
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-buttons-is-layout-constrained)> :first-child {
-            margin-block-start: 0;
-        }
-
-        :root :where(.wp-block-buttons-is-layout-constrained)> :last-child {
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-buttons-is-layout-constrained)>* {
-            margin-block-start: 16px;
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-buttons-is-layout-flex) {
-            gap: 16px;
-        }
-
-        :root :where(.wp-block-buttons-is-layout-grid) {
-            gap: 16px;
-        }
-
-        :root :where(.wp-block-column) {
-            padding-top: 0;
-        }
-
-        :root :where(.wp-block-image) {
-            margin-bottom: var(--wp--preset--spacing--50);
-        }
-
-        :root :where(.wp-block-list li) {
-            margin-top: 0.5rem;
-        }
-
-        :root :where(.wp-block-navigation) {
-            font-size: var(--wp--preset--font-size--medium);
-        }
-
-        :root :where(.wp-block-navigation-is-layout-flow)> :first-child {
-            margin-block-start: 0;
-        }
-
-        :root :where(.wp-block-navigation-is-layout-flow)> :last-child {
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-navigation-is-layout-flow)>* {
-            margin-block-start: var(--wp--preset--spacing--30);
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-navigation-is-layout-constrained)> :first-child {
-            margin-block-start: 0;
-        }
-
-        :root :where(.wp-block-navigation-is-layout-constrained)> :last-child {
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-navigation-is-layout-constrained)>* {
-            margin-block-start: var(--wp--preset--spacing--30);
-            margin-block-end: 0;
-        }
-
-        :root :where(.wp-block-navigation-is-layout-flex) {
-            gap: var(--wp--preset--spacing--30);
-        }
-
-        :root :where(.wp-block-navigation-is-layout-grid) {
-            gap: var(--wp--preset--spacing--30);
-        }
-
-        :root :where(.wp-block-navigation a:where(:not(.wp-element-button))) {
-            text-decoration: none;
-        }
-
-        :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover) {
-            text-decoration: underline;
-        }
-
-        :root :where(.wp-block-post-title a:where(:not(.wp-element-button))) {
-            text-decoration: none;
-        }
-
-        :root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover) {
-            text-decoration: underline;
-        }
-
-        :root :where(.wp-block-separator) {
-            border-color: currentColor;
-            border-width: 0 0 1px 0;
-            border-style: solid;
-            color: var(--wp--preset--color--accent-6);
-        }
-
-        :root :where(p) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            margin-top: var(--wp--preset--spacing--30);
-            margin-bottom: var(--wp--preset--spacing--30);
-        }
-
-        :root :where(p a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        :root :where(.wp-block-cover h1, .wp-block-cover h2, .wp-block-cover h3, .wp-block-cover h4, .wp-block-cover h5, .wp-block-cover h6) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root {
-            --wp--preset--duotone--duke-dark-duotone: url(#wp-duotone-duke-dark-duotone);
-        }
-
-        /*# sourceURL=global-styles-inline-css */
-    </style>
-    <style id="block-style-variation-styles-inline-css">
-        :root :where(.is-style-primary-dark-small--1 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-small--1 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-small--2 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-small--2 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--3 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--3 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-small--4 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-small--4 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--5 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--5 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--6 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--6 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-medium--7 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-medium--7 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-medium--8 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-medium--8 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--9 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--9 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-medium--10 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-medium--10 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-medium--11 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-medium--11 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--12 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--12 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-medium--13 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-medium--13 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--14 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--14 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--15 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--15 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--16 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--16 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--17 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--17 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--18 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--18 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--19 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--19 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--20 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--20 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--21 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--21 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--22 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--22 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-medium--23 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-medium--23 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--24 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--24 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--25 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--25 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--26 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--26 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--27 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--27 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--28 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--28 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-medium--29 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-medium--29 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--30 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--30 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--31 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--31 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--32 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--32 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-dark-medium--33 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-dark-medium--33 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--duke-navy-blue-100);
-            border-radius: 50px;
-            color: var(--wp--preset--color--base);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-medium--34 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-medium--34 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        :root :where(.is-style-primary-light-small--35 a:where(:not(.wp-element-button))) {
-            color: var(--wp--preset--color--base);
-        }
-
-        :root :where(.wp-block-button.is-style-primary-light-small--35 .wp-block-button__link) {
-            background-color: var(--wp--preset--color--base);
-            border-radius: 50px;
-            color: var(--wp--preset--color--duke-navy-blue-100);
-            padding-top: 0;
-            padding-right: 1rem;
-            padding-bottom: 0;
-            padding-left: 0;
-        }
-
-        /*# sourceURL=block-style-variation-styles-inline-css */
-    </style>
-    <style id="core-block-supports-inline-css">
-        .wp-container-content-9cfa9a5a {
-            flex-grow: 1;
-        }
-
-        .wp-container-duke-blocks-duke-wordmark-is-layout-96c13699 {
-            justify-content: center;
-        }
-
-        .wp-container-core-columns-is-layout-416ca3c9 {
-            flex-wrap: nowrap;
-        }
-
-        .wp-elements-01e6859231774ecc3c1449f84e839f1d a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-buttons-is-layout-3b8eca09 {
-            justify-content: flex-start;
-        }
-
-        .wp-container-core-buttons-is-layout-a8eaa7b7 {
-            justify-content: flex-start;
-        }
-
-        .wp-container-core-navigation-is-layout-4b402857 {
-            gap: 4px;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .wp-container-core-navigation-is-layout-fa9245c9 {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .wp-container-core-columns-is-layout-41d30db9 {
-            flex-wrap: nowrap;
-        }
-
-        .wp-container-core-navigation-is-layout-5f5a613a {
-            justify-content: space-between;
-        }
-
-        .wp-container-core-group-is-layout-ad7cbdd5>.alignfull {
-            margin-right: calc(0px * -1);
-            margin-left: calc(0px * -1);
-        }
-
-        .wp-container-duke-blocks-duke-menu-is-layout-3021abf7 {
-            justify-content: flex-end;
-        }
-
-        .wp-container-core-column-is-layout-242f6b88>* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-column-is-layout-242f6b88>*+* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-columns-is-layout-8f6eac6f {
-            flex-wrap: nowrap;
-            gap: var(--wp--preset--spacing--50) 0;
-        }
-
-        .wp-container-core-group-is-layout-d7f5c09a>.alignfull {
-            margin-right: calc(25px * -1);
-            margin-left: calc(25px * -1);
-        }
-
-        .wp-elements-955250753deb89f205ceab567c9fd8de a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-1fd25fda0ed32a7816cd642d2e7bb932 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-9fe29ccce84df4279f20f3831f8d4f41 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-group-is-layout-c5077547>* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-group-is-layout-c5077547>*+* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-columns-is-layout-84f39ac1 {
-            flex-wrap: nowrap;
-        }
-
-        .wp-container-core-columns-is-layout-caa0caa4 {
-            flex-wrap: nowrap;
-        }
-
-        .wp-container-core-group-is-layout-b032b897> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-            max-width: 800px;
-            margin-left: 0 !important;
-            margin-right: auto !important;
-        }
-
-        .wp-container-core-group-is-layout-b032b897>.alignwide {
-            max-width: 800px;
-        }
-
-        .wp-container-core-group-is-layout-b032b897 .alignfull {
-            max-width: none;
-        }
-
-        .wp-elements-d666ec3fb07a1a1adefccf2c73b37b2a a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-619a58a8efcd8ba6f34bcc38805c7fb1 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-buttons-is-layout-3189c7ba {
-            justify-content: center;
-            align-items: center;
-        }
-
-        .wp-container-core-columns-is-layout-794e3cfa {
-            flex-wrap: nowrap;
-        }
-
-        .wp-container-core-group-is-layout-d4c2d7a2>.alignfull {
-            margin-right: calc(0px * -1);
-            margin-left: calc(0px * -1);
-        }
-
-        .wp-container-core-group-is-layout-cb0a7ccb {
-            flex-wrap: nowrap;
-        }
-
-        .wp-elements-8eaa53cac104308e4b35db47531f2600 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--dark);
-        }
-
-        .wp-container-content-82ea18c2 {
-            flex-basis: 60px;
-        }
-
-        .wp-container-duke-blocks-chiclets-is-layout-b080bfe2 {
-            justify-content: flex-start;
-        }
-
-        .wp-elements-14d6d3902db2698dab8f7fd608c33426 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--dark);
-        }
-
-        .wp-container-core-group-is-layout-fca48da3 {
-            gap: var(--wp--preset--spacing--20);
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .wp-container-core-group-is-layout-3ed21ea6 {
-            flex-wrap: nowrap;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .wp-elements-97fe37fb3394406c38a2728b4fa0edfa a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--dark);
-        }
-
-        .wp-container-core-group-is-layout-066b3ea0 {
-            gap: var(--wp--preset--spacing--30);
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-        }
-
-        .wp-container-core-columns-is-layout-a8cae133 {
-            flex-wrap: nowrap;
-            gap: var(--wp--preset--spacing--50) 0;
-        }
-
-        .wp-elements-18ecd5d9208a4e2007830eb7d1519c61 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-container-core-group-is-layout-b910bbcf {
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-        }
-
-        .wp-elements-8c4b6b66c353996eb6dfaa820621e773 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-22ef0e47aea84aba3c3df38bb5e1d5f8 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-5142f02b0c614e51edf19dac621a99bc a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-635ba825b0bf53f56e4108d31b84a77f a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-50cc7e6115685682525b0ea0a6aa59ab a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-group-is-layout-9ff1a97f>.alignfull {
-            margin-right: calc(var(--wp--preset--spacing--30) * -1);
-            margin-left: calc(var(--wp--preset--spacing--30) * -1);
-        }
-
-        .wp-elements-b291a4472d179b524cbcb9c5d0163bdd a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-container-core-columns-is-layout-cd4eac57 {
-            flex-wrap: nowrap;
-        }
-
-        .wp-container-core-group-is-layout-8f766fc5> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-            max-width: 800px;
-            margin-left: 0 !important;
-            margin-right: auto !important;
-        }
-
-        .wp-container-core-group-is-layout-8f766fc5>.alignwide {
-            max-width: 800px;
-        }
-
-        .wp-container-core-group-is-layout-8f766fc5 .alignfull {
-            max-width: none;
-        }
-
-        .wp-elements-858f4aa8185c6bf63a22b51644e8a915 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-ff90a6be266100604d98111c8e4c8ed0 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-071a3ce6d91392eb3f0e02020d05bfaa a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-5faa2b9987e00f5785be71dae89720f5 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-b00f2a4c732c14a5cfd3107889a4c670 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-container-core-group-is-layout-c28032c9> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-            max-width: 340px;
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-
-        .wp-container-core-group-is-layout-c28032c9>.alignwide {
-            max-width: 340px;
-        }
-
-        .wp-container-core-group-is-layout-c28032c9 .alignfull {
-            max-width: none;
-        }
-
-        .wp-elements-04999eb3973aa1527eb0abb37c971e90 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-b7a8a21c051169c834f1bb947d068cbb a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-3bed0541b8c42934b814b3b24d9e70c8 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-196f5e69fb23141abef5c71f459b5d7b a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-cd5ddc62918bfb73dc3d3b11c5c062d3 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-4a9bc7c0939dc486721835933eb83450 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-7e1710630b9bee4e3d3c3bd24027973a a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-49cf8b9b6fe9b50038b6cbae006b8af9 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-container-core-group-is-layout-d36b1503>.alignfull {
-            margin-right: calc(var(--wp--preset--spacing--30) * -1);
-            margin-left: calc(var(--wp--preset--spacing--30) * -1);
-        }
-
-        .wp-container-core-group-is-layout-d36b1503> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-            margin-left: 0 !important;
-        }
-
-        .wp-elements-81af11fdabe43f41d4f7d662aa915ed4 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-53507784cbc4c0ea9679922787688999 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-0b4963de119af236a5490b875780c197 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-76a01a192e0fa1b05787338ba182898d a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-d785613027fc3c8d78435e1eefd22bad a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-7c2a1c1f9d4f6cc865f19901ce981854 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-f42a9e8f7ea6ebaa782d3e7839d714e5 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-607794baf6b0f9dba7fe7abdda5d0b1e a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-910bfb487f12659b820d9c49311b7baa a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-b59813ad3e1a60ea8ab52bbafffa3dc7 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-container-core-columns-is-layout-70bf7037 {
-            flex-wrap: nowrap;
-        }
-
-        .wp-elements-1c5e1baeb3e57731e345eff92b21dcb5 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-container-core-columns-is-layout-2b2695dc {
-            flex-wrap: nowrap;
-            gap: var(--wp--preset--spacing--50) 0;
-        }
-
-        .wp-elements-78c6203f8eedc05832df5728d65b0123 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-group-is-layout-72dba8ef> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-            max-width: 800px;
-            margin-left: 0 !important;
-            margin-right: auto !important;
-        }
-
-        .wp-container-core-group-is-layout-72dba8ef>.alignwide {
-            max-width: 800px;
-        }
-
-        .wp-container-core-group-is-layout-72dba8ef .alignfull {
-            max-width: none;
-        }
-
-        .wp-elements-361e7c22dd671f5a5785cde53c6f52df a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-87f4f530c5e4c6d26c6c33845640445c a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-131bd4033784e5b19f0f770b02dcb583 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-81f09facc3ec6fae3cd0b97f5a2842b5 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-6e0a6197f637c45d7f587f21447c9aba a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--duke-navy-blue-100);
-        }
-
-        .wp-elements-60f1d2b986126c3427f2f1abe4d00c8f a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-elements-19ca0cb68ae28d910229d8d0989e7302 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-post-content-is-layout-c56d1cb8>* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-post-content-is-layout-c56d1cb8>*+* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-post-template-is-layout-dd88eefc>* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-post-template-is-layout-dd88eefc>*+* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-group-is-layout-fdcf2c57>* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-group-is-layout-fdcf2c57>*+* {
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-
-        .wp-container-core-cover-is-layout-26aacd2d> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-            max-width: 1200px;
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-
-        .wp-container-core-cover-is-layout-26aacd2d>.alignwide {
-            max-width: 1200px;
-        }
-
-        .wp-container-core-cover-is-layout-26aacd2d .alignfull {
-            max-width: none;
-        }
-
-        .wp-container-core-post-template-is-layout-5d2a8508 {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: var(--wp--preset--spacing--50);
-        }
-
-        .wp-container-core-cover-is-layout-990fd6b6> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-            max-width: 1200px;
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-
-        .wp-container-core-cover-is-layout-990fd6b6>.alignwide {
-            max-width: 1200px;
-        }
-
-        .wp-container-core-cover-is-layout-990fd6b6 .alignfull {
-            max-width: none;
-        }
-
-        .wp-elements-1f4bd98c52fbb68be71f1d2c25cfa683 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-duke-blocks-duke-wordmark-is-layout-dc891128 {
-            justify-content: center;
-        }
-
-        .wp-container-core-group-is-layout-059bc41c> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-            margin-left: 0 !important;
-        }
-
-        .wp-elements-2d18eadb6f0d74825bcbe86685f54c45 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-social-links-is-layout-615c5081 {
-            gap: var(--wp--preset--spacing--30) var(--wp--preset--spacing--20);
-        }
-
-        .wp-container-core-group-is-layout-043a3978 {
-            gap: var(--wp--preset--spacing--40);
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .wp-elements-e871137740da588c19eddb48eb3ff9c1 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-group-is-layout-9f4c0533 {
-            gap: var(--wp--preset--spacing--20);
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .wp-container-core-group-is-layout-f41a3fee {
-            gap: 0;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .wp-elements-c9507defba1106132f5a01b31286062c a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-group-is-layout-f584d1b2 {
-            gap: var(--wp--preset--spacing--20);
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .wp-elements-67a3a29f737f1c5d81953c82146a8576 a:where(:not(.wp-element-button)) {
-            color: var(--wp--preset--color--base);
-        }
-
-        .wp-container-core-group-is-layout-fc3e210c {
-            gap: var(--wp--preset--spacing--20);
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .wp-container-core-group-is-layout-beab95b8 {
-            gap: var(--wp--preset--spacing--60);
-            align-items: flex-start;
-        }
-
-        .wp-container-core-group-is-layout-28c96c19 {
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-
-        .wp-duotone-duke-dark-duotone.wp-block-cover>.wp-block-cover__image-background,
-        .wp-duotone-duke-dark-duotone.wp-block-cover>.wp-block-cover__video-background {
-            filter: var(--wp--preset--duotone--duke-dark-duotone);
-        }
-
-        /*# sourceURL=core-block-supports-inline-css */
-    </style>
-    <link rel="stylesheet" id="duke-alertbar-css" href="https://www.duke.edu/wp-content/plugins/duke-alertbar/public/css/duke-alertbar-public.css?ver=1.0.0" media="all">
-    <link rel="stylesheet" id="duke-alertbar-styles-css" href="https://alertbar.oit.duke.edu/sites/all/themes/blackwell/css/alert.css?ver=1.0.0" media="screen">
-    <link rel="stylesheet" id="dukehomepageblocks-style-css" href="https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/styles/styles.css?ver=1.3" media="all">
-    <script id="duke-block-homepage-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/js/duke-blocks-frontend.js?ver=1772484105"></script>
-    <script data-wp-strategy="defer" defer id="duke-blocks-duke-menu-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/duke-menu/view.js?ver=2ee6d6e39e96cf0add6b"></script>
-    <script data-wp-strategy="defer" defer id="duke-blocks-hidden-content-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/hidden-content/view.js?ver=31d6cfe0d16ae931b73c"></script>
-    <script data-wp-strategy="defer" defer id="duke-blocks-section-heading-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/section-heading/view.js?ver=f8f2baec9ab8281305fd"></script>
-    <script data-wp-strategy="defer" defer id="duke-blocks-story-card-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/story-card/view.js?ver=d36e991ddd7a8169663d"></script>
-    <script data-wp-strategy="defer" defer id="duke-blocks-video-view-script-js" src="https://www.duke.edu/wp-content/plugins/duke-blocks/build/video/view.js?ver=f05780a798ab99b93e02"></script>
-    <script id="jquery-core-js" src="https://www.duke.edu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-    <script id="jquery-migrate-js" src="https://www.duke.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
-    <script id="duke-alertbar-js" src="https://www.duke.edu/wp-content/plugins/duke-alertbar/public/js/duke-alertbar-public.js?ver=1.0.0"></script>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PSPVTBK');
-    </script>
-    <!-- End Google Tag Manager -->
-    <meta name="ssp-config-path" content="https://www.duke.edu/wp-content/uploads/simply-static/configs/">
-    <meta name="ssp-config-version" content="1788193045">
-    <meta name="ssp-origin-url" content="https://www.duke.edu/">
-
-    <style class="wp-fonts-local">
-        @font-face {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 400;
-            font-display: fallback;
-            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
-        }
-
-        @font-face {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 700;
-            font-display: fallback;
-            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
-        }
-
-        @font-face {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 900;
-            font-display: fallback;
-            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
-        }
-
-        @font-face {
-            font-family: Montserrat;
-            font-style: italic;
-            font-weight: 400;
-            font-display: fallback;
-            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-        }
-
-        @font-face {
-            font-family: Montserrat;
-            font-style: italic;
-            font-weight: 700;
-            font-display: fallback;
-            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-        }
-
-        @font-face {
-            font-family: Montserrat;
-            font-style: italic;
-            font-weight: 900;
-            font-display: fallback;
-            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-        }
-
-        @font-face {
-            font-family: Quattrocento;
-            font-style: normal;
-            font-weight: 700;
-            font-display: fallback;
-            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/quattrocento/Quattrocento-Bold.ttf') format('truetype');
-        }
-
-        @font-face {
-            font-family: Quattrocento;
-            font-style: normal;
-            font-weight: 400;
-            font-display: fallback;
-            src: url('https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/fonts/quattrocento/Quattrocento-Regular.ttf') format('truetype');
-        }
-    </style>
-    <link rel="icon" href="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-32x32.png" sizes="32x32">
-    <link rel="icon" href="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-180x180.png">
-    <meta name="msapplication-TileImage" content="https://www.duke.edu/wp-content/uploads/2025/12/cropped-dfavicon-1-270x270.png">
-</head>
-
-<body class="home blog wp-embed-responsive wp-theme-duke-block-homepage">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSPVTBK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <div class="wp-site-blocks">
-        <header class="wp-block-template-part">
-            <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-d7f5c09a wp-block-group-is-layout-constrained" style="border-top-color:var(--wp--preset--color--duke-navy-blue-100);border-top-width:5px;padding-right:25px;padding-bottom:var(--wp--preset--spacing--30);padding-left:25px">
-                <div class="wp-block-columns is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-8f6eac6f wp-block-columns-is-layout-flex" style="border-style:none;border-width:0px;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0">
-                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                        <a class="skip-link screen-reader-text" id="wp-skip-link" href="#wp--skip-link--target">Skip to content</a>
-                    </div>
-
-
-
-                    <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:199px">
-                        <div class="wp-block-duke-blocks-duke-wordmark aligncenter wp-container-content-9cfa9a5a is-content-justification-center is-layout-flex wp-container-duke-blocks-duke-wordmark-is-layout-96c13699 wp-block-duke-blocks-duke-wordmark-is-layout-flex" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:25px;padding-right:0px;padding-bottom:25px;padding-left:0px">
-                            <h1 class="duke-wordmark-h1"><a href="https://www.duke.edu/" title="Home"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/duke-wordmark-white.svg" alt="Duke"></a></h1>
-                        </div>
-                    </div>
-
-
-
-                    <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-container-core-column-is-layout-242f6b88 wp-block-column-is-layout-flow">
-                        <nav class="wp-block-duke-blocks-duke-menu">
-                            <ul class="highlights">
-                                <li><a href="https://www.duke.edu/academics/" class="duke-menu-highlighted-item">Academics</a></li>
-                                <li><a href="https://www.duke.edu/research/" class="duke-menu-highlighted-item">Research</a></li>
-                                <li><a href="https://www.duke.edu/admissions/" class="duke-menu-highlighted-item">Admissions</a></li>
-                            </ul><button class="duke-menu-toggle" aria-label="Full main menu toggle" aria-expanded="false" aria-controls="duke-menu-overlay"></button>
-                            <div id="duke-menu-overlay" class="duke-menu-overlay is-content-justification-right is-layout-flex wp-container-duke-blocks-duke-menu-is-layout-3021abf7 wp-block-duke-blocks-duke-menu-is-layout-flex">
-                                <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-ad7cbdd5 wp-block-group-is-layout-constrained" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
-                                    <div class="wp-block-columns alignwide is-not-stacked-on-mobile is-layout-flex wp-container-core-columns-is-layout-416ca3c9 wp-block-columns-is-layout-flex" style="border-top-color:var(--wp--preset--color--duke-navy-blue-100);border-top-width:5px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;padding-top:0px;padding-right:0px;padding-bottom:25px;padding-left:0px">
-                                        <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"></div>
-
-
-
-                                        <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:199px">
-                                            <div style="padding:25px" class="wp-block-duke-blocks-duke-wordmark is-layout-flow wp-block-duke-blocks-duke-wordmark-is-layout-flow">
-                                                <h1 class="duke-wordmark-h1"><a href="https://www.duke.edu/" title="Home"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/duke-wordmark-white.svg" alt="Duke"></a></h1>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
-                                            <button class="alignright duke-menu-toggle">Close Menu</button>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-41d30db9 wp-block-columns-is-layout-flex" style="margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-bottom:0">
-                                        <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-bottom:0;flex-basis:35%">
-                                            <h2 class="wp-block-heading has-base-color has-text-color has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--40)">News</h2>
-
-
-
-                                            <figure class="wp-block-image is-resized"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/dt-logo.svg" alt="Duke Today logo" style="height:50px"></figure>
-
-
-
-                                            <p class="has-base-color has-text-color has-link-color wp-elements-01e6859231774ecc3c1449f84e839f1d wp-block-paragraph">Read the latest news from across campus on <a href="https://today.duke.edu/">Duke Today</a>.</p>
-
-
-
-                                            <figure class="wp-block-image is-resized" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--30)"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/dd-white.svg" alt="Duke Delivered logo" style="width:auto;height:90px"></figure>
-
-
-
-                                            <div class="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-3b8eca09 wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-small is-style-primary-dark-small--1"><a class="wp-block-button__link wp-element-button" href="https://app.e2ma.net/app2/audience/signup/1922162/1890632/">Subscribe</a></div>
-                                            </div>
-
-
-
-                                            <hr class="wp-block-separator has-text-color has-duke-navy-blue-75-color has-alpha-channel-opacity has-duke-navy-blue-75-background-color has-background is-style-default" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--30)">
-
-
-
-                                            <div class="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-a8eaa7b7 wp-block-buttons-is-layout-flex" style="margin-top:0;margin-bottom:0">
-                                                <div class="wp-block-button is-style-primary-dark-small is-style-primary-dark-small--2"><a class="wp-block-button__link wp-element-button" href="https://www.duke.edu/archive/">Feature Archive</a></div>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:30%">
-                                            <h2 class="wp-block-heading has-base-color has-text-color" style="margin-bottom:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--large)">Search</h2>
-
-
-
-                                            <div style="border-radius:4px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);font-size:14px;font-weight:700" class="wp-block-duke-blocks-duke-search is-layout-flex wp-block-duke-blocks-duke-search-is-layout-flex">
-                                                <form action="https://search.duke.edu/search/web/"><label for="duke-search-25e8f0f7-65c0-4fcb-97c6-9b71635f93af" class="sr-only">Search</label><input id="duke-search-25e8f0f7-65c0-4fcb-97c6-9b71635f93af" name="q" type="search" placeholder="Search Duke..."><button type="submit" aria-label="Search"><span class="duke-icon-search" aria-hidden="true"></span></button></form>
-                                            </div>
-
-
-
-                                            <div class="wp-block-group duke-menu-default-links is-layout-flow wp-block-group-is-layout-flow">
-                                                <div class="wp-block-duke-blocks-screen-reader-content" tabindex="0">
-                                                    <h3 class="wp-block-heading has-text-align-center hidden has-dark-color has-text-color">Default Search Links</h3>
-                                                </div>
-
-
-                                                <div style="line-height:1.5" class="has-text-color has-base-color has-small-font-size is-vertical wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-4b402857 wp-block-navigation-is-layout-flex">
-                                                    <ul style="line-height:1.5" class="wp-block-navigation__container has-text-color has-base-color has-small-font-size is-vertical wp-block-navigation">
-                                                        <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://arts.duke.edu/"><span class="wp-block-navigation-item__label">Duke Arts</span></a></li>
-                                                        <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://calendar.duke.edu/"><span class="wp-block-navigation-item__label">Calendar</span></a></li>
-                                                        <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://giving.duke.edu/"><span class="wp-block-navigation-item__label">Giving to Duke</span></a></li>
-                                                        <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://library.duke.edu/"><span class="wp-block-navigation-item__label">Libraries</span></a></li>
-                                                        <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://directory.duke.edu/"><span class="wp-block-navigation-item__label">Duke Directory</span></a></li>
-                                                        <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://goduke.com/"><span class="wp-block-navigation-item__label">Athletics</span></a></li>
-                                                        <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/"><span class="wp-block-navigation-item__label">Undergraduate Admissions</span></a></li>
-                                                        <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://work.oit.duke.edu/"><span class="wp-block-navigation-item__label">Duke@Work (NETID required)</span></a></li>
-                                                        <li class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://dukehealth.org/"><span class="wp-block-navigation-item__label">Duke Health</span></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-
-
-                                            <div class="wp-block-group duke-menu-autocomplete-links is-layout-flow wp-block-group-is-layout-flow">
-                                                <div class="wp-block-duke-blocks-screen-reader-content" tabindex="0">
-                                                    <h3 class="wp-block-heading has-text-align-center hidden has-dark-color has-text-color">Autocompleted Search Links</h3>
-                                                </div>
-
-
-                                                <div style="font-size:var(--wp--preset--font-size--small);line-height:1.5" class="has-text-color has-base-color is-vertical wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-4b402857 wp-block-navigation-is-layout-flex">
-                                                    <ul style="font-size:var(--wp--preset--font-size--small);line-height:1.5" class="wp-block-navigation__container has-text-color has-base-color is-vertical wp-block-navigation">
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/"><span class="wp-block-navigation-item__label">Undergraduate Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/visit/"><span class="wp-block-navigation-item__label">Visit – Undergraduate Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/apply/"><span class="wp-block-navigation-item__label">Apply Now – Undergraduate</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://arts.duke.edu/"><span class="wp-block-navigation-item__label">Duke Arts</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://dukearts.org/"><span class="wp-block-navigation-item__label">Duke Arts Presents</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/financial-support/"><span class="wp-block-navigation-item__label">Financial Support – Undergraduate</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/families/"><span class="wp-block-navigation-item__label">For Families – Undergraduate Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/families/"><span class="wp-block-navigation-item__label">For Counselors – Undergraduate Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/resources-tools/"><span class="wp-block-navigation-item__label">Resources &amp; Tools – Undergraduate Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/resources/"><span class="wp-block-navigation-item__label">FAQs – Undergraduate Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.dukekunshan.edu.cn/en/"><span class="wp-block-navigation-item__label">Duke Kunshan Undergraduate</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://gradschool.duke.edu/academics/programs-and-degrees/"><span class="wp-block-navigation-item__label">Graduate School Programs</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://divinity.duke.edu/admissions"><span class="wp-block-navigation-item__label">Divinity School Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://graduate.dukekunshan.edu.cn/"><span class="wp-block-navigation-item__label">Duke Kunshan Graduate</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.fuqua.duke.edu/programs"><span class="wp-block-navigation-item__label">Fuqua School of Business Programs</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://law.duke.edu/apply/"><span class="wp-block-navigation-item__label">School of Law – Apply </span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://medschool.duke.edu/education/health-professions-education-programs/doctor-medicine-md-program/office-md-admissions"><span class="wp-block-navigation-item__label">School of Medicine Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://nursing.duke.edu/academic-programs"><span class="wp-block-navigation-item__label">School of Nursing Programs</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://nicholas.duke.edu/admissions"><span class="wp-block-navigation-item__label">Nicholas School of the Environment Graduate Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.duke-nus.edu.sg/admissions/"><span class="wp-block-navigation-item__label">Duke-NUS Medical School Admissions</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pratt.duke.edu/grad"><span class="wp-block-navigation-item__label">Pratt School of Engineering Graduate Programs</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://sanford.duke.edu/"><span class="wp-block-navigation-item__label">Sanford School of Public Policy</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://financialaid.duke.edu/"><span class="wp-block-navigation-item__label">Financial Aid</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://financialaid.duke.edu/types-aid/"><span class="wp-block-navigation-item__label">Types of Aid</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://financialaid.duke.edu/apply-aid"><span class="wp-block-navigation-item__label">Apply for Aid</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://npc.collegeboard.org/app/duke"><span class="wp-block-navigation-item__label">Financial Aid Calculator</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://financialaid.duke.edu/types-aid/loans/"><span class="wp-block-navigation-item__label">Loans</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://financialaid.duke.edu/types-aid/work-study"><span class="wp-block-navigation-item__label">Work Study</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://nicholas.duke.edu/academics/undergraduate-programs"><span class="wp-block-navigation-item__label">Nicholas School of the Environment – Undergraduate</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pratt.duke.edu/"><span class="wp-block-navigation-item__label">Pratt School of Engineering</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://ugstudies.dukekunshan.edu.cn/academics/"><span class="wp-block-navigation-item__label">Duke Kunshan University</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://undergrad.duke.edu/"><span class="wp-block-navigation-item__label">Office of Undergraduate Education</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/academic-possibilities/"><span class="wp-block-navigation-item__label">Majors, Minors &amp; Schools</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/community/"><span class="wp-block-navigation-item__label">Campus Life</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admissions.duke.edu/beyond-campus/"><span class="wp-block-navigation-item__label">Beyond Campus</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://learnmore.duke.edu/"><span class="wp-block-navigation-item__label">Continuing Studies</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://divinity.duke.edu/academics"><span class="wp-block-navigation-item__label">Divinity School</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.duke-nus.edu.sg/"><span class="wp-block-navigation-item__label">Duke NUS Medical School</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://gradschool.duke.edu/academics/programs-and-degrees/"><span class="wp-block-navigation-item__label">Graduate School</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://law.duke.edu/study/"><span class="wp-block-navigation-item__label">Duke Law School</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://nicholas.duke.edu/academics"><span class="wp-block-navigation-item__label">Nicholas School of the Environment Programs</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pratt.duke.edu/grad"><span class="wp-block-navigation-item__label">Pratt School of Engineering – Graduate Programs</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://medschool.duke.edu/education/degree-programs-and-admissions"><span class="wp-block-navigation-item__label">School of Medicine</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://nursing.duke.edu/academic-programs"><span class="wp-block-navigation-item__label">School of Nursing</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://provost.duke.edu/"><span class="wp-block-navigation-item__label">Office of the Provost</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://registrar.duke.edu/"><span class="wp-block-navigation-item__label">Registrar</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://dukehub.duke.edu/psp/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_CM.H_CLASS_SEARCH.FieldFormula.IScript_Main?&amp;cmd=uninav&amp;Rnode=LOCAL_NODE&amp;uninavpath=Root%7BPORTAL_ROOT_OBJECT%7D.HighPoint%7BHIGHPOINT%7D.Campus%20Experience%7BHPT_CAMPUS_EXPERIENCE%7D.Class%20Information%7BHPT_CX_CLASS_INFORMATION%7D"><span class="wp-block-navigation-item__label">Course Listings</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://directory.duke.edu/directory/search"><span class="wp-block-navigation-item__label">Duke Directory</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://library.duke.edu/"><span class="wp-block-navigation-item__label">Libraries</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://president.duke.edu/"><span class="wp-block-navigation-item__label">Office of the President</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://provost.duke.edu/"><span class="wp-block-navigation-item__label">Office of the Provost</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://academiccouncil.duke.edu/"><span class="wp-block-navigation-item__label">Academic Council</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://admin.trinity.duke.edu/arts-sciences-council"><span class="wp-block-navigation-item__label">Arts &amp; Sciences Council</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://learninginnovation.duke.edu/"><span class="wp-block-navigation-item__label">Learning Innovation &amp; Lifetime Education</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://itac.duke.edu/"><span class="wp-block-navigation-item__label">Information Technology Advisory Council</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://alumni.duke.edu/magazine"><span class="wp-block-navigation-item__label">Duke Magazine</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://nicholas.duke.edu/magazine"><span class="wp-block-navigation-item__label">Duke Environment Magazine</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://research.duke.edu/"><span class="wp-block-navigation-item__label">Duke Research &amp; Innovation</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://research.duke.edu/about-ori/"><span class="wp-block-navigation-item__label">Vice President for Research &amp; Innovation</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://ors.duke.edu/"><span class="wp-block-navigation-item__label">Research Support</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://medschool.duke.edu/research/research-support/research-support-offices/office-research-administration-ora"><span class="wp-block-navigation-item__label">Research Administration (medicine)</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://researchfunding.duke.edu/"><span class="wp-block-navigation-item__label">Funding Opportunities</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://foundationrelations.duke.edu/"><span class="wp-block-navigation-item__label">Foundation Relations</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://undergraduateresearch.duke.edu/"><span class="wp-block-navigation-item__label">Undergraduate Research</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://research.duke.edu/news-stories/"><span class="wp-block-navigation-item__label">Research News</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://corporate.dukehealth.org/newsmedia"><span class="wp-block-navigation-item__label">Health News</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.dukehealth.org/blog/"><span class="wp-block-navigation-item__label">Duke Health Blog</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://otc.duke.edu/"><span class="wp-block-navigation-item__label">Office for Translation &amp; Commercialization</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://externalpartnerships.duke.edu/"><span class="wp-block-navigation-item__label">Office for External Partnerships</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.dukece.com/"><span class="wp-block-navigation-item__label">Duke Corporate Education</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://global.duke.edu/"><span class="wp-block-navigation-item__label">Duke Global</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://global.duke.edu/activity-map"><span class="wp-block-navigation-item__label">Global Activities Map</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://global.duke.edu/about"><span class="wp-block-navigation-item__label">Office of Global Affairs</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://studentaffairs.duke.edu/ihouse"><span class="wp-block-navigation-item__label">International House</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://global.duke.edu/duke-global-support-offices"><span class="wp-block-navigation-item__label">Global Offices</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://globaled.duke.edu/vis"><span class="wp-block-navigation-item__label">Visiting International Student Program</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://global.duke.edu/resources"><span class="wp-block-navigation-item__label">Global Resources for Students &amp; Faculty</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://travel.duke.edu/registry"><span class="wp-block-navigation-item__label">Travel Registry</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://travel.duke.edu/travelpolicy"><span class="wp-block-navigation-item__label">Travel Policy</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://travel.duke.edu/"><span class="wp-block-navigation-item__label">Global Administrative and Travel Support</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://nasher.duke.edu/"><span class="wp-block-navigation-item__label">Nasher Museum</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://documentarystudies.duke.edu/"><span class="wp-block-navigation-item__label">Center for Documentary Studies</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.fullframefest.org/"><span class="wp-block-navigation-item__label">Full Frame Documentary Film Festival</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.americandancefestival.org/"><span class="wp-block-navigation-item__label">American Dance Festival</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://dibs.duke.edu/"><span class="wp-block-navigation-item__label">Duke Institute for Brain Sciences</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://globalhealth.duke.edu/"><span class="wp-block-navigation-item__label">Global Health Institute</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://entrepreneurship.duke.edu/"><span class="wp-block-navigation-item__label">Innovation &amp; Entrepreneurship</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://interdisciplinary.duke.edu/"><span class="wp-block-navigation-item__label">Interdisciplinary Programs</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://fhi.duke.edu/"><span class="wp-block-navigation-item__label">John Hope Franklin Humanities Institute</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://kenan.ethics.duke.edu/"><span class="wp-block-navigation-item__label">The Kenan Institute for Ethics</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://healthpolicy.duke.edu/"><span class="wp-block-navigation-item__label">Margolis Institute for Health Policy</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://nicholasinstitute.duke.edu/"><span class="wp-block-navigation-item__label">Nicholas Institute for Energy, Environment &amp; Sustainability</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://bigdata.duke.edu/"><span class="wp-block-navigation-item__label">Rhodes Information Initiative</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://scienceandsociety.duke.edu/"><span class="wp-block-navigation-item__label">Science &amp; Society Initiative</span></a></li>
-                                                        <li style="font-size: var(--wp--preset--font-size--small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://ssri.duke.edu/"><span class="wp-block-navigation-item__label">Social Science Research Institute</span></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:35%">
-                                            <div class="wp-block-duke-blocks-screen-reader-content" tabindex="0">
-                                                <h2 class="wp-block-heading has-text-align-center hidden has-dark-color has-text-color">Main menu</h2>
-                                            </div>
-
-
-                                            <div style="font-size:var(--wp--preset--font-size--large);font-style:normal;font-weight:900" class="has-text-color has-base-color is-vertical duke-menu-primary-nav wp-block-navigation has-montserrat-font-family is-layout-flex wp-container-core-navigation-is-layout-fa9245c9 wp-block-navigation-is-layout-flex">
-                                                <ul style="font-size:var(--wp--preset--font-size--large);font-style:normal;font-weight:900" class="wp-block-navigation__container has-text-color has-base-color is-vertical duke-menu-primary-nav wp-block-navigation has-montserrat-font-family">
-                                                    <li style="font-size: var(--wp--preset--font-size--large)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.duke.edu/academics/"><span class="wp-block-navigation-item__label">Academics</span></a></li>
-                                                    <li style="font-size: var(--wp--preset--font-size--large)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.duke.edu/research/"><span class="wp-block-navigation-item__label">Research</span></a></li>
-                                                    <li style="font-size: var(--wp--preset--font-size--large)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.duke.edu/admissions/"><span class="wp-block-navigation-item__label">Admissions</span></a></li>
-                                                    <li style="font-size: var(--wp--preset--font-size--large)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.duke.edu/campus-life/"><span class="wp-block-navigation-item__label">Campus Life</span></a></li>
-                                                    <li style="font-size: var(--wp--preset--font-size--large)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.duke.edu/visit/"><span class="wp-block-navigation-item__label">Visit</span></a></li>
-                                                    <li style="font-size: var(--wp--preset--font-size--large)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.duke.edu/about/"><span class="wp-block-navigation-item__label">About</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <nav style="font-size:var(--wp--preset--font-size--x-small);line-height:2;text-transform:uppercase" class="has-text-color has-base-color items-justified-space-between duke-menu-footer-nav wp-block-navigation has-montserrat-font-family is-horizontal is-content-justification-space-between is-layout-flex wp-container-core-navigation-is-layout-5f5a613a wp-block-navigation-is-layout-flex" aria-label="additional links">
-                                        <ul style="font-size:var(--wp--preset--font-size--x-small);line-height:2;text-transform:uppercase" class="wp-block-navigation__container has-text-color has-base-color items-justified-space-between duke-menu-footer-nav wp-block-navigation has-montserrat-font-family">
-                                            <li style="font-size: var(--wp--preset--font-size--x-small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://studentaffairs.duke.edu/"><span class="wp-block-navigation-item__label">Student Affairs</span></a></li>
-                                            <li style="font-size: var(--wp--preset--font-size--x-small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://my.duke.edu/"><span class="wp-block-navigation-item__label">MyDuke</span></a></li>
-                                            <li style="font-size: var(--wp--preset--font-size--x-small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://hr.duke.edu/"><span class="wp-block-navigation-item__label">Human Resources</span></a></li>
-                                            <li style="font-size: var(--wp--preset--font-size--x-small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://home.careers.duke.edu/"><span class="wp-block-navigation-item__label">Careers</span></a></li>
-                                            <li style="font-size: var(--wp--preset--font-size--x-small)" class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://alumni.duke.edu/"><span class="wp-block-navigation-item__label">Alumni</span></a></li>
-                                        </ul>
-                                    </nav>
-
-
-                                    <div class="wp-block-duke-blocks-screen-reader-content" tabindex="0">
-                                        <button class="alignright duke-menu-toggle">Close Menu</button>
-                                    </div>
-                                </div>
-                                <button class="sr-only duke-menu-toggle">Close Menu</button>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-
-        <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-fdcf2c57 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0">
-            <div class="wp-block-query alignfull is-layout-flow wp-block-query-is-layout-flow">
-                <ul style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:0" class="alignfull wp-block-post-template is-layout-flow wp-container-core-post-template-is-layout-dd88eefc wp-block-post-template-is-layout-flow">
-                    <li class="wp-block-post post-3995 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-uncategorized">
-                        <div style="padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;margin-left:0;margin-right:0" class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-c56d1cb8 wp-block-post-content-is-layout-constrained">
-                            <div class="wp-block-group alignfull is-style-default hero has-base-color has-duke-navy-blue-100-background-color has-text-color has-background has-link-color wp-elements-955250753deb89f205ceab567c9fd8de has-global-padding is-layout-constrained wp-container-core-group-is-layout-c5077547 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0">
-                                <div class="wp-block-cover alignfull is-light has-custom-content-position is-position-bottom-center" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--60);min-height:720px;aspect-ratio:unset;"><video class="lazy-load-video wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline data-src="https://www.duke.edu/wp-content/uploads/2026/05/20260428_duke_edu_header_space_theme-_v2_4_1.mp4" poster="https://www.duke.edu/wp-content/uploads/2026/05/space-header-poster.jpg" style="object-position:59% 48%" data-object-fit="cover" data-object-position="59% 48%"></video><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#FFF"></span>
-                                    <div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-block-cover-is-layout-constrained">
-                                        <h1 style="font-style:normal;font-weight:400" class="has-text-align-center has-link-color wp-elements-1fd25fda0ed32a7816cd642d2e7bb932 wp-block-post-title has-text-color has-base-color has-xx-large-font-size has-quattrocento-font-family">Space</h1>
-
-
-                                        <h2 class="wp-block-heading has-text-align-center is-style-text-subtitle has-base-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size wp-elements-9fe29ccce84df4279f20f3831f8d4f41" style="font-style:normal;font-weight:400">Discover the different realms of space that intrigue us at Duke — from the farthest depths of the universe to the tiniest matter, and shared places in between.</h2>
-
-
-
-                                        <div class="wp-block-duke-blocks-screen-reader-content" tabindex="0">
-                                            <p class="has-text-align-center hidden has-dark-color has-base-background-color has-text-color has-background wp-block-paragraph">Four video clips of “spaces” important to Duke:</p>
-
-
-
-                                            <ul class="wp-block-list has-base-background-color has-background">
-                                                <li>A nightime view of the Milky Way rotating in the sky behind the Rubin Observatory</li>
-
-
-
-                                                <li>An aerial view of Duke Chapel rising out of Duke Forest’s green space</li>
-
-
-
-                                                <li>A class learning in an outdoor space in Duke Gardens</li>
-
-
-
-                                                <li>Two clips of students using the 3D printers in the CoLab creative space</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-duke-blocks-in-topic-nav alignfull duke-in-topic-nav has-dark-overlay has-dark-background-color has-background is-layout-flow wp-block-duke-blocks-in-topic-nav-is-layout-flow" id="wp--skip-link--target" tabindex="-1" style="border-top-color:var(--wp--preset--color--duke-navy-blue-100);border-top-style:solid;border-top-width:7px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/161416e_westubrywlk035.jpg');background-position:50% 100%;background-size:cover;">
-                                <div class="wp-block-group in-topic-nav-top has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                    <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-84f39ac1 wp-block-columns-is-layout-flex" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
-                                        <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:67%">
-                                            <div class="wp-block-group has-background is-layout-flow wp-block-group-is-layout-flow" style="border-radius:10px;background-color:#012069a1;margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                                <h2 class="wp-block-heading has-base-color has-text-color has-medium-font-size">The Spaces We Inhabit</h2>
-
-
-
-                                                <p class="has-base-color has-text-color has-small-font-size wp-block-paragraph">We study far-off frontiers and the tiniest of organisms. We live in communal spaces and are inspired by them. At Duke, the spaces that surround us help unite us. </p>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"></div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-columns are-vertically-aligned-bottom in-topic-nav-bottom is-layout-flex wp-container-core-columns-is-layout-caa0caa4 wp-block-columns-is-layout-flex" style="padding-top:0;padding-bottom:0">
-                                    <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
-                                        <a href="#outer" target="_self" class="wp-block-duke-blocks-in-topic-nav-item duke-in-topic-nav-item" style="text-decoration:none;display:block">
-                                            <div class="wp-block-duke-blocks-hidden-content">
-                                                <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color" style="font-size:var(--wp--preset--font-size--small)">Outer Space</h2>
-
-
-
-                                                <p class="has-text-align-center hidden has-base-color has-text-color wp-block-paragraph">Check out our scholarly space pursuits. </p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-
-
-                                    <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
-                                        <a href="#common" target="_self" class="wp-block-duke-blocks-in-topic-nav-item duke-in-topic-nav-item" style="text-decoration:none;display:block">
-                                            <div class="wp-block-duke-blocks-hidden-content">
-                                                <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color" style="font-size:var(--wp--preset--font-size--small)">Common Space</h2>
-
-
-
-                                                <p class="has-text-align-center hidden has-base-color has-text-color wp-block-paragraph">Explore where Duke’s communities connect across campus.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-
-
-                                    <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
-                                        <a href="#tiny" target="_self" class="wp-block-duke-blocks-in-topic-nav-item duke-in-topic-nav-item" style="text-decoration:none;display:block">
-                                            <div class="wp-block-duke-blocks-hidden-content">
-                                                <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color" style="font-size:var(--wp--preset--font-size--small)">Tiny Space</h2>
-
-
-
-                                                <p class="has-text-align-center hidden has-base-color has-text-color wp-block-paragraph">See how big results come from the smallest study subjects. </p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-
-
-                                    <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
-                                        <a href="#green" target="_self" class="wp-block-duke-blocks-in-topic-nav-item duke-in-topic-nav-item" style="text-decoration:none;display:block">
-                                            <div class="wp-block-duke-blocks-hidden-content">
-                                                <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color" style="font-size:var(--wp--preset--font-size--small)">Green Space</h2>
-
-
-
-                                                <p class="has-text-align-center hidden has-base-color has-text-color wp-block-paragraph">Take action with us to protect the environment.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-
-
-                                    <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow">
-                                        <a href="#creative" target="_self" class="wp-block-duke-blocks-in-topic-nav-item duke-in-topic-nav-item" style="text-decoration:none;display:block">
-                                            <div class="wp-block-duke-blocks-hidden-content">
-                                                <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color" style="font-size:var(--wp--preset--font-size--small)">Creative Space</h2>
-
-
-
-                                                <p class="has-text-align-center hidden has-base-color has-text-color wp-block-paragraph">Discover the many means of expression at Duke. </p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-duke-blocks-section-heading alignfull has-duke-navy-blue-100-color has-text-color is-layout-flow wp-block-duke-blocks-section-heading-is-layout-flow" id="outer" style="padding-top:var(--wp--preset--spacing--80);padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0;font-size:clamp(31.609px, 1.976rem + ((1vw - 3.2px) * 2.772), 56px);font-weight:900">
-                                <div class="duke-section-heading-inner" data-text="Outer Space">
-                                    <h2>Outer Space</h2>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-group has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-b032b897 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50)">
-                                <p class="has-medium-font-size wp-block-paragraph">Duke scholars are focused on the greatest of the universe’s unknowns, from hibernation in space, to law and policy regulating space activity.</p>
-                            </div>
-
-
-
-                            <article class="wp-block-group alignfull is-style-default has-dark-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-d4c2d7a2 wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;box-shadow:var(--wp--preset--shadow--natural)">
-                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="1176" class="wp-block-cover__image-background wp-image-4000 size-full" alt="Space image filled with glowing blue, white and orange stars and galaxies. " src="https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2.jpg" data-object-fit="cover" srcset="https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2.jpg 1920w, https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2-300x184.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2-1024x627.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2-768x470.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/04/Im3crop2-1536x941.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
-                                    <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                                        <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                            <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
-                                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                                    <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                        <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">The Cosmos</p>
-                                                    </div>
-
-
-
-                                                    <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-montserrat-font-family has-large-font-size wp-elements-d666ec3fb07a1a1adefccf2c73b37b2a" style="font-style:normal;font-weight:900">Cutting-Edge Space Exploration</h3>
-
-
-
-                                                    <p class="has-base-color has-text-color has-link-color wp-elements-619a58a8efcd8ba6f34bcc38805c7fb1 wp-block-paragraph">A new Duke initiative will harness brainpower from across the university in an examination of the cosmos.</p>
-                                                </div>
-
-
-
-                                                <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                                    <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3189c7ba wp-block-buttons-is-layout-flex">
-                                                        <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--3"><a class="wp-block-button__link has-duke-navy-blue-100-background-color has-background wp-element-button" href="https://trinity.duke.edu/news/trinity-college-arts-sciences-launches-space-initiative">Look Into the Unknown</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-
-
-                            <div class="wp-block-columns story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                    <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1024x683.jpg" alt="Two lemurs with large dark eyes peeking out from a hollow log." class="wp-image-4114" style="border-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/Pair-in-hollow-log-David-Haring-1-1-scaled-e1778773065645-2048x1366.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0;padding-bottom:0;flex-basis:50%">
-                                    <article class="wp-block-group has-dark-color has-eno-background-color has-text-color has-background has-link-color wp-elements-8eaa53cac104308e4b35db47531f2600 is-vertical is-layout-flex wp-container-core-group-is-layout-066b3ea0 wp-block-group-is-layout-flex" style="border-radius:10px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--natural)">
-                                        <div class="wp-block-group is-content-justification-right is-nowrap is-layout-flex wp-container-core-group-is-layout-3ed21ea6 wp-block-group-is-layout-flex">
-                                            <figure class="wp-block-image size-thumbnail is-style-default wp-container-content-82ea18c2" style="margin-right:0;margin-left:0"><img loading="lazy" decoding="async" width="150" height="150" src="https://www.duke.edu/wp-content/uploads/2026/05/podcast-150x150.png" alt="Podcast Icon" class="wp-image-4400" style="object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/podcast-150x150.png 150w, https://www.duke.edu/wp-content/uploads/2026/05/podcast-300x300.png 300w, https://www.duke.edu/wp-content/uploads/2026/05/podcast.png 600w" sizes="auto, (max-width: 150px) 100vw, 150px"></figure>
-
-
-
-                                            <div class="wp-block-group wp-container-content-9cfa9a5a is-vertical is-layout-flex wp-container-core-group-is-layout-fca48da3 wp-block-group-is-layout-flex">
-                                                <div class="wp-block-duke-blocks-chiclets is-content-justification-left is-layout-flex wp-container-duke-blocks-chiclets-is-layout-b080bfe2 wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                    <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Lemur Center</p>
-                                                </div>
-
-
-
-                                                <h3 class="wp-block-heading has-dark-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-14d6d3902db2698dab8f7fd608c33426" style="font-style:normal;font-weight:900">Creatures with Superpowers</h3>
-                                            </div>
-                                        </div>
-
-
-
-                                        <iframe title="Creatures with Superpowers podcast" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/46CsXBcwBmYN8Op2bzKfaF?utm_source=generator&amp;theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-
-
-                                        <p class="has-dark-color has-text-color has-link-color wp-elements-97fe37fb3394406c38a2728b4fa0edfa wp-block-paragraph">In this podcast, learn about the fat-tailed dwarf lemur, a creature that teaches us about everything from conservation to deep space travel.</p>
-
-
-
-                                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                            <div class="wp-block-button is-style-dark-button is-style-primary-light-small is-style-primary-light-small--4"><a class="wp-block-button__link wp-element-button" href="https://lemur.duke.edu/podcast/a-creature-that-has-a-superpower-winter-2026/">Learn from Primates</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0;padding-bottom:0;flex-basis:50%">
-                                    <article class="wp-block-group has-base-background-color has-background is-vertical is-layout-flex wp-container-core-group-is-layout-b910bbcf wp-block-group-is-layout-flex" style="border-radius:10px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--natural)">
-                                        <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                            <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Ambitious Goals</p>
-                                        </div>
-
-
-
-                                        <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-18ecd5d9208a4e2007830eb7d1519c61" style="font-style:normal;font-weight:900">When a Picture is Worth More Than 1,000 Words</h3>
-
-
-
-                                        <p class="wp-block-paragraph">Duke cosmologists were among many to marvel at the first images of the universe provided by the Rubin Observatory.</p>
-
-
-
-                                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                            <div class="wp-block-button is-style-dark-button is-style-primary-dark-medium is-style-primary-dark-medium--5"><a class="wp-block-button__link wp-element-button" href="https://trinity.duke.edu/news/when-picture-worth-billion-worlds-duke-cosmologists-celebrate-rubin-observatorys-first-images">See the Images</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                    <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="682" src="https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-1024x682.jpg" alt="Video display scoreboard at Wallace Wade Stadium showing a colorful pink, orange and blue galaxy image" class="wp-image-4131" style="border-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/2025_06_22_Rubin_First_look_Cosmology_Event_Duke_Devils_Deck-10L.jpg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;padding-right:0;padding-left:0;flex-basis:50%">
-                                    <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                                        <div class="wp-block-embed__wrapper">
-                                            <iframe loading="lazy" title="Picture Perfect Views" width="500" height="281" src="https://www.youtube.com/embed/KHJqjbFLPtw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                        </div>
-                                    </figure>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0;padding-bottom:0;flex-basis:50%">
-                                    <article class="wp-block-group has-base-background-color has-background is-vertical is-layout-flex wp-container-core-group-is-layout-b910bbcf wp-block-group-is-layout-flex" style="border-radius:10px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--natural)">
-                                        <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                            <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">The Next Frontier</p>
-                                        </div>
-
-
-
-                                        <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-8c4b6b66c353996eb6dfaa820621e773" style="font-style:normal;font-weight:900">New Satellites Give a Clearer View</h3>
-
-
-
-                                        <p class="wp-block-paragraph">A Duke engineer’s company is making new satellite imaging antennas that can deliver real-time images of Earth in 15 minutes. </p>
-
-
-
-                                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                            <div class="wp-block-button is-style-dark-button is-style-primary-dark-medium is-style-primary-dark-medium--6"><a class="wp-block-button__link wp-element-button" href="https://pratt.duke.edu/news/unlocking-reliable-satellite-imagery-at-an-industrial-scale/">Look! In the sky…</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns alignfull story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0;padding-bottom:0;flex-basis:50%">
-                                    <article class="wp-block-group has-duke-navy-blue-100-background-color has-background is-vertical is-layout-flex wp-container-core-group-is-layout-b910bbcf wp-block-group-is-layout-flex" style="border-top-right-radius:10px;border-bottom-right-radius:10px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-                                        <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                            <p class="wp-block-duke-blocks-chiclet has-duke-navy-blue-100-color has-duke-navy-blue-10-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">More Than a Rocket Scientist</p>
-                                        </div>
-
-
-
-                                        <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-22ef0e47aea84aba3c3df38bb5e1d5f8" style="font-style:normal;font-weight:900">Duke’s Provost is a Serious Rock-it Man</h3>
-
-
-
-                                        <p class="has-base-color has-text-color has-link-color wp-elements-5142f02b0c614e51edf19dac621a99bc wp-block-paragraph">Duke Provost Alec Gallimore is a rocket scientist and a rocker; he counts Jimmy Page of Led Zeppelin among his favorite guitarists.</p>
-
-
-
-                                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                            <div class="wp-block-button is-style-light-button is-style-primary-light-medium is-style-primary-light-medium--7"><a class="wp-block-button__link wp-element-button" href="https://dukemag.duke.edu/stories/dukes-provost-serious-rock-it-man">Get to Know Him</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                    <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-full has-custom-border"><img loading="lazy" decoding="async" width="1280" height="853" src="https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L.jpg" alt="Provost Alec Gallimore standing in a spacecraft-style setting with a galaxy background." class="wp-image-4120" style="border-top-left-radius:10px;border-bottom-left-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L.jpg 1280w, https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20260427_provostspace101ps3L-768x512.jpg 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px"></figure>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns is-style-default is-layout-flex wp-container-core-columns-is-layout-cd4eac57 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30)">
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                    <div class="wp-block-duke-blocks-story-card is-style-background has-navy-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-dark-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/artemis-astronauts.jpg');background-size:cover;" tabindex="0">
-                                        <div class="wp-block-group has-base-color has-text-color has-link-color wp-elements-635ba825b0bf53f56e4108d31b84a77f has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Mysteries of Microgravity</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-50cc7e6115685682525b0ea0a6aa59ab" style="font-style:normal;font-weight:900">Can Space Travel Raise Risk of Blood Clots?</h3>
-
-
-
-                                            <p class="has-base-color has-text-color wp-block-paragraph">A Duke medical student is studying whether microgravity – the near-weightlessness astronauts encounter in space – can cause blood clots. </p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-light-medium is-style-primary-light-medium--8"><a class="wp-block-button__link wp-element-button" href="https://medschool.duke.edu/stories/medical-mystery-microgravity-can-space-travel-raise-risk-blood-clots">Follow Space Travel</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                    <div class="wp-block-duke-blocks-story-card is-style-background has-white-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-base-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/earth-rise.jpg');background-size:cover;" tabindex="0">
-                                        <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Space Law</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-b291a4472d179b524cbcb9c5d0163bdd" style="font-style:normal;font-weight:900">Regulating Activity in Outer Space</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">Outer space is busy these days, and a Duke law professor calls for new law and policy around its regulation.</p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--9"><a class="wp-block-button__link wp-element-button" href="https://law.duke.edu/news/regulating-risks-outer-space">Rethink Policies</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-duke-blocks-section-heading alignfull has-duke-navy-blue-100-color has-text-color is-layout-flow wp-block-duke-blocks-section-heading-is-layout-flow" id="common" style="padding-top:var(--wp--preset--spacing--80);padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0;font-size:clamp(31.609px, 1.976rem + ((1vw - 3.2px) * 2.772), 56px);font-weight:900">
-                                <div class="duke-section-heading-inner" data-text="Common Space">
-                                    <h2>Common Space</h2>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-group has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-8f766fc5 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50)">
-                                <p class="has-medium-font-size wp-block-paragraph">From hanging out in the historic quad to tenting in K-Ville, the best Duke experiences are shared. </p>
-                            </div>
-
-
-
-                            <article class="wp-block-group alignfull is-style-default has-duke-navy-blue-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-d4c2d7a2 wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;box-shadow:var(--wp--preset--shadow--natural)">
-                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="800" class="wp-block-cover__image-background wp-image-4359 size-full" alt="The crazies apply blue face paint outside of k-ville with tents and Cameron Indoor Stadium in the background." src="https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034.jpg" style="object-position:82% 100%" data-object-fit="cover" data-object-position="82% 100%" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034.jpg 1920w, https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034-300x125.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034-1024x427.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034-768x320.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20220215_kvillecrazies034-1536x640.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
-                                    <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                                        <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                            <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
-                                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                                    <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                        <p class="wp-block-duke-blocks-chiclet has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Student Tradition</p>
-                                                    </div>
-
-
-
-                                                    <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-montserrat-font-family has-large-font-size wp-elements-858f4aa8185c6bf63a22b51644e8a915" style="font-style:normal;font-weight:900">Krzyzewskiville Turns 40</h3>
-
-
-
-                                                    <p class="has-base-color has-text-color has-link-color wp-elements-ff90a6be266100604d98111c8e4c8ed0 wp-block-paragraph">Krzyzewskiville, the tent city Duke students inhabit in the run-up to the annual home men’s basketball game against UNC, turned 40 in 2026. </p>
-                                                </div>
-
-
-
-                                                <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                                    <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3189c7ba wp-block-buttons-is-layout-flex">
-                                                        <div class="wp-block-button is-style-primary-light-medium is-style-primary-light-medium--10"><a class="wp-block-button__link wp-element-button" href="https://dukemag.duke.edu/stories/excellence-under-canvas">Experience the Tents</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-
-
-                            <div class="wp-block-columns is-style-default is-layout-flex wp-container-core-columns-is-layout-cd4eac57 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30)">
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                    <div class="wp-block-duke-blocks-story-card is-style-background has-navy-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/debate-watch-party-1.jpg');background-size:cover;" tabindex="0">
-                                        <div class="wp-block-group has-base-color has-text-color has-link-color wp-elements-071a3ce6d91392eb3f0e02020d05bfaa has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Civil Discourse</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-5faa2b9987e00f5785be71dae89720f5" style="font-style:normal;font-weight:900">A Duke Dorm for Free Expression</h3>
-
-
-
-                                            <p class="has-base-color has-text-color wp-block-paragraph">Students open to complex, uncomfortable conversations to broaden their perspectives now have a specific residence hall that fosters these interactions. </p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-light-medium is-style-primary-light-medium--11"><a class="wp-block-button__link has-text-align-left wp-element-button" href="https://today.duke.edu/2024/09/duke-dorm-big-ideas-free-expression">Leave Your Comfort Space</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                    <div class="wp-block-duke-blocks-story-card is-style-background has-white-overlay is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-base-background-color has-text-color has-background" style="box-shadow:var(--wp--preset--shadow--card);background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/study-spaces-graphic.jpg');background-size:cover;" tabindex="0">
-                                        <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Student Resources</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-b00f2a4c732c14a5cfd3107889a4c670" style="font-style:normal;font-weight:900">A Study Space for Every Student</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">Here are the places across campus that support learning.</p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--12"><a class="wp-block-button__link wp-element-button" href="https://undergrad.duke.edu/news/learning-spaces-take-different-forms/">Hit the hubs</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-group alignfull has-duke-navy-blue-100-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                <div class="wp-block-cover alignfull wp-duotone-duke-dark-duotone"><img loading="lazy" decoding="async" width="1024" height="496" class="wp-block-cover__image-background wp-image-4178 size-large" alt="" src="https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-1024x496.jpg" style="object-position:50% 100%" data-object-fit="cover" data-object-position="50% 100%" srcset="https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-1024x496.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-300x145.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-768x372.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2-1536x744.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/002119_abele_plaque_003-2.jpg 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
-                                    <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                                        <div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                            <div class="wp-block-columns are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
-                                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
-                                                    <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c28032c9 wp-block-group-is-layout-constrained">
-                                                        <figure class="wp-block-image aligncenter size-large is-resized has-custom-border"><img loading="lazy" decoding="async" width="724" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-724x1024.jpg" alt="Black-and-white portrait of architect Julian Abele seated in a chair wearing a suit and tie." class="has-border-color has-duke-navy-blue-25-border-color wp-image-4155" style="border-width:10px;border-radius:150px;box-shadow:var(--wp--preset--shadow--sharper);object-fit:cover;width:300px;height:300px" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-724x1024.jpg 724w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-212x300.jpg 212w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-768x1086.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-1086x1536.jpg 1086w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele-1449x2048.jpg 1449w, https://www.duke.edu/wp-content/uploads/2026/05/Julian_Abele.jpg 1472w" sizes="auto, (max-width: 724px) 100vw, 724px"></figure>
-                                                    </div>
-                                                </div>
-
-
-
-                                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%">
-                                                    <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                        <p class="wp-block-duke-blocks-chiclet has-dark-color has-duke-navy-blue-10-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Campus History</p>
-                                                    </div>
-
-
-
-                                                    <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-medium-font-size wp-elements-04999eb3973aa1527eb0abb37c971e90" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--40)">A Groundbreaking Architect</h3>
-
-
-
-                                                    <p class="has-base-color has-text-color has-link-color wp-elements-b7a8a21c051169c834f1bb947d068cbb wp-block-paragraph">Meet Julian Abele, the Black segregation-era architect who designed much of Duke’s West Campus.</p>
-
-
-
-                                                    <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
-                                                        <div class="wp-block-button is-style-primary-light-medium is-style-primary-light-medium--13"><a class="wp-block-button__link wp-element-button" href="https://100.duke.edu/story/julian-abele/">Picture the Past</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns is-style-default is-layout-flex wp-container-core-columns-is-layout-cd4eac57 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30)">
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-1024x683.jpg" alt="Former U.S. Poet Laureate Joy Harjo seated in conversation with Dean Luke Powery beside a blue Duke Chapel banner inside the Chapel." class="wp-image-4161" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/20260303-Pluralism-Joy-Harjo-Karen-Huang-Communications-Specialist-Small-38.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-ironweed-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Space for Spirituality</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-3bed0541b8c42934b814b3b24d9e70c8" style="font-style:normal;font-weight:900">Where Words Can Take You</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">Former U.S. Poet Laureate Jo Harjo packed Duke Chapel to talk about how poems can transcend words.</p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--14"><a class="wp-block-button__link wp-element-button" href="https://chapel.duke.edu/news/modeling-campus-pluralism-generous-and-confident/">Feel the Emotions</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-1024x683.jpg" alt="Dr. Grant standing beside a multicolored woven quilt displayed on the wall of his office." class="wp-image-4162" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/Grant-with-Quilt.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-dark-color has-eno-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Layers of Meaning</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-196f5e69fb23141abef5c71f459b5d7b" style="font-style:normal;font-weight:900">How Quilts Transform a Building Space</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">A quilt display at the School of Nursing brings warmth, artistry and texture to the school community. </p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--15"><a class="wp-block-button__link wp-element-button" href="https://nursing.duke.edu/news/quilting-community-school-nursing">See the Quilts</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-1024x683.jpg" alt="“Tree of Life” quilted triptych featuring trees, rocks and nature scenes across three fabric panels." class="wp-image-4163" srcset="https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/8x10_067605_tree001sm.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-ironweed-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Commitment to Teaching</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-cd5ddc62918bfb73dc3d3b11c5c062d3" style="font-style:normal;font-weight:900">Art Tour Celebrates Nicaea </h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">The Duke Divinity School is celebrating the <a href="https://divinity.duke.edu/about/nicaea" target="_blank" rel="noreferrer noopener">Nicene Creed’s 1700th anniversary</a> with a self-guided art tour. </p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--16"><a class="wp-block-button__link wp-element-button" href="https://divinity.duke.edu/news/duke-divinity-art-tour-celebrates">Tour the Space</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                    <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="682" src="https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-1024x682.jpg" alt="Group gathered at a Duke Shabbat dinner event as a student speaks into a microphone beside lit candles." class="wp-image-4296" style="border-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/C52A8578_edit.jpg 2000w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0;padding-bottom:0;flex-basis:50%">
-                                    <article class="wp-block-group has-base-background-color has-background is-vertical is-layout-flex wp-container-core-group-is-layout-b910bbcf wp-block-group-is-layout-flex" style="border-radius:10px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--natural)">
-                                        <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                            <p class="wp-block-duke-blocks-chiclet has-base-color has-duke-royal-blue-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Connections</p>
-                                        </div>
-
-
-
-                                        <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-4a9bc7c0939dc486721835933eb83450" style="font-style:normal;font-weight:900">Shared Meals</h3>
-
-
-
-                                        <p class="wp-block-paragraph">An endowed fund covers Shabbat dinners for more than 400 students, ensuring they remain free and welcoming for all students.</p>
-
-
-
-                                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                            <div class="wp-block-button is-style-dark-button is-style-primary-dark-medium is-style-primary-dark-medium--17"><a class="wp-block-button__link wp-element-button" href="https://students.duke.edu/jld-bermont-shabbat-fund/">Familiar Space</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;padding-top:0;padding-bottom:0;flex-basis:50%">
-                                    <article class="wp-block-group has-base-background-color has-background is-vertical is-layout-flex wp-container-core-group-is-layout-b910bbcf wp-block-group-is-layout-flex" style="border-radius:10px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--natural)">
-                                        <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                            <p class="wp-block-duke-blocks-chiclet has-base-color has-duke-royal-blue-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Athletics Action</p>
-                                        </div>
-
-
-
-                                        <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-7e1710630b9bee4e3d3c3bd24027973a" style="font-style:normal;font-weight:900">Inside Game Day</h3>
-
-
-
-                                        <p class="wp-block-paragraph">Go behind the scenes of a Duke basketball game with Alli Slater, director of game operations and championships.</p>
-
-
-
-                                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                            <div class="wp-block-button is-style-dark-button is-style-primary-dark-medium is-style-primary-dark-medium--18"><a class="wp-block-button__link wp-element-button" href="https://today.duke.edu/2025/02/duke-workday-alli-slater-takes-you-inside-game-day">Get on the Court</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;padding-right:0;padding-left:0;flex-basis:50%">
-                                    <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                                        <div class="wp-block-embed__wrapper">
-                                            <iframe loading="lazy" title="A Duke Workday: Alli Slater Takes You Inside Game Day" width="500" height="281" src="https://www.youtube.com/embed/6WthyhCAU3k?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-duke-blocks-section-heading alignfull has-duke-navy-blue-100-color has-text-color is-layout-flow wp-block-duke-blocks-section-heading-is-layout-flow" id="tiny" style="padding-top:var(--wp--preset--spacing--80);padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0;font-size:clamp(31.609px, 1.976rem + ((1vw - 3.2px) * 2.772), 56px);font-weight:900">
-                                <div class="duke-section-heading-inner" data-text="Tiny Space">
-                                    <h2>Tiny Space</h2>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-group has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-8f766fc5 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50)">
-                                <p class="has-medium-font-size wp-block-paragraph">At Duke, the study of small things is a big deal, from microplastics to subatomic particles to brain matter.</p>
-                            </div>
-
-
-
-                            <div style="background-image:url('https://www.duke.edu/wp-content/uploads/2026/05/microplastics-36.jpg');background-size:cover;" class="wp-block-duke-blocks-video has-light-overlay has-image-background has-base-background-color has-background">
-                                <div class="duke-video-wrapper">
-                                    <div class="duke-video-content">
-                                        <div class="duke-video-content-inner">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Public Health</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-text-align-left has-duke-navy-blue-100-color has-text-color" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--large)">The Risks of Microplastics</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">Plastics are everywhere. In this video, Duke experts dive into the dangers microplastics pose to us.</p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--19"><a class="wp-block-button__link wp-element-button" href="https://www.dukehealth.org/blog/plastic-pollution-everywhere-what-we-know-and-what-we-hope-learn">Understand the Dangers</a></div>
-                                            </div>
-                                        </div>
-                                    </div><button class="duke-video-play" aria-label="Play Video"><span class="duke-icon-play" aria-hidden="true"></span></button>
-                                    <div class="duke-video-embed" data-video-url="https://www.youtube.com/watch?v=LhA8fJ_Les4"></div>
-                                    <div class="duke-video-overlay"></div>
-                                </div>
-                            </div>
-
-
-
-                            <p class="wp-block-paragraph"></p>
-
-
-
-                            <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-horizontal is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1-768x1024.jpg" alt="Black-and-white photo of a person sweeping inside a large circular chamber in a nuclear lab." class="wp-image-4186" srcset="https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/VGraaff-1.jpg 1216w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-d36b1503 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Enduring Vision</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-49cf8b9b6fe9b50038b6cbae006b8af9" style="font-style:normal;font-weight:900">A Nuclear Lab Turns 60</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">The facility includes three laboratories that conduct experiments in the nuclear space, smashing together primordial particles to understand the foundations of physics.</p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--20"><a class="wp-block-button__link wp-element-button" href="https://trinity.duke.edu/news/triangle-universities-nuclear-laboratory-self-sustaining-sixty">Experience the Decades</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-horizontal is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog-768x1024.jpg" alt="Photoacoustic imaging scan showing a translucent green frog against a black background." class="wp-image-4187" srcset="https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/sound-waves-frog.jpg 1216w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-d36b1503 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Visualizing Microspaces</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-81af11fdabe43f41d4f7d662aa915ed4" style="font-style:normal;font-weight:900">Soundwaves that Shed New Light</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">Junjie Yao’s innovative “photoacoustic imaging” unveils tiny living spaces, helping develop new drugs, remove cancerous tumors and study brain function.</p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--21"><a class="wp-block-button__link wp-element-button" href="https://otc.duke.edu/news/soundwaves-that-shed-new-light/">See Sound Waves</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="682" src="https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024-1024x682.jpg" alt="Researcher wearing protective glasses working with quantum computing equipment in a laboratory." class="wp-image-4188" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20240927_DQC_Edit024.jpg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Nanospace</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-53507784cbc4c0ea9679922787688999" style="font-style:normal;font-weight:900">Inside the Plan for a Next-Gen Quantum Computer</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">Duke scientists are part of a team working on a new computer that will democratize access to quantum computing software. </p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--22"><a class="wp-block-button__link wp-element-button" href="https://pratt.duke.edu/news/duke-nqvl-grant-design-phase/">Think Big</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns alignfull story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                    <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="576" src="https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature-1024x576.jpg" alt="Debra Silver, PhD, smiling in a laboratory with imaging equipment and a colorful brain scan displayed on a monitor." class="wp-image-4030" style="border-top-right-radius:10px;border-bottom-right-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature-768x432.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/04/magnify_silver_debra-feature.jpg 1200w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0;padding-bottom:0;flex-basis:50%">
-                                    <article class="wp-block-group has-duke-navy-blue-100-background-color has-background is-vertical is-layout-flex wp-container-core-group-is-layout-b910bbcf wp-block-group-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-                                        <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                            <p class="wp-block-duke-blocks-chiclet has-base-color has-copper-background-color has-text-color has-background has-link-color wp-elements-0b4963de119af236a5490b875780c197" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Grey Matter</p>
-                                        </div>
-
-
-
-                                        <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-76a01a192e0fa1b05787338ba182898d" style="font-style:normal;font-weight:900">The Brain’s Blueprint Maker</h3>
-
-
-
-                                        <p class="has-base-color has-text-color has-link-color wp-elements-d785613027fc3c8d78435e1eefd22bad wp-block-paragraph">A developmental neurologist is trying to solve one of science’s great unknowns: How does the brain develop?</p>
-
-
-
-                                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                            <div class="wp-block-button is-style-light-button is-style-primary-light-medium is-style-primary-light-medium--23"><a class="wp-block-button__link wp-element-button" href="https://medschool.duke.edu/stories/brains-blueprint-maker">Study the Brain</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-duke-blocks-section-heading alignfull has-duke-navy-blue-100-color has-text-color is-layout-flow wp-block-duke-blocks-section-heading-is-layout-flow" id="green" style="padding-top:var(--wp--preset--spacing--80);padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0;font-size:clamp(31.609px, 1.976rem + ((1vw - 3.2px) * 2.772), 56px);font-weight:900">
-                                <div class="duke-section-heading-inner" data-text="Green Space">
-                                    <h2>Green Space</h2>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-group has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-8f766fc5 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50)">
-                                <p class="has-medium-font-size wp-block-paragraph">Duke’s commitment to climate is holistic; you can find it across the university, including athletics, architecture and business.</p>
-                            </div>
-
-
-
-                            <div class="wp-block-group alignfull has-dark-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="1080" class="wp-block-cover__image-background wp-image-4033 size-full" alt="Aerial view of the Garden Gateway Project at Duke Gardens surrounded by trees and campus buildings at sunset." src="https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003.jpg" style="object-position:80% 66%" data-object-fit="cover" data-object-position="80% 66%" srcset="https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003.jpg 1920w, https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003-768x432.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/04/20260406_gardengateway003-1536x864.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
-                                    <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                                        <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                            <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
-                                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                                    <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                        <p class="wp-block-duke-blocks-chiclet has-dark-color has-piedmont-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Major Redesign</p>
-                                                    </div>
-
-
-
-                                                    <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-montserrat-font-family has-large-font-size wp-elements-7c2a1c1f9d4f6cc865f19901ce981854" style="font-style:normal;font-weight:900">Garden Gateway Project Reopens to the Public</h3>
-
-
-
-                                                    <p class="has-base-color has-text-color has-link-color wp-elements-f42a9e8f7ea6ebaa782d3e7839d714e5 wp-block-paragraph">The project was inspired by a vision of enhancing Duke Gardens as a vibrant space for students, the university and the public.</p>
-                                                </div>
-
-
-
-                                                <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                                    <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3189c7ba wp-block-buttons-is-layout-flex">
-                                                        <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--24"><a class="wp-block-button__link has-duke-navy-blue-100-background-color has-background wp-element-button" href="https://gardens.duke.edu/gateway/">Plan A Visit</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-70bf7037 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--50)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200-1024x683.jpg" alt="An illustration showing a person watering a plant next to industrial smokestacks emitting smoke." class="wp-image-4190" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Hao-Xue_climate-disclosures-1200.jpg 1200w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-dark-color has-piedmont-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Climate Performance</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-607794baf6b0f9dba7fe7abdda5d0b1e" style="font-style:normal;font-weight:900">A Space for Green Investment</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">A Fuqua School of Business professor shows how to design climate reporting to help companies improve their environmental performance. </p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--25"><a class="wp-block-button__link wp-element-button" href="https://www.fuqua.duke.edu/duke-fuqua-insights/why-climate-disclosure-key-in-driving-efficient-green-investments">Maximize Profits</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-horizontal is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1-768x1024.jpg" alt="Map of the southeastern United States with states shaded in blue and green tones." class="wp-image-4212" srcset="https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/southeast-power-1.jpg 1216w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-d36b1503 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-dark-color has-piedmont-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Electricity Markets</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-910bfb487f12659b820d9c49311b7baa" style="font-style:normal;font-weight:900">Energy in the Southeast</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">A dashboard offers a set of indicators that characterize competitiveness of electricity markets in the Southeastern United States.</p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--26"><a class="wp-block-button__link wp-element-button" href="https://nicholasinstitute.duke.edu/articles/nicholas-institute-dashboard-shows-range-competitiveness-southeast-power-sector">Score the Competition</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-horizontal is-image-left has-base-color has-text-color">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof-768x1024.jpg" alt="Outdoor aerial view of industrial equipment and infrastructure at a large data center facility." class="wp-image-4194" srcset="https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/Data_center_roof.jpg 1216w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-d36b1503 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-dark-color has-piedmont-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Clean Energy Space</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-b59813ad3e1a60ea8ab52bbafffa3dc7" style="font-style:normal;font-weight:900">Can the Grid Keep Up With AI?</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">Speakers at an annual Duke-hosted summit explored this critical moment in time, when the desire to decarbonize collides with a surge in AI-driven electricity demand. </p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--27"><a class="wp-block-button__link wp-element-button" href="https://sanford.duke.edu/story/billions-trillions-can-grid-keep-ai-without-derailing-climate-progress/">Scale Responsibly</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns story-50-50 is-layout-flex wp-container-core-columns-is-layout-2b2695dc wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                    <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="1024" height="768" src="https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702-1024x768.jpg" alt="Students and researchers seated and standing in a circle during an outdoor field study in the mountains of Nepal." class="wp-image-4197" style="border-radius:10px;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702-1024x768.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702-300x225.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702-768x576.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20250530_111702.jpg 1200w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0;padding-bottom:0;flex-basis:50%">
-                                    <article class="wp-block-group has-base-background-color has-background is-vertical is-layout-flex wp-container-core-group-is-layout-b910bbcf wp-block-group-is-layout-flex" style="border-radius:10px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--natural)">
-                                        <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                            <p class="wp-block-duke-blocks-chiclet has-dark-color has-piedmont-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Hands-On Education</p>
-                                        </div>
-
-
-
-                                        <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-1c5e1baeb3e57731e345eff92b21dcb5" style="font-style:normal;font-weight:900">Experiential Learning in Nepal</h3>
-
-
-
-                                        <p class="wp-block-paragraph">On a three-week trip through Nepal, Duke students saw up close the connection between environmental change and human well-being.</p>
-
-
-
-                                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                            <div class="wp-block-button is-style-dark-button is-style-primary-dark-medium is-style-primary-dark-medium--28"><a class="wp-block-button__link wp-element-button" href="https://nicholas.duke.edu/narratives/lumbini-lo-manthang-exploring-ties-between-climate-health-and-society-nepal">Take the Trip</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-group alignfull has-duke-navy-blue-100-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                <div class="wp-block-cover alignfull is-light wp-duotone-duke-dark-duotone"><img loading="lazy" decoding="async" width="1024" height="427" class="wp-block-cover__image-background wp-image-4199 size-large" alt="A photo of the field and stands in Koskinen Stadium" src="https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-1024x427.jpg" style="object-position:50% 100%" data-object-fit="cover" data-object-position="50% 100%" srcset="https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-1024x427.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-300x125.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-768x320.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11-1536x640.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/ath_facilities_20170202-11.jpg 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
-                                    <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                                        <div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                            <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
-                                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
-                                                    <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c28032c9 wp-block-group-is-layout-constrained">
-                                                        <figure class="wp-block-image aligncenter size-full is-resized has-custom-border"><img loading="lazy" decoding="async" width="800" height="800" src="https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004.jpg" alt="Portrait of former professional soccer player Imani Dorsey Kunzweiler smiling in a white Duke sweatshirt with blue lettering." class="has-border-color has-duke-navy-blue-25-border-color wp-image-4044" style="border-width:10px;border-radius:150px;box-shadow:var(--wp--preset--shadow--sharper);object-fit:cover;width:300px;height:300px" srcset="https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004.jpg 800w, https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004-300x300.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004-150x150.jpg 150w, https://www.duke.edu/wp-content/uploads/2026/04/20260217_dorsey_imani004-768x768.jpg 768w" sizes="auto, (max-width: 800px) 100vw, 800px"></figure>
-                                                    </div>
-                                                </div>
-
-
-
-                                                <div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%">
-                                                    <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                        <p class="wp-block-duke-blocks-chiclet has-dark-color has-piedmont-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">New ROles</p>
-                                                    </div>
-
-
-
-                                                    <h3 class="wp-block-heading has-medium-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--40)">A Winning Match for Athletics, Climate and Green Space</h3>
-
-
-
-                                                    <p class="has-base-color has-text-color has-link-color wp-elements-78c6203f8eedc05832df5728d65b0123 wp-block-paragraph">Meet Imani Dorsey Kunzweiler, a former pro soccer player now in a new role at Duke that marries athletics and climate sustainability.</p>
-
-
-
-                                                    <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
-                                                        <div class="wp-block-button is-style-primary-light-medium is-style-primary-light-medium--29"><a class="wp-block-button__link wp-element-button" href="https://sustainability.duke.edu/profile/imani-dorsey/">Step into the Action</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-duke-blocks-section-heading alignfull has-duke-navy-blue-100-color has-text-color is-layout-flow wp-block-duke-blocks-section-heading-is-layout-flow" id="creative" style="padding-top:var(--wp--preset--spacing--80);padding-right:0;padding-bottom:var(--wp--preset--spacing--40);padding-left:0;font-size:clamp(31.609px, 1.976rem + ((1vw - 3.2px) * 2.772), 56px);font-weight:900">
-                                <div class="duke-section-heading-inner" data-text="Creative Space">
-                                    <h2>Creative Space</h2>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-group has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-72dba8ef wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--70)">
-                                <p class="has-medium-font-size wp-block-paragraph">All around campus, Duke offers spaces to create, experiment and stretch your mind. Go find yours.</p>
-                            </div>
-
-
-
-                            <div class="wp-block-group alignfull has-duke-navy-blue-100-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                <div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-center" style="min-height:450px;aspect-ratio:unset;"><img loading="lazy" decoding="async" width="1920" height="1080" class="wp-block-cover__image-background wp-image-4355 size-full" alt="Alum and students sit in a auditorium and listen to a panel of soeakers" src="https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013.jpg" style="object-position:51% 31%" data-object-fit="cover" data-object-position="51% 31%" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013.jpg 1920w, https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013-768x432.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20231021_deman_weekend_0013-1536x864.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient has-dark-bottom-gradient-background"></span>
-                                    <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                                        <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                            <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-794e3cfa wp-block-columns-is-layout-flex">
-                                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                                    <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                        <p class="wp-block-duke-blocks-chiclet has-base-color has-ironweed-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Arts Alumni</p>
-                                                    </div>
-
-
-
-                                                    <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-montserrat-font-family has-large-font-size wp-elements-361e7c22dd671f5a5785cde53c6f52df" style="font-style:normal;font-weight:900">A Weekend to Celebrate Creative Industries </h3>
-
-
-
-                                                    <p class="has-base-color has-text-color has-link-color wp-elements-87f4f530c5e4c6d26c6c33845640445c wp-block-paragraph">Now in its 12<sup>th</sup> year, an event brings together alumni and students interested in creative industries for learning, teaching and networking. </p>
-                                                </div>
-
-
-
-                                                <div class="wp-block-column is-vertically-aligned-bottom is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                                    <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3189c7ba wp-block-buttons-is-layout-flex">
-                                                        <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--30"><a class="wp-block-button__link has-duke-navy-blue-100-background-color has-background wp-element-button" href="https://alumni.duke.edu/deman-weekend-2025-recap-0">Find Your People</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns is-style-default is-layout-flex wp-container-core-columns-is-layout-cd4eac57 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30)">
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="682" src="https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373-1024x682.jpg" alt="Two people with a 3D printed bull standing in front of a wall of 3D printers." class="wp-image-4368" srcset="https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373-1024x682.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/20251119_colab373.jpg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Workshop Space</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-131bd4033784e5b19f0f770b02dcb583" style="font-style:normal;font-weight:900">Creatives Can Find a Home at the Co-Lab</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">The Duke Innovation Co-Lab isn’t just for engineers. An open house showcased the facility’s many uses. </p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--31"><a class="wp-block-button__link wp-element-button" href="https://oit.duke.edu/news/creatives-can-find-home-co-lab/">Build a Better Anything</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space-1024x683.jpg" alt="Local instructor leading students in a hands-on textile arts workshop with sewing machines and colorful craft displays in the classroom." class="wp-image-4206" srcset="https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/lakewood-creative-space.jpg 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-ironweed-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Growth Space</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-81f09facc3ec6fae3cd0b97f5a2842b5" style="font-style:normal;font-weight:900">Local Instructors Focus on Renewal</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">Meet the local artists who lead hands-on arts experiences through the Duke Arts Create program. </p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--32"><a class="wp-block-button__link wp-element-button" href="https://arts.duke.edu/the-art-of-renewal/">Take the Approach</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
-                                    <div class="wp-block-duke-blocks-story-card is-style-standard  is-vertically-aligned-bottom is-layout-vertical is-image-left has-base-color has-text-color" style="box-shadow:var(--wp--preset--shadow--card)">
-                                        <figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="683" src="https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-1024x683.jpg" alt="Amy Wyron Robinson ’06 engaging with students seated at round blue-covered tables prepared for hands-on activities during class." class="wp-image-4208" srcset="https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-1024x683.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-300x200.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-768x512.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432-1536x1024.jpg 1536w, https://www.duke.edu/wp-content/uploads/2026/05/IE101_AmyWR_20260304_2432.jpg 1600w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
-
-
-
-                                        <div class="wp-block-group has-base-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-9ff1a97f wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
-                                            <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                                <p class="wp-block-duke-blocks-chiclet has-base-color has-duke-navy-blue-100-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Tools To Innovate</p>
-                                            </div>
-
-
-
-                                            <h3 class="wp-block-heading has-duke-navy-blue-100-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-6e0a6197f637c45d7f587f21447c9aba" style="font-style:normal;font-weight:900">Nurturing the Entrepreneurial Mindset</h3>
-
-
-
-                                            <p class="has-duke-navy-blue-100-color has-text-color wp-block-paragraph">I&amp;E 101 is designed to stretch students beyond what they already know and help them lean into figuring it out.</p>
-
-
-
-                                            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                                <div class="wp-block-button is-style-primary-dark-medium is-style-primary-dark-medium--33"><a class="wp-block-button__link wp-element-button" href="https://entrepreneurship.duke.edu/where-courage-begins/">Find Solutions</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="wp-block-columns alignfull story-50-50 is-layout-flex wp-container-core-columns-is-layout-a8cae133 wp-block-columns-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0;padding-bottom:0;flex-basis:50%">
-                                    <article class="wp-block-group has-duke-navy-blue-100-background-color has-background is-vertical is-layout-flex wp-container-core-group-is-layout-b910bbcf wp-block-group-is-layout-flex" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-                                        <div class="wp-block-duke-blocks-chiclets is-layout-flex wp-block-duke-blocks-chiclets-is-layout-flex">
-                                            <p class="wp-block-duke-blocks-chiclet has-duke-navy-blue-100-color has-duke-navy-blue-10-background-color has-text-color has-background" style="border-radius:4px;padding-top:.25em;padding-right:.75em;padding-bottom:.25em;padding-left:.75em;font-size:14px;font-weight:700">Global Space</p>
-                                        </div>
-
-
-
-                                        <h3 class="wp-block-heading has-base-color has-text-color has-link-color has-montserrat-font-family has-medium-font-size wp-elements-60f1d2b986126c3427f2f1abe4d00c8f" style="font-style:normal;font-weight:900">A Student’s Immersion in Germany</h3>
-
-
-
-                                        <p class="has-base-color has-text-color has-link-color wp-elements-19ca0cb68ae28d910229d8d0989e7302 wp-block-paragraph">A Duke student describes a semester of growth abroad.</p>
-
-
-
-                                        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                                            <div class="wp-block-button is-style-light-button is-style-primary-light-medium is-style-primary-light-medium--34"><a class="wp-block-button__link wp-element-button" href="https://globaled.duke.edu/story/different-kind-classroom-semester-growth-berlin/">Discover Places Abroad</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-
-
-
-                                <div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-                                    <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-cb0a7ccb wp-block-group-is-layout-flex">
-                                        <figure class="wp-block-image size-large has-custom-border"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a-768x1024.jpg" alt="Three students seated together on a sunlit bus during a study abroad experience in Germany." class="wp-image-4071" style="border-top-left-radius:10px;border-bottom-left-radius:10px;aspect-ratio:3/2;object-fit:cover" srcset="https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a-768x1024.jpg 768w, https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a-225x300.jpg 225w, https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a-1152x1536.jpg 1152w, https://www.duke.edu/wp-content/uploads/2026/05/36fd751b-bd8b-40db-9a59-e733d3031b0a.jpg 1536w" sizes="auto, (max-width: 768px) 100vw, 768px"></figure>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <p class="has-text-align-center has-x-small-font-size wp-block-paragraph">Vera C. Rubin Observatory header image credit: NSF–DOE Rubin Observatory/P.J. Assuncao Lago</p>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="Central State University has been changing lives for over 135 years as Ohio&#039;s only public HBCU and 1890 Land-Grant Institution." />
+
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "CollegeOrUniversity",
+            "description": "Central State University (CSU) is Ohio\u0027s only public Historically Black College \u0026 University, with a diverse faculty and student body.",
+            "url": "https://www.centralstate.edu/",
+            "name": "Central State University",
+            "telephone": "(937) 376-6390",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1400 Brush Row Road",
+                "addressLocality": "Wilberforce",
+                "addressRegion": "Ohio",
+                "postalCode": "45384",
+                "addressCountry": "USA"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.centralstate.edu/",
+            "name": "Central State University",
+            "url": "https://www.centralstate.edu/"
+        }
+    ]
+}</script> 
+    <title>Central State University | HBCU | Wilberforce, Ohio</title>
+  
+    <link rel="shortcut icon" href="/public/assets/system/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c"> 
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/gaq3opr.css">
+
+    <link rel="stylesheet" media="all" href="/public/css/main.min.css" />
+    <link rel="stylesheet" media="all" href="/public/css/main-style.css" />
+
+    
+
+  </head>
+  <body class="home-page transparent-header path-frontpage page-node-type-home home">
+        <div role="region" aria-label="Skip to main"><a class="skip-link" href="#main-content">
+      Skip to Content
+    </a></div>
+ 
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'off_canvas_page_wrapper' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/content/off-canvas-page-wrapper.html.twig' -->
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'page' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ page--front.html.twig
+   ▪️ page--node--5.html.twig
+   ▪️ page--node--%.html.twig
+   ▪️ page--node.html.twig
+   ✅ page.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/layout/page.html.twig' -->
+<header id="l--main-header">
+  
+ 
+
+  <div class="region region-header r--region r--header">
+    <div class="cc--component-container cc--header" aria-label="Site Header">
+      <div class="c--component c--header">
+        
+ 
+
+<div id="block-alertbannerblock" class="block block-csu-alert block-alert-banner-block">
+      
+ 
+
+<div class="clear-both alert-banner-block-container"></div>
+
+<!-- END OUTPUT from 'modules/custom/csu_alert/templates/alert-banner-block.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--alert-banner-block.html.twig' -->
+
+
+        
+        <div class="curve-wrapper">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 20" preserveAspectRatio="none">
+            <path d="M0,0h1200v0c-200,13.3-400,20-600,20S200,13.3,0,0L0,0z"></path>
+          </svg>
         </div>
 
+        <div class="header-wrapper">
+          <div class="header-inner">
 
-        <footer class="wp-block-template-part">
-
-
-            <div class="wp-block-group has-duke-navy-blue-100-background-color has-background is-layout-flow wp-block-group-is-layout-flow">
-                <div class="wp-block-cover wp-duotone-duke-dark-duotone" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><img loading="lazy" decoding="async" width="1024" height="572" class="wp-block-cover__image-background wp-image-3544 size-large" alt="An aerial view of West Campus surrounded by green trees with mountains in the distance" src="https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-1024x572.jpg" data-object-fit="cover" srcset="https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-1024x572.jpg 1024w, https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-300x168.jpg 300w, https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-768x429.jpg 768w, https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial-1536x858.jpg 1536w, https://www.duke.edu/wp-content/uploads/2025/12/westcampusaerial.jpg 1920w" sizes="auto, (max-width: 1024px) 100vw, 1024px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
-                    <div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-990fd6b6 wp-block-cover-is-layout-constrained">
-                        <h2 class="wp-block-heading has-large-font-size">Previous Features</h2>
-
-
-
-                        <div class="wp-block-query archive-feature is-layout-flow wp-block-query-is-layout-flow">
-                            <ul style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)" class="columns-2 wp-block-post-template is-layout-grid wp-container-core-post-template-is-layout-5d2a8508 wp-block-post-template-is-layout-grid">
-                                <li class="wp-block-post post-3593 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-
-                                    <div class="wp-block-cover has-aspect-ratio" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;aspect-ratio:16/9;min-height:unset;"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-dark-bottom-gradient-background"></span><img width="1440" height="810" src="https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header.jpg" class="wp-block-cover__image-background wp-post-image" alt="Students cheering in blue jerseys at a football game" data-object-fit="cover" decoding="async" loading="lazy" srcset="https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header.jpg 1440w, https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2026/02/united-in-spirit-header-768x432.jpg 768w" sizes="auto, (max-width: 1440px) 100vw, 1440px">
-                                        <div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-26aacd2d wp-block-cover-is-layout-constrained">
-                                            <h2 style="font-style:normal;font-weight:400;padding-right:0;padding-left:0" class="has-text-align-center wp-block-post-title has-quattrocento-font-family"><a href="https://www.duke.edu/united-in-spirit/" target="_self">United in Spirit</a></h2>
-                                        </div>
-                                    </div>
-
-                                </li>
-                                <li class="wp-block-post post-101 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-
-                                    <div class="wp-block-cover has-aspect-ratio" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;aspect-ratio:16/9;min-height:unset;"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-dark-bottom-gradient-background"></span><img width="1920" height="1080" src="https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3.jpg" class="wp-block-cover__image-background wp-post-image" alt="Duke University Marine Lab sunset" data-object-fit="cover" decoding="async" loading="lazy" srcset="https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3.jpg 1920w, https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3-300x169.jpg 300w, https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3-1024x576.jpg 1024w, https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3-768x432.jpg 768w, https://www.duke.edu/wp-content/uploads/2025/09/duml-sunset-clip_3-1536x864.jpg 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px">
-                                        <div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-26aacd2d wp-block-cover-is-layout-constrained">
-                                            <h2 style="font-style:normal;font-weight:400;padding-right:0;padding-left:0" class="has-text-align-center wp-block-post-title has-quattrocento-font-family"><a href="https://www.duke.edu/across-north-carolina/" target="_self">Across Our State</a></h2>
-                                        </div>
-                                    </div>
-
-                                </li>
-                            </ul>
-
-                        </div>
-
-
-
-                        <div class="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-3b8eca09 wp-block-buttons-is-layout-flex">
-                            <div class="wp-block-button is-style-primary-light-small is-style-primary-light-small--35"><a class="wp-block-button__link wp-element-button" href="https://www.duke.edu/archive/">Archive</a></div>
-                        </div>
-                    </div>
+            <div class="desktop-nav">
+              <div class="utility-nav-container">
+                
+ 
+<div class="block block-system block-system-menu-blockmain cc--component-container cc--main-menu">
+  <div class="c--component c--main-menu">
+          <nav class="mc--menu mc--main" aria-label=" Menu">
+                
+ 
+        <ul class="m--menu m--main">
+                  <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/about" data-drupal-link-system-path="node/4">About CSU</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for About CSU">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/about-csu/innovation-our-dna" data-drupal-link-system-path="node/21">Research and Innovation</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Research and Innovation">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--collapsed">
+                  <a href="#/about-csu/1890-land-grant-university" data-drupal-link-system-path="node/331">1890 Land-Grant University</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/science/research" data-drupal-link-system-path="node/4966">Agricultural Research and Development Program</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics/science/extension" title="Engaging Diverse Communities and Transforming Lives" data-drupal-link-system-path="node/401">Extension</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics-research-and-centers/office-sponsored-programs-research" data-drupal-link-system-path="node/4006">Office of Sponsored Programs and Research</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/csu-dayton/workforce-training-business-development" data-drupal-link-system-path="node/8421">Workforce Training &amp; Business Development</a>
+              </li>
+      </ul>
+    
                 </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/about-csu/our-history-and-traditions" data-drupal-link-system-path="node/16">Our History and Traditions</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/about-csu/news-and-stories" data-drupal-link-system-path="node/36">News and Stories</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for News and Stories">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/about-csu/news-and-stories" data-drupal-link-system-path="node/36">Latest News</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-news-and-stories/university-newsletters" data-drupal-link-system-path="node/9631">Newsletters</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://lp.constantcontactpages.com/sl/7ZhzOFa/ambassador">Subscribe</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/about-csu/events" data-drupal-link-system-path="node/251">Events</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://www.wcsufm.org/">WCSU Jazzy 88.9</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <span>Administration</span>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Administration">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/office-president" title="Visit the Office of the President" data-drupal-link-system-path="node/7601">Office of the President</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/about-csu-administration/board-trustees" data-drupal-link-system-path="node/6611">Board of Trustees</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/about/administration-and-finance" data-drupal-link-system-path="node/5941">Finance</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/division-institutional-advancement" data-drupal-link-system-path="node/6636">Institutional Advancement</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/university-marketing-and-communications" title="Visit the Office of Marketing and Communications" data-drupal-link-system-path="node/6646">Public Relations</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/office-alumni-relations" title="Visit the Office of Alumni Relations" data-drupal-link-system-path="node/6641">Alumni Relations</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/about-csu-administration/human-resources" data-drupal-link-system-path="node/3796">Human Resources</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/office-general-counsel" data-drupal-link-system-path="node/5891">General Counsel</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/policies-and-procedures" data-drupal-link-system-path="node/3856">Policies and Procedures</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/title-iii-program" data-drupal-link-system-path="node/4021">Title III</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/about-csu/marauder-information-technology" data-drupal-link-system-path="node/4186">Marauder IT Services</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <span>CSU Satellite Locations</span>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for CSU Satellite Locations">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics/csu-dayton" data-drupal-link-system-path="node/96">CSU-Dayton</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/csu-trotwood" data-drupal-link-system-path="node/6561">CSU-Trotwood</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/csu-xenia" data-drupal-link-system-path="node/101">CSU-Xenia</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/sites/default/files/2024-11/Campus_Map_June_23.png" target="_blank" title="Central State University Campus Map">Campus Map</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics" data-drupal-link-system-path="node/6">Academics</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Academics">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/academic-affairs" data-drupal-link-system-path="node/5006">Academic Affairs</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Academic Affairs">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-academic-affairs/articulation-agreements-and-partners" data-drupal-link-system-path="node/4101">Articulation Agreements and Partners</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-academic-affairs/complaint-and-reporting-process" data-drupal-link-system-path="node/6486">Complaint and Reporting Process</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics-academic-affairs/office-academic-planning-and-assessment" data-drupal-link-system-path="node/5116">Office of Academic Planning and Assessment</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/academics/explore-our-programs" data-drupal-link-system-path="node/41">Explore Our Programs</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/education-your-future" data-drupal-link-system-path="node/46">Education for Your Future</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/meet-our-faculty-and-staff" data-drupal-link-system-path="node/56">Faculty and Staff</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/colleges-and-schools" data-drupal-link-system-path="node/66">Colleges and Schools</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Colleges and Schools">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-colleges-and-schools/college-business" data-drupal-link-system-path="node/71">Business</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics/science" data-drupal-link-system-path="node/81">Engineering, Science, Technology, and Agriculture</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics-colleges-and-schools/honors" data-drupal-link-system-path="node/4426">Honors</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics/humanities-arts-and-social-sciences" title="Humanities, Arts &amp; Social Sciences" data-drupal-link-system-path="node/86">Humanities, Arts, Social Sciences, and Education</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/empowering-success" data-drupal-link-system-path="node/31">Empowering Success</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Empowering Success">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-empowering-success/academic-advising-and-coaching" data-drupal-link-system-path="node/10436">Academic Advising and Coaching</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-empowering-success/trio-student-support-services" data-drupal-link-system-path="node/4011">TRIO Student Support Services</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics-empowering-success/first-and-secondyear-student-success-fsyss" data-drupal-link-system-path="node/6351">First- and Second-Year Student Success</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-empowering-success/graduate-school-preparation-program" data-drupal-link-system-path="node/8041">Graduate School Preparation Program</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-empowering-success/life-after-csu" data-drupal-link-system-path="node/4226">Life After CSU</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/research-and-centers" data-drupal-link-system-path="node/3781">Research and Centers</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Research and Centers">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/center-excellence-hbcu-corporate-engagement" data-drupal-link-system-path="node/3806">Center of Excellence HBCU Corporate Engagement</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-research-and-centers/center-international-education" data-drupal-link-system-path="node/4546">Center for International Education</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/research-and-centers" data-drupal-link-system-path="node/3781">CSU Library Research</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/mass-communications-center" data-drupal-link-system-path="node/8156">Mass Communications Center</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-research-and-centers/office-sponsored-programs-research" data-drupal-link-system-path="node/4006">Office of Sponsored Programs &amp; Research</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/academics/csu-library" data-drupal-link-system-path="node/3786">CSU Library</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/center-teaching-learning-online-learners" data-drupal-link-system-path="node/5976">Center for Teaching &amp; Learning</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Center for Teaching &amp; Learning">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-central-state-global/online-degree-programs-and-certificates" data-drupal-link-system-path="node/6301">Online Degree Programs and Certificates</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/office-registrar" data-drupal-link-system-path="node/3986">Office Of The Registrar</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Office Of The Registrar">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-office-registrar/class-registration" data-drupal-link-system-path="node/11951">Class registration</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-office-registrar/military-and-veteran-services" data-drupal-link-system-path="node/15531">Military and Veteran Services</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/marauder-life" data-drupal-link-system-path="node/7">Student Services</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Student Services">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/student-services/yard" data-drupal-link-system-path="node/106">On the Yard</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/sites/default/files/2024-11/Campus_Map_June_23.png" target="_blank" title="Central State University Campus Map">Campus Map</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/student-services/office-career-services" data-drupal-link-system-path="node/4246">Career Services</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/student-services/get-involved" data-drupal-link-system-path="node/111">Get Involved</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Get Involved">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/student-services-get-involved/office-marauder-leadership-and-engagement" data-drupal-link-system-path="node/406">Student Organizations</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/student-services-get-involved/greek-life" data-drupal-link-system-path="node/411">Greek Life</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/student-services-get-involved/invincible-marching-marauders" data-drupal-link-system-path="node/416">Marching Band</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/marauder-life-get-involved/central-state-university-chorus" data-drupal-link-system-path="node/421">Chorus</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/student-services/health-services" data-drupal-link-system-path="node/126">Health Services</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Health Services">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/student-services-health-services/counseling-services" data-drupal-link-system-path="node/6581">Counseling Services</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/student-services-health-services/campus-violence-prevention-program" data-drupal-link-system-path="node/10006">Campus Violence Prevention Program</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/student-services-health-services/office-academic-empowerment-and-accessibility" data-drupal-link-system-path="node/15041">Office of Academic Empowerment and Accessibility</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/student-services/homecoming" data-drupal-link-system-path="node/116">Homecoming</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/student-services/housing-and-dining" data-drupal-link-system-path="node/121">Housing and Dining</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Housing and Dining">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--collapsed">
+                  <a href="#/student-services-housing-and-dining/movein-information" data-drupal-link-system-path="node/6321">Move-In Information</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/student-services/office-ombuds" data-drupal-link-system-path="node/12896">Office of the Ombuds</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/student-services/central-state-university-department-public-safety" data-drupal-link-system-path="node/3876">Safety</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Safety">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/student-services-campus-safety/campus-emergency-conditions" data-drupal-link-system-path="node/4441">Campus Emergency Conditions</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/sites/default/files/2025-11/clery-report-2025.pdf">Clery Report</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/student-right-know" data-drupal-link-system-path="node/9426">Student Right to Know</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions" data-drupal-link-system-path="node/8">Admissions &amp; Aid</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Admissions &amp; Aid">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions" data-drupal-link-system-path="node/8">Options to Apply</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Options to Apply">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/admissions-aid-options-apply/undergraduate-campus" data-drupal-link-system-path="node/136">Undergraduate (campus)</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid-options-apply/college-credit-plus" data-drupal-link-system-path="node/7151">College Credit Plus</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions-aid/tour-campus" data-drupal-link-system-path="node/156">Tour Campus</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Tour Campus">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/admissions-aid-tour-campus/explore-campus" data-drupal-link-system-path="node/13826">Tour Online</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/tour-campus#campus-tour" title="Schedule a Tour" data-drupal-link-system-path="node/156">Visit Onsite</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/admissions-faqs" data-drupal-link-system-path="node/316">Admissions FAQ</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions-aid/tuition-and-costs" data-drupal-link-system-path="node/3866">Tuition &amp; Costs</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Tuition &amp; Costs">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/admissions-aid-tuition-costs/understanding-college-costs-and-payment-college-bills" data-drupal-link-system-path="node/4406">Understanding College Costs and Payments</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/financial-aid-and-scholarships" data-drupal-link-system-path="node/466">Financial Aid &amp; Scholarships</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/undergraduate-admissions-team" data-drupal-link-system-path="node/151">Meet Our Admissions Team</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions-aid/admitted-students" data-drupal-link-system-path="node/161">Admitted Students</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Admitted Students">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/ready" data-drupal-link-system-path="node/15181">Marauder Ready</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid-admitted-students/student-orientation-advising-and-registration" data-drupal-link-system-path="node/6911">Student Orientation, Advising, and Registration</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/office-cash-management" data-drupal-link-system-path="node/6866">Cash Management</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+      </ul>
+    
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/navigation/menu--main.html.twig' -->
+
+
+      </nav>
+      </div>
+</div>
+
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--centralstate-main-menu.html.twig' -->
+
+
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ block--utility.html.twig
+   ▪️ block--system-menu-block--utility.html.twig
+   ▪️ block--system-menu-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--utility.html.twig' -->
+
+<div class="block block-system block-system-menu-blockutility cc--component-container cc--utility-menu">
+  <div class="c--component c--utility-menu">
+          <nav class="mc--menu mc--utility" aria-label=" Menu">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__utility' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ menu--utility.html.twig
+   ✅ menu--utility.html.twig
+   ▪️ menu.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/navigation/menu--utility.html.twig' -->
+
+              <ul class="m--menu m--utility">
+                    <li class="menu-item">
+                  <a href="https://applynow.centralstate.edu/apply">Apply</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://global.centralstate.edu/" title="D2L Brightspace Learning Management System">D2L</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://maraudersports.com/">Athletics</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/office-alumni-relations" data-drupal-link-system-path="node/6641">Alumni</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://fundraise.givesmart.com/e/0gVMdQ?vid=12d2pw">Give</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="utility-button-wrapper">
+            <button type="button" class="utility-button information-for-toggle" aria-expanded="false" aria-haspopup="true">
+                            <a href="#" class="utility-item-link">
+                Info For<span class="offset"></span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve"><path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0 s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path></svg>
+              </a>
+            </button>
+                                        <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/info/info-current-students" data-drupal-link-system-path="node/261">Current Students</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-office-registrar/military-and-veteran-services" data-drupal-link-system-path="node/15531">Military and Veteran Services</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/info/information-parents-and-families" data-drupal-link-system-path="node/3791">Parents and Families</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/info/information-faculty-and-staff" data-drupal-link-system-path="node/4151">Faculty and Staff</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu/marauder-information-technology" data-drupal-link-system-path="node/4186">Marauder IT Services</a>
+              </li>
+        </ul>
+  
+                      </div>
+              </li>
+        </ul>
+  
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/navigation/menu--utility.html.twig' -->
+
+
+      </nav>
+      </div>
+</div>
+
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--utility.html.twig' -->
+
+
+                <button class="icon-search search-trigger-button" aria-label=Search>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="search-open" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+    <path d="M6.3,0C2.8,0,0,2.8,0,6.3s2.8,6.3,6.3,6.3c1.3,0,2.6-0.4,3.6-1.1l4.2,4.2
+    c0.4,0.4,1.1,0.4,1.6,0c0.4-0.4,0.4-1.1,0-1.6l-4.2-4.2c0.7-1,1.1-2.3,1.1-3.6C12.7,2.8,9.8,0,6.3,0z M6.3,2.2
+    c2.3,0,4.1,1.8,4.1,4.1c0,2.3-1.8,4.1-4.1,4.1c-2.3,0-4.1-1.8-4.1-4.1C2.2,4.1,4.1,2.2,6.3,2.2z"/>
+  </svg>
+
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon-close" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 17.8 17.8" style="enable-background:new 0 0 17.8 17.8;" xml:space="preserve">
+    <path d="M11,8.9l6.4-6.4C18,2,18,1,17.4,0.4c-0.6-0.6-1.5-0.6-2.1,0L8.9,6.8L2.6,0.4C2-0.1,1-0.1,0.4,0.4
+    C-0.1,1-0.1,2,0.4,2.6l6.4,6.4l-6.4,6.4c-0.6,0.6-0.6,1.5,0,2.1C1,18,2,18,2.6,17.4L8.9,11l6.4,6.4c0.6,0.6,1.5,0.6,2.1,0
+    c0.6-0.6,0.6-1.5,0-2.1L11,8.9z"/>
+  </svg>
+</button>
+              </div>
+
+              <div class="main-nav-container">
+                <div class="branding-mainmenu-container">
+                  <div class="branding-mainmenu-container-inner">
+                      
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--branding-header "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--branding-header"
+    
+      >
+
+    
+  <a href="#/" aria-label="Central State University Home"><svg data-name="Layer 1" class="logo-negative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 52.34"><g data-name="Logo - Negative"><path d="M21.8,0C35.24,0,43.6,3.73,43.6,3.73V30.54a21.8,21.8,0,0,1-43.6,0V3.73S8.35,0,21.8,0" fill="#851740"/><path d="M26.83,44.83c-.18.27-.25.34-.25.5a.25.25,0,0,0,.26.27c.23,0,.28-.22.45-.59l1.45-3.25c.1-.22.36-.63.36-.63l0-.2a3,3,0,0,1-.44,0H26.27l-.22,1.13h.24c.16-.44.25-.45.72-.45h1a3.4,3.4,0,0,0,.45,0l-.47,1a12.64,12.64,0,0,1-1.18,2.19m-3.92-4.45a.59.59,0,0,1,.6-.59c.33,0,.6.25.6.75a1.22,1.22,0,0,1-.44.93c-.41-.35-.76-.68-.76-1.09m-.19,2.68a1.23,1.23,0,0,1,.53-1c.49.4,1,.79,1,1.29a.76.76,0,0,1-.77.74c-.41,0-.75-.36-.75-1m-.66.12a1.23,1.23,0,0,0,1.38,1.14,1.37,1.37,0,0,0,1.49-1.22c0-.59-.53-1-1-1.45.49-.33.88-.66.88-1.18s-.47-.95-1.21-.95-1.34.45-1.34,1A1.79,1.79,0,0,0,23,41.84a1.65,1.65,0,0,0-1,1.34m-3.18-2.8a.59.59,0,0,1,.6-.59c.33,0,.6.25.6.75a1.23,1.23,0,0,1-.45.93c-.4-.35-.75-.68-.75-1.09m-.2,2.68a1.22,1.22,0,0,1,.54-1c.49.4,1,.79,1,1.29a.75.75,0,0,1-.76.74c-.42,0-.76-.36-.76-1m-.66.12c0,.8.73,1.14,1.39,1.14A1.37,1.37,0,0,0,20.9,43.1c0-.59-.54-1-1-1.45.49-.33.88-.66.88-1.18s-.47-.95-1.22-.95-1.33.45-1.33,1A1.8,1.8,0,0,0,19,41.84a1.65,1.65,0,0,0-1,1.34m-3.24,1.09,1.93,0,0-.23L16,43.94a2.17,2.17,0,0,0,0-.36V41.27l.62-.07,0-.24h-2v.25c.49,0,.62.09.62.41v2c0,.32-.14.44-.58.44Z" fill="#fff"/><path d="M30.38,26.6,21.8,24.33V35.76l8.69,2.17Zm-4.13,4.12c-.58,0-1.09-.66-1.14-1.55s.36-1.64.93-1.68,1.09.66,1.14,1.55S26.82,30.68,26.25,30.72ZM21.8,5.62l12.12,6.61L21.8,7.66ZM31.64,12l1.87.7-3.23,1.64v-.52a.78.78,0,0,1,.6-.79A1.3,1.3,0,0,0,31.64,12Zm-1.37,3.65L30.38,26l-2.17-.59V19.47a.51.51,0,1,0-1,0v5.67L26.65,25V18.92a.52.52,0,1,0-1,0v5.8l-.56-.15V18.36a.51.51,0,1,0-1,0V24.3l-2.28-.62V8.29l2.35.89a1.26,1.26,0,0,1-.8,1.05.77.77,0,0,0-.62.82V12.9c0,.3-.2.79-.4.79l.45.15a.87.87,0,0,0,.42-.73V11.26a.81.81,0,0,1,.63-.82,1.35,1.35,0,0,0,.79-1.08l.32.12a1.25,1.25,0,0,1-.8,1,.78.78,0,0,0-.63.83v1.84c0,.3-.2.79-.39.79l.44.15a.88.88,0,0,0,.43-.73V11.53a.8.8,0,0,1,.62-.82,1.34,1.34,0,0,0,.79-1.06l5,1.9a1.2,1.2,0,0,1-.77,1,.75.75,0,0,0-.6.79v1.78c0,.29-.19.75-.37.75l.42.15a.86.86,0,0,0,.41-.7V13.57a.77.77,0,0,1,.6-.79,1.29,1.29,0,0,0,.76-1.06l.3.12a1.18,1.18,0,0,1-.77,1,.74.74,0,0,0-.59.79v1.78c0,.29-.2.75-.38.75l.42.15A.82.82,0,0,0,30.27,15.66Z" fill="#fff"/><path d="M13.11,37.93l8.69-2.17V24.33L13.22,26.6ZM16.41,29c.06-.89.57-1.59,1.15-1.55s1,.79.93,1.68-.56,1.58-1.14,1.55S16.36,29.93,16.41,29ZM21.8,7.66,9.68,12.23,21.8,5.62ZM12.72,13a.78.78,0,0,1,.6.79v.52l-3.23-1.64L12,12A1.26,1.26,0,0,0,12.72,13Zm1,3.27.42-.15c-.19,0-.38-.46-.38-.75V13.63a.74.74,0,0,0-.6-.79,1.21,1.21,0,0,1-.77-1l.31-.12a1.29,1.29,0,0,0,.76,1.06.78.78,0,0,1,.6.79v1.78a.84.84,0,0,0,.41.7l.42-.15c-.18,0-.38-.46-.38-.75V13.37a.74.74,0,0,0-.59-.79,1.21,1.21,0,0,1-.78-1l5-1.9A1.32,1.32,0,0,0,19,10.71a.8.8,0,0,1,.62.82v1.85a.88.88,0,0,0,.43.73l.44-.15c-.19,0-.4-.49-.4-.79V11.33a.77.77,0,0,0-.62-.83,1.25,1.25,0,0,1-.8-1L19,9.36a1.35,1.35,0,0,0,.79,1.08.8.8,0,0,1,.62.82v1.85a.88.88,0,0,0,.43.73l.44-.15c-.19,0-.39-.49-.39-.79V11.05a.77.77,0,0,0-.62-.82,1.27,1.27,0,0,1-.81-1.05l2.36-.89V23.68l-2.28.62V18.36a.51.51,0,1,0-1,0v6.21l-.57.15v-5.8a.57.57,0,0,0-.5-.63.58.58,0,0,0-.5.63V25l-.56.15V19.47a.58.58,0,0,0-.5-.63.57.57,0,0,0-.5.63v5.94L13.22,26l.1-10.34A.85.85,0,0,0,13.73,16.31Z" fill="#e0bb60"/><path d="M198.11,29.64s3.2-.11,5-.11h11.45L216,23h-1.21c-1.78,4-2.35,5.13-5.41,5.13h-5.94a11,11,0,0,0,.18-2V10.11a6.78,6.78,0,0,1,1.18-4.3l-.18-.14a30.1,30.1,0,0,1-4,.14h-2.77V6.7c2.63.53,2.63.89,2.63,2.59v17c0,1.28-.78,2-2.38,2.2Zm-4.62-3.84-7.9-20.2-1.46.32-8.43,21a2.54,2.54,0,0,1-2.38,1.6v1h6.58l.14-1-3-.43,2.45-6.4.46-.36h8.5L190.6,27c.4,1.07-.49,1.35-1.49,1.39v1.21s4.09-.11,5.41-.11h1.53l.14-1C195.09,28.39,194.45,28.22,193.49,25.8Zm-13.34-5.94L184.1,9.58a20,20,0,0,0,.71,2.17l3.06,8.11Zm-9,8.5c-.92-.07-1.63-.14-3.16-2.35l-5.12-7.5V18c1.7-.88,4.69-3.16,4.69-6.5,0-3.1-2.42-5.73-8.82-5.73h-8.25V6.7c2.74.53,2.92.89,2.92,2.59v17c0,1.21-1,2-2.56,2.2v1.14l8.57-.21.14-1-3.2-.32a8.91,8.91,0,0,0,.18-1.81V19.36l.35-.35h2.6l4.41,6.5a24.36,24.36,0,0,1,2.2,3.92l.15.1h5.15l.15-1.14ZM159.55,17.62h-3V7.55l.35-.35h1.32c4.37,0,5.9,2.56,5.9,5.26C164.14,15.91,161.69,17.62,159.55,17.62Zm-27.35,12,8.93-.21.14-1-3.55-.32a10.89,10.89,0,0,0,.17-1.92V7.55l.36-.35h3.52c2.77,0,3.95.74,3.77,4.41h1.21l1.1-6a15.13,15.13,0,0,1-2.56.21H128.65a12,12,0,0,1-2.39-.21l-1.1,6h1.21c1.35-3.67,2.42-4.41,4.87-4.41h3.52v19c0,1.28-1,2.13-2.56,2.31Zm-32.61,0,7-.21.15-1-3.21-.21a10.44,10.44,0,0,0,.18-1.92V10.15c.36.53.86,1.21,1.28,1.71l15.12,17.85H121V9.94a3.61,3.61,0,0,1,2.46-3.63l-.18-.5h-6.76v1c2.88.29,2.92,1.11,2.92,2.67v14.8c-.39-.57-1-1.32-1.42-1.89L105.17,7.52a11.43,11.43,0,0,1-1.32-1.85s-1.81.14-3.55.14H99.23V6.7c2.35.43,2.92,1.14,2.92,3.59v16c0,1.28-1,2-2.56,2.2Zm-20.67,0s3.38-.11,5.16-.11h11.1l1.31-5.79H95.28c-1.78,3.73-2.2,4.41-5.26,4.41H84.43a11.82,11.82,0,0,0,.18-2V18.54l.36-.35h6.15v2.63h1.67V14.56l-1.31.21-.29,2H84.61V7.55L85,7.2h4.66c2.84,0,4,.74,3.84,4.41h1.21l1.1-5.94a22.51,22.51,0,0,1-2.56.14H78.57V6.7c2.73.53,2.91.89,2.91,2.59v17c0,1.28-1,2-2.56,2.2ZM54.49,17.94c0,7.68,6,12,12.37,12a10.62,10.62,0,0,0,8.86-4.13l-.5-.74a11.11,11.11,0,0,1-7.15,2.52c-5.79,0-10.28-4.3-10.28-10.7,0-5.77,3.63-10.18,9.11-10.18,2.88,0,6,1.18,6,4.88h1.21L75.19,6.2a74.57,74.57,0,0,0-7.69-.82c-7.64,0-13,5.3-13,12.56m154,29.94,4.42-.09.06-.53-1.35-.14a4.64,4.64,0,0,0,.08-.86V42.94l2.83-4.53a2.24,2.24,0,0,1,1-.91l-.08-.3h-2.71v.48c.81.13.89.57.64,1l-2.15,3.54c-.13-.29-.31-.64-.45-.9l-1.75-3a1.35,1.35,0,0,1,0-1.15l-.06-.06s-.85.06-2.26.06h-.85v.48a1.43,1.43,0,0,1,.85.7l2.93,4.75v3.13c0,.57-.4,1-1.07,1Zm-11.43,0,4.65-.09.07-.53-1.6-.14a4.64,4.64,0,0,0,.08-.86v-8l.2-.19h1.25c1.2,0,1.73.32,1.73,1.93H204l.49-2.85a7,7,0,0,1-1.14.09h-7.85a5.63,5.63,0,0,1-1.07-.09L194,40h.62c.64-1.61,1.12-1.93,2.14-1.93h1.37v8.23c0,.57-.4,1-1.07,1Zm-8.95,0,4.42-.09.06-.53-1.35-.14a4.64,4.64,0,0,0,.08-.86v-7a3.51,3.51,0,0,1,.52-2l-.07-.06s-.53.06-2.52.06h-1.17v.48c1.1.24,1.1.4,1.1,1.16v7.42c0,.57-.4,1-1.07,1Zm-9.42-1.48c.05,1.18,1.9,1.63,3.33,1.63,2,0,3.7-1,3.7-3.06,0-3.54-4.93-3.26-4.93-5.78,0-.84.67-1.38,1.74-1.38,1.41,0,1.87.94,1.84,2.15H185l.52-2.65a19.91,19.91,0,0,0-2.85-.3c-2.49,0-3.75,1.31-3.75,3,0,3.4,4.93,3.32,4.93,5.81,0,1-.88,1.4-1.74,1.4s-2.31-.51-2.31-2.6h-.62a6.62,6.62,0,0,0-.48,1.77m-1.59.83c-.29,0-.59,0-1.22-1l-2.31-3.48v-.27a3.53,3.53,0,0,0,2-2.74c0-1.33-1.08-2.57-3.89-2.57H167.1v.48c1.15.24,1.23.4,1.23,1.16v7.47c0,.54-.42.9-1.07,1v.59l4.5-.09.06-.53-1.44-.14a4,4,0,0,0,.08-.81V43.5l.2-.19h.68l1.8,2.72a7.17,7.17,0,0,1,.91,1.74l.07.07h3.06l.06-.59Zm-5.44-4.75h-1.17V38.22l.2-.19h.39a2,2,0,0,1,2.11,2.23C173.16,41.75,172.33,42.48,171.63,42.48Zm-15,5.4s1.66,0,2.73,0h5l.59-2.71h-.63c-.79,1.67-1,1.88-2.36,1.88H159.8a5.41,5.41,0,0,0,.08-.9V43l.19-.19h2.44V44h.83V41l-.67.1-.13.92h-2.66V38.22l.19-.19h1.77c1.27,0,1.8.29,1.72,1.93h.62l.5-2.82s-.58.06-1.23.06h-6.94v.48c1.15.24,1.23.4,1.23,1.16v7.47c0,.57-.4.9-1.07,1Zm-7.16-.09.8.19L154,39.13A3.54,3.54,0,0,1,155,37.5l-.08-.3H152.3v.48c.88.24,1,.68.74,1.39l-2.51,6.1c-.08-.28-.19-.7-.3-1l-2.07-5.51a2,2,0,0,1,.09-1.47l-.06-.06s-1.09.06-2.33.06H145v.48a1.4,1.4,0,0,1,.87.88Zm-10.33.09,4.42-.09.06-.53-1.35-.14a5.28,5.28,0,0,0,.07-.86v-7a3.47,3.47,0,0,1,.53-2l-.08-.06s-.52.06-2.52.06h-1.16v.48c1.1.24,1.1.4,1.1,1.16v7.42c0,.57-.4,1-1.07,1Zm-13.23,0,3.34-.09.07-.53-1.44-.09a4.78,4.78,0,0,0,.08-.86V39.86a7.89,7.89,0,0,0,.66.79l6.79,7.27h.67V39.11a1.6,1.6,0,0,1,1.1-1.61l-.08-.3h-3.22v.53c1.27.12,1.29.51,1.29,1.21v5.68c-.19-.24-.45-.55-.65-.77L129,38a3.71,3.71,0,0,1-.63-.83s-1.3.06-2.09.06h-.46v.48c1,.35,1.29.75,1.29,1.77v6.86c0,.57-.43.9-1.14,1ZM114.1,44.11c0,2.9,2.41,3.92,4.56,3.92,2.47,0,4.42-1.34,4.42-4V39.21a1.81,1.81,0,0,1,1.18-1.71l-.08-.3h-3.31v.53c1.2.12,1.22.49,1.22,1.19v5.17a2.93,2.93,0,1,1-5.86-.11V39.21a3.28,3.28,0,0,1,.53-2l-.08-.06s-.51.06-2.52.06H113v.48c1.1.24,1.1.4,1.1,1.16ZM96.53,47.88s1.65,0,2.72,0h5l.59-2.71h-.62c-.8,1.67-1,1.88-2.36,1.88H99.65a5.41,5.41,0,0,0,.08-.9V43l.19-.19h2.44V44h.83V41l-.67.1-.13.92H99.73V38.22l.19-.19h1.77c1.28,0,1.8.29,1.72,1.93H104l.49-2.82s-.57.06-1.23.06H96.37v.48c1.15.24,1.22.4,1.22,1.16v7.47c0,.57-.39.9-1.06,1Zm-9.19,0L92,47.79l.06-.53-1.59-.14a4.64,4.64,0,0,0,.08-.86v-8l.19-.19H92c1.19,0,1.72.32,1.72,1.93h.62l.5-2.85a7.21,7.21,0,0,1-1.15.09H85.84a5.45,5.45,0,0,1-1.06-.09L84.28,40h.62C85.54,38.35,86,38,87,38h1.37v8.23c0,.57-.4,1-1.07,1Zm-3.87-1.73L80,37.07l-1,.21-3.7,9.26a1.16,1.16,0,0,1-1.06.75v.55h3.12l.1-.55-1.38-.17.9-2.35.27-.19h3.4l.74,2.06c.18.48-.2.62-.63.64v.62s2.36-.06,3.11-.06h.65l.06-.51C84,47.25,83.74,46.86,83.47,46.15Zm-6.08-2.44,1.55-4c.09.32.27.9.4,1.23l1,2.81ZM67,47.88l4.65-.09.07-.53-1.6-.14a4.64,4.64,0,0,0,.08-.86v-8l.19-.19H71.6c1.2,0,1.73.32,1.73,1.93H74l.49-2.85a7.05,7.05,0,0,1-1.15.09H65.45a5.63,5.63,0,0,1-1.07-.09L63.89,40h.62c.64-1.61,1.11-1.93,2.14-1.93H68v8.23c0,.57-.4,1-1.07,1ZM55.58,46.4c.05,1.18,1.9,1.63,3.33,1.63,2,0,3.7-1,3.7-3.06,0-3.54-4.93-3.26-4.93-5.78,0-.84.67-1.38,1.74-1.38,1.41,0,1.87.94,1.84,2.15h.62l.52-2.65a19.91,19.91,0,0,0-2.85-.3c-2.49,0-3.75,1.31-3.75,3,0,3.4,4.93,3.32,4.93,5.81,0,1-.88,1.4-1.74,1.4s-2.31-.51-2.31-2.6h-.62a6.62,6.62,0,0,0-.48,1.77" fill="#fff"/></g></svg>
+<svg version="1.1" class="logo-positive" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 216 52.3" style="enable-background:new 0 0 216 52.3;" xml:space="preserve">
+<path fill="#851740" d="M198.1,29.6c0,0,3.2-0.1,5-0.1h11.4L216,23h-1.2c-1.8,4-2.4,5.1-5.4,5.1
+	h-5.9c0.1-0.7,0.2-1.3,0.2-2v-16c-0.1-1.5,0.3-3,1.2-4.3l-0.2-0.1c-1.3,0.1-2.7,0.2-4,0.1h-2.8v0.9c2.6,0.5,2.6,0.9,2.6,2.6v17
+	c0,1.3-0.8,2-2.4,2.2L198.1,29.6z M184.8,11.8l3.1,8.1h-7.7l4-10.3C184.3,10.3,184.5,11,184.8,11.8 M173.3,29.5h6.6l0.1-1l-3-0.4
+	l2.4-6.4l0.5-0.4h8.5l2.1,5.7c0.4,1.1-0.5,1.4-1.5,1.4v1.2c0,0,4.1-0.1,5.4-0.1h1.5l0.1-1c-1.1-0.2-1.7-0.4-2.7-2.8l-7.9-20.2
+	l-1.5,0.3l-8.4,21c-0.4,1-1.3,1.6-2.4,1.6V29.5z M156.6,17.6V7.6l0.4-0.3h1.3c4.4,0,5.9,2.6,5.9,5.3c0,3.4-2.4,5.2-4.6,5.2H156.6z
+	 M150.9,29.6l8.6-0.2l0.1-1l-3.2-0.3c0.1-0.6,0.2-1.2,0.2-1.8v-6.9l0.4-0.4h2.6l4.4,6.5c0.9,1.2,1.6,2.5,2.2,3.9l0.1,0.1h5.1
+	l0.1-1.1h-0.4c-0.9-0.1-1.6-0.1-3.2-2.4l-5.1-7.5V18c1.7-0.9,4.7-3.2,4.7-6.5c0-3.1-2.4-5.7-8.8-5.7h-8.2v0.9
+	c2.7,0.5,2.9,0.9,2.9,2.6v17c0,1.2-1,2-2.6,2.2L150.9,29.6z M132.2,29.6l8.9-0.2l0.1-1l-3.6-0.3c0.1-0.6,0.2-1.3,0.2-1.9V7.6
+	l0.4-0.3h3.5c2.8,0,3.9,0.7,3.8,4.4h1.2l1.1-6c-0.8,0.1-1.7,0.2-2.6,0.2h-16.6c-0.8,0-1.6-0.1-2.4-0.2l-1.1,6h1.2
+	c1.3-3.7,2.4-4.4,4.9-4.4h3.5v19c0,1.3-1,2.1-2.6,2.3L132.2,29.6z M99.6,29.6l7-0.2l0.2-1l-3.2-0.2c0.1-0.6,0.2-1.3,0.2-1.9V10.1
+	c0.4,0.5,0.9,1.2,1.3,1.7l15.1,17.8h0.9V9.9c-0.1-1.6,0.9-3.1,2.5-3.6l-0.2-0.5h-6.8v1c2.9,0.3,2.9,1.1,2.9,2.7v14.8
+	c-0.4-0.6-1-1.3-1.4-1.9L105.2,7.5c-0.5-0.6-0.9-1.2-1.3-1.8c0,0-1.8,0.1-3.6,0.1h-1.1v0.9c2.3,0.4,2.9,1.1,2.9,3.6v16
+	c0,1.3-1,2-2.6,2.2L99.6,29.6z M78.9,29.6c0,0,3.4-0.1,5.2-0.1h11.1l1.3-5.8h-1.2c-1.8,3.7-2.2,4.4-5.3,4.4h-5.6
+	c0.1-0.7,0.2-1.3,0.2-2v-7.6l0.4-0.4h6.2v2.6h1.7v-6.3l-1.3,0.2l-0.3,2h-6.6V7.6L85,7.2h4.7c2.8,0,4,0.7,3.8,4.4h1.2l1.1-5.9
+	c-0.8,0.1-1.7,0.1-2.6,0.1H78.6v0.9c2.7,0.5,2.9,0.9,2.9,2.6v17c0,1.3-1,2-2.6,2.2L78.9,29.6z M54.5,17.9c0,7.7,6,12,12.4,12
+	c3.4,0.1,6.8-1.4,8.9-4.1l-0.5-0.7c-2,1.7-4.5,2.5-7.2,2.5c-5.8,0-10.3-4.3-10.3-10.7c0-5.8,3.6-10.2,9.1-10.2c2.9,0,6,1.2,6,4.9
+	h1.2l1.1-5.4c-2.5-0.4-5.1-0.7-7.7-0.8C59.9,5.4,54.5,10.7,54.5,17.9 M208.5,47.9l4.4-0.1l0.1-0.5l-1.4-0.1c0.1-0.3,0.1-0.6,0.1-0.9
+	v-3.3l2.8-4.5c0.2-0.4,0.6-0.7,1-0.9l-0.1-0.3h-2.7v0.5c0.8,0.1,0.9,0.6,0.6,1l-2.1,3.5c-0.1-0.3-0.3-0.6-0.4-0.9l-1.8-3
+	c-0.2-0.4-0.2-0.8,0-1.2l-0.1-0.1c0,0-0.9,0.1-2.3,0.1h-0.9v0.5c0.4,0.1,0.7,0.4,0.9,0.7l2.9,4.8v3.1c0,0.6-0.4,1-1.1,1L208.5,47.9z
+	 M197.1,47.9l4.6-0.1l0.1-0.5l-1.6-0.1c0.1-0.3,0.1-0.6,0.1-0.9v-8l0.2-0.2h1.2c1.2,0,1.7,0.3,1.7,1.9h0.6l0.5-2.8
+	c-0.4,0.1-0.8,0.1-1.1,0.1h-7.9c-0.4,0-0.7,0-1.1-0.1L194,40h0.6c0.6-1.6,1.1-1.9,2.1-1.9h1.4v8.2c0,0.6-0.4,1-1.1,1L197.1,47.9z
+	 M188.1,47.9l4.4-0.1l0.1-0.5l-1.4-0.1c0.1-0.3,0.1-0.6,0.1-0.9v-7c0-0.7,0.1-1.4,0.5-2l-0.1-0.1c0,0-0.5,0.1-2.5,0.1h-1.2v0.5
+	c1.1,0.2,1.1,0.4,1.1,1.2v7.4c0,0.6-0.4,1-1.1,1L188.1,47.9z M178.7,46.4c0.1,1.2,1.9,1.6,3.3,1.6c2,0,3.7-1,3.7-3.1
+	c0-3.5-4.9-3.3-4.9-5.8c0-0.8,0.7-1.4,1.7-1.4c1.4,0,1.9,0.9,1.8,2.2h0.6l0.5-2.7c-0.9-0.2-1.9-0.3-2.9-0.3c-2.5,0-3.8,1.3-3.8,3
+	c0,3.4,4.9,3.3,4.9,5.8c0,1-0.9,1.4-1.7,1.4s-2.3-0.5-2.3-2.6h-0.6C178.9,45.2,178.8,45.8,178.7,46.4 M170.5,42.5v-4.3l0.2-0.2h0.4
+	c1.1-0.1,2.1,0.8,2.1,1.9c0,0.1,0,0.2,0,0.4c0,1.5-0.8,2.2-1.5,2.2L170.5,42.5z M167.3,47.9l4.5-0.1l0.1-0.5l-1.4-0.1
+	c0.1-0.3,0.1-0.5,0.1-0.8v-2.8l0.2-0.2h0.7l1.8,2.7c0.4,0.5,0.7,1.1,0.9,1.7l0.1,0.1h3.1l0.1-0.6h-0.2c-0.3,0-0.6,0-1.2-1l-2.3-3.5
+	v-0.3c1.1-0.5,1.8-1.5,2-2.7c0-1.3-1.1-2.6-3.9-2.6h-4.6v0.5c1.1,0.2,1.2,0.4,1.2,1.2v7.5c0,0.5-0.4,0.9-1.1,1L167.3,47.9z
+	 M156.7,47.9c0,0,1.7,0,2.7,0h5l0.6-2.7h-0.6c-0.8,1.7-1,1.9-2.4,1.9h-2.2c0.1-0.3,0.1-0.6,0.1-0.9V43l0.2-0.2h2.4V44h0.8v-3
+	l-0.7,0.1l-0.1,0.9h-2.7v-3.8l0.2-0.2h1.8c1.3,0,1.8,0.3,1.7,1.9h0.6l0.5-2.8c0,0-0.6,0.1-1.2,0.1h-6.9v0.5c1.1,0.2,1.2,0.4,1.2,1.2
+	v7.5c0,0.6-0.4,0.9-1.1,1L156.7,47.9z M149.6,47.8l0.8,0.2l3.6-8.8c0.2-0.6,0.5-1.2,1-1.6l-0.1-0.3h-2.6v0.5c0.9,0.2,1,0.7,0.7,1.4
+	l-2.5,6.1c-0.1-0.3-0.2-0.7-0.3-1l-2.1-5.5c-0.2-0.5-0.1-1,0.1-1.5l-0.1-0.1c0,0-1.1,0.1-2.3,0.1H145v0.5c0.4,0.1,0.7,0.5,0.9,0.9
+	L149.6,47.8z M139.2,47.9l4.4-0.1l0.1-0.5l-1.4-0.1c0-0.3,0.1-0.6,0.1-0.9v-7c0-0.7,0.2-1.4,0.5-2l-0.1-0.1c0,0-0.5,0.1-2.5,0.1
+	h-1.2v0.5c1.1,0.2,1.1,0.4,1.1,1.2v7.4c0,0.6-0.4,1-1.1,1L139.2,47.9z M126,47.9l3.3-0.1l0.1-0.5l-1.4-0.1c0.1-0.3,0.1-0.6,0.1-0.9
+	v-6.4c0.2,0.3,0.4,0.5,0.7,0.8l6.8,7.3h0.7v-8.8c0-0.7,0.4-1.4,1.1-1.6l-0.1-0.3H134v0.5c1.3,0.1,1.3,0.5,1.3,1.2v5.7
+	c-0.2-0.2-0.4-0.5-0.6-0.8L129,38c-0.2-0.2-0.5-0.5-0.6-0.8c0,0-1.3,0.1-2.1,0.1h-0.5v0.5c1,0.3,1.3,0.8,1.3,1.8v6.9
+	c0,0.6-0.4,0.9-1.1,1L126,47.9z M114.1,44.1c0,2.9,2.4,3.9,4.6,3.9c2.5,0,4.4-1.3,4.4-4v-4.8c0-0.8,0.5-1.4,1.2-1.7l-0.1-0.3h-3.3
+	v0.5c1.2,0.1,1.2,0.5,1.2,1.2v5.2c0,1.6-1.4,2.9-3,2.9s-2.9-1.4-2.9-3v-4.8c0-0.7,0.1-1.4,0.5-2l-0.1-0.1c0,0-0.5,0.1-2.5,0.1H113
+	v0.5c1.1,0.2,1.1,0.4,1.1,1.2V44.1z M96.5,47.9c0,0,1.7,0,2.7,0h5l0.6-2.7h-0.6c-0.8,1.7-1,1.9-2.4,1.9h-2.2
+	c0.1-0.3,0.1-0.6,0.1-0.9V43l0.2-0.2h2.4V44h0.8v-3l-0.7,0.1l-0.1,0.9h-2.7v-3.8l0.2-0.2h1.8c1.3,0,1.8,0.3,1.7,1.9h0.6l0.5-2.8
+	c0,0-0.6,0.1-1.2,0.1h-6.9v0.5c1.2,0.2,1.2,0.4,1.2,1.2v7.5c0,0.6-0.4,0.9-1.1,1L96.5,47.9z M87.3,47.9l4.7-0.1l0.1-0.5l-1.6-0.1
+	c0.1-0.3,0.1-0.6,0.1-0.9v-8l0.2-0.2H92c1.2,0,1.7,0.3,1.7,1.9h0.6l0.5-2.8c-0.4,0.1-0.8,0.1-1.2,0.1h-7.9c-0.4,0-0.7,0-1.1-0.1
+	L84.3,40h0.6c0.6-1.7,1.1-2,2.1-2h1.4v8.2c0,0.6-0.4,1-1.1,1L87.3,47.9z M79.3,40.9l1,2.8h-3l1.6-4C79,40,79.2,40.6,79.3,40.9
+	 M74.2,47.9h3.1l0.1-0.5L76,47.1l0.9-2.3l0.3-0.2h3.4l0.7,2.1c0.2,0.5-0.2,0.6-0.6,0.6v0.6c0,0,2.4-0.1,3.1-0.1h0.7l0.1-0.5
+	c-0.6-0.1-0.8-0.5-1.1-1.2L80,37.1l-1,0.2l-3.7,9.3c-0.2,0.4-0.6,0.7-1.1,0.8L74.2,47.9z M66.9,47.9l4.7-0.1l0.1-0.5L70,47.1
+	c0.1-0.3,0.1-0.6,0.1-0.9v-8l0.2-0.2h1.3c1.2,0,1.7,0.3,1.7,1.9H74l0.5-2.8c-0.4,0.1-0.8,0.1-1.2,0.1h-7.9c-0.4,0-0.7,0-1.1-0.1
+	L63.9,40h0.6c0.6-1.6,1.1-1.9,2.1-1.9H68v8.2c0,0.6-0.4,1-1.1,1L66.9,47.9z M55.6,46.4c0,1.2,1.9,1.6,3.3,1.6c2,0,3.7-1,3.7-3.1
+	c0-3.5-4.9-3.3-4.9-5.8c0-0.8,0.7-1.4,1.7-1.4c1.4,0,1.9,0.9,1.8,2.2h0.6l0.5-2.7c-0.9-0.2-1.9-0.3-2.8-0.3c-2.5,0-3.8,1.3-3.8,3
+	c0,3.4,4.9,3.3,4.9,5.8c0,1-0.9,1.4-1.7,1.4s-2.3-0.5-2.3-2.6h-0.6C55.8,45.2,55.7,45.8,55.6,46.4 M21.8,0c13.4,0,21.8,3.7,21.8,3.7
+	v26.8c0,12-9.8,21.8-21.8,21.8S0,42.6,0,30.5V3.7C0,3.7,8.4,0,21.8,0"/>
+<path fill="#FFFFFF" d="M26.8,44.8c-0.2,0.3-0.2,0.3-0.2,0.5c0,0.1,0.1,0.3,0.2,0.3c0,0,0,0,0,0c0.2,0,0.3-0.2,0.5-0.6
+	l1.5-3.2c0.1-0.2,0.4-0.6,0.4-0.6v-0.2c-0.1,0-0.3,0-0.4,0h-2.4l-0.2,1.1h0.2c0.2-0.4,0.2-0.5,0.7-0.5h1c0.1,0,0.3,0,0.5,0l-0.5,1
+	C27.7,43.4,27.3,44.1,26.8,44.8 M22.9,40.3c0-0.3,0.3-0.6,0.6-0.6c0,0,0,0,0,0c0.3,0,0.6,0.2,0.6,0.8c0,0.4-0.2,0.7-0.4,0.9
+	C23.2,41.1,22.9,40.8,22.9,40.3 M22.7,43c0-0.4,0.2-0.8,0.5-1c0.5,0.4,1,0.8,1,1.3c0,0.4-0.4,0.7-0.8,0.7
+	C23.1,44.1,22.7,43.7,22.7,43 M22.1,43.2c0,0.7,0.6,1.2,1.3,1.1c0,0,0,0,0.1,0c0.7,0.1,1.4-0.5,1.5-1.2c0-0.6-0.5-1-1-1.5
+	c0.5-0.3,0.9-0.7,0.9-1.2s-0.5-1-1.2-1s-1.3,0.5-1.3,1c0,0.5,0.3,1,0.8,1.3C22.4,42.1,22.1,42.6,22.1,43.2 M18.8,40.4
+	c0-0.3,0.3-0.6,0.6-0.6c0,0,0,0,0,0c0.3,0,0.6,0.2,0.6,0.8c0,0.4-0.2,0.7-0.5,0.9C19.2,41.1,18.8,40.8,18.8,40.4 M18.6,43.1
+	c0-0.4,0.2-0.8,0.5-1c0.5,0.4,1,0.8,1,1.3c0,0.4-0.3,0.7-0.8,0.7c0,0,0,0,0,0C19,44.1,18.6,43.7,18.6,43.1 M18,43.2
+	c0,0.8,0.7,1.1,1.4,1.1c0.8,0.1,1.4-0.4,1.5-1.2c0,0,0,0,0-0.1c0-0.6-0.5-1-1-1.5c0.5-0.3,0.9-0.7,0.9-1.2s-0.5-1-1.2-1
+	s-1.3,0.5-1.3,1c0,0.5,0.3,1,0.8,1.3C18.4,42.1,18.1,42.6,18,43.2 M14.8,44.3h1.9V44L16,43.9c0-0.1,0-0.2,0-0.4v-2.3l0.6-0.1V41h-2
+	v0.2c0.5,0,0.6,0.1,0.6,0.4v2c0,0.3-0.1,0.4-0.6,0.4L14.8,44.3z"/>
+<path fill="#FFFFFF" d="M30.4,26.6l-8.6-2.3v11.4l8.7,2.2L30.4,26.6z M26.2,30.7c-0.6,0-1.1-0.7-1.1-1.5
+	s0.4-1.6,0.9-1.7s1.1,0.7,1.1,1.5S26.8,30.7,26.2,30.7z M21.8,5.6l12.1,6.6L21.8,7.7V5.6z M31.6,12l1.9,0.7l-3.2,1.6v-0.5
+	c0-0.4,0.2-0.7,0.6-0.8C31.3,12.8,31.6,12.5,31.6,12z M30.3,15.6L30.4,26l-2.2-0.6v-5.9c0.1-0.3-0.1-0.5-0.4-0.6s-0.5,0.1-0.6,0.4
+	c0,0.1,0,0.1,0,0.2v5.7L26.6,25v-6.1c0.1-0.3-0.1-0.6-0.4-0.6s-0.6,0.1-0.6,0.4c0,0.1,0,0.2,0,0.3v5.8l-0.6-0.1v-6.2
+	c0.1-0.3-0.1-0.5-0.4-0.6s-0.5,0.1-0.6,0.4c0,0.1,0,0.1,0,0.2v5.9l-2.3-0.6V8.3l2.4,0.9c0,0.5-0.4,0.9-0.8,1.1
+	c-0.4,0.1-0.7,0.4-0.6,0.8v1.8c0,0.3-0.2,0.8-0.4,0.8l0.5,0.1c0.3-0.2,0.4-0.4,0.4-0.7v-1.8c0-0.4,0.3-0.7,0.6-0.8
+	c0.4-0.2,0.7-0.6,0.8-1.1L25,9.5c-0.1,0.5-0.4,0.8-0.8,1c-0.4,0.1-0.7,0.4-0.6,0.8v1.8c0,0.3-0.2,0.8-0.4,0.8l0.4,0.1
+	c0.3-0.2,0.4-0.4,0.4-0.7v-1.8c0-0.4,0.2-0.7,0.6-0.8c0.4-0.2,0.7-0.6,0.8-1.1l5,1.9c0,0.5-0.3,0.8-0.8,1C29.3,12.6,29,13,29,13.3
+	v1.8c0,0.3-0.2,0.8-0.4,0.8l0.4,0.1c0.2-0.2,0.4-0.4,0.4-0.7v-1.7c0-0.4,0.2-0.7,0.6-0.8c0.4-0.2,0.7-0.6,0.8-1.1l0.3,0.1
+	c0,0.5-0.3,0.8-0.8,1c-0.4,0.1-0.6,0.4-0.6,0.8v1.8c0,0.3-0.2,0.8-0.4,0.8l0.4,0.1C30.1,16.2,30.2,15.9,30.3,15.6L30.3,15.6z"/>
+<path fill="#E0BB60" d="M13.1,37.9l8.7-2.2V24.3l-8.6,2.3L13.1,37.9z M16.4,29c0.1-0.9,0.6-1.6,1.1-1.5
+	s1,0.8,0.9,1.7s-0.6,1.6-1.1,1.5S16.4,29.9,16.4,29z M21.8,7.7L9.7,12.2l12.1-6.6V7.7z M12.7,13c0.4,0.1,0.6,0.4,0.6,0.8v0.5
+	l-3.2-1.6L12,12C12,12.4,12.3,12.8,12.7,13z M13.7,16.3l0.4-0.1c-0.2,0-0.4-0.5-0.4-0.8v-1.7c0-0.4-0.2-0.7-0.6-0.8
+	c-0.4-0.2-0.7-0.5-0.8-1l0.3-0.1c0,0.5,0.3,0.9,0.8,1.1c0.4,0.1,0.6,0.4,0.6,0.8v1.8c0,0.3,0.2,0.6,0.4,0.7l0.4-0.1
+	c-0.2,0-0.4-0.5-0.4-0.8v-1.8c0-0.4-0.2-0.7-0.6-0.8c-0.4-0.2-0.7-0.5-0.8-1l5-1.9c0.1,0.5,0.4,0.9,0.9,1c0.4,0.1,0.6,0.4,0.6,0.8
+	v1.9c0,0.3,0.2,0.6,0.4,0.7l0.4-0.1c-0.2,0-0.4-0.5-0.4-0.8v-1.8c0-0.4-0.2-0.8-0.6-0.8c-0.4-0.2-0.7-0.5-0.8-1L19,9.4
+	c0.1,0.5,0.4,0.9,0.8,1.1c0.4,0.1,0.6,0.4,0.6,0.8v1.9c0,0.3,0.2,0.6,0.4,0.7l0.4-0.1c-0.2,0-0.4-0.5-0.4-0.8v-1.9
+	c0-0.4-0.2-0.7-0.6-0.8c-0.4-0.2-0.8-0.6-0.8-1.1l2.4-0.9v15.4l-2.3,0.6v-5.9c0.1-0.3-0.1-0.5-0.4-0.6s-0.5,0.1-0.6,0.4
+	c0,0.1,0,0.1,0,0.2v6.2L18,24.7v-5.8c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6V25l-0.6,0.1v-5.7c0-0.3-0.2-0.6-0.5-0.6
+	c-0.3,0-0.5,0.3-0.5,0.6v5.9L13.2,26l0.1-10.3C13.3,15.9,13.5,16.2,13.7,16.3L13.7,16.3z"/>
+</svg>
+</a>
+
+
+  </div></div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="mobile-nav">
+              <div class="mobile-nav-topbar-container">
+                <button type="button" class="mobile-menu-trigger">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon-hamburger" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                    <path d="M18.5,14c0.8,0,1.5,0.7,1.5,1.5S19.3,17,18.5,17h-17C0.7,17,0,16.3,0,15.5S0.7,14,1.5,14H18.5z
+                  M18.5,7C19.3,7,20,7.7,20,8.5S19.3,10,18.5,10h-17C0.7,10,0,9.3,0,8.5S0.7,7,1.5,7H18.5z M18.5,0C19.3,0,20,0.7,20,1.5
+                  S19.3,3,18.5,3h-17C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0H18.5z"></path>
+                  </svg>
+
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon-close" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.8 17.8" style="enable-background:new 0 0 17.8 17.8;" xml:space="preserve">
+                    <path d="M11,8.9l6.4-6.4C18,2,18,1,17.4,0.4c-0.6-0.6-1.5-0.6-2.1,0L8.9,6.8L2.6,0.4C2-0.1,1-0.1,0.4,0.4
+                    C-0.1,1-0.1,2,0.4,2.6l6.4,6.4l-6.4,6.4c-0.6,0.6-0.6,1.5,0,2.1C1,18,2,18,2.6,17.4L8.9,11l6.4,6.4c0.6,0.6,1.5,0.6,2.1,0
+                    c0.6-0.6,0.6-1.5,0-2.1L11,8.9z"></path>
+                  </svg>
+                </button>
+                  
+    
 
 
 
-            <div class="wp-block-group has-base-color has-duke-navy-blue-100-background-color has-text-color has-background has-link-color wp-elements-1f4bd98c52fbb68be71f1d2c25cfa683 has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-                <div class="wp-block-group has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-059bc41c wp-block-group-is-layout-constrained">
-                    <div style="margin-top:0;margin-bottom:0;padding-top:25px;padding-right:0px;padding-bottom:25px;padding-left:0px" class="wp-block-duke-blocks-duke-wordmark is-content-justification-center is-layout-flex wp-container-duke-blocks-duke-wordmark-is-layout-dc891128 wp-block-duke-blocks-duke-wordmark-is-layout-flex"><a href="https://www.duke.edu/" title="Home"><img decoding="async" src="https://www.duke.edu/wp-content/plugins/duke-blocks/assets/images/duke-wordmark-white.svg" alt="Duke"></a></div>
+
+
+
+<div
+  class="cc--component-container cc--branding-header "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--branding-header"
+    
+      >
+
+    
+  <a href="#/" aria-label="Central State University Home"><svg data-name="Layer 1" class="logo-negative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 52.34"><g data-name="Logo - Negative"><path d="M21.8,0C35.24,0,43.6,3.73,43.6,3.73V30.54a21.8,21.8,0,0,1-43.6,0V3.73S8.35,0,21.8,0" fill="#851740"/><path d="M26.83,44.83c-.18.27-.25.34-.25.5a.25.25,0,0,0,.26.27c.23,0,.28-.22.45-.59l1.45-3.25c.1-.22.36-.63.36-.63l0-.2a3,3,0,0,1-.44,0H26.27l-.22,1.13h.24c.16-.44.25-.45.72-.45h1a3.4,3.4,0,0,0,.45,0l-.47,1a12.64,12.64,0,0,1-1.18,2.19m-3.92-4.45a.59.59,0,0,1,.6-.59c.33,0,.6.25.6.75a1.22,1.22,0,0,1-.44.93c-.41-.35-.76-.68-.76-1.09m-.19,2.68a1.23,1.23,0,0,1,.53-1c.49.4,1,.79,1,1.29a.76.76,0,0,1-.77.74c-.41,0-.75-.36-.75-1m-.66.12a1.23,1.23,0,0,0,1.38,1.14,1.37,1.37,0,0,0,1.49-1.22c0-.59-.53-1-1-1.45.49-.33.88-.66.88-1.18s-.47-.95-1.21-.95-1.34.45-1.34,1A1.79,1.79,0,0,0,23,41.84a1.65,1.65,0,0,0-1,1.34m-3.18-2.8a.59.59,0,0,1,.6-.59c.33,0,.6.25.6.75a1.23,1.23,0,0,1-.45.93c-.4-.35-.75-.68-.75-1.09m-.2,2.68a1.22,1.22,0,0,1,.54-1c.49.4,1,.79,1,1.29a.75.75,0,0,1-.76.74c-.42,0-.76-.36-.76-1m-.66.12c0,.8.73,1.14,1.39,1.14A1.37,1.37,0,0,0,20.9,43.1c0-.59-.54-1-1-1.45.49-.33.88-.66.88-1.18s-.47-.95-1.22-.95-1.33.45-1.33,1A1.8,1.8,0,0,0,19,41.84a1.65,1.65,0,0,0-1,1.34m-3.24,1.09,1.93,0,0-.23L16,43.94a2.17,2.17,0,0,0,0-.36V41.27l.62-.07,0-.24h-2v.25c.49,0,.62.09.62.41v2c0,.32-.14.44-.58.44Z" fill="#fff"/><path d="M30.38,26.6,21.8,24.33V35.76l8.69,2.17Zm-4.13,4.12c-.58,0-1.09-.66-1.14-1.55s.36-1.64.93-1.68,1.09.66,1.14,1.55S26.82,30.68,26.25,30.72ZM21.8,5.62l12.12,6.61L21.8,7.66ZM31.64,12l1.87.7-3.23,1.64v-.52a.78.78,0,0,1,.6-.79A1.3,1.3,0,0,0,31.64,12Zm-1.37,3.65L30.38,26l-2.17-.59V19.47a.51.51,0,1,0-1,0v5.67L26.65,25V18.92a.52.52,0,1,0-1,0v5.8l-.56-.15V18.36a.51.51,0,1,0-1,0V24.3l-2.28-.62V8.29l2.35.89a1.26,1.26,0,0,1-.8,1.05.77.77,0,0,0-.62.82V12.9c0,.3-.2.79-.4.79l.45.15a.87.87,0,0,0,.42-.73V11.26a.81.81,0,0,1,.63-.82,1.35,1.35,0,0,0,.79-1.08l.32.12a1.25,1.25,0,0,1-.8,1,.78.78,0,0,0-.63.83v1.84c0,.3-.2.79-.39.79l.44.15a.88.88,0,0,0,.43-.73V11.53a.8.8,0,0,1,.62-.82,1.34,1.34,0,0,0,.79-1.06l5,1.9a1.2,1.2,0,0,1-.77,1,.75.75,0,0,0-.6.79v1.78c0,.29-.19.75-.37.75l.42.15a.86.86,0,0,0,.41-.7V13.57a.77.77,0,0,1,.6-.79,1.29,1.29,0,0,0,.76-1.06l.3.12a1.18,1.18,0,0,1-.77,1,.74.74,0,0,0-.59.79v1.78c0,.29-.2.75-.38.75l.42.15A.82.82,0,0,0,30.27,15.66Z" fill="#fff"/><path d="M13.11,37.93l8.69-2.17V24.33L13.22,26.6ZM16.41,29c.06-.89.57-1.59,1.15-1.55s1,.79.93,1.68-.56,1.58-1.14,1.55S16.36,29.93,16.41,29ZM21.8,7.66,9.68,12.23,21.8,5.62ZM12.72,13a.78.78,0,0,1,.6.79v.52l-3.23-1.64L12,12A1.26,1.26,0,0,0,12.72,13Zm1,3.27.42-.15c-.19,0-.38-.46-.38-.75V13.63a.74.74,0,0,0-.6-.79,1.21,1.21,0,0,1-.77-1l.31-.12a1.29,1.29,0,0,0,.76,1.06.78.78,0,0,1,.6.79v1.78a.84.84,0,0,0,.41.7l.42-.15c-.18,0-.38-.46-.38-.75V13.37a.74.74,0,0,0-.59-.79,1.21,1.21,0,0,1-.78-1l5-1.9A1.32,1.32,0,0,0,19,10.71a.8.8,0,0,1,.62.82v1.85a.88.88,0,0,0,.43.73l.44-.15c-.19,0-.4-.49-.4-.79V11.33a.77.77,0,0,0-.62-.83,1.25,1.25,0,0,1-.8-1L19,9.36a1.35,1.35,0,0,0,.79,1.08.8.8,0,0,1,.62.82v1.85a.88.88,0,0,0,.43.73l.44-.15c-.19,0-.39-.49-.39-.79V11.05a.77.77,0,0,0-.62-.82,1.27,1.27,0,0,1-.81-1.05l2.36-.89V23.68l-2.28.62V18.36a.51.51,0,1,0-1,0v6.21l-.57.15v-5.8a.57.57,0,0,0-.5-.63.58.58,0,0,0-.5.63V25l-.56.15V19.47a.58.58,0,0,0-.5-.63.57.57,0,0,0-.5.63v5.94L13.22,26l.1-10.34A.85.85,0,0,0,13.73,16.31Z" fill="#e0bb60"/><path d="M198.11,29.64s3.2-.11,5-.11h11.45L216,23h-1.21c-1.78,4-2.35,5.13-5.41,5.13h-5.94a11,11,0,0,0,.18-2V10.11a6.78,6.78,0,0,1,1.18-4.3l-.18-.14a30.1,30.1,0,0,1-4,.14h-2.77V6.7c2.63.53,2.63.89,2.63,2.59v17c0,1.28-.78,2-2.38,2.2Zm-4.62-3.84-7.9-20.2-1.46.32-8.43,21a2.54,2.54,0,0,1-2.38,1.6v1h6.58l.14-1-3-.43,2.45-6.4.46-.36h8.5L190.6,27c.4,1.07-.49,1.35-1.49,1.39v1.21s4.09-.11,5.41-.11h1.53l.14-1C195.09,28.39,194.45,28.22,193.49,25.8Zm-13.34-5.94L184.1,9.58a20,20,0,0,0,.71,2.17l3.06,8.11Zm-9,8.5c-.92-.07-1.63-.14-3.16-2.35l-5.12-7.5V18c1.7-.88,4.69-3.16,4.69-6.5,0-3.1-2.42-5.73-8.82-5.73h-8.25V6.7c2.74.53,2.92.89,2.92,2.59v17c0,1.21-1,2-2.56,2.2v1.14l8.57-.21.14-1-3.2-.32a8.91,8.91,0,0,0,.18-1.81V19.36l.35-.35h2.6l4.41,6.5a24.36,24.36,0,0,1,2.2,3.92l.15.1h5.15l.15-1.14ZM159.55,17.62h-3V7.55l.35-.35h1.32c4.37,0,5.9,2.56,5.9,5.26C164.14,15.91,161.69,17.62,159.55,17.62Zm-27.35,12,8.93-.21.14-1-3.55-.32a10.89,10.89,0,0,0,.17-1.92V7.55l.36-.35h3.52c2.77,0,3.95.74,3.77,4.41h1.21l1.1-6a15.13,15.13,0,0,1-2.56.21H128.65a12,12,0,0,1-2.39-.21l-1.1,6h1.21c1.35-3.67,2.42-4.41,4.87-4.41h3.52v19c0,1.28-1,2.13-2.56,2.31Zm-32.61,0,7-.21.15-1-3.21-.21a10.44,10.44,0,0,0,.18-1.92V10.15c.36.53.86,1.21,1.28,1.71l15.12,17.85H121V9.94a3.61,3.61,0,0,1,2.46-3.63l-.18-.5h-6.76v1c2.88.29,2.92,1.11,2.92,2.67v14.8c-.39-.57-1-1.32-1.42-1.89L105.17,7.52a11.43,11.43,0,0,1-1.32-1.85s-1.81.14-3.55.14H99.23V6.7c2.35.43,2.92,1.14,2.92,3.59v16c0,1.28-1,2-2.56,2.2Zm-20.67,0s3.38-.11,5.16-.11h11.1l1.31-5.79H95.28c-1.78,3.73-2.2,4.41-5.26,4.41H84.43a11.82,11.82,0,0,0,.18-2V18.54l.36-.35h6.15v2.63h1.67V14.56l-1.31.21-.29,2H84.61V7.55L85,7.2h4.66c2.84,0,4,.74,3.84,4.41h1.21l1.1-5.94a22.51,22.51,0,0,1-2.56.14H78.57V6.7c2.73.53,2.91.89,2.91,2.59v17c0,1.28-1,2-2.56,2.2ZM54.49,17.94c0,7.68,6,12,12.37,12a10.62,10.62,0,0,0,8.86-4.13l-.5-.74a11.11,11.11,0,0,1-7.15,2.52c-5.79,0-10.28-4.3-10.28-10.7,0-5.77,3.63-10.18,9.11-10.18,2.88,0,6,1.18,6,4.88h1.21L75.19,6.2a74.57,74.57,0,0,0-7.69-.82c-7.64,0-13,5.3-13,12.56m154,29.94,4.42-.09.06-.53-1.35-.14a4.64,4.64,0,0,0,.08-.86V42.94l2.83-4.53a2.24,2.24,0,0,1,1-.91l-.08-.3h-2.71v.48c.81.13.89.57.64,1l-2.15,3.54c-.13-.29-.31-.64-.45-.9l-1.75-3a1.35,1.35,0,0,1,0-1.15l-.06-.06s-.85.06-2.26.06h-.85v.48a1.43,1.43,0,0,1,.85.7l2.93,4.75v3.13c0,.57-.4,1-1.07,1Zm-11.43,0,4.65-.09.07-.53-1.6-.14a4.64,4.64,0,0,0,.08-.86v-8l.2-.19h1.25c1.2,0,1.73.32,1.73,1.93H204l.49-2.85a7,7,0,0,1-1.14.09h-7.85a5.63,5.63,0,0,1-1.07-.09L194,40h.62c.64-1.61,1.12-1.93,2.14-1.93h1.37v8.23c0,.57-.4,1-1.07,1Zm-8.95,0,4.42-.09.06-.53-1.35-.14a4.64,4.64,0,0,0,.08-.86v-7a3.51,3.51,0,0,1,.52-2l-.07-.06s-.53.06-2.52.06h-1.17v.48c1.1.24,1.1.4,1.1,1.16v7.42c0,.57-.4,1-1.07,1Zm-9.42-1.48c.05,1.18,1.9,1.63,3.33,1.63,2,0,3.7-1,3.7-3.06,0-3.54-4.93-3.26-4.93-5.78,0-.84.67-1.38,1.74-1.38,1.41,0,1.87.94,1.84,2.15H185l.52-2.65a19.91,19.91,0,0,0-2.85-.3c-2.49,0-3.75,1.31-3.75,3,0,3.4,4.93,3.32,4.93,5.81,0,1-.88,1.4-1.74,1.4s-2.31-.51-2.31-2.6h-.62a6.62,6.62,0,0,0-.48,1.77m-1.59.83c-.29,0-.59,0-1.22-1l-2.31-3.48v-.27a3.53,3.53,0,0,0,2-2.74c0-1.33-1.08-2.57-3.89-2.57H167.1v.48c1.15.24,1.23.4,1.23,1.16v7.47c0,.54-.42.9-1.07,1v.59l4.5-.09.06-.53-1.44-.14a4,4,0,0,0,.08-.81V43.5l.2-.19h.68l1.8,2.72a7.17,7.17,0,0,1,.91,1.74l.07.07h3.06l.06-.59Zm-5.44-4.75h-1.17V38.22l.2-.19h.39a2,2,0,0,1,2.11,2.23C173.16,41.75,172.33,42.48,171.63,42.48Zm-15,5.4s1.66,0,2.73,0h5l.59-2.71h-.63c-.79,1.67-1,1.88-2.36,1.88H159.8a5.41,5.41,0,0,0,.08-.9V43l.19-.19h2.44V44h.83V41l-.67.1-.13.92h-2.66V38.22l.19-.19h1.77c1.27,0,1.8.29,1.72,1.93h.62l.5-2.82s-.58.06-1.23.06h-6.94v.48c1.15.24,1.23.4,1.23,1.16v7.47c0,.57-.4.9-1.07,1Zm-7.16-.09.8.19L154,39.13A3.54,3.54,0,0,1,155,37.5l-.08-.3H152.3v.48c.88.24,1,.68.74,1.39l-2.51,6.1c-.08-.28-.19-.7-.3-1l-2.07-5.51a2,2,0,0,1,.09-1.47l-.06-.06s-1.09.06-2.33.06H145v.48a1.4,1.4,0,0,1,.87.88Zm-10.33.09,4.42-.09.06-.53-1.35-.14a5.28,5.28,0,0,0,.07-.86v-7a3.47,3.47,0,0,1,.53-2l-.08-.06s-.52.06-2.52.06h-1.16v.48c1.1.24,1.1.4,1.1,1.16v7.42c0,.57-.4,1-1.07,1Zm-13.23,0,3.34-.09.07-.53-1.44-.09a4.78,4.78,0,0,0,.08-.86V39.86a7.89,7.89,0,0,0,.66.79l6.79,7.27h.67V39.11a1.6,1.6,0,0,1,1.1-1.61l-.08-.3h-3.22v.53c1.27.12,1.29.51,1.29,1.21v5.68c-.19-.24-.45-.55-.65-.77L129,38a3.71,3.71,0,0,1-.63-.83s-1.3.06-2.09.06h-.46v.48c1,.35,1.29.75,1.29,1.77v6.86c0,.57-.43.9-1.14,1ZM114.1,44.11c0,2.9,2.41,3.92,4.56,3.92,2.47,0,4.42-1.34,4.42-4V39.21a1.81,1.81,0,0,1,1.18-1.71l-.08-.3h-3.31v.53c1.2.12,1.22.49,1.22,1.19v5.17a2.93,2.93,0,1,1-5.86-.11V39.21a3.28,3.28,0,0,1,.53-2l-.08-.06s-.51.06-2.52.06H113v.48c1.1.24,1.1.4,1.1,1.16ZM96.53,47.88s1.65,0,2.72,0h5l.59-2.71h-.62c-.8,1.67-1,1.88-2.36,1.88H99.65a5.41,5.41,0,0,0,.08-.9V43l.19-.19h2.44V44h.83V41l-.67.1-.13.92H99.73V38.22l.19-.19h1.77c1.28,0,1.8.29,1.72,1.93H104l.49-2.82s-.57.06-1.23.06H96.37v.48c1.15.24,1.22.4,1.22,1.16v7.47c0,.57-.39.9-1.06,1Zm-9.19,0L92,47.79l.06-.53-1.59-.14a4.64,4.64,0,0,0,.08-.86v-8l.19-.19H92c1.19,0,1.72.32,1.72,1.93h.62l.5-2.85a7.21,7.21,0,0,1-1.15.09H85.84a5.45,5.45,0,0,1-1.06-.09L84.28,40h.62C85.54,38.35,86,38,87,38h1.37v8.23c0,.57-.4,1-1.07,1Zm-3.87-1.73L80,37.07l-1,.21-3.7,9.26a1.16,1.16,0,0,1-1.06.75v.55h3.12l.1-.55-1.38-.17.9-2.35.27-.19h3.4l.74,2.06c.18.48-.2.62-.63.64v.62s2.36-.06,3.11-.06h.65l.06-.51C84,47.25,83.74,46.86,83.47,46.15Zm-6.08-2.44,1.55-4c.09.32.27.9.4,1.23l1,2.81ZM67,47.88l4.65-.09.07-.53-1.6-.14a4.64,4.64,0,0,0,.08-.86v-8l.19-.19H71.6c1.2,0,1.73.32,1.73,1.93H74l.49-2.85a7.05,7.05,0,0,1-1.15.09H65.45a5.63,5.63,0,0,1-1.07-.09L63.89,40h.62c.64-1.61,1.11-1.93,2.14-1.93H68v8.23c0,.57-.4,1-1.07,1ZM55.58,46.4c.05,1.18,1.9,1.63,3.33,1.63,2,0,3.7-1,3.7-3.06,0-3.54-4.93-3.26-4.93-5.78,0-.84.67-1.38,1.74-1.38,1.41,0,1.87.94,1.84,2.15h.62l.52-2.65a19.91,19.91,0,0,0-2.85-.3c-2.49,0-3.75,1.31-3.75,3,0,3.4,4.93,3.32,4.93,5.81,0,1-.88,1.4-1.74,1.4s-2.31-.51-2.31-2.6h-.62a6.62,6.62,0,0,0-.48,1.77" fill="#fff"/></g></svg>
+<svg version="1.1" class="logo-positive" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 216 52.3" style="enable-background:new 0 0 216 52.3;" xml:space="preserve">
+<path fill="#851740" d="M198.1,29.6c0,0,3.2-0.1,5-0.1h11.4L216,23h-1.2c-1.8,4-2.4,5.1-5.4,5.1
+	h-5.9c0.1-0.7,0.2-1.3,0.2-2v-16c-0.1-1.5,0.3-3,1.2-4.3l-0.2-0.1c-1.3,0.1-2.7,0.2-4,0.1h-2.8v0.9c2.6,0.5,2.6,0.9,2.6,2.6v17
+	c0,1.3-0.8,2-2.4,2.2L198.1,29.6z M184.8,11.8l3.1,8.1h-7.7l4-10.3C184.3,10.3,184.5,11,184.8,11.8 M173.3,29.5h6.6l0.1-1l-3-0.4
+	l2.4-6.4l0.5-0.4h8.5l2.1,5.7c0.4,1.1-0.5,1.4-1.5,1.4v1.2c0,0,4.1-0.1,5.4-0.1h1.5l0.1-1c-1.1-0.2-1.7-0.4-2.7-2.8l-7.9-20.2
+	l-1.5,0.3l-8.4,21c-0.4,1-1.3,1.6-2.4,1.6V29.5z M156.6,17.6V7.6l0.4-0.3h1.3c4.4,0,5.9,2.6,5.9,5.3c0,3.4-2.4,5.2-4.6,5.2H156.6z
+	 M150.9,29.6l8.6-0.2l0.1-1l-3.2-0.3c0.1-0.6,0.2-1.2,0.2-1.8v-6.9l0.4-0.4h2.6l4.4,6.5c0.9,1.2,1.6,2.5,2.2,3.9l0.1,0.1h5.1
+	l0.1-1.1h-0.4c-0.9-0.1-1.6-0.1-3.2-2.4l-5.1-7.5V18c1.7-0.9,4.7-3.2,4.7-6.5c0-3.1-2.4-5.7-8.8-5.7h-8.2v0.9
+	c2.7,0.5,2.9,0.9,2.9,2.6v17c0,1.2-1,2-2.6,2.2L150.9,29.6z M132.2,29.6l8.9-0.2l0.1-1l-3.6-0.3c0.1-0.6,0.2-1.3,0.2-1.9V7.6
+	l0.4-0.3h3.5c2.8,0,3.9,0.7,3.8,4.4h1.2l1.1-6c-0.8,0.1-1.7,0.2-2.6,0.2h-16.6c-0.8,0-1.6-0.1-2.4-0.2l-1.1,6h1.2
+	c1.3-3.7,2.4-4.4,4.9-4.4h3.5v19c0,1.3-1,2.1-2.6,2.3L132.2,29.6z M99.6,29.6l7-0.2l0.2-1l-3.2-0.2c0.1-0.6,0.2-1.3,0.2-1.9V10.1
+	c0.4,0.5,0.9,1.2,1.3,1.7l15.1,17.8h0.9V9.9c-0.1-1.6,0.9-3.1,2.5-3.6l-0.2-0.5h-6.8v1c2.9,0.3,2.9,1.1,2.9,2.7v14.8
+	c-0.4-0.6-1-1.3-1.4-1.9L105.2,7.5c-0.5-0.6-0.9-1.2-1.3-1.8c0,0-1.8,0.1-3.6,0.1h-1.1v0.9c2.3,0.4,2.9,1.1,2.9,3.6v16
+	c0,1.3-1,2-2.6,2.2L99.6,29.6z M78.9,29.6c0,0,3.4-0.1,5.2-0.1h11.1l1.3-5.8h-1.2c-1.8,3.7-2.2,4.4-5.3,4.4h-5.6
+	c0.1-0.7,0.2-1.3,0.2-2v-7.6l0.4-0.4h6.2v2.6h1.7v-6.3l-1.3,0.2l-0.3,2h-6.6V7.6L85,7.2h4.7c2.8,0,4,0.7,3.8,4.4h1.2l1.1-5.9
+	c-0.8,0.1-1.7,0.1-2.6,0.1H78.6v0.9c2.7,0.5,2.9,0.9,2.9,2.6v17c0,1.3-1,2-2.6,2.2L78.9,29.6z M54.5,17.9c0,7.7,6,12,12.4,12
+	c3.4,0.1,6.8-1.4,8.9-4.1l-0.5-0.7c-2,1.7-4.5,2.5-7.2,2.5c-5.8,0-10.3-4.3-10.3-10.7c0-5.8,3.6-10.2,9.1-10.2c2.9,0,6,1.2,6,4.9
+	h1.2l1.1-5.4c-2.5-0.4-5.1-0.7-7.7-0.8C59.9,5.4,54.5,10.7,54.5,17.9 M208.5,47.9l4.4-0.1l0.1-0.5l-1.4-0.1c0.1-0.3,0.1-0.6,0.1-0.9
+	v-3.3l2.8-4.5c0.2-0.4,0.6-0.7,1-0.9l-0.1-0.3h-2.7v0.5c0.8,0.1,0.9,0.6,0.6,1l-2.1,3.5c-0.1-0.3-0.3-0.6-0.4-0.9l-1.8-3
+	c-0.2-0.4-0.2-0.8,0-1.2l-0.1-0.1c0,0-0.9,0.1-2.3,0.1h-0.9v0.5c0.4,0.1,0.7,0.4,0.9,0.7l2.9,4.8v3.1c0,0.6-0.4,1-1.1,1L208.5,47.9z
+	 M197.1,47.9l4.6-0.1l0.1-0.5l-1.6-0.1c0.1-0.3,0.1-0.6,0.1-0.9v-8l0.2-0.2h1.2c1.2,0,1.7,0.3,1.7,1.9h0.6l0.5-2.8
+	c-0.4,0.1-0.8,0.1-1.1,0.1h-7.9c-0.4,0-0.7,0-1.1-0.1L194,40h0.6c0.6-1.6,1.1-1.9,2.1-1.9h1.4v8.2c0,0.6-0.4,1-1.1,1L197.1,47.9z
+	 M188.1,47.9l4.4-0.1l0.1-0.5l-1.4-0.1c0.1-0.3,0.1-0.6,0.1-0.9v-7c0-0.7,0.1-1.4,0.5-2l-0.1-0.1c0,0-0.5,0.1-2.5,0.1h-1.2v0.5
+	c1.1,0.2,1.1,0.4,1.1,1.2v7.4c0,0.6-0.4,1-1.1,1L188.1,47.9z M178.7,46.4c0.1,1.2,1.9,1.6,3.3,1.6c2,0,3.7-1,3.7-3.1
+	c0-3.5-4.9-3.3-4.9-5.8c0-0.8,0.7-1.4,1.7-1.4c1.4,0,1.9,0.9,1.8,2.2h0.6l0.5-2.7c-0.9-0.2-1.9-0.3-2.9-0.3c-2.5,0-3.8,1.3-3.8,3
+	c0,3.4,4.9,3.3,4.9,5.8c0,1-0.9,1.4-1.7,1.4s-2.3-0.5-2.3-2.6h-0.6C178.9,45.2,178.8,45.8,178.7,46.4 M170.5,42.5v-4.3l0.2-0.2h0.4
+	c1.1-0.1,2.1,0.8,2.1,1.9c0,0.1,0,0.2,0,0.4c0,1.5-0.8,2.2-1.5,2.2L170.5,42.5z M167.3,47.9l4.5-0.1l0.1-0.5l-1.4-0.1
+	c0.1-0.3,0.1-0.5,0.1-0.8v-2.8l0.2-0.2h0.7l1.8,2.7c0.4,0.5,0.7,1.1,0.9,1.7l0.1,0.1h3.1l0.1-0.6h-0.2c-0.3,0-0.6,0-1.2-1l-2.3-3.5
+	v-0.3c1.1-0.5,1.8-1.5,2-2.7c0-1.3-1.1-2.6-3.9-2.6h-4.6v0.5c1.1,0.2,1.2,0.4,1.2,1.2v7.5c0,0.5-0.4,0.9-1.1,1L167.3,47.9z
+	 M156.7,47.9c0,0,1.7,0,2.7,0h5l0.6-2.7h-0.6c-0.8,1.7-1,1.9-2.4,1.9h-2.2c0.1-0.3,0.1-0.6,0.1-0.9V43l0.2-0.2h2.4V44h0.8v-3
+	l-0.7,0.1l-0.1,0.9h-2.7v-3.8l0.2-0.2h1.8c1.3,0,1.8,0.3,1.7,1.9h0.6l0.5-2.8c0,0-0.6,0.1-1.2,0.1h-6.9v0.5c1.1,0.2,1.2,0.4,1.2,1.2
+	v7.5c0,0.6-0.4,0.9-1.1,1L156.7,47.9z M149.6,47.8l0.8,0.2l3.6-8.8c0.2-0.6,0.5-1.2,1-1.6l-0.1-0.3h-2.6v0.5c0.9,0.2,1,0.7,0.7,1.4
+	l-2.5,6.1c-0.1-0.3-0.2-0.7-0.3-1l-2.1-5.5c-0.2-0.5-0.1-1,0.1-1.5l-0.1-0.1c0,0-1.1,0.1-2.3,0.1H145v0.5c0.4,0.1,0.7,0.5,0.9,0.9
+	L149.6,47.8z M139.2,47.9l4.4-0.1l0.1-0.5l-1.4-0.1c0-0.3,0.1-0.6,0.1-0.9v-7c0-0.7,0.2-1.4,0.5-2l-0.1-0.1c0,0-0.5,0.1-2.5,0.1
+	h-1.2v0.5c1.1,0.2,1.1,0.4,1.1,1.2v7.4c0,0.6-0.4,1-1.1,1L139.2,47.9z M126,47.9l3.3-0.1l0.1-0.5l-1.4-0.1c0.1-0.3,0.1-0.6,0.1-0.9
+	v-6.4c0.2,0.3,0.4,0.5,0.7,0.8l6.8,7.3h0.7v-8.8c0-0.7,0.4-1.4,1.1-1.6l-0.1-0.3H134v0.5c1.3,0.1,1.3,0.5,1.3,1.2v5.7
+	c-0.2-0.2-0.4-0.5-0.6-0.8L129,38c-0.2-0.2-0.5-0.5-0.6-0.8c0,0-1.3,0.1-2.1,0.1h-0.5v0.5c1,0.3,1.3,0.8,1.3,1.8v6.9
+	c0,0.6-0.4,0.9-1.1,1L126,47.9z M114.1,44.1c0,2.9,2.4,3.9,4.6,3.9c2.5,0,4.4-1.3,4.4-4v-4.8c0-0.8,0.5-1.4,1.2-1.7l-0.1-0.3h-3.3
+	v0.5c1.2,0.1,1.2,0.5,1.2,1.2v5.2c0,1.6-1.4,2.9-3,2.9s-2.9-1.4-2.9-3v-4.8c0-0.7,0.1-1.4,0.5-2l-0.1-0.1c0,0-0.5,0.1-2.5,0.1H113
+	v0.5c1.1,0.2,1.1,0.4,1.1,1.2V44.1z M96.5,47.9c0,0,1.7,0,2.7,0h5l0.6-2.7h-0.6c-0.8,1.7-1,1.9-2.4,1.9h-2.2
+	c0.1-0.3,0.1-0.6,0.1-0.9V43l0.2-0.2h2.4V44h0.8v-3l-0.7,0.1l-0.1,0.9h-2.7v-3.8l0.2-0.2h1.8c1.3,0,1.8,0.3,1.7,1.9h0.6l0.5-2.8
+	c0,0-0.6,0.1-1.2,0.1h-6.9v0.5c1.2,0.2,1.2,0.4,1.2,1.2v7.5c0,0.6-0.4,0.9-1.1,1L96.5,47.9z M87.3,47.9l4.7-0.1l0.1-0.5l-1.6-0.1
+	c0.1-0.3,0.1-0.6,0.1-0.9v-8l0.2-0.2H92c1.2,0,1.7,0.3,1.7,1.9h0.6l0.5-2.8c-0.4,0.1-0.8,0.1-1.2,0.1h-7.9c-0.4,0-0.7,0-1.1-0.1
+	L84.3,40h0.6c0.6-1.7,1.1-2,2.1-2h1.4v8.2c0,0.6-0.4,1-1.1,1L87.3,47.9z M79.3,40.9l1,2.8h-3l1.6-4C79,40,79.2,40.6,79.3,40.9
+	 M74.2,47.9h3.1l0.1-0.5L76,47.1l0.9-2.3l0.3-0.2h3.4l0.7,2.1c0.2,0.5-0.2,0.6-0.6,0.6v0.6c0,0,2.4-0.1,3.1-0.1h0.7l0.1-0.5
+	c-0.6-0.1-0.8-0.5-1.1-1.2L80,37.1l-1,0.2l-3.7,9.3c-0.2,0.4-0.6,0.7-1.1,0.8L74.2,47.9z M66.9,47.9l4.7-0.1l0.1-0.5L70,47.1
+	c0.1-0.3,0.1-0.6,0.1-0.9v-8l0.2-0.2h1.3c1.2,0,1.7,0.3,1.7,1.9H74l0.5-2.8c-0.4,0.1-0.8,0.1-1.2,0.1h-7.9c-0.4,0-0.7,0-1.1-0.1
+	L63.9,40h0.6c0.6-1.6,1.1-1.9,2.1-1.9H68v8.2c0,0.6-0.4,1-1.1,1L66.9,47.9z M55.6,46.4c0,1.2,1.9,1.6,3.3,1.6c2,0,3.7-1,3.7-3.1
+	c0-3.5-4.9-3.3-4.9-5.8c0-0.8,0.7-1.4,1.7-1.4c1.4,0,1.9,0.9,1.8,2.2h0.6l0.5-2.7c-0.9-0.2-1.9-0.3-2.8-0.3c-2.5,0-3.8,1.3-3.8,3
+	c0,3.4,4.9,3.3,4.9,5.8c0,1-0.9,1.4-1.7,1.4s-2.3-0.5-2.3-2.6h-0.6C55.8,45.2,55.7,45.8,55.6,46.4 M21.8,0c13.4,0,21.8,3.7,21.8,3.7
+	v26.8c0,12-9.8,21.8-21.8,21.8S0,42.6,0,30.5V3.7C0,3.7,8.4,0,21.8,0"/>
+<path fill="#FFFFFF" d="M26.8,44.8c-0.2,0.3-0.2,0.3-0.2,0.5c0,0.1,0.1,0.3,0.2,0.3c0,0,0,0,0,0c0.2,0,0.3-0.2,0.5-0.6
+	l1.5-3.2c0.1-0.2,0.4-0.6,0.4-0.6v-0.2c-0.1,0-0.3,0-0.4,0h-2.4l-0.2,1.1h0.2c0.2-0.4,0.2-0.5,0.7-0.5h1c0.1,0,0.3,0,0.5,0l-0.5,1
+	C27.7,43.4,27.3,44.1,26.8,44.8 M22.9,40.3c0-0.3,0.3-0.6,0.6-0.6c0,0,0,0,0,0c0.3,0,0.6,0.2,0.6,0.8c0,0.4-0.2,0.7-0.4,0.9
+	C23.2,41.1,22.9,40.8,22.9,40.3 M22.7,43c0-0.4,0.2-0.8,0.5-1c0.5,0.4,1,0.8,1,1.3c0,0.4-0.4,0.7-0.8,0.7
+	C23.1,44.1,22.7,43.7,22.7,43 M22.1,43.2c0,0.7,0.6,1.2,1.3,1.1c0,0,0,0,0.1,0c0.7,0.1,1.4-0.5,1.5-1.2c0-0.6-0.5-1-1-1.5
+	c0.5-0.3,0.9-0.7,0.9-1.2s-0.5-1-1.2-1s-1.3,0.5-1.3,1c0,0.5,0.3,1,0.8,1.3C22.4,42.1,22.1,42.6,22.1,43.2 M18.8,40.4
+	c0-0.3,0.3-0.6,0.6-0.6c0,0,0,0,0,0c0.3,0,0.6,0.2,0.6,0.8c0,0.4-0.2,0.7-0.5,0.9C19.2,41.1,18.8,40.8,18.8,40.4 M18.6,43.1
+	c0-0.4,0.2-0.8,0.5-1c0.5,0.4,1,0.8,1,1.3c0,0.4-0.3,0.7-0.8,0.7c0,0,0,0,0,0C19,44.1,18.6,43.7,18.6,43.1 M18,43.2
+	c0,0.8,0.7,1.1,1.4,1.1c0.8,0.1,1.4-0.4,1.5-1.2c0,0,0,0,0-0.1c0-0.6-0.5-1-1-1.5c0.5-0.3,0.9-0.7,0.9-1.2s-0.5-1-1.2-1
+	s-1.3,0.5-1.3,1c0,0.5,0.3,1,0.8,1.3C18.4,42.1,18.1,42.6,18,43.2 M14.8,44.3h1.9V44L16,43.9c0-0.1,0-0.2,0-0.4v-2.3l0.6-0.1V41h-2
+	v0.2c0.5,0,0.6,0.1,0.6,0.4v2c0,0.3-0.1,0.4-0.6,0.4L14.8,44.3z"/>
+<path fill="#FFFFFF" d="M30.4,26.6l-8.6-2.3v11.4l8.7,2.2L30.4,26.6z M26.2,30.7c-0.6,0-1.1-0.7-1.1-1.5
+	s0.4-1.6,0.9-1.7s1.1,0.7,1.1,1.5S26.8,30.7,26.2,30.7z M21.8,5.6l12.1,6.6L21.8,7.7V5.6z M31.6,12l1.9,0.7l-3.2,1.6v-0.5
+	c0-0.4,0.2-0.7,0.6-0.8C31.3,12.8,31.6,12.5,31.6,12z M30.3,15.6L30.4,26l-2.2-0.6v-5.9c0.1-0.3-0.1-0.5-0.4-0.6s-0.5,0.1-0.6,0.4
+	c0,0.1,0,0.1,0,0.2v5.7L26.6,25v-6.1c0.1-0.3-0.1-0.6-0.4-0.6s-0.6,0.1-0.6,0.4c0,0.1,0,0.2,0,0.3v5.8l-0.6-0.1v-6.2
+	c0.1-0.3-0.1-0.5-0.4-0.6s-0.5,0.1-0.6,0.4c0,0.1,0,0.1,0,0.2v5.9l-2.3-0.6V8.3l2.4,0.9c0,0.5-0.4,0.9-0.8,1.1
+	c-0.4,0.1-0.7,0.4-0.6,0.8v1.8c0,0.3-0.2,0.8-0.4,0.8l0.5,0.1c0.3-0.2,0.4-0.4,0.4-0.7v-1.8c0-0.4,0.3-0.7,0.6-0.8
+	c0.4-0.2,0.7-0.6,0.8-1.1L25,9.5c-0.1,0.5-0.4,0.8-0.8,1c-0.4,0.1-0.7,0.4-0.6,0.8v1.8c0,0.3-0.2,0.8-0.4,0.8l0.4,0.1
+	c0.3-0.2,0.4-0.4,0.4-0.7v-1.8c0-0.4,0.2-0.7,0.6-0.8c0.4-0.2,0.7-0.6,0.8-1.1l5,1.9c0,0.5-0.3,0.8-0.8,1C29.3,12.6,29,13,29,13.3
+	v1.8c0,0.3-0.2,0.8-0.4,0.8l0.4,0.1c0.2-0.2,0.4-0.4,0.4-0.7v-1.7c0-0.4,0.2-0.7,0.6-0.8c0.4-0.2,0.7-0.6,0.8-1.1l0.3,0.1
+	c0,0.5-0.3,0.8-0.8,1c-0.4,0.1-0.6,0.4-0.6,0.8v1.8c0,0.3-0.2,0.8-0.4,0.8l0.4,0.1C30.1,16.2,30.2,15.9,30.3,15.6L30.3,15.6z"/>
+<path fill="#E0BB60" d="M13.1,37.9l8.7-2.2V24.3l-8.6,2.3L13.1,37.9z M16.4,29c0.1-0.9,0.6-1.6,1.1-1.5
+	s1,0.8,0.9,1.7s-0.6,1.6-1.1,1.5S16.4,29.9,16.4,29z M21.8,7.7L9.7,12.2l12.1-6.6V7.7z M12.7,13c0.4,0.1,0.6,0.4,0.6,0.8v0.5
+	l-3.2-1.6L12,12C12,12.4,12.3,12.8,12.7,13z M13.7,16.3l0.4-0.1c-0.2,0-0.4-0.5-0.4-0.8v-1.7c0-0.4-0.2-0.7-0.6-0.8
+	c-0.4-0.2-0.7-0.5-0.8-1l0.3-0.1c0,0.5,0.3,0.9,0.8,1.1c0.4,0.1,0.6,0.4,0.6,0.8v1.8c0,0.3,0.2,0.6,0.4,0.7l0.4-0.1
+	c-0.2,0-0.4-0.5-0.4-0.8v-1.8c0-0.4-0.2-0.7-0.6-0.8c-0.4-0.2-0.7-0.5-0.8-1l5-1.9c0.1,0.5,0.4,0.9,0.9,1c0.4,0.1,0.6,0.4,0.6,0.8
+	v1.9c0,0.3,0.2,0.6,0.4,0.7l0.4-0.1c-0.2,0-0.4-0.5-0.4-0.8v-1.8c0-0.4-0.2-0.8-0.6-0.8c-0.4-0.2-0.7-0.5-0.8-1L19,9.4
+	c0.1,0.5,0.4,0.9,0.8,1.1c0.4,0.1,0.6,0.4,0.6,0.8v1.9c0,0.3,0.2,0.6,0.4,0.7l0.4-0.1c-0.2,0-0.4-0.5-0.4-0.8v-1.9
+	c0-0.4-0.2-0.7-0.6-0.8c-0.4-0.2-0.8-0.6-0.8-1.1l2.4-0.9v15.4l-2.3,0.6v-5.9c0.1-0.3-0.1-0.5-0.4-0.6s-0.5,0.1-0.6,0.4
+	c0,0.1,0,0.1,0,0.2v6.2L18,24.7v-5.8c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6V25l-0.6,0.1v-5.7c0-0.3-0.2-0.6-0.5-0.6
+	c-0.3,0-0.5,0.3-0.5,0.6v5.9L13.2,26l0.1-10.3C13.3,15.9,13.5,16.2,13.7,16.3L13.7,16.3z"/>
+</svg>
+</a>
+
+
+  </div></div>
+                <button class="icon-search search-trigger-button" aria-label="Search">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="search-open" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                    <path d="M6.3,0C2.8,0,0,2.8,0,6.3s2.8,6.3,6.3,6.3c1.3,0,2.6-0.4,3.6-1.1l4.2,4.2
+                    c0.4,0.4,1.1,0.4,1.6,0c0.4-0.4,0.4-1.1,0-1.6l-4.2-4.2c0.7-1,1.1-2.3,1.1-3.6C12.7,2.8,9.8,0,6.3,0z M6.3,2.2
+                    c2.3,0,4.1,1.8,4.1,4.1c0,2.3-1.8,4.1-4.1,4.1c-2.3,0-4.1-1.8-4.1-4.1C2.2,4.1,4.1,2.2,6.3,2.2z"></path>
+                  </svg>
+
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon-close" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.8 17.8" style="enable-background:new 0 0 17.8 17.8;" xml:space="preserve">
+                    <path d="M11,8.9l6.4-6.4C18,2,18,1,17.4,0.4c-0.6-0.6-1.5-0.6-2.1,0L8.9,6.8L2.6,0.4C2-0.1,1-0.1,0.4,0.4
+                    C-0.1,1-0.1,2,0.4,2.6l6.4,6.4l-6.4,6.4c-0.6,0.6-0.6,1.5,0,2.1C1,18,2,18,2.6,17.4L8.9,11l6.4,6.4c0.6,0.6,1.5,0.6,2.1,0
+                    c0.6-0.6,0.6-1.5,0-2.1L11,8.9z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-nav-menu-container">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ block--centralstate-main-menu.html.twig
+   ▪️ block--system-menu-block--main.html.twig
+   ▪️ block--system-menu-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--centralstate-main-menu.html.twig' -->
+
+<div class="block block-system block-system-menu-blockmain cc--component-container cc--main-menu">
+  <div class="c--component c--main-menu">
+          <nav class="mc--menu mc--main" aria-label=" Menu">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__main' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ menu--main.html.twig
+   ✅ menu--main.html.twig
+   ▪️ menu.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/navigation/menu--main.html.twig' -->
+
+        <ul class="m--menu m--main">
+                  <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/about" data-drupal-link-system-path="node/4">About CSU</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for About CSU">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/about-csu/innovation-our-dna" data-drupal-link-system-path="node/21">Research and Innovation</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Research and Innovation">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--collapsed">
+                  <a href="#/about-csu/1890-land-grant-university" data-drupal-link-system-path="node/331">1890 Land-Grant University</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/science/research" data-drupal-link-system-path="node/4966">Agricultural Research and Development Program</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics/science/extension" title="Engaging Diverse Communities and Transforming Lives" data-drupal-link-system-path="node/401">Extension</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics-research-and-centers/office-sponsored-programs-research" data-drupal-link-system-path="node/4006">Office of Sponsored Programs and Research</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/csu-dayton/workforce-training-business-development" data-drupal-link-system-path="node/8421">Workforce Training &amp; Business Development</a>
+              </li>
+      </ul>
+    
                 </div>
-
-
-
-                <hr class="wp-block-separator has-text-color has-duke-navy-blue-75-color has-alpha-channel-opacity has-duke-navy-blue-75-background-color has-background is-style-default" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)">
-
-
-
-                <div class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-28c96c19 wp-block-group-is-layout-flex" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
-                    <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-043a3978 wp-block-group-is-layout-flex" style="margin-bottom:var(--wp--preset--spacing--40)">
-                        <p class="is-style-default has-base-color has-text-color has-link-color has-montserrat-font-family has-x-small-font-size wp-elements-2d18eadb6f0d74825bcbe86685f54c45 wp-block-paragraph">Duke University<br>2080 Duke University Road<br>Durham, NC 27708<br>(919) 684-8111</p>
-
-
-
-                        <ul class="wp-block-social-links has-icon-color has-icon-background-color is-style-default is-layout-flex wp-container-core-social-links-is-layout-615c5081 wp-block-social-links-is-layout-flex">
-                            <li style="color:#012169;background-color:#FFFFFF" class="wp-social-link wp-social-link-facebook has-duke-navy-blue-100-color has-base-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://www.facebook.com/DukeUniv/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                        <path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path>
-                                    </svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
-
-                            <li style="color:#012169;background-color:#FFFFFF" class="wp-social-link wp-social-link-instagram has-duke-navy-blue-100-color has-base-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://www.instagram.com/dukeuniversity/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                        <path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path>
-                                    </svg><span class="wp-block-social-link-label screen-reader-text">Instagram</span></a></li>
-
-                            <li style="color:#012169;background-color:#FFFFFF" class="wp-social-link wp-social-link-linkedin has-duke-navy-blue-100-color has-base-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://www.linkedin.com/school/duke-university/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                        <path d="M19.7,3H4.3C3.582,3,3,3.582,3,4.3v15.4C3,20.418,3.582,21,4.3,21h15.4c0.718,0,1.3-0.582,1.3-1.3V4.3 C21,3.582,20.418,3,19.7,3z M8.339,18.338H5.667v-8.59h2.672V18.338z M7.004,8.574c-0.857,0-1.549-0.694-1.549-1.548 c0-0.855,0.691-1.548,1.549-1.548c0.854,0,1.547,0.694,1.547,1.548C8.551,7.881,7.858,8.574,7.004,8.574z M18.339,18.338h-2.669 v-4.177c0-0.996-0.017-2.278-1.387-2.278c-1.389,0-1.601,1.086-1.601,2.206v4.249h-2.667v-8.59h2.559v1.174h0.037 c0.356-0.675,1.227-1.387,2.526-1.387c2.703,0,3.203,1.779,3.203,4.092V18.338z"></path>
-                                    </svg><span class="wp-block-social-link-label screen-reader-text">LinkedIn</span></a></li>
-
-                            <li style="color:#012169;background-color:#FFFFFF" class="wp-social-link wp-social-link-x has-duke-navy-blue-100-color has-base-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://x.com/DukeU" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                        <path d="M13.982 10.622 20.54 3h-1.554l-5.693 6.618L8.745 3H3.5l6.876 10.007L3.5 21h1.554l6.012-6.989L15.868 21h5.245l-7.131-10.378Zm-2.128 2.474-.697-.997-5.543-7.93H8l4.474 6.4.697.996 5.815 8.318h-2.387l-4.745-6.787Z"></path>
-                                    </svg><span class="wp-block-social-link-label screen-reader-text">X</span></a></li>
-
-                            <li style="color:#012169;background-color:#FFFFFF" class="wp-social-link wp-social-link-youtube has-duke-navy-blue-100-color has-base-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://www.youtube.com/@dukeuniversity" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                        <path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path>
-                                    </svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a></li>
-
-                            <li style="color:#012169;background-color:#FFFFFF" class="wp-social-link wp-social-link-tiktok has-duke-navy-blue-100-color has-base-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://www.tiktok.com/@dukeu?lang=en" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                        <path d="M16.708 0.027c1.745-0.027 3.48-0.011 5.213-0.027 0.105 2.041 0.839 4.12 2.333 5.563 1.491 1.479 3.6 2.156 5.652 2.385v5.369c-1.923-0.063-3.855-0.463-5.6-1.291-0.76-0.344-1.468-0.787-2.161-1.24-0.009 3.896 0.016 7.787-0.025 11.667-0.104 1.864-0.719 3.719-1.803 5.255-1.744 2.557-4.771 4.224-7.88 4.276-1.907 0.109-3.812-0.411-5.437-1.369-2.693-1.588-4.588-4.495-4.864-7.615-0.032-0.667-0.043-1.333-0.016-1.984 0.24-2.537 1.495-4.964 3.443-6.615 2.208-1.923 5.301-2.839 8.197-2.297 0.027 1.975-0.052 3.948-0.052 5.923-1.323-0.428-2.869-0.308-4.025 0.495-0.844 0.547-1.485 1.385-1.819 2.333-0.276 0.676-0.197 1.427-0.181 2.145 0.317 2.188 2.421 4.027 4.667 3.828 1.489-0.016 2.916-0.88 3.692-2.145 0.251-0.443 0.532-0.896 0.547-1.417 0.131-2.385 0.079-4.76 0.095-7.145 0.011-5.375-0.016-10.735 0.025-16.093z"></path>
-                                    </svg><span class="wp-block-social-link-label screen-reader-text">TikTok</span></a></li>
-                        </ul>
-                    </div>
-
-
-
-                    <div class="wp-block-group is-layout-flex wp-container-core-group-is-layout-beab95b8 wp-block-group-is-layout-flex">
-                        <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-f41a3fee wp-block-group-is-layout-flex">
-                            <h2 class="wp-block-heading has-base-color has-text-color has-link-color has-small-font-size wp-elements-e871137740da588c19eddb48eb3ff9c1" style="margin-bottom:0">Accessibility</h2>
-
-
-
-                            <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-9f4c0533 wp-block-group-is-layout-flex" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-right:0;padding-left:0">
-                                <p class="has-x-small-font-size wp-block-paragraph"><a href="https://access.duke.edu/">Access &amp; Accommodation</a></p>
-
-
-
-                                <p class="has-x-small-font-size wp-block-paragraph"><a href="https://web.accessibility.duke.edu/">Web &amp; Digital</a></p>
-
-
-
-                                <p class="has-x-small-font-size wp-block-paragraph"><a href="https://access.duke.edu/getting-around/">Getting Around</a></p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-f41a3fee wp-block-group-is-layout-flex">
-                            <h2 class="wp-block-heading has-base-color has-text-color has-link-color has-small-font-size wp-elements-c9507defba1106132f5a01b31286062c" style="margin-top:0;margin-bottom:0">Get in Touch</h2>
-
-
-
-                            <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-f584d1b2 wp-block-group-is-layout-flex" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-right:0;padding-left:0">
-                                <p class="has-x-small-font-size wp-block-paragraph"><a href="https://www.duke.edu/contact/">Contact Us</a></p>
-
-
-
-                                <p class="has-x-small-font-size wp-block-paragraph"><a href="https://home.careers.duke.edu/">Careers</a></p>
-
-
-
-                                <p class="has-x-small-font-size wp-block-paragraph"><a href="https://news.duke.edu/">News &amp; Media</a></p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-f41a3fee wp-block-group-is-layout-flex">
-                            <h2 class="wp-block-heading has-base-color has-text-color has-link-color has-small-font-size wp-elements-67a3a29f737f1c5d81953c82146a8576"><strong>Compliance</strong> </h2>
-
-
-
-                            <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-fc3e210c wp-block-group-is-layout-flex" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-right:0;padding-left:0">
-                                <p class="has-x-small-font-size wp-block-paragraph"><a href="https://oarc.duke.edu/privacy/duke-university-privacy-statement/">Privacy Policy</a></p>
-
-
-
-                                <p class="has-x-small-font-size wp-block-paragraph"><a href="https://emergency.duke.edu/">Emergency Updates</a></p>
-
-
-
-                                <p class="has-x-small-font-size wp-block-paragraph"><a href="https://www.trademarklicensing.duke.edu/">Trademark</a></p>
-                            </div>
-                        </div>
-                    </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/about-csu/our-history-and-traditions" data-drupal-link-system-path="node/16">Our History and Traditions</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/about-csu/news-and-stories" data-drupal-link-system-path="node/36">News and Stories</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for News and Stories">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/about-csu/news-and-stories" data-drupal-link-system-path="node/36">Latest News</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-news-and-stories/university-newsletters" data-drupal-link-system-path="node/9631">Newsletters</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://lp.constantcontactpages.com/sl/7ZhzOFa/ambassador">Subscribe</a>
+              </li>
+      </ul>
+    
                 </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/about-csu/events" data-drupal-link-system-path="node/251">Events</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://www.wcsufm.org/">WCSU Jazzy 88.9</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <span>Administration</span>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Administration">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/office-president" title="Visit the Office of the President" data-drupal-link-system-path="node/7601">Office of the President</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/about-csu-administration/board-trustees" data-drupal-link-system-path="node/6611">Board of Trustees</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/about/administration-and-finance" data-drupal-link-system-path="node/5941">Finance</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/division-institutional-advancement" data-drupal-link-system-path="node/6636">Institutional Advancement</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/university-marketing-and-communications" title="Visit the Office of Marketing and Communications" data-drupal-link-system-path="node/6646">Public Relations</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/office-alumni-relations" title="Visit the Office of Alumni Relations" data-drupal-link-system-path="node/6641">Alumni Relations</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/about-csu-administration/human-resources" data-drupal-link-system-path="node/3796">Human Resources</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/office-general-counsel" data-drupal-link-system-path="node/5891">General Counsel</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/policies-and-procedures" data-drupal-link-system-path="node/3856">Policies and Procedures</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/title-iii-program" data-drupal-link-system-path="node/4021">Title III</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/about-csu/marauder-information-technology" data-drupal-link-system-path="node/4186">Marauder IT Services</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <span>CSU Satellite Locations</span>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for CSU Satellite Locations">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics/csu-dayton" data-drupal-link-system-path="node/96">CSU-Dayton</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/csu-trotwood" data-drupal-link-system-path="node/6561">CSU-Trotwood</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/csu-xenia" data-drupal-link-system-path="node/101">CSU-Xenia</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/sites/default/files/2024-11/Campus_Map_June_23.png" target="_blank" title="Central State University Campus Map">Campus Map</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics" data-drupal-link-system-path="node/6">Academics</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Academics">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/academic-affairs" data-drupal-link-system-path="node/5006">Academic Affairs</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Academic Affairs">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-academic-affairs/articulation-agreements-and-partners" data-drupal-link-system-path="node/4101">Articulation Agreements and Partners</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-academic-affairs/complaint-and-reporting-process" data-drupal-link-system-path="node/6486">Complaint and Reporting Process</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics-academic-affairs/office-academic-planning-and-assessment" data-drupal-link-system-path="node/5116">Office of Academic Planning and Assessment</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/academics/explore-our-programs" data-drupal-link-system-path="node/41">Explore Our Programs</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/education-your-future" data-drupal-link-system-path="node/46">Education for Your Future</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/meet-our-faculty-and-staff" data-drupal-link-system-path="node/56">Faculty and Staff</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/colleges-and-schools" data-drupal-link-system-path="node/66">Colleges and Schools</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Colleges and Schools">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-colleges-and-schools/college-business" data-drupal-link-system-path="node/71">Business</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics/science" data-drupal-link-system-path="node/81">Engineering, Science, Technology, and Agriculture</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics-colleges-and-schools/honors" data-drupal-link-system-path="node/4426">Honors</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics/humanities-arts-and-social-sciences" title="Humanities, Arts &amp; Social Sciences" data-drupal-link-system-path="node/86">Humanities, Arts, Social Sciences, and Education</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/empowering-success" data-drupal-link-system-path="node/31">Empowering Success</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Empowering Success">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-empowering-success/academic-advising-and-coaching" data-drupal-link-system-path="node/10436">Academic Advising and Coaching</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-empowering-success/trio-student-support-services" data-drupal-link-system-path="node/4011">TRIO Student Support Services</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/academics-empowering-success/first-and-secondyear-student-success-fsyss" data-drupal-link-system-path="node/6351">First- and Second-Year Student Success</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-empowering-success/graduate-school-preparation-program" data-drupal-link-system-path="node/8041">Graduate School Preparation Program</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-empowering-success/life-after-csu" data-drupal-link-system-path="node/4226">Life After CSU</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/research-and-centers" data-drupal-link-system-path="node/3781">Research and Centers</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Research and Centers">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/center-excellence-hbcu-corporate-engagement" data-drupal-link-system-path="node/3806">Center of Excellence HBCU Corporate Engagement</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-research-and-centers/center-international-education" data-drupal-link-system-path="node/4546">Center for International Education</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics/research-and-centers" data-drupal-link-system-path="node/3781">CSU Library Research</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/mass-communications-center" data-drupal-link-system-path="node/8156">Mass Communications Center</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-research-and-centers/office-sponsored-programs-research" data-drupal-link-system-path="node/4006">Office of Sponsored Programs &amp; Research</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/academics/csu-library" data-drupal-link-system-path="node/3786">CSU Library</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/center-teaching-learning-online-learners" data-drupal-link-system-path="node/5976">Center for Teaching &amp; Learning</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Center for Teaching &amp; Learning">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-central-state-global/online-degree-programs-and-certificates" data-drupal-link-system-path="node/6301">Online Degree Programs and Certificates</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/academics/office-registrar" data-drupal-link-system-path="node/3986">Office Of The Registrar</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Office Of The Registrar">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/academics-office-registrar/class-registration" data-drupal-link-system-path="node/11951">Class registration</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-office-registrar/military-and-veteran-services" data-drupal-link-system-path="node/15531">Military and Veteran Services</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/marauder-life" data-drupal-link-system-path="node/7">Student Services</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Student Services">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/student-services/yard" data-drupal-link-system-path="node/106">On the Yard</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/sites/default/files/2024-11/Campus_Map_June_23.png" target="_blank" title="Central State University Campus Map">Campus Map</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/student-services/office-career-services" data-drupal-link-system-path="node/4246">Career Services</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/student-services/get-involved" data-drupal-link-system-path="node/111">Get Involved</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Get Involved">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/student-services-get-involved/office-marauder-leadership-and-engagement" data-drupal-link-system-path="node/406">Student Organizations</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/student-services-get-involved/greek-life" data-drupal-link-system-path="node/411">Greek Life</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/student-services-get-involved/invincible-marching-marauders" data-drupal-link-system-path="node/416">Marching Band</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/marauder-life-get-involved/central-state-university-chorus" data-drupal-link-system-path="node/421">Chorus</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/student-services/health-services" data-drupal-link-system-path="node/126">Health Services</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Health Services">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/student-services-health-services/counseling-services" data-drupal-link-system-path="node/6581">Counseling Services</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/student-services-health-services/campus-violence-prevention-program" data-drupal-link-system-path="node/10006">Campus Violence Prevention Program</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="#/student-services-health-services/office-academic-empowerment-and-accessibility" data-drupal-link-system-path="node/15041">Office of Academic Empowerment and Accessibility</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/student-services/homecoming" data-drupal-link-system-path="node/116">Homecoming</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/student-services/housing-and-dining" data-drupal-link-system-path="node/121">Housing and Dining</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Housing and Dining">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--collapsed">
+                  <a href="#/student-services-housing-and-dining/movein-information" data-drupal-link-system-path="node/6321">Move-In Information</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/student-services/office-ombuds" data-drupal-link-system-path="node/12896">Office of the Ombuds</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/student-services/central-state-university-department-public-safety" data-drupal-link-system-path="node/3876">Safety</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Safety">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/student-services-campus-safety/campus-emergency-conditions" data-drupal-link-system-path="node/4441">Campus Emergency Conditions</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/sites/default/files/2025-11/clery-report-2025.pdf">Clery Report</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/student-right-know" data-drupal-link-system-path="node/9426">Student Right to Know</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions" data-drupal-link-system-path="node/8">Admissions &amp; Aid</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Admissions &amp; Aid">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions" data-drupal-link-system-path="node/8">Options to Apply</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Options to Apply">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/admissions-aid-options-apply/undergraduate-campus" data-drupal-link-system-path="node/136">Undergraduate (campus)</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid-options-apply/college-credit-plus" data-drupal-link-system-path="node/7151">College Credit Plus</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions-aid/tour-campus" data-drupal-link-system-path="node/156">Tour Campus</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Tour Campus">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/admissions-aid-tour-campus/explore-campus" data-drupal-link-system-path="node/13826">Tour Online</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/tour-campus#campus-tour" title="Schedule a Tour" data-drupal-link-system-path="node/156">Visit Onsite</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/admissions-faqs" data-drupal-link-system-path="node/316">Admissions FAQ</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions-aid/tuition-and-costs" data-drupal-link-system-path="node/3866">Tuition &amp; Costs</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Tuition &amp; Costs">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/admissions-aid-tuition-costs/understanding-college-costs-and-payment-college-bills" data-drupal-link-system-path="node/4406">Understanding College Costs and Payments</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/financial-aid-and-scholarships" data-drupal-link-system-path="node/466">Financial Aid &amp; Scholarships</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/undergraduate-admissions-team" data-drupal-link-system-path="node/151">Meet Our Admissions Team</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="link-arrow-wrapper">
+            <a href="#/admissions-aid/admitted-students" data-drupal-link-system-path="node/161">Admitted Students</a>
+                          <button type="button" class="has-submenu arrow-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Display Sub Menu for Admitted Students">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve">
+                <path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0
+                  s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path>
+                </svg>
+              </button>
+                      </div>
+                      <div class="submenus-wrapper">
+                              <div class="submenus-wrapper-inner">
+                  <span></span>
+                            <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/ready" data-drupal-link-system-path="node/15181">Marauder Ready</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid-admitted-students/student-orientation-advising-and-registration" data-drupal-link-system-path="node/6911">Student Orientation, Advising, and Registration</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+                <li class="menu-item">
+                  <a href="#/admissions-aid/office-cash-management" data-drupal-link-system-path="node/6866">Cash Management</a>
+              </li>
+      </ul>
+    
+                </div>
+                          </div>
+                        </li>
+      </ul>
+    
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/navigation/menu--main.html.twig' -->
+
+
+      </nav>
+      </div>
+</div>
+
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--centralstate-main-menu.html.twig' -->
+
+
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ block--utility.html.twig
+   ▪️ block--system-menu-block--utility.html.twig
+   ▪️ block--system-menu-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--utility.html.twig' -->
+
+<div class="block block-system block-system-menu-blockutility cc--component-container cc--utility-menu">
+  <div class="c--component c--utility-menu">
+          <nav class="mc--menu mc--utility" aria-label=" Menu">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__utility' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ menu--utility.html.twig
+   ✅ menu--utility.html.twig
+   ▪️ menu.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/navigation/menu--utility.html.twig' -->
+
+              <ul class="m--menu m--utility">
+                    <li class="menu-item">
+                  <a href="https://applynow.centralstate.edu/apply">Apply</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://global.centralstate.edu/" title="D2L Brightspace Learning Management System">D2L</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://maraudersports.com/">Athletics</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu-administration/office-alumni-relations" data-drupal-link-system-path="node/6641">Alumni</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://fundraise.givesmart.com/e/0gVMdQ?vid=12d2pw">Give</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item-submenu">
+                  <div class="utility-button-wrapper">
+            <button type="button" class="utility-button information-for-toggle" aria-expanded="false" aria-haspopup="true">
+                            <a href="#" class="utility-item-link">
+                Info For<span class="offset"></span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 8.3" style="enable-background:new 0 0 14 8.3;" xml:space="preserve"><path d="M0,1c0-0.3,0.1-0.5,0.3-0.7c0.4-0.4,1-0.4,1.4,0L7,5.5l5.3-5.2c0.4-0.4,1-0.4,1.4,0 s0.4,1,0,1.4L7,8.3L0.3,1.7C0.1,1.5,0,1.3,0,1z"></path></svg>
+              </a>
+            </button>
+                                        <ul class="submenu">
+                    <li class="menu-item">
+                  <a href="#/info/info-current-students" data-drupal-link-system-path="node/261">Current Students</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/academics-office-registrar/military-and-veteran-services" data-drupal-link-system-path="node/15531">Military and Veteran Services</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/info/information-parents-and-families" data-drupal-link-system-path="node/3791">Parents and Families</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/info/information-faculty-and-staff" data-drupal-link-system-path="node/4151">Faculty and Staff</a>
+              </li>
+                <li class="menu-item">
+                  <a href="#/about-csu/marauder-information-technology" data-drupal-link-system-path="node/4186">Marauder IT Services</a>
+              </li>
+        </ul>
+  
+                      </div>
+              </li>
+        </ul>
+  
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/navigation/menu--utility.html.twig' -->
+
+
+      </nav>
+      </div>
+</div>
+
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--utility.html.twig' -->
+
+
+              </div>
             </div>
-        </footer>
-    </div>
-    <script type="speculationrules">
-        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/duke-block-homepage/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-        <defs>
-            <filter id="wp-duotone-duke-dark-duotone">
-                <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix>
-                <fecomponenttransfer color-interpolation-filters="sRGB">
-                    <fefuncr type="table" tablevalues="0 0.074509803921569"></fefuncr>
-                    <fefuncg type="table" tablevalues="0 0.15686274509804"></fefuncg>
-                    <fefuncb type="table" tablevalues="0.28627450980392 0.44705882352941"></fefuncb>
-                    <fefunca type="table" tablevalues="1 1"></fefunca>
-                </fecomponenttransfer>
-                <fecomposite in2="SourceGraphic" operator="in"></fecomposite>
-            </filter>
-        </defs>
+              
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--search-form "
+
+  
+  
+   role="dialog"
+  
+  
+  
+  >
+  <div class="c--component c--search-form"
+    
+      >
+
+    
+  <div class="curve-wrapper">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 1200 20"  preserveAspectRatio="none">
+      <path d="M0,0h1200v0c-200,13.3-400,20-600,20S200,13.3,0,0L0,0z"/>
     </svg>
-    <div class="duke-alert-container" style="display:none;visibility:hidden;">
-        <script src="https://alertbar.oit.duke.edu/alert.html" type="text/javascript"></script>
-    </div> <span class="ssp-id" style="display:none">3995</span>
-    <button id="back-to-top" aria-label="Back to top">
-    </button>
-    <script id="dukehomepageblocks-front-end-js" src="https://www.duke.edu/wp-content/themes/duke-block-homepage/assets/js/front-end.js?ver=9ebeceb7ca991dce5f6c"></script>
-</body>
+  </div>
 
+  <div class="inner-wrapper">
+
+    <h2 class="visually-hidden" id="dialog-title">Enter a Search Term</h2>
+
+    <form autocomplete="on" name="search-form" action="/search">
+    
+                <div class="input-wrapper">
+          <div class="fi--form-item fi--search">
+            <input
+              type="text"
+              name="q"
+              id="search"
+              maxlength="50"
+              class="form-autocomplete form-text ui-autocomplete-input"
+              placeholder="Search the Site"
+              size="50" >
+          </div>
+        </div>
+        
+<input type="submit" value="Search" class="button">
+
+      </form>
+
+  </div>
+
+
+  </div></div>
+
+          </div>        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/layout/region--header.html.twig' -->
+
+
+</header>
+
+<main id="main-content">
+
+  <div class="l--content">
+
+    <div class="above-content">
+        
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+
+    <div class="content">
+
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ region--content.html.twig
+   ✅ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/layout/region.html.twig' -->
+  <div class="region region-content r--region r--content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--centralstate-enrollmentfuelmatchback.html.twig
+   ▪️ block--block-content--c705cc02-f708-4e21-8d2b-0af6750cda62.html.twig
+   ▪️ block--block-content--id-view--centralstate-enrollmentfuelmatchback--full.html.twig
+   ▪️ block--block-content--id--centralstate-enrollmentfuelmatchback.html.twig
+   ▪️ block--block-content--view-type--basic--full.html.twig
+   ▪️ block--block-content--type--basic.html.twig
+   ▪️ block--block-content--view--full.html.twig
+   ▪️ block--block-content.html.twig
+   ✅ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+<div id="block-centralstate-enrollmentfuelmatchback" class="block block-block-content block-block-contentc705cc02-f708-4e21-8d2b-0af6750cda62">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--block-content--body--basic.html.twig
+   ▪️ field--block-content--body.html.twig
+   ▪️ field--block-content--basic.html.twig
+   ▪️ field--body.html.twig
+   ▪️ field--text-with-summary.html.twig
+   ✅ field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+            <div><!-- enrollmentFUEL matchBACK WIRE Begin --><script type="text/javascript" async src="https://api.wire.spbx.app/wire.js?account_id=66c37e57f423096afd3b0cee&amp;property_id=68925158fd649f690113e16b"> </script><!-- enrollmentFUEL matchBACK WIRE End --></div>
+      
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--centralstate-enrollmentfuelmsclarity.html.twig
+   ▪️ block--block-content--3d289fc0-5c10-4405-8f3b-5dff6c1c1176.html.twig
+   ▪️ block--block-content--id-view--centralstate-enrollmentfuelmsclarity--full.html.twig
+   ▪️ block--block-content--id--centralstate-enrollmentfuelmsclarity.html.twig
+   ▪️ block--block-content--view-type--basic--full.html.twig
+   ▪️ block--block-content--type--basic.html.twig
+   ▪️ block--block-content--view--full.html.twig
+   ▪️ block--block-content.html.twig
+   ✅ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+<div id="block-centralstate-enrollmentfuelmsclarity" class="block block-block-content block-block-content3d289fc0-5c10-4405-8f3b-5dff6c1c1176">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--block-content--body--basic.html.twig
+   ▪️ field--block-content--body.html.twig
+   ▪️ field--block-content--basic.html.twig
+   ▪️ field--body.html.twig
+   ▪️ field--text-with-summary.html.twig
+   ✅ field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+            <div><!-- enrollmentFUEL MS Clarity Begin --><script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "t0jnjq2zim");
+</script><!-- enrollmentFUEL MS Clarity End --></div>
+      
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--centralstate-content.html.twig
+   ▪️ block--system-main-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--centralstate_content.html.twig' -->
+<div id="block-centralstate-content" class="block block-system block-system-main-block tc--template-container tc--home-page">
+  <div class="t--template t--home-page">
+    
+        
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ node--5--full.html.twig
+   ▪️ node--5.html.twig
+   ✅ node--home--full.html.twig
+   ▪️ node--home.html.twig
+   ▪️ node--full.html.twig
+   ▪️ node.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--home--full.html.twig' -->
+  
+
+  
+  
+
+  
+                                                        
+  <div class="content-main">
+    <div class="lc--layout-container lc--full">
+      <div class="l--layout l--full">
+        <div class="lr--layout-region lr--main">
+            
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--home-page-hero "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--home-page-hero"
+    
+      >
+
+    
+  <div class="image-video">
+    <div class="video-wrapper">
+                  
+<div class="f--field f--ambient-video">
+
+    
+  <video
+    aria-hidden="true"
+    tabindex="-1"
+    loop
+    autoplay
+    playsinline
+    muted
+  >
+    <source src="https://player.vimeo.com/progressive_redirect/playback/790073440/rendition/720p/file.mp4?loc=external&amp;signature=8d208ee2ab02bd0ac92776706c88e46b4f2c763864dc5c158354b09b4c129066" type="video/mp4">
+  </video>
+
+
+</div>
+      
+          
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img srcset="/public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 320w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 720w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg?itok=z-SizCK2 768w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 891w, /sites/default/files/styles/16_9_900x506/public/2025-05/central-state-campus-aerial-10_resized_0.jpg.jpeg?itok=-1znKMNO 900w, /sites/default/files/styles/16_9_960x540/public/2025-05/central-state-campus-aerial-10_resized_0.jpg.jpeg?itok=DFwzMLfx 960w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 996w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 1152w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 1170w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg  1200w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 1275w,/public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 1536w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 1800w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 1992w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 2400w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg 2700w, /public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg?itok=-RitP9hB 3600w" sizes="100vw" width="996" height="560" src="/public/assets/uploads/central-state-campus-aerial-10_resized_0.jpg.jpeg?itok=z-SizCK2" alt="Aerial view of Central State University campus in Wilberforce, Ohio" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+
+      <div class="curve-wrapper" aria-hidden="true" >
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 1200 60" preserveAspectRatio="none">
+          <path d="M0,0c205.3,39.3,405.3,59,600,59s394.7-19.7,600-59v60H0V0z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="cards-wrapper">
+              <div class="video-controls">
+  <div class="video-controls-inner">
+    <button aria-label="Pause Video" class="video-button video-pause-button">
+      <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Pasue Video Backgroound</title>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g>
+                <g>
+                    <rect fill="#000000" opacity="0.3" x="0" y="0" width="40" height="40"></rect>
+                    <g transform="translate(12.000000, 12.000000)" fill="#FFFFFF">
+                        <path d="M6.5,2.5 L6.5,13.5 L4,13.5 L4,2.5 L6.5,2.5 Z M12,2.5 L12,13.5 L9.5,13.5 L9.5,2.5 L12,2.5 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+    </button>
+    <button aria-label="Play Video" class="video-button video-play-button">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+        <style type="text/css">
+          .st0{opacity:0.3;fill-rule:evenodd;clip-rule:evenodd;enable-background:new    ;}
+          .st1{fill:#FFFFFF;}
+        </style>
+        <rect class="st0" width="40" height="40"/>
+        <path class="st1" d="M17.5,26l7.2-4.7c0.5-0.3,0.6-0.9,0.3-1.4c-0.1-0.1-0.2-0.2-0.3-0.3L17.5,15
+        c-0.5-0.3-1.1-0.2-1.4,0.3c-0.1,0.2-0.2,0.4-0.2,0.5v9.3c0,0.6,0.4,1,1,1C17.2,26.2,17.4,26.1,17.5,26z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+      
+      <div class="cards">
+
+        <div class="col">
+                        
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--home-page-hero-card "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--home-page-hero-card"
+    
+      >
+
+    
+      <div class="image-container">
+      <a href="https://www.centralstate.edu/events/fall-college-preview-day" >
+            
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img   sizes="(min-width:1200px) 65vw, (min-width:768px) 83vw, 100vw" width="996" height="560" src="/public/assets/uploads/csu-students-outside-student-center.jpg.jpeg?itok=0vHPDTAV" alt="CSU Students Outside Student Center" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+      </a>
+    </div>
+  
+  <div class="text-container">
+
+              
+<div class="f--field f--text">
+
+    
+    
+
+
+</div>
+    
+              
+<div class="f--field f--cta-title">
+
+    
+  <h3>
+          <a href="https://www.centralstate.edu/events/fall-college-preview-day">College Preview Day is Oct 31 | REGISTER</a>
+      </h3>
+
+
+</div>
+    
+  </div>
+
+
+  </div></div>
+          
+          <div class="sub-cards">
+
+                            
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--home-page-hero-card "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--home-page-hero-card"
+    
+      >
+
+    
+      <div class="image-container">
+      <a href="https://fundraise.givesmart.com/vf/CSUHOME" >
+            
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img   sizes="(min-width:1200px) 65vw, (min-width:768px) 83vw, 100vw" width="996" height="560" src="/public/assets/uploads/chatgpt-image-sep-2-2026-08_25_20-pm.png.jpeg" alt="Central State Giving Challenge 2026" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+      </a>
+    </div>
+  
+  <div class="text-container">
+
+              
+<div class="f--field f--text">
+
+    
+    
+
+
+</div>
+    
+              
+<div class="f--field f--cta-title">
+
+    
+  <h3>
+          <a href="https://fundraise.givesmart.com/vf/CSUHOME">Homecoming Giving Challenge</a>
+      </h3>
+
+
+</div>
+    
+  </div>
+
+
+  </div></div>
+            
+                            
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--home-page-hero-card "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--home-page-hero-card"
+    
+      >
+
+    
+      <div class="image-container">
+      <a href="https://www.centralstate.edu/events/17th-annual-constitution-prelaw-day" >
+            
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img width="996" height="560" src="/public/assets/uploads/We the People Constitution Day with U.S. flag.jpg.jpeg?itok=OjQlFHN_" alt="A closeup of the U.S. Constitution and flag" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+      </a>
+    </div>
+  
+  <div class="text-container">
+
+              
+<div class="f--field f--text">
+
+    
+    
+
+
+</div>
+    
+              
+<div class="f--field f--cta-title">
+
+    
+  <h3>
+          <a href="https://www.centralstate.edu/events/17th-annual-constitution-prelaw-day">Sept. 17 Constitution Pre-Law Day</a>
+      </h3>
+
+
+</div>
+    
+  </div>
+
+
+  </div></div>
+            
+          </div>
+
+        </div>
+
+        <div class="col">
+                        
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--home-page-hero-card "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--home-page-hero-card"
+    
+      >
+
+    
+      <div class="image-container">
+      <a href="#/get-event-tickets" >
+            
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  width="996" height="560" src="/public/assets/uploads/University events - stock - lighter.jpg.jpeg?itok=4QucmLXu" alt="a large group of people attend a University-sponsored event; get event tickets" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+      </a>
+    </div>
+  
+  <div class="text-container">
+
+              
+<div class="f--field f--text">
+
+    
+    
+
+
+</div>
+    
+              
+<div class="f--field f--cta-title">
+
+    
+  <h3>
+          <a href="#/get-event-tickets">Get your University event tickets</a>
+      </h3>
+
+
+</div>
+    
+  </div>
+
+
+  </div></div>
+          
+          <div class="slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+
+                
+                                  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/form/container.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view__announcement_carousel' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ views-view--announcement-carousel.html.twig
+   ✅ views-view--announcement-carousel.html.twig
+   ▪️ views-view.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/views/announcement_carousel/views-view--announcement-carousel.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_unformatted__announcement_carousel' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ views-view-unformatted--announcement-carousel.html.twig
+   ✅ views-view-unformatted--announcement-carousel.html.twig
+   ▪️ views-view-unformatted.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/views/announcement_carousel/views-view-unformatted--announcement-carousel.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ node--view--announcement-carousel--block-1.html.twig
+   ▪️ node--view--announcement-carousel.html.twig
+   ▪️ node--9696--teaser.html.twig
+   ▪️ node--9696.html.twig
+   ✅ node--announcement--teaser.html.twig
+   ▪️ node--announcement.html.twig
+   ▪️ node--teaser.html.twig
+   ▪️ node.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--announcement--teaser.html.twig' -->
+<div class="swiper-slide">
+  <div class="f--field f--description">
+    <p>Our regular newsletters help you stay up to date with Central State University and news about our exceptional students, faculty, staff, and alumni.</p>
+  </div>
+
+      <div class="f--field f--link">
+      <a class="link" href="https://www.centralstate.edu/university-newsletters" aria-label="click here to visit the university newsletters webpage">Latest Newsletters</a>
+    </div>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--announcement--teaser.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ node--view--announcement-carousel--block-1.html.twig
+   ▪️ node--view--announcement-carousel.html.twig
+   ▪️ node--8361--teaser.html.twig
+   ▪️ node--8361.html.twig
+   ✅ node--announcement--teaser.html.twig
+   ▪️ node--announcement.html.twig
+   ▪️ node--teaser.html.twig
+   ▪️ node.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--announcement--teaser.html.twig' -->
+<div class="swiper-slide">
+  <div class="f--field f--description">
+    <p><span><span><span>College Credit Plus empowers students to earn high school and college credits simultaneously. Become a Marauder today.</span></span></span></p>
+  </div>
+
+      <div class="f--field f--link">
+      <a class="link" href="https://www.centralstate.edu/college-credit-plus" aria-label="click here to learn about College Credit Plus at Central State University">Power Your Education</a>
+    </div>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--announcement--teaser.html.twig' -->
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/views/announcement_carousel/views-view-unformatted--announcement-carousel.html.twig' -->
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/views/announcement_carousel/views-view--announcement-carousel.html.twig' -->
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/form/container.html.twig' -->
+
+
+                
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  </div></div>
+
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--node--field-components--home.html.twig
+   ✅ field--node--field-components.html.twig
+   ▪️ field--node--home.html.twig
+   ▪️ field--field-components.html.twig
+   ▪️ field--entity-reference-revisions.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/field/field--node--field-components.html.twig' -->
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--text-link-listing--default.html.twig
+   ✅ paragraph--text-link-listing.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--text-link-listing.html.twig' -->
+  <div class="paragraph paragraph--type--text-link-listing paragraph--view-mode--default">
+        
+                    
+    
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--text-and-link-listing "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--text-and-link-listing"
+    
+      >
+
+    
+  <div class="curve-wrapper">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M1200,60C994.7,20.7,794.7,1,600,1S205.3,20.7,0,60V0h1200V60z"/>
+    </svg>
+  </div>
+
+      <div class="image-container">
+          
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  width="320" height="180" src="/public/assets/uploads/11bb7147f2b68a218fc7ec92185cf16e336ac978.png.jpeg" alt="The tower" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+    </div>
+  
+  <header>
+              
+<div class="f--field f--section-title">
+
+    
+  <h2>Who will you become?</h2>
+
+
+</div>
+    
+              
+<div class="f--field f--description">
+
+    
+  <p>Wherever you are on your journey, your experience at Central State University will be life-changing.</p>
+
+
+
+</div>
+    
+              
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/academics/education-your-future"  aria-label="click here to learn how Central State teaches for the future">Your Future Awaits  </a>
+
+
+</div>
+      </header>
+
+  <div class="links-outer-wrapper">
+              
+<div class="f--field f--cta-title">
+
+    
+  <h3>
+          Explore our programs
+      </h3>
+
+
+</div>
+    
+          <div class="link-container">
+                      
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="/admissions-aid-options-apply/undergraduate-campus"  aria-label="click here to access a list of undergraduate programs offered at Central State University">Undergraduate programs  </a>
+
+
+</div>
+                      
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/academics/explore-our-programs"  aria-label="click here to access the program listing for the Master of Business Administration (MBA)">Graduate program  </a>
+
+
+</div>
+                      
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="/academics/center-teaching-learning-online-learners"  aria-label="click here to learn about Central State&#039;s online division, Central State Global">Central State Global online  </a>
+
+
+</div>
+              </div>
+      </div>
+
+  </div></div>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--text-link-listing.html.twig' -->
+
+
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--vertical-tabbed-carousel--default.html.twig
+   ✅ paragraph--vertical-tabbed-carousel.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--vertical-tabbed-carousel.html.twig' -->
+  <div class="paragraph paragraph--type--vertical-tabbed-carousel paragraph--view-mode--default">
+    
+  
+
+    
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--vertical-tabbed-carousel "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--vertical-tabbed-carousel"
+    
+      >
+
+          
+<div class="f--field f--slides">
+
+    
+      <div class="left-container">
+        <div class="left-container-inner side-titles">
+                          
+<div class="f--field f--section-title">
+
+    
+  <h2>Admissions and aid</h2>
+
+
+</div>
+          
+          <div class="side-nav">
+            <div class="side-nav-inner">
+              <ul class="swiper-pagination">
+                                  <li class="swiper-pagination-customs">How to apply</li>
+                                  <li class="swiper-pagination-customs">Paying for college</li>
+                                  <li class="swiper-pagination-customs">Financial aid</li>
+                                  <li class="swiper-pagination-customs">Meet your admissions counselor</li>
+                              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-container swiper-no-swiping right-container">
+        <div class="swiper-wrapper">
+                        
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--vertical-tabbed-carousel-slide cc--side-tab-carousel-slide swiper-slide"
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--vertical-tabbed-carousel-slide"
+    
+      >
+
+    
+      
+<div class="f--field f--image">
+ 
+               
+<img width="996" height="560" src="/public/assets/uploads/csu-students-outside-student-center.jpg.jpeg" alt="CSU Students Outside Student Center" loading="lazy" />
+ 
+      
+
+</div>
+
+  <div class="text-container">
+    <div class="text-container-inner">
+      <h3 class="tab-title">How to apply</h3>
+
+          
+<div class="f--field f--description">
+
+    
+  <p>Whether you are coming from high school or transferring, seeking an MBA, or studying online, we will walk you through the application process.</p>
+
+
+</div>
+
+                  
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/admissions"  aria-label="click here to learn the steps to apply to Central State University">Apply Now  </a>
+
+
+</div>
+          </div>
+  </div>
+
+
+  </div></div>
+                        
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--vertical-tabbed-carousel-slide cc--side-tab-carousel-slide swiper-slide"
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--vertical-tabbed-carousel-slide"
+    
+      >
+
+    
+      
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  sizes="(min-width:1200px) 65vw, (min-width:768px) 83vw, 100vw" width="996" height="560" src="/public/assets/uploads/6f6446033cfda9cb2eb356bf2710f9638de95eaf.png.jpeg" alt="Student tour" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+
+  <div class="text-container">
+    <div class="text-container-inner">
+      <h3 class="tab-title">Paying for college</h3>
+
+          
+<div class="f--field f--description">
+
+    
+  <p>We are committed to making college affordable with the Marauder Tuition Guarantee&nbsp;— zero tuition increases over four years!&nbsp;</p>
+
+
+</div>
+
+                  
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/admissions-aid-tuition-costs/understanding-college-cost-and-payment-college-bills"  aria-label="click here to learn about tuition and fees">Understanding Tuition Costs  </a>
+
+
+</div>
+          </div>
+  </div>
+
+
+  </div></div>
+                        
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--vertical-tabbed-carousel-slide cc--side-tab-carousel-slide swiper-slide"
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--vertical-tabbed-carousel-slide"
+    
+      >
+
+    
+      
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img sizes="(min-width:1200px) 65vw, (min-width:768px) 83vw, 100vw" width="996" height="560" src="/public/assets/uploads/b5672bb02e0e7ebdb0c70ea8aead96625b58f51f.png.jpeg" alt="Football" loading="lazy" />
+ 
+
+      
+
+</div>
+
+  <div class="text-container">
+    <div class="text-container-inner">
+      <h3 class="tab-title">Financial aid</h3>
+
+          
+<div class="f--field f--description">
+
+    
+  <p>We will walk with you step-by-step to help secure the scholarships and federal and state aid for which you are eligible.</p>
+
+
+</div>
+
+                  
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/admissions-aid/financial-aid-and-scholarships"  aria-label="click here to learn ways to pay for college, including financial aid and scholarships">Financial Aid and Scholarships  </a>
+
+
+</div>
+          </div>
+  </div>
+
+
+  </div></div>
+                        
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--vertical-tabbed-carousel-slide cc--side-tab-carousel-slide swiper-slide"
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--vertical-tabbed-carousel-slide"
+    
+      >
+
+    
+      
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  sizes="(min-width:1200px) 65vw, (min-width:768px) 83vw, 100vw" width="996" height="560" src="/public/assets/uploads/7524a2cc379b7545df90171faf8c47d91fc8e247.png.jpeg" alt="Graduation day" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+
+  <div class="text-container">
+    <div class="text-container-inner">
+      <h3 class="tab-title">Meet your admissions counselor</h3>
+
+          
+<div class="f--field f--description">
+
+    
+  <p>Need help on your journey to come to Central State? We are here to answer your questions and help you find your best pathway to a bright future.&nbsp;</p>
+
+
+</div>
+
+                  
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/admissions-aid/undergraduate-admissions-team"  aria-label="click here to learn about undergraduate admissions">Meet Your Advisor  </a>
+
+
+</div>
+          </div>
+  </div>
+
+
+  </div></div>
+                  </div>
+      </div>
+
+    
+</div>
+
+  </div></div>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--vertical-tabbed-carousel.html.twig' -->
+
+
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--spacer--default.html.twig
+   ✅ paragraph--spacer.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--spacer.html.twig' -->
+  <div class="paragraph paragraph--type--spacer paragraph--view-mode--default">
+        
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--spacer "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--spacer"
+    
+      >
+
+    
+
+  </div></div>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--spacer.html.twig' -->
+
+
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--event-cards-by-taxonomy--default.html.twig
+   ✅ paragraph--event-cards-by-taxonomy.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--event-cards-by-taxonomy.html.twig' -->
+  <div class="paragraph paragraph--type--event-cards-by-taxonomy paragraph--view-mode--default">
+    
+	<section class="cc--component-container cc--related-events">
+		<div class="c--component c--related-events">
+
+      <header class="section-header">
+        <div class="inner-wrapper">
+                      <div class="f--field f--section-title">
+              <h2>Upcoming events</h2>
+            </div>
+          
+                          
+<div class="f--field f--link">
+
+    
+    
+  
+
+<a class="link"  href="/about-csu/events"  aria-label="Read more about More events">More events  </a>
+
+
+</div>
+                  </div>
+      </header>
+
+      <div class="f--field f--field-components">
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-views-reference--event-cards-by-taxonomy.html.twig
+   ▪️ field--paragraph--field-views-reference.html.twig
+   ▪️ field--paragraph--event-cards-by-taxonomy.html.twig
+   ▪️ field--field-views-reference.html.twig
+   ✅ field--viewsreference.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/field/field--viewsreference.html.twig' -->
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/form/container.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view' -->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/views/views-view.html.twig' -->
+<div class="js-view-dom-id-4fc4aac05c24a04737b696be0af61322fdc95cc7d27a7ce975118fb60c21d8b2">
+  
+  
+  
+
+  
+  
+  
+
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_unformatted__event_cards_by_taxonomy' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ views-view-unformatted--event-cards-by-taxonomy.html.twig
+   ✅ views-view-unformatted--event-cards-by-taxonomy.html.twig
+   ▪️ views-view-unformatted.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/views/event_cards_by_taxonomy/views-view-unformatted--event-cards-by-taxonomy.html.twig' -->
+
+      <ul class="cards-list">
+      <li>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ node--view--event-cards-by-taxonomy--default.html.twig
+   ▪️ node--view--event-cards-by-taxonomy.html.twig
+   ▪️ node--15216--events-listing.html.twig
+   ▪️ node--15216.html.twig
+   ✅ node--event--events-listing.html.twig
+   ▪️ node--event.html.twig
+   ▪️ node--events-listing.html.twig
+   ▪️ node.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--event--events-listing.html.twig' -->
+
+  
+    
+
+
+
+
+
+
+<section
+  class="cc--component-container cc--events-listing-component with-image"
+
+  
+   aria-label="Body text"
+  
+  
+  
+  
+  >
+  <div class="c--component c--events-listing-component"
+    
+      >
+
+    
+      <div class="image-container">
+          
+<div class="f--field f--image">
+
+    
+              <a href="#/events/meadow-seeding-service-project">
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  sizes="(min-width:1200px) 25vw, (min-width:768px) 33vw, 83vw" width="996" height="560" src="/public/assets/uploads/image-11.png.jpeg" alt="Native Seed Plugs; click to learn more about this event" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+          </a>
+      
+
+</div>
+    </div>
+  
+  <div class="text-container">
+              
+<div class="f--field f--category">
+
+    
+  September 24
+
+
+</div>
+    
+              
+<div class="f--field f--cta-title">
+
+    
+  <h3>
+          <a href="#/events/meadow-seeding-service-project">Meadow Seeding Service Project</a>
+      </h3>
+
+
+</div>
+    
+          <div class="time-wrapper">
+            
+<div class="f--field f--date-string">
+
+    
+    6:00 p.m. to 8:00 p.m.
+
+
+</div>
+      </div>
+    
+              
+<div class="f--field f--text">
+
+    
+    Seed to Bloom Botanical and Community Garden located at the intersection of St. Rt. 42 E and Wilberforce Switch Rd. Parking off Wilberforce Switch Rd.
+
+
+</div>
+    
+  </div>
+
+  </div></section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--event--events-listing.html.twig' -->
+
+</li>
+  
+      <li>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ node--view--event-cards-by-taxonomy--default.html.twig
+   ▪️ node--view--event-cards-by-taxonomy.html.twig
+   ▪️ node--15556--events-listing.html.twig
+   ▪️ node--15556.html.twig
+   ✅ node--event--events-listing.html.twig
+   ▪️ node--event.html.twig
+   ▪️ node--events-listing.html.twig
+   ▪️ node.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--event--events-listing.html.twig' -->
+
+  
+    
+
+
+
+
+
+
+<section
+  class="cc--component-container cc--events-listing-component with-image"
+
+  
+   aria-label="Body text"
+  
+  
+  
+  
+  >
+  <div class="c--component c--events-listing-component"
+    
+      >
+
+    
+      <div class="image-container">
+          
+<div class="f--field f--image">
+
+    
+              <a href="#/events/putting-garden-rest">
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  sizes="(min-width:1200px) 25vw, (min-width:768px) 33vw, 83vw" width="996" height="560" src="/public/assets/uploads/picture1.jpg.jpeg" alt="raised winter beds" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+          </a>
+      
+
+</div>
+    </div>
+  
+  <div class="text-container">
+              
+<div class="f--field f--category">
+
+    
+  October 1
+
+
+</div>
+    
+              
+<div class="f--field f--cta-title">
+
+    
+  <h3>
+          <a href="#/events/putting-garden-rest">Putting the Garden to Rest</a>
+      </h3>
+
+
+</div>
+    
+          <div class="time-wrapper">
+            
+<div class="f--field f--date-string">
+
+    
+    3:30 p.m. to 5:00 p.m.
+
+
+</div>
+      </div>
+    
+              
+<div class="f--field f--text">
+
+    
+    Seed to Bloom Botanical and Community Garden located at the intersection of US Hwy 42 and Wilberforce Switch Rd. Parking off Wilberforce Switch Rd.
+
+
+</div>
+    
+  </div>
+
+  </div></section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--event--events-listing.html.twig' -->
+
+</li>
+  
+      <li>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ node--view--event-cards-by-taxonomy--default.html.twig
+   ▪️ node--view--event-cards-by-taxonomy.html.twig
+   ▪️ node--15561--events-listing.html.twig
+   ▪️ node--15561.html.twig
+   ✅ node--event--events-listing.html.twig
+   ▪️ node--event.html.twig
+   ▪️ node--events-listing.html.twig
+   ▪️ node.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--event--events-listing.html.twig' -->
+
+  
+    
+
+
+
+
+
+
+<section
+  class="cc--component-container cc--events-listing-component with-image"
+
+  
+   aria-label="Body text"
+  
+  
+  
+  
+  >
+  <div class="c--component c--events-listing-component"
+    
+      >
+
+    
+      <div class="image-container">
+          
+<div class="f--field f--image">
+
+    
+              <a href="#/events/growing-garlic-basics">
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  sizes="(min-width:1200px) 25vw, (min-width:768px) 33vw, 83vw" width="996" height="560" src="/public/assets/uploads/Garlic Power.png.jpeg" alt="a person wearing a white glove plants garlic cloves" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+          </a>
+      
+
+</div>
+    </div>
+  
+  <div class="text-container">
+              
+<div class="f--field f--category">
+
+    
+  October 15
+
+
+</div>
+    
+              
+<div class="f--field f--cta-title">
+
+    
+  <h3>
+          <a href="#/events/growing-garlic-basics">Growing Garlic Basics</a>
+      </h3>
+
+
+</div>
+    
+          <div class="time-wrapper">
+            
+<div class="f--field f--date-string">
+
+    
+    3:30 p.m. to 5:00 p.m.
+
+
+</div>
+      </div>
+    
+              
+<div class="f--field f--text">
+
+    
+    Seed to Bloom Botanical and Community Garden located at the intersectionof US Hwy 42 and Wilberforce Switch Rd. Parking off Wilberforce Switch Rd.
+
+
+</div>
+    
+  </div>
+
+  </div></section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--event--events-listing.html.twig' -->
+
+</li>
+      </ul>
+  
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/views/event_cards_by_taxonomy/views-view-unformatted--event-cards-by-taxonomy.html.twig' -->
+
+
+    
+
+  
+  
+
+  
+  
+</div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/views/views-view.html.twig' -->
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/form/container.html.twig' -->
+
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/field/field--viewsreference.html.twig' -->
+
+
+      </div>
+
+		</div>
+	</section>
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--event-cards-by-taxonomy.html.twig' -->
+
+
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--text-and-images-mosaic--default.html.twig
+   ✅ paragraph--text-and-images-mosaic.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--text-and-images-mosaic.html.twig' -->
+  <div class="paragraph paragraph--type--text-and-images-mosaic paragraph--view-mode--default">
+                          
+    
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--text-and-images-mosaic "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--text-and-images-mosaic"
+    
+      >
+
+    
+           
+<div class="f--field f--section-title">
+
+    
+  <h2>The Marauder experience</h2>
+
+
+</div>
+   
+      
+<div class="f--field f--field-components">
+
+    
+      
+          
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--mosaic-card "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--mosaic-card"
+    
+      >
+
+    
+  <div class="image-container">
+        
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  width="956" height="956" src="/public/assets/uploads/Garlic Power.png.jpeg" alt="Danielle Darkenwald" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+  </div>
+
+  <div class="text-container">
+    <div class="text-inner">
+      
+            
+<div class="f--field f--description">
+
+    
+  <p><span><span><span>As a native of Cleveland, I chose to attend Central State because I believed that I did not need to leave my home state to … acquire an outstanding education.</span></span></span></p>
+
+
+</div>
+
+      
+      
+            
+<div class="f--field f--attribution">
+
+          <h3>Danielle Darkenwald</h3>
+  
+      <p>History Major, International Languages Minor</p>
+  
+
+</div>
+
+      
+          </div>
+  </div>
+
+
+  </div></div>
+
+      
+          
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--mosaic-card "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--mosaic-card"
+    
+      >
+
+    
+  <div class="image-container">
+        
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 83vw" width="956" height="956" src="/public/assets/uploads/Jeremy Jackson HD.jpg.jpeg" alt="Jeremy Jackson" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+  </div>
+
+  <div class="text-container">
+    <div class="text-inner">
+      
+            
+<div class="f--field f--description">
+
+    
+  <p>Every student can find the path of excellence for themselves, and we know that the Honors College is there to support and encourage us.</p>
+
+
+</div>
+
+      
+      
+            
+<div class="f--field f--attribution">
+
+          <h3>Jeremy Jackson</h3>
+  
+      <p>Manufacturing Engineering Major</p>
+  
+
+</div>
+
+      
+          </div>
+  </div>
+
+
+  </div></div>
+
+      
+          
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--mosaic-card "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--mosaic-card"
+    
+      >
+
+    
+  <div class="image-container">
+        
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 83vw" width="956" height="956" src="/public/assets/uploads/Chantinae Gray (1).jpeg" alt="Chantinae Gray" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+  </div>
+
+  <div class="text-container">
+    <div class="text-inner">
+      
+            
+<div class="f--field f--description">
+
+    
+  <p>As an undergraduate research assistant, I have gained priceless experience, ... encouraging confidence in my field and defying gender norms as a woman in STEM.</p>
+
+
+</div>
+
+      
+      
+            
+<div class="f--field f--attribution">
+
+          <h3>Bahamian-born Chantinae Gray</h3>
+  
+      <p>Sustainable Agriculture and Agroecology Major, Biology Minor</p>
+  
+
+</div>
+
+      
+          </div>
+  </div>
+
+
+  </div></div>
+
+      
+    
+</div>
+
+
+  </div></div>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--text-and-images-mosaic.html.twig' -->
+
+
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--50-50-split-cta--default.html.twig
+   ✅ paragraph--50-50-split-cta.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--50-50-split-cta.html.twig' -->
+  <div class="paragraph paragraph--type--_0-50-split-cta paragraph--view-mode--default">
+    
+          
+  
+    
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--fifty-fifty-split-cta "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--fifty-fifty-split-cta"
+    
+      >
+
+    
+  <div class="text-image-container">
+    <div class="text-container">
+
+      
+        <div role="none" aria-hidden="true" class="year-image"></div>
+
+      
+      <div class="text-inner">
+                      
+<div class="f--field f--category">
+
+    
+  Master of Business Administration
+
+
+</div>
+        
+                      
+<div class="f--field f--section-title">
+
+    
+  <h2>Earn an MBA in as little as a year!</h2>
+
+
+</div>
+        
+                      
+<div class="f--field f--description">
+
+    
+  <p>Central State is now offering a Master of Business Administration through our award-winning College of Business, building on our legacy of nurturing the best and brightest minds. Step boldly into your future with Central State University. <a href="#/programs/master-business-administration-mba" data-entity-type="node" data-entity-uuid="162dcde9-df14-4a4b-9d73-bd4110fcfe75" data-entity-substitution="canonical" title="Master of Business Administration (MBA)">Learn more<span class="visually-hidden"> about the Master of Business Administration at Central State University</span>.</a></p>
+
+
+</div>
+        
+                  <div class="link-list">
+                              
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/programs/master-business-administration-mba"  aria-label="click here to learn how to earn your Master of Business Administration in as little as a year">Advance Positive Change  </a>
+
+
+</div>
+                      </div>
+              </div>
+    </div>
+
+          <div class="image-container">
+            
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  width="956" height="956" src="/public/assets/uploads/commencement-2024-masters-students.jpg.jpeg" alt="CSU MBA Grads" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+
+              </div>
+    
+  </div>
+
+
+  </div></div>
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--50-50-split-cta.html.twig' -->
+
+
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--full-width-image-text--default.html.twig
+   ✅ paragraph--full-width-image-text.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--full-width-image-text.html.twig' -->
+  <div class="paragraph paragraph--type--full-width-image-text paragraph--view-mode--default">
+    
+  
+    
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--full-width-image-with-text "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--full-width-image-with-text"
+    
+      >
+
+    
+  <div class="content-wrapper">
+
+    <div class="image-container">
+      <div class="curve-wrapper">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 1200 10" preserveAspectRatio="none">
+          <path d="M1200,10C1000,3.3,800,0,600,0S200,3.3,0,10V0h1200V10z"/>
+        </svg>
+      </div>
+
+          
+<div class="f--field f--image">
+
+    
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'responsive_image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+<img  sizes="100vw" width="768" height="384" src="/public/assets/uploads/importedimage_85.png.jpeg" alt="CSU Research Facility Construction Winter 2025" loading="lazy" />
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/responsive-image.html.twig' -->
+
+
+      
+
+</div>
+
+      <div class="curve-wrapper bottom">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 1200 10" preserveAspectRatio="none">
+          <path d="M600,0c200,0,400,3.3,600,10H0C200,3.3,400,0,600,0z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="text-container">
+      <div class="text-container-inner">
+
+        
+              
+<div class="f--field f--category">
+
+    
+  Partner with us
+
+
+</div>
+
+        
+        
+              
+<div class="f--field f--section-title">
+
+    
+  <h2>Research and Demonstration Complex</h2>
+
+
+</div>
+
+        
+        
+              
+<div class="f--field f--description">
+
+    
+  <p>We're embarking on an exciting new journey, and we want YOU to be a part of it!</p>
+
+
+</div>
+
+        
+        
+              
+<div class="f--field f--link">
+
+    
+  
+
+              
+<a class="link"  href="/news/how-enhance-capabilities-new-research-and-demonstration-complex"  aria-label="click to learn about the research facility construction and ways to partner">Learn more  </a>
+
+
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+  </div></div>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--full-width-image-text.html.twig' -->
+
+
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--full-width-cta--default.html.twig
+   ✅ paragraph--full-width-cta.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--full-width-cta.html.twig' -->
+  <div class="paragraph paragraph--type--full-width-cta paragraph--view-mode--default">
+      
+          
+    
+    
+
+
+
+
+
+
+<section
+  class="cc--component-container cc--full-width-cta "
+
+  
+   aria-label="Full Width CTA"
+  
+  
+  
+  
+  >
+  <div class="c--component c--full-width-cta"
+    
+      >
+
+    
+  <div class="curve-wrapper" aria-hidden="true">
+    <svg version="1.1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M1200,0c-200,40-400,60-600,60S200,40,0,0H1200z"/>
+    </svg>
+  </div>
+
+  <div class="header-container">
+              
+<div class="f--field f--section-title">
+
+    
+  <h2>Get tickets for University events</h2>
+
+
+</div>
+                  
+<div class="f--field f--description">
+
+    
+  <p><span><span><span><span><span>Plan your next trip to Marauder Land. Check out our listing of upcoming events and get your tickets.</span></span></span></span></span></p>
+
+
+</div>
+      </div>
+
+      <div class="link-container">
+                  
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/ticketing"  aria-label="click here to learn about upcoming events and get tickets for University-sponsored events on and off campus">Snag Tickets  </a>
+
+
+</div>
+          </div>
+  
+
+  </div></section>
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--full-width-cta.html.twig' -->
+
+
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--full-width-cta--default.html.twig
+   ✅ paragraph--full-width-cta.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--full-width-cta.html.twig' -->
+  <div class="paragraph paragraph--type--full-width-cta paragraph--view-mode--default">
+      
+                      
+    
+    
+
+
+
+
+
+
+<section
+  class="cc--component-container cc--full-width-cta "
+
+  
+   aria-label="Full Width CTA"
+  
+  
+  
+  
+  >
+  <div class="c--component c--full-width-cta"
+    
+      >
+
+    
+  <div class="curve-wrapper" aria-hidden="true">
+    <svg version="1.1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M1200,0c-200,40-400,60-600,60S200,40,0,0H1200z"/>
+    </svg>
+  </div>
+
+  <div class="header-container">
+              
+<div class="f--field f--section-title">
+
+    
+  <h2>Make your move</h2>
+
+
+</div>
+          </div>
+
+      <div class="link-container">
+                  
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/request-information"  aria-label="click here to access a form to request information from Central State">Request Info  </a>
+
+
+</div>
+                  
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/admissions-aid/tour-campus"  aria-label="click here to learn how to tour the campus of Central State University">Visit Campus  </a>
+
+
+</div>
+                  
+<div class="f--field f--link">
+
+    
+  
+
+
+<a class="link"  href="https://www.centralstate.edu/admissions-aid/undergraduate-admissions-team"  aria-label="click here to learn about the undergraduate admissions team and contact them">Talk to Admissions  </a>
+
+
+</div>
+          </div>
+  
+
+  </div></section>
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/paragraphs/paragraph--full-width-cta.html.twig' -->
+
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/field/field--node--field-components.html.twig' -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/content/node--home--full.html.twig' -->
+
+
+      </div>
+</div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--centralstate_content.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--centralstate-hidenoonnoonfulldayevents.html.twig
+   ▪️ block--block-content--87e2dcc0-5209-4fbd-b93d-f4b2c5f678e3.html.twig
+   ▪️ block--block-content--id-view--centralstate-hidenoonnoonfulldayevents--full.html.twig
+   ▪️ block--block-content--id--centralstate-hidenoonnoonfulldayevents.html.twig
+   ▪️ block--block-content--view-type--basic--full.html.twig
+   ▪️ block--block-content--type--basic.html.twig
+   ▪️ block--block-content--view--full.html.twig
+   ▪️ block--block-content.html.twig
+   ✅ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+<div id="block-centralstate-hidenoonnoonfulldayevents" class="block block-block-content block-block-content87e2dcc0-5209-4fbd-b93d-f4b2c5f678e3">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--block-content--body--basic.html.twig
+   ▪️ field--block-content--body.html.twig
+   ▪️ field--block-content--basic.html.twig
+   ▪️ field--body.html.twig
+   ▪️ field--text-with-summary.html.twig
+   ✅ field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+            <div><script>
+// hide start/end times for full day events
+document.querySelectorAll('*').forEach(element => {
+    if (element.textContent.trim() === '12:00 a.m. to 11:59 p.m.') {
+        element.style.display = 'none';
+    }
+});
+</script></div>
+      
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--centralstate-connoisseurmediatrackerforpublicrelations20260521.html.twig
+   ▪️ block--block-content--c35a1442-87bd-4ed8-a5c0-791301223e41.html.twig
+   ▪️ block--block-content--id-view--centralstate-connoisseurmediatrackerforpublicrelations20260521--full.html.twig
+   ▪️ block--block-content--id--centralstate-connoisseurmediatrackerforpublicrelations20260521.html.twig
+   ▪️ block--block-content--view-type--basic--full.html.twig
+   ▪️ block--block-content--type--basic.html.twig
+   ▪️ block--block-content--view--full.html.twig
+   ▪️ block--block-content.html.twig
+   ✅ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+<div id="block-centralstate-connoisseurmediatrackerforpublicrelations20260521" class="block block-block-content block-block-contentc35a1442-87bd-4ed8-a5c0-791301223e41">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--block-content--body--basic.html.twig
+   ▪️ field--block-content--body.html.twig
+   ▪️ field--block-content--basic.html.twig
+   ▪️ field--body.html.twig
+   ▪️ field--text-with-summary.html.twig
+   ✅ field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+            <div><script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'10217559','he': '<email_address>','hph': '<phone_number>'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script></div>
+      
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--centralstate-accessibilitytweakfocusindicator.html.twig
+   ▪️ block--block-content--c58dba49-29d0-473a-bbfb-5a3c8be7cb51.html.twig
+   ▪️ block--block-content--id-view--centralstate-accessibilitytweakfocusindicator--full.html.twig
+   ▪️ block--block-content--id--centralstate-accessibilitytweakfocusindicator.html.twig
+   ▪️ block--block-content--view-type--basic--full.html.twig
+   ▪️ block--block-content--type--basic.html.twig
+   ▪️ block--block-content--view--full.html.twig
+   ▪️ block--block-content.html.twig
+   ✅ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+<div id="block-centralstate-accessibilitytweakfocusindicator" class="block block-block-content block-block-contentc58dba49-29d0-473a-bbfb-5a3c8be7cb51">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--block-content--body--basic.html.twig
+   ▪️ field--block-content--body.html.twig
+   ▪️ field--block-content--basic.html.twig
+   ▪️ field--body.html.twig
+   ▪️ field--text-with-summary.html.twig
+   ✅ field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+            <div><style>
+a:focus,
+button:focus,
+[tabindex]:focus,
+input:focus,
+select:focus,
+textarea:focus,
+summary:focus {
+  outline: 3px solid #ffffff !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 5px #000000 !important;
+}
+@supports selector(:focus-visible) {
+  a:focus:not(:focus-visible),
+  button:focus:not(:focus-visible),
+  [tabindex]:focus:not(:focus-visible),
+  input:focus:not(:focus-visible),
+  select:focus:not(:focus-visible),
+  textarea:focus:not(:focus-visible),
+  summary:focus:not(:focus-visible) {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+.m--menu a:focus,
+.mc--left-nav a:focus,
+.left-navigation-mobile:focus {
+  outline: 3px solid #ffffff !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 5px #000000 !important;
+}
+.site-footer a:focus,
+.cc--footer a:focus,
+.cc--branding-footer a:focus {
+  outline: 3px solid #ffffff !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 5px #000000 !important;
+}
+</style><script>
+(function () {
+  'use strict';
+  function ready(fn) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn);
+    } else {
+      fn();
+    }
+  }
+  function findMenuContainer(trigger) {
+    var mobileNav = trigger.closest('.mobile-nav');
+    if (!mobileNav) return null;
+    return mobileNav.querySelector('.mobile-nav-menu-container');
+  }
+  function patchTrigger(trigger) {
+    if (trigger.hasAttribute('data-a11y-labeled')) return;
+    trigger.setAttribute('data-a11y-labeled', 'true');
+    trigger.setAttribute('aria-label', 'Main menu');
+    var icons = trigger.querySelectorAll('svg');
+    icons.forEach(function (icon) {
+      icon.setAttribute('aria-hidden', 'true');
+      icon.setAttribute('focusable', 'false');
+    });
+    var menu = findMenuContainer(trigger);
+    if (!menu) return;
+    if (!menu.id) {
+      menu.id = 'mobile-nav-menu-' + Math.random().toString(36).slice(2, 9);
+    }
+    trigger.setAttribute('aria-controls', menu.id);
+    function syncExpanded() {
+      var isOpen = window.getComputedStyle(menu).display !== 'none';
+      trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+    syncExpanded();
+    new MutationObserver(syncExpanded).observe(menu, {
+      attributes: true,
+      attributeFilter: ['style', 'class']
+    });
+  }
+  function init() {
+    var triggers = document.querySelectorAll('.mobile-menu-trigger');
+    triggers.forEach(patchTrigger);
+  }
+  ready(init);
+})();
+</script><script>
+(function () {
+  'use strict';
+  function ready(fn) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn);
+    } else {
+      fn();
+    }
+  }
+  var FOCUSABLE_SELECTOR = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  function findMenuContainer(trigger) {
+    var mobileNav = trigger.closest('.mobile-nav');
+    if (!mobileNav) return null;
+    return mobileNav.querySelector('.mobile-nav-menu-container');
+  }
+  function isMenuOpen(trigger, menu) {
+    var expandedAttr = trigger.getAttribute('aria-expanded');
+    if (expandedAttr !== null) {
+      return expandedAttr === 'true';
+    }
+    return window.getComputedStyle(menu).display !== 'none';
+  }
+  function getFocusableChain(trigger, menu) {
+    var items = [trigger];
+    var menuItems = menu.querySelectorAll(FOCUSABLE_SELECTOR);
+    for (var i = 0; i < menuItems.length; i++) {
+      items.push(menuItems[i]);
+    }
+    return items;
+  }
+  function attachTrap(trigger) {
+    if (trigger.hasAttribute('data-a11y-trap-added')) return;
+    trigger.setAttribute('data-a11y-trap-added', 'true');
+    var menu = findMenuContainer(trigger);
+    if (!menu) return;
+    var mobileNav = trigger.closest('.mobile-nav');
+    mobileNav.addEventListener('keydown', function (event) {
+      if (event.key !== 'Tab') return;
+      if (!isMenuOpen(trigger, menu)) return;
+      var chain = getFocusableChain(trigger, menu);
+      if (chain.length === 0) return;
+      var first = chain[0];
+      var last = chain[chain.length - 1];
+      var active = document.activeElement;
+      if (event.shiftKey) {
+        if (active === first) {
+          event.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (active === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+  }
+  function init() {
+    var triggers = document.querySelectorAll('.mobile-menu-trigger');
+    triggers.forEach(attachTrap);
+  }
+  ready(init);
+})();
+</script></div>
+      
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--centralstate-accessibilitytweakhomepage.html.twig
+   ▪️ block--block-content--23906fee-d8a2-4f08-861d-2e3388e975c8.html.twig
+   ▪️ block--block-content--id-view--centralstate-accessibilitytweakhomepage--full.html.twig
+   ▪️ block--block-content--id--centralstate-accessibilitytweakhomepage.html.twig
+   ▪️ block--block-content--view-type--basic--full.html.twig
+   ▪️ block--block-content--type--basic.html.twig
+   ▪️ block--block-content--view--full.html.twig
+   ▪️ block--block-content.html.twig
+   ✅ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+<div id="block-centralstate-accessibilitytweakhomepage" class="block block-block-content block-block-content23906fee-d8a2-4f08-861d-2e3388e975c8">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--block-content--body--basic.html.twig
+   ▪️ field--block-content--body.html.twig
+   ▪️ field--block-content--basic.html.twig
+   ▪️ field--body.html.twig
+   ▪️ field--text-with-summary.html.twig
+   ✅ field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+            <div><script>
+  (function () {
+    var branding = document.querySelector('.c--component.c--branding-header');
+    if (branding) {
+      var h1 = document.createElement('h1');
+      h1.textContent = 'Central State University';
+      h1.className = 'visually-hidden';
+      branding.insertBefore(h1, branding.firstChild);
+    }
+  })();
+</script><style>
+.cc--home-page-hero-card:focus-within {
+  position: relative;
+}
+.cc--home-page-hero-card:focus-within::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 3px #ffffff, inset 0 0 0 6px #000000;
+  pointer-events: none;
+  z-index: 10;
+}
+.a11y-carousel-pause-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25em;
+  height: 2.25em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  color: #1a1a1a;
+  background: #ffffff;
+  border: 1px solid #1a1a1a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.a11y-carousel-pause-toggle:hover {
+  background: #f0f0f0;
+}
+.a11y-carousel-pause-toggle-icon {
+  font-size: 0.85em;
+  transform: translateY(-1px);
+}
+</style><script>
+(function () {
+  'use strict';
+
+  function ready(fn) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn);
+    } else {
+      fn();
+    }
+  }
+
+  var ICON_PAUSE = '\u275A\u275A';
+  var ICON_PLAY = '\u25B6';
+
+  function createButton() {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'a11y-carousel-pause-toggle';
+    btn.setAttribute('aria-label', 'Pause automatic slideshow');
+
+    var icon = document.createElement('span');
+    icon.setAttribute('aria-hidden', 'true');
+    icon.className = 'a11y-carousel-pause-toggle-icon';
+    icon.textContent = ICON_PAUSE;
+    btn.appendChild(icon);
+
+    return btn;
+  }
+
+  function attach(swiperEl) {
+    if (swiperEl.hasAttribute('data-a11y-pause-added')) return;
+    swiperEl.setAttribute('data-a11y-pause-added', 'true');
+
+    var sliderWrapper = swiperEl.closest('.slider') || swiperEl;
+    var insertionPoint = sliderWrapper.parentElement;
+    if (!insertionPoint) return;
+
+    var btn = createButton();
+    insertionPoint.insertBefore(btn, sliderWrapper);
+    var icon = btn.querySelector('.a11y-carousel-pause-toggle-icon');
+
+    btn.addEventListener('click', function () {
+      var instance = swiperEl.swiper;
+      if (!instance || !instance.autoplay) return;
+
+      if (instance.autoplay.running) {
+        instance.autoplay.stop();
+        icon.textContent = ICON_PLAY;
+        btn.setAttribute('aria-label', 'Play automatic slideshow');
+      } else {
+        instance.autoplay.start();
+        icon.textContent = ICON_PAUSE;
+        btn.setAttribute('aria-label', 'Pause automatic slideshow');
+      }
+    });
+  }
+
+  function init() {
+    var swipers = document.querySelectorAll('.slider .swiper.mySwiper');
+    swipers.forEach(attach);
+  }
+
+  ready(init);
+})();
+</script></div>
+      
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/layout/region.html.twig' -->
+
+
+
+    </div>
+
+  </div>
+</main>
+
+
+
+  <footer id="l--main-footer" class="site-footer">
+
+    <h2 class="visually-hidden">Site Footer</h2>
+
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ region--footer.html.twig
+   ▪️ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/layout/region--footer.html.twig' -->
+  <div class="region region-footer r--region r--footer">
+    <div class="cc--component-container cc--page-back-to-top">
+      <div class="c--component c--page-back-to-top">
+        <button type="button" class="back-top-btn">
+          <svg height="7" viewBox="0 0 12 7" width="12" xmlns="http://www.w3.org/2000/svg"><path d="m24 13.8456481 4 4.0623143-4 4.0623143" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" transform="matrix(0 -1 1 0 -11.907962 29.907962)"/></svg>
+          Top
+        </button>
+      </div>
+    </div>
+    <section class="cc--component-container cc--footer" aria-label="Site Footer">
+      <div class="c--component c--footer">
+        <div class="footer-main">
+
+          <div class="curve-wrapper" aria-hidden="true">
+            <svg width="1200" height="20" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 20" preserveAspectRatio="none">
+              <path d="M1200,20c-200-5.3-400-8-600-8S200,14.7,0,20V0h1200V20z"></path>
+            </svg>
+          </div>
+
+          <div class="footer-top">
+            <div class="branding-social-container">
+                
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--branding-footer "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--branding-footer"
+    
+      >
+
+    
+  <a href="#/" aria-label="Central State University Home"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 52.34"><g><path d="M21.8,0C35.24,0,43.6,3.73,43.6,3.73V30.54a21.8,21.8,0,0,1-43.6,0V3.73S8.35,0,21.8,0" fill="#851740"/><path d="M26.83,44.83c-.18.27-.25.34-.25.5a.25.25,0,0,0,.26.27c.23,0,.28-.22.45-.59l1.45-3.25c.1-.22.36-.63.36-.63l0-.2a3,3,0,0,1-.44,0H26.27l-.22,1.13h.24c.16-.44.25-.45.72-.45h1a3.4,3.4,0,0,0,.45,0l-.47,1a12.64,12.64,0,0,1-1.18,2.19m-3.92-4.45a.59.59,0,0,1,.6-.59c.33,0,.6.25.6.75a1.22,1.22,0,0,1-.44.93c-.41-.35-.76-.68-.76-1.09m-.19,2.68a1.23,1.23,0,0,1,.53-1c.49.4,1,.79,1,1.29a.76.76,0,0,1-.77.74c-.41,0-.75-.36-.75-1m-.66.12a1.23,1.23,0,0,0,1.38,1.14,1.37,1.37,0,0,0,1.49-1.22c0-.59-.53-1-1-1.45.49-.33.88-.66.88-1.18s-.47-.95-1.21-.95-1.34.45-1.34,1A1.79,1.79,0,0,0,23,41.84a1.65,1.65,0,0,0-1,1.34m-3.18-2.8a.59.59,0,0,1,.6-.59c.33,0,.6.25.6.75a1.23,1.23,0,0,1-.45.93c-.4-.35-.75-.68-.75-1.09m-.2,2.68a1.22,1.22,0,0,1,.54-1c.49.4,1,.79,1,1.29a.75.75,0,0,1-.76.74c-.42,0-.76-.36-.76-1m-.66.12c0,.8.73,1.14,1.39,1.14A1.37,1.37,0,0,0,20.9,43.1c0-.59-.54-1-1-1.45.49-.33.88-.66.88-1.18s-.47-.95-1.22-.95-1.33.45-1.33,1A1.8,1.8,0,0,0,19,41.84a1.65,1.65,0,0,0-1,1.34m-3.24,1.09,1.93,0,0-.23L16,43.94a2.17,2.17,0,0,0,0-.36V41.27l.62-.07,0-.24h-2v.25c.49,0,.62.09.62.41v2c0,.32-.14.44-.58.44Z" fill="#fff"/><path d="M30.38,26.6,21.8,24.33V35.76l8.69,2.17Zm-4.13,4.12c-.58,0-1.09-.66-1.14-1.55s.36-1.64.93-1.68,1.09.66,1.14,1.55S26.82,30.68,26.25,30.72ZM21.8,5.62l12.12,6.61L21.8,7.66ZM31.64,12l1.87.7-3.23,1.64v-.52a.78.78,0,0,1,.6-.79A1.3,1.3,0,0,0,31.64,12Zm-1.37,3.65L30.38,26l-2.17-.59V19.47a.51.51,0,1,0-1,0v5.67L26.65,25V18.92a.52.52,0,1,0-1,0v5.8l-.56-.15V18.36a.51.51,0,1,0-1,0V24.3l-2.28-.62V8.29l2.35.89a1.26,1.26,0,0,1-.8,1.05.77.77,0,0,0-.62.82V12.9c0,.3-.2.79-.4.79l.45.15a.87.87,0,0,0,.42-.73V11.26a.81.81,0,0,1,.63-.82,1.35,1.35,0,0,0,.79-1.08l.32.12a1.25,1.25,0,0,1-.8,1,.78.78,0,0,0-.63.83v1.84c0,.3-.2.79-.39.79l.44.15a.88.88,0,0,0,.43-.73V11.53a.8.8,0,0,1,.62-.82,1.34,1.34,0,0,0,.79-1.06l5,1.9a1.2,1.2,0,0,1-.77,1,.75.75,0,0,0-.6.79v1.78c0,.29-.19.75-.37.75l.42.15a.86.86,0,0,0,.41-.7V13.57a.77.77,0,0,1,.6-.79,1.29,1.29,0,0,0,.76-1.06l.3.12a1.18,1.18,0,0,1-.77,1,.74.74,0,0,0-.59.79v1.78c0,.29-.2.75-.38.75l.42.15A.82.82,0,0,0,30.27,15.66Z" fill="#fff"/><path d="M13.11,37.93l8.69-2.17V24.33L13.22,26.6ZM16.41,29c.06-.89.57-1.59,1.15-1.55s1,.79.93,1.68-.56,1.58-1.14,1.55S16.36,29.93,16.41,29ZM21.8,7.66,9.68,12.23,21.8,5.62ZM12.72,13a.78.78,0,0,1,.6.79v.52l-3.23-1.64L12,12A1.26,1.26,0,0,0,12.72,13Zm1,3.27.42-.15c-.19,0-.38-.46-.38-.75V13.63a.74.74,0,0,0-.6-.79,1.21,1.21,0,0,1-.77-1l.31-.12a1.29,1.29,0,0,0,.76,1.06.78.78,0,0,1,.6.79v1.78a.84.84,0,0,0,.41.7l.42-.15c-.18,0-.38-.46-.38-.75V13.37a.74.74,0,0,0-.59-.79,1.21,1.21,0,0,1-.78-1l5-1.9A1.32,1.32,0,0,0,19,10.71a.8.8,0,0,1,.62.82v1.85a.88.88,0,0,0,.43.73l.44-.15c-.19,0-.4-.49-.4-.79V11.33a.77.77,0,0,0-.62-.83,1.25,1.25,0,0,1-.8-1L19,9.36a1.35,1.35,0,0,0,.79,1.08.8.8,0,0,1,.62.82v1.85a.88.88,0,0,0,.43.73l.44-.15c-.19,0-.39-.49-.39-.79V11.05a.77.77,0,0,0-.62-.82,1.27,1.27,0,0,1-.81-1.05l2.36-.89V23.68l-2.28.62V18.36a.51.51,0,1,0-1,0v6.21l-.57.15v-5.8a.57.57,0,0,0-.5-.63.58.58,0,0,0-.5.63V25l-.56.15V19.47a.58.58,0,0,0-.5-.63.57.57,0,0,0-.5.63v5.94L13.22,26l.1-10.34A.85.85,0,0,0,13.73,16.31Z" fill="#e0bb60"/><path d="M198.11,29.64s3.2-.11,5-.11h11.45L216,23h-1.21c-1.78,4-2.35,5.13-5.41,5.13h-5.94a11,11,0,0,0,.18-2V10.11a6.78,6.78,0,0,1,1.18-4.3l-.18-.14a30.1,30.1,0,0,1-4,.14h-2.77V6.7c2.63.53,2.63.89,2.63,2.59v17c0,1.28-.78,2-2.38,2.2Zm-4.62-3.84-7.9-20.2-1.46.32-8.43,21a2.54,2.54,0,0,1-2.38,1.6v1h6.58l.14-1-3-.43,2.45-6.4.46-.36h8.5L190.6,27c.4,1.07-.49,1.35-1.49,1.39v1.21s4.09-.11,5.41-.11h1.53l.14-1C195.09,28.39,194.45,28.22,193.49,25.8Zm-13.34-5.94L184.1,9.58a20,20,0,0,0,.71,2.17l3.06,8.11Zm-9,8.5c-.92-.07-1.63-.14-3.16-2.35l-5.12-7.5V18c1.7-.88,4.69-3.16,4.69-6.5,0-3.1-2.42-5.73-8.82-5.73h-8.25V6.7c2.74.53,2.92.89,2.92,2.59v17c0,1.21-1,2-2.56,2.2v1.14l8.57-.21.14-1-3.2-.32a8.91,8.91,0,0,0,.18-1.81V19.36l.35-.35h2.6l4.41,6.5a24.36,24.36,0,0,1,2.2,3.92l.15.1h5.15l.15-1.14ZM159.55,17.62h-3V7.55l.35-.35h1.32c4.37,0,5.9,2.56,5.9,5.26C164.14,15.91,161.69,17.62,159.55,17.62Zm-27.35,12,8.93-.21.14-1-3.55-.32a10.89,10.89,0,0,0,.17-1.92V7.55l.36-.35h3.52c2.77,0,3.95.74,3.77,4.41h1.21l1.1-6a15.13,15.13,0,0,1-2.56.21H128.65a12,12,0,0,1-2.39-.21l-1.1,6h1.21c1.35-3.67,2.42-4.41,4.87-4.41h3.52v19c0,1.28-1,2.13-2.56,2.31Zm-32.61,0,7-.21.15-1-3.21-.21a10.44,10.44,0,0,0,.18-1.92V10.15c.36.53.86,1.21,1.28,1.71l15.12,17.85H121V9.94a3.61,3.61,0,0,1,2.46-3.63l-.18-.5h-6.76v1c2.88.29,2.92,1.11,2.92,2.67v14.8c-.39-.57-1-1.32-1.42-1.89L105.17,7.52a11.43,11.43,0,0,1-1.32-1.85s-1.81.14-3.55.14H99.23V6.7c2.35.43,2.92,1.14,2.92,3.59v16c0,1.28-1,2-2.56,2.2Zm-20.67,0s3.38-.11,5.16-.11h11.1l1.31-5.79H95.28c-1.78,3.73-2.2,4.41-5.26,4.41H84.43a11.82,11.82,0,0,0,.18-2V18.54l.36-.35h6.15v2.63h1.67V14.56l-1.31.21-.29,2H84.61V7.55L85,7.2h4.66c2.84,0,4,.74,3.84,4.41h1.21l1.1-5.94a22.51,22.51,0,0,1-2.56.14H78.57V6.7c2.73.53,2.91.89,2.91,2.59v17c0,1.28-1,2-2.56,2.2ZM54.49,17.94c0,7.68,6,12,12.37,12a10.62,10.62,0,0,0,8.86-4.13l-.5-.74a11.11,11.11,0,0,1-7.15,2.52c-5.79,0-10.28-4.3-10.28-10.7,0-5.77,3.63-10.18,9.11-10.18,2.88,0,6,1.18,6,4.88h1.21L75.19,6.2a74.57,74.57,0,0,0-7.69-.82c-7.64,0-13,5.3-13,12.56m154,29.94,4.42-.09.06-.53-1.35-.14a4.64,4.64,0,0,0,.08-.86V42.94l2.83-4.53a2.24,2.24,0,0,1,1-.91l-.08-.3h-2.71v.48c.81.13.89.57.64,1l-2.15,3.54c-.13-.29-.31-.64-.45-.9l-1.75-3a1.35,1.35,0,0,1,0-1.15l-.06-.06s-.85.06-2.26.06h-.85v.48a1.43,1.43,0,0,1,.85.7l2.93,4.75v3.13c0,.57-.4,1-1.07,1Zm-11.43,0,4.65-.09.07-.53-1.6-.14a4.64,4.64,0,0,0,.08-.86v-8l.2-.19h1.25c1.2,0,1.73.32,1.73,1.93H204l.49-2.85a7,7,0,0,1-1.14.09h-7.85a5.63,5.63,0,0,1-1.07-.09L194,40h.62c.64-1.61,1.12-1.93,2.14-1.93h1.37v8.23c0,.57-.4,1-1.07,1Zm-8.95,0,4.42-.09.06-.53-1.35-.14a4.64,4.64,0,0,0,.08-.86v-7a3.51,3.51,0,0,1,.52-2l-.07-.06s-.53.06-2.52.06h-1.17v.48c1.1.24,1.1.4,1.1,1.16v7.42c0,.57-.4,1-1.07,1Zm-9.42-1.48c.05,1.18,1.9,1.63,3.33,1.63,2,0,3.7-1,3.7-3.06,0-3.54-4.93-3.26-4.93-5.78,0-.84.67-1.38,1.74-1.38,1.41,0,1.87.94,1.84,2.15H185l.52-2.65a19.91,19.91,0,0,0-2.85-.3c-2.49,0-3.75,1.31-3.75,3,0,3.4,4.93,3.32,4.93,5.81,0,1-.88,1.4-1.74,1.4s-2.31-.51-2.31-2.6h-.62a6.62,6.62,0,0,0-.48,1.77m-1.59.83c-.29,0-.59,0-1.22-1l-2.31-3.48v-.27a3.53,3.53,0,0,0,2-2.74c0-1.33-1.08-2.57-3.89-2.57H167.1v.48c1.15.24,1.23.4,1.23,1.16v7.47c0,.54-.42.9-1.07,1v.59l4.5-.09.06-.53-1.44-.14a4,4,0,0,0,.08-.81V43.5l.2-.19h.68l1.8,2.72a7.17,7.17,0,0,1,.91,1.74l.07.07h3.06l.06-.59Zm-5.44-4.75h-1.17V38.22l.2-.19h.39a2,2,0,0,1,2.11,2.23C173.16,41.75,172.33,42.48,171.63,42.48Zm-15,5.4s1.66,0,2.73,0h5l.59-2.71h-.63c-.79,1.67-1,1.88-2.36,1.88H159.8a5.41,5.41,0,0,0,.08-.9V43l.19-.19h2.44V44h.83V41l-.67.1-.13.92h-2.66V38.22l.19-.19h1.77c1.27,0,1.8.29,1.72,1.93h.62l.5-2.82s-.58.06-1.23.06h-6.94v.48c1.15.24,1.23.4,1.23,1.16v7.47c0,.57-.4.9-1.07,1Zm-7.16-.09.8.19L154,39.13A3.54,3.54,0,0,1,155,37.5l-.08-.3H152.3v.48c.88.24,1,.68.74,1.39l-2.51,6.1c-.08-.28-.19-.7-.3-1l-2.07-5.51a2,2,0,0,1,.09-1.47l-.06-.06s-1.09.06-2.33.06H145v.48a1.4,1.4,0,0,1,.87.88Zm-10.33.09,4.42-.09.06-.53-1.35-.14a5.28,5.28,0,0,0,.07-.86v-7a3.47,3.47,0,0,1,.53-2l-.08-.06s-.52.06-2.52.06h-1.16v.48c1.1.24,1.1.4,1.1,1.16v7.42c0,.57-.4,1-1.07,1Zm-13.23,0,3.34-.09.07-.53-1.44-.09a4.78,4.78,0,0,0,.08-.86V39.86a7.89,7.89,0,0,0,.66.79l6.79,7.27h.67V39.11a1.6,1.6,0,0,1,1.1-1.61l-.08-.3h-3.22v.53c1.27.12,1.29.51,1.29,1.21v5.68c-.19-.24-.45-.55-.65-.77L129,38a3.71,3.71,0,0,1-.63-.83s-1.3.06-2.09.06h-.46v.48c1,.35,1.29.75,1.29,1.77v6.86c0,.57-.43.9-1.14,1ZM114.1,44.11c0,2.9,2.41,3.92,4.56,3.92,2.47,0,4.42-1.34,4.42-4V39.21a1.81,1.81,0,0,1,1.18-1.71l-.08-.3h-3.31v.53c1.2.12,1.22.49,1.22,1.19v5.17a2.93,2.93,0,1,1-5.86-.11V39.21a3.28,3.28,0,0,1,.53-2l-.08-.06s-.51.06-2.52.06H113v.48c1.1.24,1.1.4,1.1,1.16ZM96.53,47.88s1.65,0,2.72,0h5l.59-2.71h-.62c-.8,1.67-1,1.88-2.36,1.88H99.65a5.41,5.41,0,0,0,.08-.9V43l.19-.19h2.44V44h.83V41l-.67.1-.13.92H99.73V38.22l.19-.19h1.77c1.28,0,1.8.29,1.72,1.93H104l.49-2.82s-.57.06-1.23.06H96.37v.48c1.15.24,1.22.4,1.22,1.16v7.47c0,.57-.39.9-1.06,1Zm-9.19,0L92,47.79l.06-.53-1.59-.14a4.64,4.64,0,0,0,.08-.86v-8l.19-.19H92c1.19,0,1.72.32,1.72,1.93h.62l.5-2.85a7.21,7.21,0,0,1-1.15.09H85.84a5.45,5.45,0,0,1-1.06-.09L84.28,40h.62C85.54,38.35,86,38,87,38h1.37v8.23c0,.57-.4,1-1.07,1Zm-3.87-1.73L80,37.07l-1,.21-3.7,9.26a1.16,1.16,0,0,1-1.06.75v.55h3.12l.1-.55-1.38-.17.9-2.35.27-.19h3.4l.74,2.06c.18.48-.2.62-.63.64v.62s2.36-.06,3.11-.06h.65l.06-.51C84,47.25,83.74,46.86,83.47,46.15Zm-6.08-2.44,1.55-4c.09.32.27.9.4,1.23l1,2.81ZM67,47.88l4.65-.09.07-.53-1.6-.14a4.64,4.64,0,0,0,.08-.86v-8l.19-.19H71.6c1.2,0,1.73.32,1.73,1.93H74l.49-2.85a7.05,7.05,0,0,1-1.15.09H65.45a5.63,5.63,0,0,1-1.07-.09L63.89,40h.62c.64-1.61,1.11-1.93,2.14-1.93H68v8.23c0,.57-.4,1-1.07,1ZM55.58,46.4c.05,1.18,1.9,1.63,3.33,1.63,2,0,3.7-1,3.7-3.06,0-3.54-4.93-3.26-4.93-5.78,0-.84.67-1.38,1.74-1.38,1.41,0,1.87.94,1.84,2.15h.62l.52-2.65a19.91,19.91,0,0,0-2.85-.3c-2.49,0-3.75,1.31-3.75,3,0,3.4,4.93,3.32,4.93,5.81,0,1-.88,1.4-1.74,1.4s-2.31-.51-2.31-2.6h-.62a6.62,6.62,0,0,0-.48,1.77" fill="#fff"/></g></svg>
+</a>
+
+
+  </div></div>
+              
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+
+            <div class="menu-container">
+
+              <div class="footer-col">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--centralstate-footersocialmedialinks.html.twig
+   ▪️ block--block-content--22deeb85-d734-45f0-8458-5de1fe72b606.html.twig
+   ▪️ block--block-content--id-view--centralstate-footersocialmedialinks--full.html.twig
+   ▪️ block--block-content--id--centralstate-footersocialmedialinks.html.twig
+   ▪️ block--block-content--view-type--social-media-links--full.html.twig
+   ▪️ block--block-content--type--social-media-links.html.twig
+   ▪️ block--block-content--view--full.html.twig
+   ▪️ block--block-content.html.twig
+   ✅ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+<div id="block-centralstate-footersocialmedialinks" class="block block-block-content block-block-content22deeb85-d734-45f0-8458-5de1fe72b606">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ field--block-content--field-links--social-media-links.html.twig
+   ▪️ field--block-content--field-links.html.twig
+   ▪️ field--block-content--social-media-links.html.twig
+   ▪️ field--field-links.html.twig
+   ▪️ field--link.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/field/field--block-content--field-links--social-media-links.html.twig' -->
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+  
+    
+
+
+
+
+
+
+<div
+  class="cc--component-container cc--footer-social "
+
+  
+  
+  
+  
+  
+  
+  >
+  <div class="c--component c--footer-social"
+    
+      >
+
+    
+<div class="footer-social-container">
+  <h3 class="visually-hidden">Footer Social Media Links</h3>
+
+    <ul class="social-media-links--platforms platforms">
+    
+              <li>
+          <a href="https://www.facebook.com/CentralState87/" class="ext" aria-label="Follow Central State University on Facebook">
+            <svg version="1.1" class="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+              <title>Follow Central State University on Facebook</title>
+              <path d="M18.9,0H1.1C0.5,0,0,0.5,0,1.1v17.8C0,19.5,0.5,20,1.1,20h9.6v-7.7H8.1v-3h2.6V7
+              c0-2.6,1.6-4,3.9-4c0.8,0,1.6,0,2.3,0.1v2.7h-1.6c-1.3,0-1.5,0.6-1.5,1.5v1.9h3l-0.4,3h-2.6V20h5.1c0.6,0,1.1-0.5,1.1-1.1V1.1
+              C20,0.5,19.5,0,18.9,0z"/>
+            </svg>
+            <span class="ext" aria-label="(link is external)"></span>
+          </a>
+        </li>
+      
+      
+      
+      
+      
+    
+      
+              <li>
+          <a href="https://twitter.com/CentralState87" class="ext" aria-label="Follow Central State University on Twitter">
+            <svg version="1.1" class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 25 20" style="enable-background:new 0 0 25 20;" xml:space="preserve">
+              <title>Follow Central State University on Twitter</title>
+              <path d="M24.5,2.3c-0.9,0.3-1.8,0.6-2.9,0.9c1-0.6,1.8-1.7,2.1-2.9c-1,0.5-2,1-3.2,1.2
+              C19.7,0.6,18.4,0,16.8,0c-2.9,0-5,2.1-5,5c0,0.3,0,0.9,0.2,1.2C7.9,6,4.1,4,1.6,0.9C1.4,1.7,1,2.6,1,3.5c0,1.7,0.9,3.4,2.1,4.1
+              C2.2,7.7,1.4,7.3,0.7,7l0,0c0,2.6,1.7,4.6,4,4.9c-0.3,0.2-0.6,0.3-1.2,0.3c-0.3,0-0.6,0-1,0c0.6,2,2.6,3.4,4.7,3.5
+              c-1.7,1.4-3.8,2.1-6.2,2.1c-0.5,0-0.9,0-1.2,0C2.1,19.4,4.9,20,7.7,20c9.3,0,14.3-7.7,14.3-14.3c0-0.2,0-0.5,0-0.6
+              C23,4.1,23.8,3.4,24.5,2.3"/>
+            </svg>
+            <span class="ext" aria-label="(link is external)"></span>
+          </a>
+        </li>
+      
+      
+      
+      
+    
+      
+      
+              <li>
+          <a href="https://www.instagram.com/centralstate87" class="ext" aria-label="Follow Central State University on Instagram">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 21 20" style="enable-background:new 0 0 21 20;" xml:space="preserve">
+              <title>Follow Central State University on Instagram</title>
+              <path d="M10.5,0C7.8,0,7.4,0,6.4,0.1C5.3,0.1,4.6,0.3,4,0.5S2.7,1.1,2.2,1.7S1.3,2.9,1,3.5
+              S0.6,4.9,0.6,5.9c-0.1,1-0.1,1.4-0.1,4.1s0,3.1,0.1,4.1c0,1.1,0.2,1.8,0.4,2.4c0.2,0.6,0.6,1.3,1.2,1.8s1.2,0.9,1.8,1.2
+              c0.6,0.2,1.4,0.4,2.4,0.4S7.8,20,10.5,20s3.1,0,4.1-0.1c1.1,0,1.8-0.2,2.4-0.4c0.6-0.2,1.3-0.6,1.8-1.2c0.5-0.5,0.9-1.2,1.2-1.8
+              s0.4-1.4,0.4-2.4s0.1-1.4,0.1-4.1s0-3.1-0.1-4.1c0-1.1-0.2-1.8-0.4-2.4s-0.6-1.3-1.2-1.8c-0.5-0.5-1.2-0.9-1.8-1.2
+              c-0.6-0.2-1.4-0.4-2.4-0.4C13.6,0,13.2,0,10.5,0 M10.5,1.8c2.6,0,2.9,0,4,0.1c0.9,0,1.5,0.2,1.9,0.3c0.4,0.2,0.8,0.4,1.2,0.7
+              c0.3,0.3,0.5,0.7,0.7,1.2c0.1,0.3,0.3,0.8,0.3,1.9s0.1,1.4,0.1,4.1c0,2.6,0,2.9-0.1,4c0,0.9-0.2,1.5-0.3,1.9
+              c-0.2,0.4-0.4,0.8-0.7,1.2c-0.3,0.3-0.6,0.5-1.2,0.7c-0.3,0.1-0.8,0.3-1.9,0.3s-1.4,0.1-4,0.1s-2.9,0-4-0.1c-0.9,0-1.5-0.2-1.9-0.3
+              c-0.4-0.2-0.8-0.4-1.2-0.7c-0.3-0.3-0.5-0.7-0.7-1.2c-0.1-0.3-0.3-0.8-0.3-1.9s-0.1-1.4-0.1-4s0-2.9,0.1-4.1c0-0.9,0.2-1.5,0.3-1.9
+              c0.2-0.4,0.4-0.8,0.7-1.2C3.7,2.6,4,2.4,4.6,2.2c0.3-0.1,0.8-0.3,1.9-0.3C7.6,1.8,7.9,1.8,10.5,1.8 M10.5,13.4
+              c-1.8,0-3.4-1.5-3.4-3.4s1.5-3.4,3.4-3.4s3.4,1.5,3.4,3.4S12.3,13.4,10.5,13.4 M10.5,4.8c-2.8,0-5.2,2.3-5.2,5.2s2.3,5.2,5.2,5.2
+              s5.2-2.3,5.2-5.2S13.3,4.8,10.5,4.8 M17,4.6c0,0.6-0.5,1.2-1.2,1.2c-0.6,0-1.2-0.5-1.2-1.2s0.5-1.2,1.2-1.2C16.5,3.5,17,4,17,4.6"/>
+            </svg>
+            <span class="ext" aria-label="(link is external)"></span>
+          </a>
+        </li>
+      
+      
+      
+    
+      
+      
+      
+              <li>
+          <a href="https://www.youtube.com/user/CentralState87" class="ext" aria-label="Follow Central State University on YouTube">
+            <svg version="1.1" class="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 30 20" style="enable-background:new 0 0 30 20;" xml:space="preserve">
+              <title>Follow Central State University on YouTube</title>
+              <path d="M29.2,4.3c0,0-0.3-1.9-1.2-2.8c-1.1-1.2-2.4-1.2-2.9-1.2C21.1,0,15,0,15,0l0,0
+                c0,0-6.1,0-10.1,0.3c-0.6,0-1.8,0-3,1.2C1,2.4,0.8,4.3,0.8,4.3S0.5,6.6,0.5,8.9v2.2c0,2.3,0.3,4.6,0.3,4.6s0.3,1.9,1.2,2.8
+                c1.1,1.2,2.6,1.1,3.2,1.2c2.4,0.2,9.9,0.3,9.9,0.3s6.1,0,10.2-0.3c0.5-0.1,1.8-0.1,2.9-1.2c0.9-0.9,1.2-2.8,1.2-2.8s0.3-2.3,0.3-4.6
+                V8.9C29.5,6.6,29.2,4.3,29.2,4.3z M12,14V5.9l7.7,3.9L12,14z"/>
+            </svg>
+            <span class="ext" aria-label="(link is external)"></span>
+          </a>
+        </li>
+      
+      
+    
+      
+      
+      
+      
+              <li>
+          <a href="https://www.linkedin.com/school/central-state-university/" class="ext" aria-label="Follow Central State University on LinkedIn">
+            <svg version="1.1" class="linkedin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+              <title>Follow Central State University on LinkedIn</title>
+              <path d="M20,16.2c0,2.1-1.7,3.8-3.8,3.8H3.8C1.7,20,0,18.3,0,16.2V3.8C0,1.7,1.7,0,3.8,0
+                h12.5C18.3,0,20,1.7,20,3.8V16.2z M4.7,3.4C3.6,3.4,3,4,3,4.9C2.9,5.8,3.5,6.5,4.5,6.5l0,0c1,0,1.7-0.6,1.7-1.6S5.6,3.4,4.7,3.4z
+                M6.1,16.8V7.7h-3v9.1H6.1z M16.9,16.8v-5.2c0-2.7-1.4-4-3.5-4c-1.6,0-2.2,0.9-2.6,1.6l0,0V7.8h-3c0,0,0,0.9,0,9.1h3v-5.2
+                c0-0.3,0-0.5,0.1-0.8c0.1-0.5,0.6-1,1.6-1c1,0,1.6,0.8,1.6,2.1v4.8H16.9L16.9,16.8z"/>
+            </svg>
+            <span class="ext" aria-label="(link is external)"></span>
+          </a>
+        </li>
+      
+      </ul>
+  </div>
+
+
+  </div></div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/field/field--block-content--field-links--social-media-links.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+
+
+
+                <div class="footer-ctas">
+                  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ block--footerlinks.html.twig
+   ▪️ block--system-menu-block--footer-links.html.twig
+   ▪️ block--system-menu-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--footerlinks.html.twig' -->
+
+<div id="block-footerlinks" class="block block-system block-system-menu-blockfooter-links cc--component-container cc--footer-menu">
+  <div class="c--component c--footer-menu">
+          <nav class="mc--menu mc--footer" aria-label=" Menu">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__footer_links' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ menu--footer-links.html.twig
+   ✅ menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/navigation/menu.html.twig' -->
+
+              <ul>
+              <li>
+        <a href="https://applynow.centralstate.edu/apply">Apply</a>
+              </li>
+          <li>
+        <a href="https://www.centralstate.edu/give">Give</a>
+              </li>
+          <li>
+        <a href="#/admissions-aid/tour-campus" data-drupal-link-system-path="node/156">Visit</a>
+              </li>
+        </ul>
+  
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/navigation/menu.html.twig' -->
+
+
+      </nav>
+      </div>
+</div>
+
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--footerlinks.html.twig' -->
+
+
+                </div>
+
+                <div class="cc--component-container cc--footer-contact ">
+                  <div class="c--component c--footer-contact">
+                    <div class="f--field f--wysiwyg">
+                      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--centralstate-footercontact.html.twig
+   ▪️ block--block-content--b03739b9-73c3-46c3-9554-06c79e17a70c.html.twig
+   ▪️ block--block-content--id-view--centralstate-footercontact--full.html.twig
+   ▪️ block--block-content--id--centralstate-footercontact.html.twig
+   ▪️ block--block-content--view-type--basic--full.html.twig
+   ▪️ block--block-content--type--basic.html.twig
+   ▪️ block--block-content--view--full.html.twig
+   ▪️ block--block-content.html.twig
+   ✅ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+<div id="block-centralstate-footercontact" class="block block-block-content block-block-contentb03739b9-73c3-46c3-9554-06c79e17a70c">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--block-content--body--basic.html.twig
+   ▪️ field--block-content--body.html.twig
+   ▪️ field--block-content--basic.html.twig
+   ▪️ field--body.html.twig
+   ▪️ field--text-with-summary.html.twig
+   ✅ field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+            <div><p>Central State University<br>Wilberforce, Ohio, 45384<br><a href="tel:+1-937-376-6249">937-376-6249</a> - <a href="mailto:admissions@centralstate.edu">Admissions</a></p></div>
+      
+<!-- END OUTPUT from 'themes/contrib/stable/templates/field/field.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block.html.twig' -->
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-col">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ block--resources.html.twig
+   ▪️ block--system-menu-block--resources.html.twig
+   ▪️ block--system-menu-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--resources.html.twig' -->
+
+<div id="block-resources" class="block block-system block-system-menu-blockresources cc--component-container cc--footer-menu">
+  <div class="c--component c--footer-menu">
+          <nav class="mc--menu mc--footer-campus-resources" aria-label="Academic Resources Menu">
+                  <h3>Academic Resources</h3>
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__resources' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ menu--resources.html.twig
+   ✅ menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/navigation/menu.html.twig' -->
+
+              <ul>
+              <li>
+        <a href="#/academics" data-drupal-link-system-path="node/6">Academics</a>
+              </li>
+          <li>
+        <a href="#/admissions-aid/financial-aid-and-scholarships" data-drupal-link-system-path="node/466">Financial Aid and Scholarships</a>
+              </li>
+          <li>
+        <a href="#/academics/office-registrar" data-drupal-link-system-path="node/3986">Office of the Registrar</a>
+              </li>
+          <li>
+        <a href="https://global.centralstate.edu/">D2L (Learning Management System)</a>
+              </li>
+          <li>
+        <a href="https://www.centralstate.edu/sites/default/files/2025-12/csu-strategic-plan-final-jul-2025-3.pdf" target="_blank" title="Strategic Plan 2025-2030">Strategic Plan</a>
+              </li>
+          <li>
+        <a href="#/compliance" data-drupal-link-system-path="node/14691">Compliance</a>
+              </li>
+          <li>
+        <a href="#/syllabi" data-drupal-link-system-path="node/15246">Syllabi</a>
+              </li>
+        </ul>
+  
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/navigation/menu.html.twig' -->
+
+
+      </nav>
+      </div>
+</div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--resources.html.twig' -->
+
+
+              </div>
+
+              <div class="footer-col">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ block--campus.html.twig
+   ▪️ block--system-menu-block--campus.html.twig
+   ▪️ block--system-menu-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--campus.html.twig' -->
+
+<div id="block-campus" class="block block-system block-system-menu-blockcampus cc--component-container cc--footer-menu">
+  <div class="c--component c--footer-menu">
+          <nav class="mc--menu mc--footer-campus-resources" aria-label="Campus Resources Menu">
+                  <h3>Campus Resources</h3>
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__campus' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ menu--campus.html.twig
+   ✅ menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/stable/templates/navigation/menu.html.twig' -->
+
+              <ul>
+              <li>
+        <a href="#/student-services/central-state-university-department-public-safety" data-drupal-link-system-path="node/3876">CSU Police Department</a>
+              </li>
+          <li>
+        <a href="#/academics/csu-faculty-staff-administration">Faculty and Staff Directory</a>
+              </li>
+          <li>
+        <a href="#/info/info-current-students" data-drupal-link-system-path="node/261">Current Students</a>
+              </li>
+          <li>
+        <a href="#/student-services/housing-and-dining" data-drupal-link-system-path="node/121">Housing and Dining</a>
+              </li>
+          <li>
+        <a href="#/about-csu-administration-human-resources/title-ix-information" data-drupal-link-system-path="node/7756">Title IX</a>
+              </li>
+        </ul>
+  
+
+
+<!-- END OUTPUT from 'themes/contrib/stable/templates/navigation/menu.html.twig' -->
+
+
+      </nav>
+      </div>
+</div>
+
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--campus.html.twig' -->
+
+
+              </div>
+
+              <div class="footer-col">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ block--contact.html.twig
+   ▪️ block--system-menu-block--contact.html.twig
+   ▪️ block--system-menu-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--contact.html.twig' -->
+
+<div id="block-contact" class="block block-system block-system-menu-blockcontact cc--component-container cc--footer-menu">
+  <div class="c--component c--footer-menu">
+          <nav class="mc--menu mc--footer-contact" aria-label="Contact Menu">
+                  <h3>Contact</h3>
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__contact' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ menu--contact.html.twig
+   ✅ menu--contact.html.twig
+   ▪️ menu.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/navigation/menu--contact.html.twig' -->
+
+              <ul class="m--menu m--footer-contact">
+            <li>
+          <a href="https://careers.centralstate.edu/">Job Postings</a>
+                </li>
+          <li>
+          <a href="#/about" data-drupal-link-system-path="node/4">About CSU</a>
+                </li>
+          <li>
+          <a href="#/sites/default/files/2024-11/Campus_Map_June_23.png" target="_blank" title="Central State University Campus Map">Campus Map</a>
+                </li>
+          <li>
+          <a href="https://forms.cloud.microsoft/r/RF4PW2yU8r" title="Website Feedback Form">Website Feedback Form</a>
+                </li>
+      </ul>
+    
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/navigation/menu--contact.html.twig' -->
+
+
+      </nav>
+      </div>
+</div>
+
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/block/block--contact.html.twig' -->
+
+
+              </div>
+
+            </div>
+
+            <div class="info-container">
+              <div class="f--field f--wysiwyg">
+                <p>All rights reserved © 2009-2026 Central State University</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/layout/region--footer.html.twig' -->
+
+
+
+  </footer>
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/custom/centralstate/templates/layout/page.html.twig' -->
+
+
+  </div>
+ 
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/5","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"3e23c959b449dbcc8d1fcd55ecd643934dac1dc106512008e124045987eee5b4"}}</script>
+<script src="/public/js/jquery-3.6.0.min.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=centralstate&amp;include=eJxtjmsOAjEIhC-k7pEI7aIlsrBp6fo4vWj8YTcmhIRvgJlM6hWlOTpN6QK84IWg60Ysh_wr3gr6kXXtPvJiG9UQPOCooMhjJILPBzR-Uhv5-jZNmK_gFrUe6O7Cep3m2leU03ccj8LWOaOAY0o0Q8ZqvdEu9sYzGWQLZNL20ReCj3eharvwqtY10xLw53XrgBLG06cfU6xRHS_VnM8RzNkU_i0Uwpkq3NgLNMKaywugCZt6"></script>
+
+  </body>
 </html>

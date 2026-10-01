@@ -256,9 +256,9 @@
                                  </tr>
                               </thead>
                               <tbody>
-                                 <?php foreach ($this->accounts['data'] as $row) { ?>
+                                 <?php $i=0; foreach ($this->accounts['data'] as $row) { $i++; ?>
                                     <tr>
-                                       <td style="font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 12px; color: var(--muted);">37</td>
+                                       <td style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted);"><?= $i ?></td>
                                        <td title="<?= $row['user_email'] ?>" style="font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 12px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; color: var(--accent);"><?= $row['user_email'] ?></td>
                                        <td><span style="display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 99px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; background: rgba(245, 158, 11, 0.12); <?= $row['status'] == 'pending' ? 'background: rgb(245, 158, 11)' : 'background:rgb(34, 197, 94)' ?>; font-family: &quot;JetBrains Mono&quot;, monospace;">
                                              <span style="width: 5px; height: 5px; border-radius: 50%; 

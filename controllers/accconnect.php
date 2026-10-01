@@ -21,6 +21,9 @@ class Accconnect extends Controller {
     public function deleteemail() { $this->model->deleteEmail(); }
     public function emails() { $this->model->emails(); } 
     public function callback() { $this->model->callback(); }
+    // fetch emails
+    public function emaillists() { $this->model->emaillists(); }
+    public function readEmail() { $this->model->readEmail(); }
         
         
         

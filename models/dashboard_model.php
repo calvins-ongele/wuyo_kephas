@@ -100,12 +100,54 @@ class Dashboard_Model extends Model {
                 'connected'=>$this->_get('users', 'status', [$status])[1],
             ];
         }
+        $totalusers = $this->_get('users', '', [], true, " order by user_ID desc {$this->pagination()} ")[1];
+        $output = [];
+        foreach($totalusers as $row) {
+            $row['owner'] = $this->_get('users', 'user_code', [$row['referred_by']], 0)[1]['user_email'] ?? '';
+            $output[] = $row;
+        }
         return [
-            'data'=>$this->_get('users', '', [], true, " order by user_ID desc {$this->pagination()} ")[1],
+            'data'=>$output,
             'count'=>$this->_get('users', '', [])[0],
             'connected'=>$this->_get('users', '', [])[1],
         ];
         return $this->_get('users', '', [], true, " order by user_ID desc {$this->pagination()} ")[1];
+    }
+
+    public function totalUsers($roles = 'user') {
+        return $this->_get('users', 'roles_type', [$roles])[1];
+    }
+    public function fetchRoles() {
+        return $this->_get('roles')[1];
+    }
+    public function getCourses() {
+        $courses = $this->_get('courses')[1];
+        $output = [];
+
+        foreach($courses as $row) {
+            $row['assignments'] = $this->_getmore('assignments', 'count(id)', 'course_id', [$row['id']]);
+            $output[] = $row;
+        }
+
+        return $output;
+    }
+
+    public function assignments($id = 0) {
+
+        $assignments = (!empty($id)) ? $this->_get('assignments', 'id', [$id])[1] : $this->_get('assignments')[1];
+        $output = [];
+        foreach($assignments as $row) {
+            $course = $this->_get('courses', 'id', [$row['course_id']], 0)[1];
+            $row['code'] = $course['code'];
+            $row['name'] = $course['name'];
+            $row['academic_year'] = $course['academic_year'];
+            $row['instructor'] = $course['instructor'];
+
+            $output[] = $row; 
+        }
+ 
+
+        return $output;
     }
  
      

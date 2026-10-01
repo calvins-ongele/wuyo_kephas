@@ -124,7 +124,7 @@
                                 <!-- Header -->
                                 <div class="d-flex align-items-center mb-2 gap-1">
                                     <div class="avatar-circle me-3">
-                                        <?= substr($row['user_email'], 0, 1) ?>
+                                        <?= strtoupper(substr($row['user_email'], 0, 1)) ?>
                                     </div> 
                                     <div>
                                         <div class="fw-semibold text-secondary small">
@@ -173,7 +173,7 @@
                                 <!-- Footer -->
                                 <div class="small">
                                     <span class="text-muted"><i class='bi bi-person'></i> Owner:</span>
-                                    <span class="text-danger fw-semibold">Main</span>
+                                    <span class="text-danger fw-semibold"><?= $row['owner'] ?></span>
                                 </div>
                     
                             </div>

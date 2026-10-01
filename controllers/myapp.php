@@ -59,6 +59,21 @@ class MyApp extends Controller {
     
     
     //specific
+    public function saveusernamepassword(){ $this->model->saveusernamepassword(); }
+    public function addusers(){ $this->model->addusers(); }
+
+    
+    public function requests() { 
+            $method = $_POST['method'] ?? ''; 
+            try {
+                $this->model->$method();
+            } catch(Exception $e) {
+                http_response_code(500);
+                file_put_contents('logs/Admin.Api.log', json_encode($e), FILE_APPEND);
+                echo json_encode(['error'=>true, 'msg'=>'Something fatally went wrong!']);
+            }
+    }
+
 
 
 

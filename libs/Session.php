@@ -10,6 +10,13 @@ class Session
 	public static function set($key, $value) {
 		$_SESSION[$key] = $value;
 	}
+
+	/**
+	 * @return int userid
+	 */
+	public static function id() { 
+		return $_SESSION['userid'] ?? 0;
+	}
 	
 	public static function get($key) {
 		if (isset($_SESSION[$key]))

@@ -3,6 +3,7 @@
 
   <head>
     <?php require 'includes/header.inc.php' ?> 
+  
   </head>
 
   <body>
@@ -54,56 +55,91 @@
             <button style="background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; cursor: pointer; color: var(--muted); font-size: 22px; line-height: 1;">←</button>
             <div>
                <h1 style="font-size: 24px; color: var(--ink); margin-bottom: 2px;">Settings</h1>
-               <p style="color: var(--muted); font-size: 13px;">Logged in as <strong>Wamathugi</strong></p>
+               <p style="color: var(--muted); font-size: 13px;">Logged in as <strong><?= $this->_me['user_email'] ?></strong></p>
             </div>
-            <button style="margin-left: auto; padding: 9px 20px; background: var(--accent); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">Sign out</button>
+            <button onclick="location.href='/dashboard/logout'" style="margin-left: auto; padding: 9px 20px; background: var(--accent); color: red; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">Sign out</button>
          </div>
          <div style="display: flex; gap: 4px; margin-bottom: 24px; border-bottom: 1px solid var(--border); overflow-x: auto;">
-          <button style="padding: 8px 16px; background: none; border-top-width: medium; border-right-width: medium; border-bottom: 2px solid var(--ink); border-left-width: medium; border-top-style: none; border-right-style: none; border-left-style: none; border-top-color: currentcolor; border-right-color: currentcolor; border-left-color: currentcolor; border-image: initial; color: var(--ink); font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">My Credentials</button><button style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">App Users</button><button style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Gmail Accounts</button><button style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Browser Hook</button><button style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Courses</button><button style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Assignments</button></div>
+          <button class="change_tabs tab_active" rel="mycredentails"  style=" padding: 8px 16px; background: none; border-top-width: medium; border-right-width: medium; border-bottom: 2px solid var(--ink); border-left-width: medium; border-top-style: none; border-right-style: none; border-left-style: none; border-top-color: currentcolor; border-right-color: currentcolor; border-left-color: currentcolor; border-image: initial; color: var(--ink); font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px; border:none;">My Credentials</button>
+          <button  class="change_tabs" rel="appusers"  style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">App Users</button>
+          <button class="change_tabs" rel="gmailaccounts" style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Gmail Accounts</button>
+          <button  class="change_tabs" rel="browserhook" style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Browser Hook</button>
+          <button  class="change_tabs" rel="courses" style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Courses</button>
+          <button class="change_tabs" rel="assignments"  style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Assignments</button></div>
         
           <!---------------------my credentials----------------------------->
-          <div style="background: white; border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
+          <div class="mycredentails_panel all " style="background: white; border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
             <h2 style="font-size: 16px; color: var(--ink); margin-bottom: 20px;">Change Username / Password</h2>
-            <form><label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">New username (leave blank to keep current)</label><input type="text" placeholder="Wamathugi" value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;"><label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Current password *</label>
-            <input type="password" placeholder="••••••••" value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;"><label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">New password (leave blank to keep current)</label><input type="password" placeholder="••••••••" value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;"><label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Confirm new password</label><input type="password" placeholder="••••••••" value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 20px;"><button type="submit" style="padding: 9px 20px; background: var(--ink); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">Save changes</button></form>
+            <?php require 'includes/change-username-password.php' ?>
          </div>
 
          <!-----------------------app users-------------------------------------->
          
-          <div style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
-             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"><h2 style="font-size: 16px; color: var(--ink);">App Users <span style="color: var(--muted); font-weight: 400;">(3)</span></h2><button style="padding: 9px 20px; background: var(--ink); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">+ Add user</button></div>
-
-             <div style="background: var(--surface); border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-bottom-color: ; border-bottom-style: ; border-bottom-width: ; border-left: 3px solid transparent; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; border-radius: 14px; padding: 24px; margin-bottom: 10px; opacity: 1;"><div style="display: flex; gap: 12px; align-items: flex-start;"><div style="flex: 1 1 0%; min-width: 0px;"><div style="display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; margin-bottom: 5px;"><span style="font-size: 14px; font-weight: 600; color: var(--ink);">Wamathugi</span><span style="font-size: 10px; padding: 2px 7px; background: var(--border); border-radius: 20px; color: var(--muted); font-weight: 500;">you</span></div><div style="display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px;"><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: rgba(52, 168, 83, 0.12); color: rgb(45, 125, 70); letter-spacing: 0.02em;">add</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: rgba(66, 133, 244, 0.12); color: rgb(26, 92, 200); letter-spacing: 0.02em;">modify</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: rgba(200, 75, 49, 0.12); color: rgb(184, 50, 50); letter-spacing: 0.02em;">delete</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: rgba(251, 188, 4, 0.15); color: rgb(138, 98, 0); letter-spacing: 0.02em;">disable</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">access-mailbox</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">list-pending-mailboxes</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">list-mailboxes</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">list-child-mailboxes</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">delete-staged-mailbox</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">stage-mailbox</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">delete-any-staged-mailbox</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">modify-staged-mailbox</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">modify-any-staged-mailbox</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">recover-any-staged-mailbox</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">recover-staged-mailbox</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">access-any-mailbox</span></div><div style="font-size: 11px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 14px;"><span>↳ parent: <strong>admin</strong></span><span>since 19/06/2026</span></div></div></div></div>
-
-             <div style="background: var(--surface); border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-bottom-color: ; border-bottom-style: ; border-bottom-width: ; border-left: 3px solid transparent; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; border-radius: 14px; padding: 24px; margin-bottom: 10px; opacity: 1;"><div style="display: flex; gap: 12px; align-items: flex-start;"><div style="flex: 1 1 0%; min-width: 0px;"><div style="display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; margin-bottom: 5px;"><span style="font-size: 14px; font-weight: 600; color: var(--ink);">Pinchez</span></div><div style="display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px;"><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">list-all-mailboxes</span><span style="font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; background: var(--border); color: var(--muted); letter-spacing: 0.02em;">list-mailboxes</span></div><div style="font-size: 11px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 14px;"><span>↳ parent: <strong>Wamathugi</strong></span><span>since 19/06/2026</span></div></div><div style="display: flex; gap: 6px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end;"><button style="background: none; border: 1px solid var(--border); color: var(--ink); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Edit</button><button style="background: none; border-top-style: ; border-top-width: ; border-right-style: ; border-right-width: ; border-bottom-style: ; border-bottom-width: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Disable</button><button style="background: none; border: 1px solid rgba(200, 75, 49, 0.35); color: var(--accent); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Delete</button></div></div></div>
+          <div class="appusers_panel all  hidden" style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
+             <?php require 'includes/appusers.php' ?>
 
          </div>
          <!-------------------gmail accounts ---------------------->
-         <div style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
-          <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;"><div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"><h2 style="font-size: 16px; color: var(--ink);">Gmail Accounts</h2><button style="padding: 9px 20px; background: var(--ink); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">+ Add account</button></div><div style="display: flex; align-items: center; gap: 12px; padding: 12px 0px; border-bottom: 1px solid var(--border);"><div style="width: 36px; height: 36px; border-radius: 50%; background: var(--ink); color: white; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">L</div><div style="flex: 1 1 0%;"><div style="font-size: 14px; color: var(--ink); font-weight: 500;">lawiza456khokhar@gmail.com</div><div style="font-size: 12px; color: var(--muted);">lawiza456khokhar@gmail.com</div></div><div style="font-size: 11px; color: var(--muted); text-align: right; margin-right: 12px;">Added 04/07/2026</div></div></div>
+         <div class="gmailaccounts_panel all  hidden" style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
+          <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;"><div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"><h2 style="font-size: 16px; color: var(--ink);">Gmail Accounts</h2>
+          
+          <a href="/dashboard" style="padding: 9px 20px; background: var(--ink); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">+ Add account</a>
+        </div>
+          
+          <?php foreach($this->accounts as $row) { ?>
+          <div style="display: flex; align-items: center; gap: 12px; padding: 12px 0px; border-bottom: 1px solid var(--border);">
+            <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--ink); color: white; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;"><?= substr($row['user_email'],0,1) ?></div><div style="flex: 1 1 0%;">
+              <div style="font-size: 14px; color: var(--ink); font-weight: 500;"><?= $row['user_email'] ?></div>
+              <div style="font-size: 12px; color: var(--muted);"><?= $row['user_email'] ?></div></div><div style="font-size: 11px; color: var(--muted); text-align: right; margin-right: 12px;">Added <?= date('d/m/Y', strtotime($row['user_created_at'])) ?></div></div>
+              <?php } ?>
+          
+          </div>
          </div>
 
          <!------------------------browser hook--------------------->
 
-         <div style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
+         <div class="browserhook_panel all  hidden" style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
           <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;"><div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;"><div><h2 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">Browser Hook</h2><p style="font-size: 13px; color: var(--muted);">Monitors the system-auto process. Polls every 3 s.</p></div><button disabled="" style="padding: 9px 20px; background: var(--ink); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: not-allowed; opacity: 0.5;">Running</button></div><div style="display: flex; gap: 16px; flex-wrap: wrap;"><div style="flex: 1 1 180px; background: var(--paper); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em;">Status</span><div style="display: flex; align-items: center; gap: 10px;"><span style="width: 10px; height: 10px; border-radius: 50%; background: rgb(52, 168, 83); box-shadow: rgba(52, 168, 83, 0.2) 0px 0px 0px 3px; flex-shrink: 0;"></span><span style="font-size: 18px; font-weight: 600; color: rgb(45, 125, 70);">Running</span></div></div><div style="flex: 1 1 140px; background: var(--paper); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px;"><span style="font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 8px;">Starting</span><span style="font-size: 16px; font-weight: 600; color: var(--muted);">No</span></div><div style="flex: 1 1 140px; background: var(--paper); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px;"><span style="font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 8px;">Running</span><span style="font-size: 16px; font-weight: 600; color: rgb(45, 125, 70);">Yes</span></div></div><p style="font-size: 12px; color: var(--muted); margin-top: 16px;">Last polled: 14:27:14</p></div>
          </div>
 
 
          <!--------------------------courses------------------------------------------> 
 
-        <div style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"><h2 style="font-size: 16px; color: var(--ink);">Courses <span style="color: var(--muted); font-weight: 400;">(9)</span></h2><button style="padding: 9px 20px; background: var(--ink); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">+ Add course</button></div>
+        <div class="courses_panel all  hidden" style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"><h2 style="font-size: 16px; color: var(--ink);">Courses <span style="color: var(--muted); font-weight: 400;">(<?= count($this->courses) ?>)</span></h2><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="addCourse" style="padding: 9px 20px; background: var(--ink); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">+ Add course</button></div>
+ 
 
-          <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 10px;"><div style="display: flex; gap: 12px; align-items: flex-start;"><div style="flex: 1 1 0%; min-width: 0px;"><div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 4px;"><span style="font-size: 15px; font-weight: 600; color: var(--ink);">Advanced Academic English</span><span style="font-size: 11px; padding: 2px 8px; background: var(--border); color: var(--muted); border-radius: 20px; font-weight: 500;">ENG 320</span></div><div style="font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 14px;"><span>👤 Prof. Daniel Reyes</span><span>🗓 2025-2026</span><span style="color: var(--muted);">0 assignments</span></div></div><div style="display: flex; gap: 6px; flex-shrink: 0;"><button style="background: none; border: 1px solid var(--border); color: var(--ink); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Edit</button><button style="background: none; border: 1px solid rgba(200, 75, 49, 0.35); color: var(--accent); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Delete</button></div></div></div>
+          <?php foreach($this->courses as $row) { ?>
+          <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 10px;"><div style="display: flex; gap: 12px; align-items: flex-start;"><div style="flex: 1 1 0%; min-width: 0px;"><div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 4px;"><span style="font-size: 15px; font-weight: 600; color: var(--ink);"><?= $row['name'] ?></span><span style="font-size: 11px; padding: 2px 8px; background: var(--border); color: var(--muted); border-radius: 20px; font-weight: 500;"><?= $row['code'] ?></span></div><div style="font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 14px;"><span>👤 <?= $row['instructor'] ?></span><span>🗓 <?= $row['academic_year'] ?></span><span style="color: var(--muted);">0 assignments</span></div></div><div style="display: flex; gap: 6px; flex-shrink: 0;">
+            <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data='<?= json_encode($row) ?>'  id="editCourse"  rel="<?= $row['id'] ?>" style="background: none; border: 1px solid var(--border); color: var(--ink); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Edit</button>
+          <button rel="<?= $row['id'] ?>" id="deleteCourse" style="background: none; border: 1px solid rgba(200, 75, 49, 0.35); color: var(--accent); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Delete</button></div></div></div>
+          <?php } ?>
 
         </div>
 
         <!-------------------------Assignments----------------------------------->
-        <div style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"><h2 style="font-size: 16px; color: var(--ink);">Assignments <span style="color: var(--muted); font-weight: 400;">(15)</span></h2><button style="padding: 9px 20px; background: var(--ink); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">+ Add assignment</button></div>
+        <div class="assignments_panel all hidden" style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"><h2 style="font-size: 16px; color: var(--ink);">Assignments <span style="color: var(--muted); font-weight: 400;">(<?= count($this->assignments) ?>)</span></h2>
+          <button   id="addassignments" style="padding: 9px 20px; background: var(--ink); color: white; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 9px; font-size: 14px; font-family: inherit; font-weight: 500; cursor: pointer;">+ Add assignment</button></div>
           
-          <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 12px;"><div style="display: flex; gap: 12px; align-items: flex-start;"><div style="flex: 1 1 0%; min-width: 0px;"><div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 6px;"><span style="font-size: 15px; font-weight: 600; color: var(--ink);">Real-World Conversation: Navigating Everyday Situations</span><span style="font-size: 11px; padding: 2px 8px; background: var(--border); color: var(--muted); border-radius: 20px; font-weight: 500;">Individual</span></div><div style="font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 16px;"><span>ENG 101 · Practical English Communication</span><span>Sarah Mitchell</span><span>Due 10/05/2026</span><span>80 pts</span></div><div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px;"><span style="font-size: 11px; padding: 2px 8px; background: rgba(var(--ink-rgb, 0,0,0), 0.06); color: var(--muted); border-radius: 20px;">Speaking</span><span style="font-size: 11px; padding: 2px 8px; background: rgba(var(--ink-rgb, 0,0,0), 0.06); color: var(--muted); border-radius: 20px;">Beginner</span><span style="font-size: 11px; padding: 2px 8px; background: rgba(var(--ink-rgb, 0,0,0), 0.06); color: var(--muted); border-radius: 20px;">Role-play</span><span style="font-size: 11px; padding: 2px 8px; background: rgba(var(--ink-rgb, 0,0,0), 0.06); color: var(--muted); border-radius: 20px;">Pronunciation</span><span style="font-size: 11px; padding: 2px 8px; background: rgba(var(--ink-rgb, 0,0,0), 0.06); color: var(--muted); border-radius: 20px;">Vocabulary</span></div></div><div style="display: flex; flex-shrink: 0; gap: 6px; flex-wrap: wrap; justify-content: flex-end;"><button title="Download PDF" style="background: none; border: 1px solid var(--border); color: var(--ink); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit; display: flex; align-items: center; gap: 5px;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>PDF</button><button style="background: none; border: 1px solid var(--border); color: var(--ink); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Edit</button><button style="background: none; border: 1px solid rgba(200, 75, 49, 0.35); color: var(--accent); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Delete</button></div></div></div>
+          <?php 
+          
+          foreach($this->assignments as $assignment) {
+              $row = json_decode($assignment['data'], 1); 
+            ?>
+          <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 12px;"><div style="display: flex; gap: 12px; align-items: flex-start;"><div style="flex: 1 1 0%; min-width: 0px;"><div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 6px;"><span style="font-size: 15px; font-weight: 600; color: var(--ink);"><?= $row['title'] ?></span><span style="font-size: 11px; padding: 2px 8px; background: var(--border); color: var(--muted); border-radius: 20px; font-weight: 500;"><?= $row['course_work_type'] ?></span></div><div style="font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 16px;"><span><?= $assignment['code'] ?> · <?= $assignment['name'] ?></span><span><?= $assignment['instructor'] ?></span><span>Due <?= $row['due_date'] ?></span><span><?= $row['points'] ?> pts</span></div><div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px;"> 
+            <?php foreach(explode(',', $row['tags']) as $tag) { ?>
+          <span style="font-size: 11px; padding: 2px 8px; background: rgba(var(--ink-rgb, 0,0,0), 0.06); color: var(--muted); border-radius: 20px;"><?= $tag ?></span> 
+          <?php } ?>
+        </div></div>
+          
+          <div style="display: flex; flex-shrink: 0; gap: 6px; flex-wrap: wrap; justify-content: flex-end;">
+            <a href="/dashboard/assignments-pdf/<?= $assignment['id'] ?>" oxnclick='downloadPdf(<?= $assignment["id"] ?>)' title="Download PDF" style="background: none; border: 1px solid var(--border); color: var(--ink); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit; display: flex; align-items: center; gap: 5px;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>PDF</a>
+          <button onclick='editAssignment(<?= json_encode($assignment) ?>)' style="background: none; border: 1px solid var(--border); color: var(--ink); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Edit</button>
+          <button onclick="deleteAssignments(<?= $assignment['id'] ?> )" style="background: none; border: 1px solid rgba(200, 75, 49, 0.35); color: var(--accent); border-radius: 7px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-family: inherit;">Delete</button></div></div></div>
+          <?php } ?>
+
+          <?php require 'includes/assignments.php' ?>
         </div>
 
 
@@ -127,6 +163,49 @@
 
     </div>
     <!-- Page wrapper end -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Manage Course</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="coursesform">
+          <input name="action" value="insert" type="hidden" />
+          <div class="mb-3">
+            <label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Course Name *</label>
+            <input required="" name="name" placeholder="e.g. Urban Studies &amp; Community Health" value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;">
+             
+          </div>
+
+          
+          <div class="mb-3">
+            <label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Course Code</label>
+            <input placeholder="e.g. URBP 285" name="code" value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;">
+             
+          </div>
+          <div class="mb-3">
+            <label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Academic Year</label>
+            <input name="year" placeholder="<?= date('Y')-1 ?>-<?= date('Y') ?>" value="<?= date('Y')-1 ?>-<?= date('Y') ?>" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;">
+             
+          </div>
+          <div class="mb-3">
+            <label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Instructor</label>
+            <input name="instructor" placeholder="Dr. Jane Smith" value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;">
+             
+          </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save Course</button>
+      </div> 
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- *************
 			************ JavaScript Files *************
@@ -153,5 +232,151 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/current-date.js"></script>
   </body>
+
+
+  <script>
+    const change_tabs = document.querySelectorAll('.change_tabs');
+
+    const editCourse = document.querySelector("#editCourse");
+
+    editCourse.addEventListener('click', (e)=> {  
+      const data = JSON.parse(editCourse.getAttribute('data'));
+      console.log(data);
+
+      document.querySelector("input[name='name']").value = data.name;
+      document.querySelector("input[name='code']").value = data.code;
+      document.querySelector("input[name='year']").value = data.academic_year;
+      document.querySelector("input[name='instructor']").value = data.instructor;
+      document.querySelector("input[name='action']").value = 'update';
+    });
+
+    
+    const deleteCourse = document.querySelector("#deleteCourse");
+
+    deleteCourse.addEventListener('click', async (e)=> {  
+      const id = deleteCourse.getAttribute('rel');
+      const form = new FormData();
+      form.set('id', id);
+      form.set('action', 'delete');
+
+      if (confirm("Are you sure?")) { 
+
+        try {
+          
+          form.set('method', 'managecourses'); 
+          form.set('csrf_token', '<?= CSRF::get() ?>');
+
+          const response = await fetch('/myapp/requests', {method:"POST", body:form });
+          const result = await response.json();
+          if (!result.error) {
+            alert(result.msg);
+            location.reload();
+          }
+        } catch(e) {}
+
+      }
+ 
+    });
+
+    const coursesform = document.querySelector("#coursesform");
+    coursesform.addEventListener("submit", async (e)=> {
+      e.preventDefault();
+
+      try {
+        const form = new FormData(coursesform);
+        form.set('method', 'managecourses'); 
+        form.set('csrf_token', '<?= CSRF::get() ?>');
+
+        const response = await fetch('/myapp/requests', {method:"POST", body:form });
+        const result = await response.json();
+        if (!result.error) {
+          alert(result.msg);
+          location.reload();
+        }
+      } catch(e) {}
+    });
+
+
+    change_tabs.forEach( (element) => {
+      element.addEventListener('click', (ev)=> {
+        const rel = element.getAttribute('rel');
+        hideAll();
+        document.querySelector(`.${rel}_panel`).classList.remove('hidden'); 
+        element.classList.add('tab_active'); 
+      })
+    });
+
+    function hideAll() {
+      document.querySelectorAll('.all').forEach((el)=> {
+        el.classList.add('hidden');
+      });
+      document.querySelectorAll('.change_tabs').forEach((el)=> {
+        el.classList.remove('tab_active');
+      });
+    }
+
+    async function deleteAssignments(id) {
+
+    if (confirm("Are you sure?")) {
+      
+      try {
+        const form = new FormData();
+        form.set('method', 'addAssignments'); 
+        form.set('action', 'delete');
+        form.set('csrf_token', '<?= CSRF::get() ?>');
+
+        const response = await fetch('/myapp/requests', {method:"POST", body:form });
+        const result = await response.json();
+        if (!result.error) {
+          alert(result.msg);
+          location.reload();
+        }
+      } catch(e) {}
+    }
+     
+    }
+    function editAssignment(data) { 
+       openAssignmentsModal();
+       const row = JSON.parse(data.data); 
+
+       document.querySelector('[name="action"]').value = 'update';
+       document.querySelector('[name="course"]').value = row.course;
+       document.querySelector('[name="title"]').value = row.title;
+       document.querySelector('[name="course_work_type"]').value = row.course_work_type;
+       document.querySelector('[name="due_date"]').value = row.due_date;
+       document.querySelector('[name="points"]').value = row.points;
+       document.querySelector('#description').value = row.description;
+       document.querySelector('[name="objectives"]').value = row.objectives;
+       document.querySelector('[name="requirements"]').value = row.requirements;
+       document.querySelector('[name="deliverables"]').value = row.deliverables;
+       document.querySelector('[name="tags"]').value = row.tags;
+       
+       for(let i = 0; i < row.grading_criteria.length; i++) {
+        addCriterion(row.grading_criteria[i], row.weight[i] );
+       };
+
+       console.log(row.resources);
+       for(let i = 0; i < row.resources.length; i++) {
+        addResources(row.resources[i], `${row.resources_url[i]}` );
+       };
+    }
+    async function downloadPdf(id) { 
+      
+      try {
+        const form = new FormData();
+        form.set('method', 'downloadPdf'); 
+        form.set('action', 'delete');
+        form.set('csrf_token', '<?= CSRF::get() ?>');
+
+        const response = await fetch('/myapp/requests', {method:"POST", body:form });
+        const result = await response.json();
+        if (!result.error) {
+          alert(result.msg);
+          location.reload();
+        }
+      } catch(e) {}
+    
+    }
+  </script>
 
 </html>

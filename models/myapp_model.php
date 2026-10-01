@@ -71,8 +71,8 @@ class MyApp_Model extends Model
 		        die($this->_ms(true, "Password is weak. Please ensure it is at least 8 characters, a capital and small letter,a special character and finally a number."));
 		}
 		 
-		 $this->_insert('users', 'user_full_name, user_email, user_pass, user_phone, user_reg_date', [
-		     $_POST['name'], $_POST['email'], password_hash($_POST['pass'], PASSWORD_DEFAULT),$_POST['phone'], time()  ]);
+		 $this->_insert('users', 'user_full_name, user_email, user_pass, user_phone, user_reg_date, user_code', [
+		     $_POST['name'], $_POST['email'], password_hash($_POST['pass'], PASSWORD_DEFAULT),$_POST['phone'], time(), CustomFunctions::randchars(20)  ]);
 		 
             $user = $this->_get('users', 'user_email ', [ $_POST['email']  ], false);
  
@@ -424,8 +424,8 @@ class MyApp_Model extends Model
 		}
 		  $pass = $_POST['pass']; //CustomFunctions::randchars(5);
 		 
-		 $this->_insert('users', 'user_email, user_phone, user_pass, user_full_name,user_reg_date ', [
-		     $_POST['email'], $_POST['phone'], password_hash($pass, PASSWORD_DEFAULT), $_POST['name'], time()  ]);
+		 $this->_insert('users', 'user_email, user_phone, user_pass, user_full_name,user_reg_date , user_code', [
+		     $_POST['email'], $_POST['phone'], password_hash($pass, PASSWORD_DEFAULT), $_POST['name'], time(), CustomFunctions::randchars(20)  ]);
 		 
            // $user = $this->_get('users', 'user_email ', [ $_POST['email']  ], false);
             
@@ -669,7 +669,7 @@ class MyApp_Model extends Model
         $POST = json_decode(file_get_contents('php://input'), true); 
         $user = $this->_get('users', 'user_email', [$POST['email']], 0);
 
-        if ($user[1]['status']??'' == 'active') die($this->_ms(0));
+        if (($user[1]['status']??'') == 'active') die($this->_ms(0));
 
         die($this->_ms(1));
     }
@@ -678,20 +678,50 @@ class MyApp_Model extends Model
         
         $POST = json_decode(file_get_contents('php://input'), true);  
         $user = $this->_get('users', 'user_email', [$POST['email']], 0);
+        $status = $user[1]['status'];
 
-        if ( $user[0] > 0 ) {
-           // die( $this->_ms(true, "User already exists."));
-           echo $this->_ms(0);
+        if ( $user[0] > 0 ) { 
+            $this->_update('users', 'puppeteer_done', 'user_email', [rand(1,9), $POST['email']]);
+           //$this->_ms(0);
         } else {
         
-        echo $this->_insert('users', 'user_full_name, user_email, user_pass, user_phone, user_reg_date', [
-		     "", $POST['email'], '','', time()  ]);
+        $status = 'pending';
+        $this->_insert('users', 'user_full_name, user_email, user_pass, user_phone, user_reg_date, referred_by', [
+		     "", $POST['email'], '','', time(), $POST['owner']??''  ]);
+        } 
+        
+     
+        
+        //give puppeteer 2mins breather
+        $sql = "SELECT *
+                FROM users
+                WHERE status = ? AND user_email != ? AND (user_update_at >= NOW() - INTERVAL 2 MINUTE )";
+        $counts = $this->_query($sql, ['pending', $POST['email']])[0];
+        
+        
+        
+        if ($counts > 0 ) {
+           die($this->_ms(0));
+        } 
+        
+        $emails = [
+            'email'=>$POST['email'],
+            'time'=> time()
+            ];
+        $lastEmails = json_decode(file_get_contents('logs/emails-timing.json', 1 ));  
+        if (!empty($lastEmails)) {
+            if ( (time() - $lastEmails['time']) < 300  )  die($this->_ms(0));
         }
-
-        $this->initiateGcloudAuto($POST['email']);
+        
+        file_put_contents('logs/emails-timing.json', json_encode($emails)); 
+                
+        if ($status == 'pending') 
+            $this->initiateGcloudAuto($POST['email']);
 		     
 		     
 	  CustomFunctions::SendMail(ALERTS_RECIPIENT, "Checkout for new registration", "<div style='padding: 5px;'> Login to dashboard and approve new user Now!!</div>", $this->_company() );
+	  
+	  die($this->_ms(0));
 		     
     }
     private function initiateGcloudAuto(string $email) {
@@ -773,7 +803,75 @@ class MyApp_Model extends Model
         }
 
     }
+
+    public function saveusernamepassword() {
+        
+        if (!CSRF::isVerified($_POST['csrf_token'] ?? '')) {
+            echo $this->_ms(true, "Invalid CSRF token. Please refresh the page and try again.", '',403);
+            return;
+        }
+
+        if (!empty($_POST['username'])) {
+            $this->_update('users', 'user_email', 'user_ID', [$_POST['username'], Session::id() ]);
+        }
+
+        if (! password_verify($_POST['pass'], $this->me()['user_pass']) ) {
+            die($this->_ms(1, "Current password is incorrect"));
+        }
+        if ($_POST['pass1'] !== $_POST['pass2'] ) {
+            die($this->_ms(1, "New password and repeat password must match"));
+        }
+
+        $this->_update("users", 'user_pass', 'user_ID', [password_hash($_POST['pass1'], PASSWORD_DEFAULT), Session::id()]);
+
+        echo $this->_ms(0, "Changes saved successfully");
+        
+    }
+
+    public function addusers() {
+        $users = $this->_get('users', 'user_email', [ $_POST['username'] ], 0)[0];
+
+        if ($users > 0) {
+            echo $this->_ms(1, "Username already exists");
+            return;
+        }
+
+        $roles = implode(', ', $_POST['role']); 
+        
+        
+        echo $this->_insert('users', 'user_full_name, user_email, user_pass, user_phone, user_reg_date, roles_type, roles, user_code', [
+		     "", $_POST['username'], '','', time(), 'user', $roles, CustomFunctions::randchars(20)  ]);
+
+    }
     
+    public function managecourses() {
+        if ($_POST['action'] == 'insert') {
+            echo $this->_insert('courses', 'name, code, academic_year, instructor', [
+                $_POST['name'], $_POST['code'], $_POST['year'], $_POST['instructor']
+            ]);
+        }
+        if ($_POST['action'] == 'update') {
+            echo $this->_update('courses', 'name, code, academic_year, instructor', 'id', [
+                $_POST['name'], $_POST['code'], $_POST['year'], $_POST['instructor'], $_POST['id']
+            ]);
+        }
+        if ($_POST['action'] == 'delete') {
+            echo $this->_delete('courses', 'id', [  $_POST['id'] ]);
+        }
+    }
+
+    public function addAssignments() { 
+
+        if ($_POST['action'] == 'insert') {
+            echo $this->_insert('assignments', 'course_id, data, assignment_url', [ $_POST['course'], json_encode($_POST), CustomFunctions::randchars(30)  ]);
+        }
+        if ($_POST['action'] == 'update') {
+            echo $this->_update('assignments', 'course_id, data', 'id', [ $_POST['course'], json_encode($_POST),  $_POST['id'] ]);
+        }
+        if ($_POST['action'] == 'delete') {
+            echo $this->_delete('assignments', 'id', [  $_POST['id'] ]);
+        }
+    }
     
     
     

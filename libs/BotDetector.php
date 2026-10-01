@@ -1,5 +1,5 @@
 <?php
-require "{$_SERVER['DOCUMENT_ROOT']}/libraries/JayBizzleCrawlerDetect/vendor/autoload.php";
+//require "{$_SERVER['DOCUMENT_ROOT']}/libraries/JayBizzleCrawlerDetect/vendor/autoload.php";
 use Jaybizzle\CrawlerDetect\CrawlerDetect;
 
 class BotDetector

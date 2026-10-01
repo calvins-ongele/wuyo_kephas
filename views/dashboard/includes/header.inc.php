@@ -32,6 +32,20 @@
         --surface: white;
         --border: lightgrey;
         --ink: black;
+        --muted: #6b6b6b;
+      }
+      .hidden {
+        display: none !important;
+      }
+      .tab_active {
+        border-bottom: 3px solid black !important;
+      }
+      .activeTab {
+        border-bottom: 3px solid white !important;
+      }
+      .activeTabFilter {
+        background:black!important;
+        color:white !important;
       }
     </style>
 

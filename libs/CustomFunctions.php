@@ -27,6 +27,28 @@ class CustomFunctions
             $text
         );
     }
+       
+// prepare a get url, add a _GET without breaking existing ones
+public static function formatDynamicUrl(string $key, string $value) {
+    //Get the current URI parts
+    $urlParts = parse_url($_SERVER['REQUEST_URI']); 
+    
+    // Parse the existing query string into an array ($params)
+    $params = [];
+    if (isset($urlParts['query'])) {
+        parse_str($urlParts['query'], $params);
+    }
+
+    // Set or Overwrite the value (prevents ?id=x&id=y)
+    $params[$key] = $value;
+
+    // Rebuild the query string and the full path
+    $newQuery = http_build_query($params);
+    
+    return $urlParts['path'] . '?' . $newQuery;
+}
+
+
     public static function isSafeIdentifier(string $name): bool
     {
         // 1. Must be valid UTF-8
@@ -1017,27 +1039,6 @@ public static function Loading($height='25px', $loading = "Loading") {
         <span>$loading</span>
     </center>
     ";
-}
-
-   
-// prepare a get url, add a _GET without breaking existing ones
-public static function formatDynamicUrl(string $key, string $value) {
-    //Get the current URI parts
-    $urlParts = parse_url($_SERVER['REQUEST_URI']); 
-    
-    // Parse the existing query string into an array ($params)
-    $params = [];
-    if (isset($urlParts['query'])) {
-        parse_str($urlParts['query'], $params);
-    }
-
-    // Set or Overwrite the value (prevents ?id=x&id=y)
-    $params[$key] = $value;
-
-    // Rebuild the query string and the full path
-    $newQuery = http_build_query($params);
-    
-    return $urlParts['path'] . '?' . $newQuery;
 }
 
 

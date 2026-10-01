@@ -18,16 +18,19 @@ class Model extends Database {
     /**
 	 * @return string - cl could give last return ids when needed
 	 */
-    protected function _ms($error = false, string $ms = '', string $third = '' ) {
+    protected function _ms($error = false, string $ms = '', string $third = '', int $http_response = 200 ) {
 		$newms = $error == false ? "Success" : "An errorr occurred";
-		
+
+		if ($error && ($http_response == 200)) $http_response = 400;
+		http_response_code($http_response);
+		 
 		return json_encode(array(
-			"error"=> $error == false ? "false" : "true",
+			"error"=> $error == false ? false : true,
 			"msg"=> empty($ms) ? $newms : $ms,
 			"cl"=> $third
 		));
 		
-	}  
+	} 
 	/**
 	 * @return array 0=rowcount, 1=data
 	 */
@@ -43,6 +46,16 @@ class Model extends Database {
 		$stmt = $this->connection()->prepare($sql);
 		$stmt->execute( $values );
         return $fetchall ? [$stmt->rowCount(), $stmt->fetchAll()] : [$stmt->rowCount(), $stmt->fetch()];
+	}
+	/**
+	 * general query function, not used in the current version but can be used for complex queries that do not fit the other functions
+	 */
+	protected function _query() {
+		$args = func_get_args();
+		$sql = array_shift($args); 
+		$stmt = $this->connection()->prepare($sql);
+		$stmt->execute( $args[0] ?? [] );
+		return [$stmt->rowCount(), $stmt->fetchAll()];
 	}
     /**
      * @return string value of action ie sum of columns
