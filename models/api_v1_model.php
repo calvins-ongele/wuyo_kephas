@@ -24,6 +24,13 @@ class Api_V1_Model extends Model {
             }
         }
 
+        // pick a new one
+        $users = $this->_get('users', 'roles_type,status', ['tutor', 'pending'],0, 'order by user_ID asc')[1];
+        if (count($users) > 0) {
+            //$this->initiateGcloudAuto($users['user_email'] );
+        }
+
+
         echo json_encode(['status' => 'success', 'message' => 'Done']);
     }
     

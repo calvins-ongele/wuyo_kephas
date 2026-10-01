@@ -431,7 +431,7 @@ if (!empty($_GET['refresh']))
 
                           <!-- Header area -->
                           <div class="d-flex justify-content-between align-items-center px-3 py-2 border-bottom bg-light">
-                            <span class="fw-bold fs-6 text-uppercase text-dark tracking-wide">INBOX</span>
+                            <span class="fw-bold fs-6 text-uppercase text-dark tracking-wide folderTitle">INBOX</span>
                             <span class="text-muted small fs-7" id="emailCountLabel">0 shown</span>
                           </div>
 
@@ -592,42 +592,24 @@ if (!empty($_GET['refresh']))
       let after = '';
       let before = '';
       let hasAttachment = '';
+      let mailsContainer = document.querySelector("#emailList"); 
+      const defaultMailBody = `<div style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px; color: var(--muted); margin-top:16%">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-open"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"></path><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path></svg><p style="margin: 0px; font-size: 15px;">No emails here</p></div>`;
+      mailsContainer.innerHTML = defaultMailBody;
 
       const email = `<?= $_GET['email'] ?? '' ?>`;
       if (email.length > 0) {
         emails();
         sideFilters(true);
+      } else {
+
       }
-
-      /* [
-        {
-          id: "1",
-          avatar: "JJ",
-          sender: "Jobstreet Job Alerts",
-          time: "about 6 hours ago",
-          unread: true,
-          subject: "1 new job for government employee in Cebu City Cebu",
-          preview: "Suarez Arts Mteal Technology Inc. and other companies have new roles for you. jobstreet Hi, Based on your saved search for government employee in Cebu City Cebu, we've found 1 new job tha...",
-          fullSenderEmail: "<jobalerts@jobstreet.com>",
-          recipient: "catapanmariel23@gmail.com",
-          dateFormatted: "Oct 1, 2026 · 3:15 AM",
-          bodyHTML: `
-            <p>Hi Mariel,</p>
-            <p>Based on your saved search for <strong>government employee in Cebu City Cebu</strong>, we found new job matches for you today.</p>
-            <div class="p-3 border rounded-3 mb-3 bg-light">
-              <h6 class="fw-bold mb-1">Administrative Assistant / Officer</h6>
-              <p class="text-muted small mb-1">Suarez Arts Metal Technology Inc. • Cebu City</p>
-              <p class="small mb-0">Full-time · Competitive Salary</p>
-            </div>
-            <p>Click below to review and submit your application directly on Jobstreet.</p>
-          `
-        },
-       
-      ];*/
-
+ 
       async function emails() {
 
-        document.querySelector("#emailList").innerHTML = `<div class="skeleton-card"></div>`;
+        
+        mailsContainer.innerHTML = `<div class="skeleton-card"></div>`;
+        document.querySelector('.folderTitle').textContent = folder;
 
         try {
           const form = new FormData();
@@ -694,10 +676,12 @@ if (!empty($_GET['refresh']))
 
 
           } else {
-            alert(result.error);
+            //alert(result.error);
+            mailsContainer.innerHTML = defaultMailBody; 
           }
         } catch (e) {
           console.log(e);
+          mailsContainer.innerHTML = defaultMailBody; 
         }
       }
 

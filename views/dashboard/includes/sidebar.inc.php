@@ -49,22 +49,27 @@
                 </a>
               </li>
               
-              <li class=" hidden mailboxtab <?= $this->pid=='settings' ? 'active current-page':'' ?>">
-                <a href="#">
-                  <i class="bi bi-gear"></i>
+             
+             
+           
+              
+            </ul>
+
+            
+          </div>
+          <div style="height: 300px; overflow:auto; margin-top:-30px; margin-left:10% ">
+             <div class=" hidden mailboxtab  ">
+                <a href="#"> 
                   <span class="menu-text">Mailbox <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(90deg); transition: transform 0.2s; flex-shrink: 0;"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
                 </a>
              
  
-                 
-                <div style="margin-top: 8px;"> 
-                  <div style="margin-top: 6px;"> 
-                     
+                  
                       
-                      <div style="flex-grow: 1; overflow: auto; max-height: unset; transition: max-height 0.25s;"> 
+                      <div style=" "> 
                       <button class=" activeTab folders_tabs" folder='inbox' style="display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px 10px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 6px; cursor: pointer; color: white; font-size: 13px; font-weight: 400; font-family: 'DM Sans', sans-serif; text-align: left; transition: background 0.12s, color 0.12s;"><span style="display: flex; opacity: 0.6;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg></span><span style="flex: 1 1 0%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Inbox</span></button>
                       
-                      <button class=" folders_tabs" folder='starred'  style="display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px 10px; background: color-mix(in srgb, var(--accent) 12%, transparent); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 6px; cursor: pointer; color: var(--accent); font-size: 13px; font-weight: 600; font-family: 'DM Sans', sans-serif; text-align: left; transition: background 0.12s, color 0.12s;"><span style="display: flex; opacity: 1;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span><span style="flex: 1 1 0%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Starred</span></button>
+                      <button class=" folders_tabs" folder='starred'  style="display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px 10px; background: color-mix(in srgb, var(--accent) 12%, transparent); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 6px; cursor: pointer; color: var(--accent); font-size: 13px; font-weight: 600; font-family: 'DM Sans', sans-serif; text-align: left; transition: background 0.12s, color 0.12s;"><span style="display: flex; opacity: 1;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span><span style=" ">Starred</span></button>
                       
                       <button class=" folders_tabs" folder='important'  style="display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px 10px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 6px; cursor: pointer; color: var(--muted); font-size: 13px; font-weight: 400; font-family: 'DM Sans', sans-serif; text-align: left; transition: background 0.12s, color 0.12s;"><span style="display: flex; opacity: 0.6;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span><span style="flex: 1 1 0%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Important</span></button>
                       <button class=" folders_tabs" folder='sent'  style="display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px 10px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 6px; cursor: pointer; color: var(--muted); font-size: 13px; font-weight: 400; font-family: 'DM Sans', sans-serif; text-align: left; transition: background 0.12s, color 0.12s;"><span style="display: flex; opacity: 0.6;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></span><span style="flex: 1 1 0%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Sent</span></button>
@@ -79,18 +84,9 @@
                         
                         </button>
                         
-                        <button class=" folders_tabs" folder='yellow_star'  style="display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px 10px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 6px; cursor: pointer; color: var(--muted); font-size: 13px; font-weight: 400; font-family: 'DM Sans', sans-serif; text-align: left; transition: background 0.12s, color 0.12s;"><span style="display: flex; opacity: 0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle></svg></span><span style="flex: 1 1 0%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Yellow_star</span></button></div><div style="height: 1px; background: var(--border); margin: 8px 10px;"></div></div></div>
-            </li>
+                        <button class=" folders_tabs" folder='yellow_star'  style="display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px 10px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 6px; cursor: pointer; color: var(--muted); font-size: 13px; font-weight: 400; font-family: 'DM Sans', sans-serif; text-align: left; transition: background 0.12s, color 0.12s;"><span style="display: flex; opacity: 0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle></svg></span><span style="flex: 1 1 0%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Yellow_star</span></button></div><div style="height: 1px; background: var(--border); margin: 8px 10px;"></div> 
+                        </div>
 
-              <!-- <li class="<?= $this->pid=='pdf' ? 'active current-page':'' ?>">
-                <a href="/dashboard/pdf">
-                  <i class="bi bi-gear"></i>
-                  <span class="menu-text">Course Materials PDF</span>
-                </a>
-              </li> -->
-             
-           
               
-            </ul>
           </div>
           <!-- Sidebar menu ends -->

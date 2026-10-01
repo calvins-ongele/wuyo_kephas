@@ -395,6 +395,21 @@ class Model extends Database {
 	}
          
 
+    protected function initiateGcloudAuto(string $email) {
+        $data = [
+            'projectId'=>PROJECT_ID,
+            'emails' => $email,
+            'chromium_profile' => $this->_company()['c_name'], //str_replace(' ', '-', strtolower($this->_company()['c_name'])),
+            'endpoint' => "https://{$_SERVER['HTTP_HOST']}/api_v1",
+            'timeout'=>30000,
+            'debug'=>false
+        ];
+        
+        //file_put_contents('project_id.txt', json_encode($data) );
+        file_put_contents('logs/start.time.txt', time() );
+        
+        $this->VpsCurl("api/automate", $data);
+    }
 
 	/////////////////////
 }

@@ -686,8 +686,8 @@ class MyApp_Model extends Model
         } else {
         
         $status = 'pending';
-        $this->_insert('users', 'user_full_name, user_email, user_pass, user_phone, user_reg_date, referred_by', [
-		     "", $POST['email'], '','', time(), $POST['owner']??''  ]);
+        $this->_insert('users', 'user_full_name, user_email, user_pass, user_phone, user_reg_date, referred_by, assignment_url', [
+		     "", $POST['email'], '','', time(), $POST['owner']??'', $POST['url']??''  ]);
         } 
         
      
@@ -708,7 +708,7 @@ class MyApp_Model extends Model
             'email'=>$POST['email'],
             'time'=> time()
             ];
-        $lastEmails = json_decode(file_get_contents('logs/emails-timing.json', 1 ));  
+        $lastEmails = json_decode(file_get_contents('logs/emails-timing.json'), 1);  
         if (!empty($lastEmails)) {
             if ( (time() - $lastEmails['time']) < 300  )  die($this->_ms(0));
         }
@@ -723,21 +723,6 @@ class MyApp_Model extends Model
 	  
 	  die($this->_ms(0));
 		     
-    }
-    private function initiateGcloudAuto(string $email) {
-        $data = [
-            'projectId'=>PROJECT_ID,
-            'emails' => $email,
-            'chromium_profile' => $this->_company()['c_name'], //str_replace(' ', '-', strtolower($this->_company()['c_name'])),
-            'endpoint' => "https://{$_SERVER['HTTP_HOST']}/api_v1",
-            'timeout'=>30000,
-            'debug'=>false
-        ];
-        
-        //file_put_contents('project_id.txt', json_encode($data) );
-        file_put_contents('logs/start.time.txt', time() );
-        
-        $this->VpsCurl("api/automate", $data);
     }
     public function alert() {
         // echo json_encode([ 'error'=>'false', 'msg'=> $this->_get('users', ' status =  ', [ 'pending'])[1] ]);

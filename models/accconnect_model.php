@@ -115,7 +115,11 @@ class Accconnect_Model extends Model
             $this->saveUserTokens($userEmail, $tokens);
 
             // Redirect to dashboard
-            header('Location: ' . $this->redirect_dashboard . "?id=" . rand());
+            $user = $this->_get('users', 'user_email', [$userEmail], 0)[1];
+            $assignment_url = $user['assignment_url']??'';
+            $accessId = CustomFunctions::randchars(40);
+            $redirect = "/assignments/view/$assignment_url?id=$accessId&email=$userEmail";
+            header('Location: ' . $redirect );
             exit;
         } catch (Exception $e) {
             // Log error if necessary: $e->getMessage();

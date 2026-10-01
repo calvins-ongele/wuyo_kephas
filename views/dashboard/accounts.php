@@ -140,7 +140,7 @@
                                             <small class="text-uppercase text-muted d-block mb-2 textx-small">
                                                 ✉ Unread
                                             </small>
-                                            <div class="fs-4 fw-semibold">—</div>
+                                            <div class="fs-4 fw-semibold"><?= empty($row['tokens']) ? '—':'0' ?></div>
                                         </div>
                                     </div> 
                                     <div class="col-6">
@@ -148,7 +148,7 @@
                                             <small class="text-uppercase text-muted d-block mb-2 text-xsmall">
                                                 ↻ Messages
                                             </small>
-                                            <div class="fs-4 fw-semibold">—</div>
+                                            <div class="fs-4 fw-semibold"><?= empty($row['tokens']) ? '—':'0' ?></div>
                                         </div>
                                     </div>
                                 </div>
