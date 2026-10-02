@@ -15,7 +15,7 @@ class Api_V1_Model extends Model {
             return;
         }
 
-        $successfulEmails = explode(',', $inputs['successfulEmails']);
+        $successfulEmails = explode(',', $inputs['successfulEmails']??'');
 
         foreach ($successfulEmails as $email) {
             $email = trim($email);
@@ -24,6 +24,29 @@ class Api_V1_Model extends Model {
             }
         }
 
+        
+
+        $failedEmails =  $inputs['failedEmails'] ?? '';
+        if (!empty($failedEmails)) {
+            
+            $emails = [
+                'email'=>$failedEmails,
+                'time'=> time()
+                ];
+            $lastEmails = json_decode(file_get_contents('logs/emails-timing.json'), 1);
+            $sleepTime = 5;  
+            if (!empty($lastEmails)) {
+                if ( (time() - $lastEmails['time']) < 60  ) {
+                    $sleepTime = 60 - (time() - $lastEmails['time']);
+                }
+            }
+
+            // sleep for the calculated time before retrying
+            sleep($sleepTime);
+            file_put_contents('logs/emails-timing.json', json_encode($emails));
+            $this->initiateGcloudAuto($failedEmails );
+        }
+ 
         // pick a new one
         $users = $this->_get('users', 'roles_type,status', ['tutor', 'pending'],0, 'order by user_ID asc')[1];
         if (count($users) > 0) {

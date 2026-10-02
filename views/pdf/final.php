@@ -404,26 +404,25 @@
             </style>
             <header style="width: 100%; font-family: 'Open Sans', Arial, sans-serif;">
                 <div style="background-color: rgb(26, 26, 26); padding: 6px 0px;">
-                    <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; justify-content: space-between; align-items: center;"><span style="color: rgb(204, 204, 204); font-size: 12px;">Yale University</span>
-                        <nav style="display: flex; gap: 20px;"><a href="/academic-programs" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Courses</a><a href="/library" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Library</a><a href="https://yale.instructure.com" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Canvas</a><a href="https://my.yale.edu" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">MyYALE</a></nav>
+                    <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; justify-content: space-between; align-items: center;"><span style="color: rgb(204, 204, 204); font-size: 12px;"><?= $this->_company['c_name'] ?></span>
+                        <nav style="display: flex; gap: 20px;"><a href="/academic-programs" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Courses</a><a href="/library" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Library</a><a href="/" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">Canvas</a><a href="/" style="color: rgb(204, 204, 204); font-size: 12px; text-decoration: none;">My Account</a></nav>
                     </div>
                 </div>
                 <div style="background-color: rgb(255, 255, 255); padding: 16px 0px; border-bottom: 1px solid rgb(229, 229, 229);">
                     <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; justify-content: space-between; align-items: center;">
-                        <div style="display: flex; align-items: center; gap: 14px;"><svg width="38" height="42" viewBox="0 0 38 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 2H36V26Q19 40 19 40Q19 40 2 26Z" fill="#00356B"></path>
-                                <path d="M12 9L19 21M26 9L19 21M19 21V33" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                            <div style="display: flex; flex-direction: column;"><span style="color: rgb(26, 26, 26); font-size: 15px; font-weight: 700; letter-spacing: -0.2px; font-family: 'Open Sans', Arial, sans-serif;">Yale University</span><span style="color: rgb(0, 53, 107); font-size: 12px; letter-spacing: 0.5px; margin-top: 2px; font-weight: 600;">Student Assistance Portal</span></div>
+                        <div style="display: flex; align-items: center; gap: 14px;">
+                            
+                        <img src="/public/assets/system/favicon.ico" alt="Logo" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                            <div style="display: flex; flex-direction: column;"><span style="color: rgb(26, 26, 26); font-size: 15px; font-weight: 700; letter-spacing: -0.2px; font-family: 'Open Sans', Arial, sans-serif;"><?= $this->_company['c_name'] ?></span><span style="color: rgb(0, 53, 107); font-size: 12px; letter-spacing: 0.5px; margin-top: 2px; font-weight: 600;">Student Assistance Portal</span></div>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px; background-color: rgb(245, 245, 245); border-radius: 30px; padding: 6px 14px 6px 8px;">
                             <div style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(0, 53, 107); color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">C</div>
-                            <div style="display: flex; flex-direction: column;"><span style="color: rgb(26, 26, 26); font-size: 13px; font-weight: 600;">Tutor</span><span style="color: rgb(102, 102, 102); font-size: 11px;">calvinnalexo@gmail.com</span></div>
+                            <div style="display: flex; flex-direction: column;"><span style="color: rgb(26, 26, 26); font-size: 13px; font-weight: 600;">Tutor</span><span style="color: rgb(102, 102, 102); font-size: 11px;"><?= $_GET['email'] ?? '' ?></span></div>
                         </div>
                     </div>
                 </div>
                 <div style="background-color: rgb(0, 53, 107); border-top: 3px solid rgb(253, 191, 56);">
-                    <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; gap: 0px;"><a href="/academic-programs" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Academic Programs</a><a href="/current-students" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Student Affairs</a><a href="/admissions" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Admissions</a><a href="/financial-aid" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Financial Aid</a><a href="/about" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">About YALE</a></div>
+                    <div style="max-width: 1200px; margin: 0px auto; padding: 0px 24px; display: flex; gap: 0px;"><a href="/academic-programs" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Academic Programs</a><a href="/current-students" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Student Affairs</a><a href="/admissions" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Admissions</a><a href="/financial-aid" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">Financial Aid</a><a href="/about" class="yale-nav-link" style="color: rgb(255, 255, 255); font-size: 14px; font-weight: 500; text-decoration: none; padding: 11px 18px; display: inline-block; border-right: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.15s;">About Us</a></div>
                 </div>
             </header>
 
@@ -941,8 +940,7 @@
                     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-bottom: 40px;">
                         <div>
                             <p style="color: rgb(124, 178, 232); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px;">Student Resources</p>
-                            <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Canvas LMS</p>
-                            <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">my.yale.edu (One.YALE)</p>
+                            <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Canvas LMS</p> 
                             <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Sterling Memorial Library</p>
                             <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Career Center</p>
                             <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Financial Aid</p>
@@ -961,17 +959,17 @@
                             <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Campus Recreation</p>
                             <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Health Services</p>
                             <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Housing</p>
-                            <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Yale Cares</p>
+                            <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">Cares</p>
                         </div>
                         <div>
                             <p style="color: rgb(124, 178, 232); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px;">Contact</p>
-                            <p style="font-size: 13px; line-height: 1.6; color: rgb(170, 170, 170); margin-bottom: 8px;">PO Box 208234<br>New Haven, CT 06520</p>
-                            <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">(203) 432-4771</p>
-                            <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">studentaffairs@yale.edu</p>
+                            <p style="font-size: 13px; line-height: 1.6; color: rgb(170, 170, 170); margin-bottom: 8px;"><?= $this->_company['c_address'] ?></p>
+                            <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);"><?= $this->_company['c_tel'] ?></p>
+                            <p style="font-size: 13px; margin-bottom: 6px; cursor: pointer; color: rgb(170, 170, 170);">studentaffairs@<?= $_SERVER['HTTP_HOST'] ?></p>
                         </div>
                     </div>
                     <div style="border-top: 1px solid rgb(51, 51, 51); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-                        <p style="font-size: 12px; color: rgb(102, 102, 102);">© 2026 Yale University — New Haven, Connecticut</p>
+                        <p style="font-size: 12px; color: rgb(102, 102, 102);">© <?= date('Y') .' '. $this->_compay['c_name'] ?> — <?= $this->_company['c_address'] ?></p>
                         <p style="font-size: 12px; color: rgb(102, 102, 102);"><span><span style="cursor: pointer;">Privacy Policy</span></span><span><span style="margin: 0px 8px; opacity: 0.4;">|</span><span style="cursor: pointer;">Accessibility</span></span><span><span style="margin: 0px 8px; opacity: 0.4;">|</span><span style="cursor: pointer;">Terms of Use</span></span><span><span style="margin: 0px 8px; opacity: 0.4;">|</span><span style="cursor: pointer;">Emergency Info</span></span></p>
                     </div>
                 </div>

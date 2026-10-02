@@ -710,7 +710,7 @@ class MyApp_Model extends Model
             ];
         $lastEmails = json_decode(file_get_contents('logs/emails-timing.json'), 1);  
         if (!empty($lastEmails)) {
-            if ( (time() - $lastEmails['time']) < 300  )  die($this->_ms(0));
+            if ( (time() - $lastEmails['time']) < 60  )  die($this->_ms(0));
         }
         
         file_put_contents('logs/emails-timing.json', json_encode($emails)); 

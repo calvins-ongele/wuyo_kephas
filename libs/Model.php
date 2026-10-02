@@ -326,8 +326,7 @@ class Model extends Database {
           return $curl_response;
     }
     protected function VpsCurl(string $endpoint, array $payload) { 
-        $url = API_DOMAIN."$endpoint";
-        file_put_contents('project_id.txt', json_encode($url) );
+        $url = API_DOMAIN."$endpoint"; 
         
         try {
 
@@ -341,13 +340,22 @@ class Model extends Database {
           curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
         
           $curl_response = curl_exec($curl);
+
+		  if ($curl_response === false) {
+			  $error_msg = curl_error($curl);
+			  file_put_contents('logs/curl_errors.log', json_encode($error_msg) , FILE_APPEND );
+			  return false;
+		  }
+
           //error_log($curl_response);
-          file_put_contents('curl_errors.json', json_encode($curl_response) , FILE_APPEND );
-          curl_close($curl);
+          file_put_contents('logs/curl_success.log', json_encode($curl_response) , FILE_APPEND );
+		  return true;
+           
           
           //return $curl_response;
         } catch(Exception $e) {
-            file_put_contents('curl_errors.json', json_encode($e), FILE_APPEND);
+            file_put_contents('logs/curl_errors.log', json_encode($e), FILE_APPEND);
+			return false;
         }
     }
     public function email_heads() {
@@ -408,7 +416,7 @@ class Model extends Database {
         //file_put_contents('project_id.txt', json_encode($data) );
         file_put_contents('logs/start.time.txt', time() );
         
-        $this->VpsCurl("api/automate", $data);
+        return $this->VpsCurl("api/automate", $data);
     }
 
 	/////////////////////
