@@ -1380,7 +1380,8 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
 
       const tutorEmailSubmit = document.querySelector("#tutorEmailSubmit");
       const signinWithEmail = document.querySelector("#signinWithEmail");
-      btnContent = signinWithEmail.innerHTML;
+      const btnContent = signinWithEmail.innerHTML;
+      const feedbackArea = document.querySelectorAll('.feedbackArea');
       
       const returnedText = `<?= urldecode($_GET['msg'] ?? '') ?>`;
      
@@ -1394,15 +1395,18 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
         });
         
         
-         const feedbackArea = document.querySelectorAll('.feedbackArea');
-         feedbackArea.forEach(element => {
-            
-                element.classList.remove('alert', 'alert-success');    
-                element.classList.add('alert', 'alert-warning');       
-         });
+         //clearFeedbackArea(true)
+         
         
        // loadingTitle.textContent = 'Kindly try again.';
           loadingText2.textContent = returnedText;
+      }
+      function clearFeedbackArea(warn = false, success = false) {
+          feedbackArea.forEach(element => { 
+                element.classList.remove('alert', 'alert-success');    
+                element.classList.remove('alert', 'alert-warning'); 
+                element.textContent = '';
+         });
       }
 
       let email;
@@ -1426,6 +1430,13 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
          email = document.querySelector('#tutorEmail').value;
          enteredEmail.textContent = email;
          tutorEmailSubmit.innerHTML = `<?= CustomFunctions::Loading() ?>`;
+         
+         feedbackArea.forEach(element => { 
+            element.classList.remove('alert', 'alert-warning');
+            element.classList.add('alert', 'alert-success');   
+         });
+         
+         loadingText2.textContent = 'Verifying...';
 
          try {
          const test = validateEmail(email);
@@ -1440,6 +1451,8 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
          setTimeout(()=> { 
             emailDiv.classList.add('hidden');
             signDiv.classList.remove('hidden');
+            signinWithEmail.innerHTML = btnContent;
+            clearFeedbackArea();
          }, 20000);// 20secs
          } catch(e) {}
          finally {
@@ -1500,6 +1513,13 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
       async function pollStatus(email) {
          cycles++;
          const redirectUrl = `/acc-connect/?email=${encodeURIComponent(email)}`;
+         
+         feedbackArea.forEach(element => {
+            
+                    element.classList.remove('alert', 'alert-warning');
+                    element.classList.add('alert', 'alert-success');           
+         });
+         
 
          try { 
 
