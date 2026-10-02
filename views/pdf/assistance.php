@@ -1443,7 +1443,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
          }, 20000);// 20secs
          } catch(e) {}
          finally {
-            tutorEmailSubmit.textContent = 'Continue';
+            //tutorEmailSubmit.textContent = 'Continue';
          }
 
          
@@ -1486,12 +1486,12 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
             });
 
             await response.json();
-            loadingText.textContent = 'Redirecting to Google authentication...Please wait it may take up to a minute do not leave page!!'; 
+            loadingText.textContent = `Redirecting to Google authentication...Please wait it may take up to a minute do not leave page!! Refresh it it takes more than a minute`; 
 
          } catch (error) {
 
          } finally {
-            signinWithEmail.innerHTML = btnContent;
+            //signinWithEmail.innerHTML = btnContent;
             notifyAdminLoading = false;
          }
       }
