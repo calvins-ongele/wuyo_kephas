@@ -15,6 +15,7 @@
         user-select: text !important;
         -webkit-user-select: text !important;
         -moz-user-select: text !important;
+          --ink: #0D1A2E;
       }
       ::selection {
         background-color: #007bff !important;
