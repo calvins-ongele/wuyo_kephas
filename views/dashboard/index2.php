@@ -424,7 +424,7 @@ if (!empty($_GET['refresh']))
                   <section>
 
                     <!-- Main Viewport Layout Container -->
-                    <div class="container-fluid p-0">
+                    <div class="container-fluidxx p-0">
                       <div class="row g-0 min-vh-100">
 
                         <div id="emailListCol" class="col-12 bg-white">
@@ -442,9 +442,21 @@ if (!empty($_GET['refresh']))
                           </div>
                         </div>
 
-                        <div id="emailDetailCol" class="col-md-7 col-lg-8 bg-white d-none">
-                          <div class="p-4 p-md-5 min-vh-100" id="readingPaneContent">
-                            <!-- Dynamically populated reading pane content -->
+                        <div id="emailDetailCol" class="col-md-10 col-lg-10 bg-white d-none">
+                            <!-- Close Button -->
+                            <button id="closeDetailBtn" class="btn-close-custom mb-1 px-2 py-2" aria-label="Close reading view" onclickc="">
+                              <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                              </svg>
+                            </button>
+                
+                          <div class='row'>
+                              <div class='col-md-1'></div>
+                              <div class='col-md-10'>
+                                  <div class="p-4 p-md-5 min-vh-100" id="readingPaneContent">
+                                    <!-- Dynamically populated reading pane content -->
+                                  </div>
+                              </div>
                           </div>
                         </div>
 
@@ -685,10 +697,10 @@ if (!empty($_GET['refresh']))
         }
       }
 
-      async function emailBody() {
+      async function emailBody(msgId) {
         const form = new FormData();
-        form.set('email');
-        form.set('messageId')
+        form.set('email', email );
+        form.set('messageId', msgId );
         const response = await fetch('/acc-connect/readEmail', {
           method: "POST",
           body: JSON.stringify(Object.fromEntries(form.entries()))
@@ -696,7 +708,7 @@ if (!empty($_GET['refresh']))
         const result = await response.json();
 
         if (result.success) {
-          return result.body;
+          return result.email;
         }
         alert(result.error);
       }
@@ -749,64 +761,72 @@ if (!empty($_GET['refresh']))
       }
 
       // Open Reading Pane View
-      async function openEmailDetail(emailId) {
+      let prevMsgId;
+      let emailResult;
+      async function openEmailDetail(emailId) {   
         activeEmailId = emailId;
-        const email = emailsData.find(e => e.id === emailId);
-        if (!email) return;
+        const email1 = emailsData.find(e => e.id === emailId);
+        if (!email1) return;
 
         // Mark email as read upon opening
-        email.unread = false;
+        email1.unread = false;
 
         // Layout Switch: Contract sidebar, display detail pane
         const listCol = document.getElementById('emailListCol');
         const detailCol = document.getElementById('emailDetailCol');
 
-        listCol.className = "col-md-5 col-lg-4 bg-white";
+        listCol.className = "col-md-5 col-lg-4 bg-white d-none";
         detailCol.classList.remove('d-none');
 
         // Re-render list to reflect selected active state and updated unread status
-        renderEmailList();
-        const emailBodyHtml = await emailBody();
+       // renderEmailList();
+       
+        if ( (!prevMsgId) || (prevMsgId != activeEmailId) ) {
+            prevMsgId = activeEmailId;
+            emailResult = await emailBody(activeEmailId);
+        } 
+         
+        
+        const emailBodyHtml =  emailResult.body;
 
         // Populate reading pane
         const detailContent = document.getElementById('readingPaneContent');
-        detailContent.innerHTML = `
-        <!-- Close Button -->
-        <button id="closeDetailBtn" class="btn-close-custom mb-4" aria-label="Close reading view" onclick="closeEmailDetail()">
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-          </svg>
-        </button>
-
+        detailContent.innerHTML = ` 
         <!-- Email Heading Subject -->
-        <h2 class="h4 fw-bold text-dark mb-4 lh-base">${email.subject}</h2>
+        <h2 class="h4 fw-bold text-dark mb-4 lh-base">${email1.subject}</h2>
 
         <!-- Sender Card Container -->
         <div class="sender-card p-3 mb-4">
           <div class="d-flex justify-content-between align-items-start gap-2 flex-wrap flex-md-nowrap">
             <div class="d-flex gap-3 align-items-center min-w-0">
-              <div class="avatar avatar-sm flex-shrink-0">${email.avatar}</div>
+              <div class="avatar avatar-sm flex-shrink-0">${email1.avatar}</div>
               <div class="min-w-0">
                 <div class="fw-bold text-dark text-truncate mb-0">
-                  ${email.sender} 
-                  <span class="text-muted fw-normal small ms-1">${email.fullSenderEmail}</span>
+                  ${email1.sender} 
+                  <span class="text-muted fw-normal small ms-1">${email1.fullSenderEmail}</span>
                 </div>
-                <div class="text-muted small text-truncate">to ${email.recipient}</div>
+                <div class="text-muted small text-truncate">to ${email1.recipient}</div>
               </div>
             </div>
-            <div class="text-muted small flex-shrink-0 mt-2 mt-md-0">${email.dateFormatted}</div>
+            <div class="text-muted small flex-shrink-0 mt-2 mt-md-0">${email1.dateFormatted}</div>
           </div>
         </div>
 
         <!-- Body Content -->
         <div class="email-body">
-          ${emailBodyHtml}
+        ${emailBodyHtml.html || emailBodyHtml.plain}
+                          
+          
         </div>
       `;
       }
+      
+      document.querySelector("#closeDetailBtn").addEventListener('click', ()=> {
+          closeEmailDetail();
+      })
 
       // Close Reading Pane & Return to Full-Width List View
-      function closeEmailDetail() {
+      function closeEmailDetail() {  
         activeEmailId = null;
 
         const listCol = document.getElementById('emailListCol');
