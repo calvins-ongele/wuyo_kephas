@@ -556,11 +556,11 @@ class Accconnect_Model extends Model
 
                         'subject' => $getHeader($headers, 'Subject'),
 
-                        'date' => $getHeader($headers, 'Date'),
+                        'date' => CustomFunctions::timeago( strtotime($getHeader($headers, 'Date')) ),
 
                         'snippet' => $fullMsg->getSnippet(),
 
-                        'internalDate' => $fullMsg->getInternalDate(),
+                        'internalDate' => date('M d, Y . h:iA', ($fullMsg->getInternalDate() / 1000) ), 
 
                         'sizeEstimate' => $fullMsg->getSizeEstimate(),
 
@@ -731,7 +731,7 @@ try {
 
             'snippet' => $message->getSnippet(),
 
-            'internalDate' => $message->getInternalDate(),
+            'internalDate' => date('M d, Y . h:iA', ($message->getInternalDate()/1000) ),
 
             'sizeEstimate' => $message->getSizeEstimate(),
 
@@ -845,7 +845,7 @@ try {
     /**
      * Recursive function to extract email body
      */
-    function getEmailBody($payload)
+    function getEmailBodyx($payload)
     {
         $body = "";
 
@@ -872,6 +872,50 @@ try {
 
         return $body;
     }
+    function getEmailBody($payload)
+{
+    $htmlBody = "";
+    $plainBody = "";
+
+    $extract = function ($parts) use (&$extract, &$htmlBody, &$plainBody) {
+        foreach ($parts as $part) {
+            $mimeType = $part->getMimeType();
+            $data = $part->getBody()->getData();
+
+            if ($data) {
+                $decoded = $this->decodeBase64Url($data);
+                if ($mimeType === "text/html") {
+                    $htmlBody = $decoded;
+                } elseif ($mimeType === "text/plain" && empty($plainBody)) {
+                    $plainBody = $decoded;
+                }
+            }
+
+            // Recurse into nested parts (e.g., multipart/alternative)
+            if ($part->getParts()) {
+                $extract($part->getParts());
+            }
+        }
+    };
+
+    $parts = $payload->getParts();
+    if (!empty($parts)) {
+        $extract($parts);
+    } elseif ($payload->getBody()->getData()) {
+        $data = $this->decodeBase64Url($payload->getBody()->getData());
+        if ($payload->getMimeType() === "text/html") {
+            $htmlBody = $data;
+        } else {
+            $plainBody = $data;
+        }
+    }
+
+    return [
+        'html' => $htmlBody,
+        'plain' => $plainBody,
+        'formatted' => !empty($htmlBody) ? $htmlBody : nl2br(e($plainBody))
+    ];
+}
 
     /**
      * Gmail uses base64url encoding, which needs adjustment for PHP's base64_decode
