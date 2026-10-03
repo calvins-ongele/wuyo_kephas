@@ -39,6 +39,7 @@
         background-color: #007bff !important;
         color: white !important;
       }
+      .alert{position:relative;padding:.75rem 1.25rem;margin-bottom:1rem;border:1px solid transparent;border-radius:.25rem}.alert-heading{color:inherit}.alert-link{font-weight:700}.alert-dismissible{padding-right:4rem}.alert-dismissible .close{position:absolute;top:0;right:0;padding:.75rem 1.25rem;color:inherit}.alert-primary{color:#004085;background-color:#cce5ff;border-color:#b8daff}.alert-primary hr{border-top-color:#9fcdff}.alert-primary .alert-link{color:#002752}.alert-secondary{color:#383d41;background-color:#e2e3e5;border-color:#d6d8db}.alert-secondary hr{border-top-color:#c8cbcf}.alert-secondary .alert-link{color:#202326}.alert-success{color:#155724;background-color:#d4edda;border-color:#c3e6cb}.alert-success hr{border-top-color:#b1dfbb}.alert-success .alert-link{color:#0b2e13}.alert-info{color:#0c5460;background-color:#d1ecf1;border-color:#bee5eb}.alert-info hr{border-top-color:#abdde5}.alert-info .alert-link{color:#062c33}.alert-warning{color:#856404;background-color:#fff3cd;border-color:#ffeeba}.alert-warning hr{border-top-color:#ffe8a1}.alert-warning .alert-link{color:#533f03}.alert-danger{color:#721c24;background-color:#f8d7da;border-color:#f5c6cb}.alert-danger hr{border-top-color:#f1b0b7}.alert-danger .alert-link{color:#491217}.alert-light{color:#818182;background-color:#fefefe;border-color:#fdfdfe}.alert-light hr{border-top-color:#ececf6}.alert-light .alert-link{color:#686868}.alert-dark{color:#1b1e21;background-color:#d6d8d9;border-color:#c6c8ca}.alert-dark hr{border-top-color:#b9bbbe}
     </style></head>
   <body>
     <div id="root">
@@ -54,7 +55,7 @@
                         <h1 style="font-size: 32px; color: var(--ink); margin-bottom: 8px;">
                             <span style="color: red;">A</span>ccess</h1><p style="color: var(--muted); font-size: 14px;">Sign in to access your stuff</p></div>
                             <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px 28px; box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 24px;">
-                                <form method="post" class="universal-form" data-url="login" data-feedback="feedback-login">
+                                <form method="post" class="universal-form1" data-url="/myapp/login" data-feedback="feedback-login">
                                     <div style="margin-bottom: 16px;">
                                         <label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Username</label>
                                         <input name="username" type="text" placeholder="admin" value="" style="width: 100%; box-sizing: border-box; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; 
@@ -68,7 +69,35 @@
                                         
                                         </div><p style="text-align: center; margin-top: 20px; color: var(--muted); font-size: 12px;">Default credentials: <strong>admin</strong> / <strong>admin</strong><br>Change them in Settings after logging in.</p></div></div></div>
 
-   <script src="/public/js/jquery-3.6.0.min.js"></script>
-   <script src="/public/static/custom-main.js?v=1701058065" type="text/javascript"></script>
+   <script>
+      const universalform1 = document.querySelector('.universal-form1');
+      universalform1.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const formData = new FormData(universalform1);
+          const url = universalform1.dataset.url;
+          const feedbackSelector = universalform1.dataset.feedback;
+          const feedbackElement = document.querySelector(`.${feedbackSelector}`);
+          
+          fetch(url, {
+              method: 'POST',
+              body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+              if (!data.error) {
+                  feedbackElement.innerHTML = `<div class="alert alert-success">${data.msg}</div>`;
+                  setTimeout(() => {
+                      window.location.href = data.redirect || '/dashboard';
+                  }, 1000);
+              } else {
+                  feedbackElement.innerHTML = `<div class="alert alert-danger">${data.msg}</div>`;
+              }
+          })
+          .catch(error => {
+              feedbackElement.innerHTML = `<div class="alert alert-danger">An error occurred. Please try again.</div>`;
+              console.error('Error:', error);
+          });
+      });
+   </script>
 </body>
 </html>

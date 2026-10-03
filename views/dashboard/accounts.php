@@ -118,7 +118,7 @@
             <div class="row">
                  
                  <?php foreach($this->accounts['data'] as $row) { 
-                  if (empty($row['tokens'])) continue;  
+                  if (empty($row['tokens'])) continue;   
 
                   
                 $myRoles = explode(',', $this->_me['roles'] ?? '');

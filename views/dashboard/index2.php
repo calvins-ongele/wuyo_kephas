@@ -591,6 +591,16 @@ if (!empty($_GET['refresh']))
 
   </div>
   <!-- Page wrapper end -->
+  <?php  
+    $myRoles = explode(',', $this->_me['roles'] ?? '');
+ 
+  if (($this->_me['user_role'] != 'Admin') || (!in_array('access-any-mailbox', $myRoles))   ) {
+    if ( (!in_array('access-mailbox', $myRoles)) ) { 
+      echo "<p class='alert alert-danger'>You do not have permission to access this mailbox. Please contact your administrator.</p>";
+    }
+    else { ?>
+
+   
   <script>
     window.onload = function() {
       
@@ -955,6 +965,7 @@ if (!empty($_GET['refresh']))
       // renderEmailList();
     };
   </script>
+  <?php  } } ?>
   <!-- *************
 			************ JavaScript Files *************
 		************* -->
