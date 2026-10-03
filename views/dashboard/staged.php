@@ -181,7 +181,7 @@
 
                <!-- Row start -->
                <main class="dash-main">
-                  <div style="padding: 28px 24px; max-width: 1100px; margin: 0px auto; font-family: &quot;DM Sans&quot;, sans-serif;">
+                  <div style="padding: 28px 24px; max-width: 1100px; margin: 0px auto; font-family: 'DM Sans', sans-serif;">
                      <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 22px;">
                         <div>
                            <h1 style="margin: 0px; font-size: 22px; font-weight: 700; color: var(--ink, #e2e8f0); letter-spacing: -0.02em;">Staged Mailboxes</h1>
@@ -222,19 +222,19 @@
                      <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
                         <div style="background: var(--surface, #111318); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; min-width: 110px; flex: 1 1 110px;">
                            <div style="font-size: 11px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;">Total</div>
-                           <div style="font-size: 24px; font-weight: 700; color: var(--ink, #e2e8f0); font-family: &quot;JetBrains Mono&quot;, monospace;"><?= ($this->accounts['count']) ?></div>
+                           <div style="font-size: 24px; font-weight: 700; color: var(--ink, #e2e8f0); font-family: 'JetBrains Mono', monospace;"><?= ($this->accounts['count']) ?></div>
                         </div>
                         <div style="background: var(--surface, #111318); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; min-width: 110px; flex: 1 1 110px;">
                            <div style="font-size: 11px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;">Staged</div>
-                           <div style="font-size: 24px; font-weight: 700; color: rgb(245, 158, 11); font-family: &quot;JetBrains Mono&quot;, monospace;"><?= count($this->accounts['data']) ?></div>
+                           <div style="font-size: 24px; font-weight: 700; color: rgb(245, 158, 11); font-family: 'JetBrains Mono', monospace;"><?= count($this->accounts['data']) ?></div>
                         </div>
                         <div style="background: var(--surface, #111318); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; min-width: 110px; flex: 1 1 110px;">
                            <div style="font-size: 11px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;">Connected</div>
-                           <div style="font-size: 24px; font-weight: 700; color: rgb(34, 197, 94); font-family: &quot;JetBrains Mono&quot;, monospace;"><?= count($this->accounts['connected']) ?></div>
+                           <div style="font-size: 24px; font-weight: 700; color: rgb(34, 197, 94); font-family: 'JetBrains Mono', monospace;"><?= count($this->accounts['connected']) ?></div>
                         </div>
                         <div style="background: var(--surface, #111318); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; min-width: 110px; flex: 1 1 110px;">
                            <div style="font-size: 11px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;">Disconnected</div>
-                           <div style="font-size: 24px; font-weight: 700; color: rgb(239, 68, 68); font-family: &quot;JetBrains Mono&quot;, monospace;">0</div>
+                           <div style="font-size: 24px; font-weight: 700; color: rgb(239, 68, 68); font-family: 'JetBrains Mono', monospace;">0</div>
                         </div>
                      </div> 
                      <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 16px;">
@@ -242,7 +242,7 @@
                         <a href="/dashboard/staged?filter=staged" class="sm-filter-btn">STAGED</a>
                         <a href="/dashboard/staged?filter=connected" class="sm-filter-btn">CONNECTED</a>
                         <a href="/dashboard/staged?filter=disconnected" class="sm-filter-btn">DISCONNECTED</a>
-                        <input placeholder="Search email or owner…" value="" style="width: 220px; box-sizing: border-box; padding: 8px 10px; background: color-mix(in srgb, var(--border) 40%, transparent); border: 1px solid var(--border); border-radius: 7px; color: var(--ink, #e2e8f0); font-size: 13px; font-family: &quot;DM Sans&quot;, sans-serif; outline: none; margin-left: auto;"></div>
+                        <input placeholder="Search email or owner…" value="" style="width: 220px; box-sizing: border-box; padding: 8px 10px; background: color-mix(in srgb, var(--border) 40%, transparent); border: 1px solid var(--border); border-radius: 7px; color: var(--ink, #e2e8f0); font-size: 13px; font-family: 'DM Sans', sans-serif; outline: none; margin-left: auto;"></div>
                      <div style="background: var(--surface, #111318); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;">
                         <div style="overflow-x: auto;">
                            <table class="sm-table">
@@ -256,11 +256,14 @@
                                  </tr>
                               </thead>
                               <tbody>
-                                 <?php $i=0; foreach ($this->accounts['data'] as $row) { $i++; ?>
+                                 <?php $i=0; foreach ($this->accounts['data'] as $row) { 
+                                    if ( (strtolower($row['roles_type']) == 'user') || strtolower($row['user_role']) == 'admin' ) continue;
+                                    
+                                    $i++; ?>
                                     <tr>
                                        <td style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted);"><?= $i ?></td>
-                                       <td title="<?= $row['user_email'] ?>" style="font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 12px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; color: var(--accent);"><?= $row['user_email'] ?></td>
-                                       <td><span style="display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 99px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; background: rgba(245, 158, 11, 0.12); <?= $row['status'] == 'pending' ? 'background: rgb(245, 158, 11)' : 'background:rgb(34, 197, 94)' ?>; font-family: &quot;JetBrains Mono&quot;, monospace;">
+                                       <td title="<?= $row['user_email'] ?>" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; color: var(--accent);"><?= $row['user_email'] ?></td>
+                                       <td><span style="display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 99px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; background: rgba(245, 158, 11, 0.12); <?= $row['status'] == 'pending' ? 'background: rgb(245, 158, 11)' : 'background:rgb(34, 197, 94)' ?>; font-family: 'JetBrains Mono', monospace;">
                                              <span style="width: 5px; height: 5px; border-radius: 50%; 
                         <?= (($row['status'] == 'pending' )|| empty($row['tokens'])) ? 'background: rgb(245, 158, 11)' : 'background:rgb(34, 197, 94)' ?>; flex-shrink: 0;"></span>
                         <?= (($row['status'] == 'pending') || empty($row['tokens'])) ? 'STAGED' : 'CONNECTED' ?></span></td>
@@ -280,7 +283,8 @@
                            </table>
                         </div>
                      </div>
-                     <div style="margin-top: 10px; font-size: 11px; color: var(--muted); text-align: right;">31 of 31 mailboxes</div>
+                     <div style="margin-top: 10px; font-size: 11px; color: var(--muted); text-align: right;"
+                        ><?= count($this->accounts['data']) ?> of <?= $this->accounts['count'] ?> mailboxes</div>
                   
                       <div class="col-12">
                         <nav>
@@ -368,11 +372,12 @@
             if (confirm('Are you sure you want to delete ' + email + '?')) {
                $.ajax({
                   url: '/myapp/clear_entire_email',
-                  type: 'POST',
+                  type: 'POST', 
                   data: { email: email },
                   success: function(response) {
-                     alert(response.message);
-                     location.reload();
+                     alert(response.msg);
+                     if (!response.error) 
+                        location.reload();
                   },
                   error: function(xhr, status, error) {
                      alert('Error deleting account: ' + error);

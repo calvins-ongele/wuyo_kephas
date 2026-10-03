@@ -117,7 +117,19 @@
             <!-- Row start -->
             <div class="row">
                  
-                 <?php foreach($this->accounts['data'] as $row) { if (empty($row['tokens'])) continue;  ?>
+                 <?php foreach($this->accounts['data'] as $row) { 
+                  if (empty($row['tokens'])) continue;  
+
+                  
+                $myRoles = explode(',', $this->_me['roles'] ?? '');
+              // can I modify this user?
+              if (($this->_me['user_role'] != 'Admin') || (!in_array('list-all-mailboxes', $myRoles))   ) {
+                if ( (!in_array('access-mailbox', $myRoles)) ) {
+                    continue; // can't access any mailboxes
+                }
+              }
+                  
+                  ?>
                     <div class="col-xl-4 col-sm-6 mb-3" onclick="location.href='/dashboard?email=<?= $row['user_email'] ?>'" >
                         <div class="card shadow-sm border-0 rounded-4" stydle="width: 320px;">
                             <div class="card-body p-4"> 
@@ -210,25 +222,16 @@
                                 <?php } ?>
                             </ul>
                         </nav>
-                    </div>
-                     
-                 
+                    </div> 
     
             </div>
-            <!-- Row end -->
-
-           
-
-         
+            <!-- Row end --> 
             <!-- Row end -->
 
           </div>
           <!-- App body ends -->
 
-          <!-- App footer start -->
-          <div class="app-footer">
-            <span>© Bootstrap Gallery 2025</span>
-          </div>
+         
           <!-- App footer end -->
 
         </div>

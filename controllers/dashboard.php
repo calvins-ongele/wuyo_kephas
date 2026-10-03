@@ -42,7 +42,7 @@ class Dashboard extends Controller {
     public function staged($emails = '') {
         
         $this->view->pid = 'staged'; 
-        $this->view->accounts = $this->model->accounts($_GET['filter'] ?? '');
+        $this->view->accounts = $this->model->stagedAccounts($_GET['filter'] ?? '');
         //$this->view->data = $this->model->getemails($emails);
         $this->view->title = 'Staged ' ;
         $this->view->render(PROFILE_NAV.'/staged');
@@ -67,67 +67,6 @@ class Dashboard extends Controller {
         $this->view->render(PROFILE_NAV.'/new-pdf');
     }
     
-   
-     
-    public function profile() {  
-        $this->view->pid = 'settings';
-        
-        $this->view->title = 'My profile settings';
-        $this->view->render(PROFILE_NAV . '/settings/profile');
-    }
-    public function company() { 
-        $this->view->pid = 'settings';
-        
-      
-        $this->view->title = 'Company profile settngs';
-        $this->view->render(PROFILE_NAV . '/settings/company');
-    }
-    
-    public function logs() {   
-        $this->view->pid = 'settings';
-        
-        $this->view->currentpage = $_GET['pg'] ?? 1;
-        $this->view->logs = $this->model->getlogs(150); 
-        $this->view->title = 'My profile settngs';
-        $this->view->render(PROFILE_NAV . '/logs');
-    }
-    
-    public function users($action = 'all', $n = 0) {
-        $this->view->pid = 'users';
-        
-        if ($this->view->_me['user_role'] != 'Admin') {
-          die(CustomFunctions::relocate('/'.PROFILE_NAV.'?unauthorized=true'));
-        }
-        
-        $this->view->currentpage = $_GET['pg'] ?? 1;
-        $this->view->users = $this->model->users();  
-        
-        
-        if ($action == 'new') {
-            
-            $this->view->title = ' New User ' ;
-            $this->view->render(PROFILE_NAV . '/users/new');
-            return;
-        }
-        
-        if ($action == 'edit') { 
-            
-            $this->view->user = $this->model->users($_GET['id']);  
-            $this->view->title = ' Edit User ' ;
-            $this->view->render(PROFILE_NAV . '/users/edit');
-            return;
-        }
-        if ($action == 'subscribers') {
-            $this->view->subs = $this->model->getsubs();
-            $this->view->title = ' Subscribers';
-            $this->view->render(PROFILE_NAV . '/users/subscribers');
-            return;
-        }
-        
-        
-        $this->view->title = ' Users';
-        $this->view->render(PROFILE_NAV . '/users/index');
-    }
     
     
      

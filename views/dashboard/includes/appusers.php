@@ -35,7 +35,8 @@
 >
     <div style="display: flex; gap: 12px; align-items: flex-start">
         <div style="flex: 1 1 0%; min-width: 0px">
-            <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; margin-bottom: 5px">
+            <div style="display: flex; justify-content:space-between; align-items: center; flex-wrap: wrap; gap: 4px 10px; margin-bottom: 5px">
+                <span>
                 <span style="font-size: 14px; font-weight: 600; color: var(--ink)"><?= $row['user_email'] ?></span
                 ><span
                     style="
@@ -46,191 +47,39 @@
                         color: var(--muted);
                         font-weight: 500;
                     "
-                    >you</span
-                >
+                    ><?= $row['user_email']==$this->_me['user_email']?'you':'' ?></span
+                ></span>
+
+                <a href="#" user='<?= json_encode($row) ?>' class="edit-user" style="font-size: 10px; background:rgb(35, 75, 35); color: var(--surface); text-decoration: none; cursor: pointer;padding:6px 12px; border-radius:4px;">Edit</a>
             </div>
             <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px">
+                <?php 
+                $roles = $row['roles'];
+                if ($row['user_role'] == 'Admin') {
+                    $roles = array_column($this->roles, 'role_id');
+                    $roles = implode(',', $roles);
+                }
+                foreach(explode(',', $roles) as $role) { 
+                    $color = CustomFunctions::color(trim($role));
+                ?>
                 <span
                     style="
                         font-size: 10px;
                         padding: 2px 7px;
                         border-radius: 20px;
                         font-weight: 600;
-                        background: rgba(52, 168, 83, 0.12);
-                        color: rgb(45, 125, 70);
+                        background: rgba(40, 42, 40, 0.12);
+                        color: <?= $color ?>;
                         letter-spacing: 0.02em;
                     "
-                    >add</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: rgba(66, 133, 244, 0.12);
-                        color: rgb(26, 92, 200);
-                        letter-spacing: 0.02em;
-                    "
-                    >modify</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: rgba(200, 75, 49, 0.12);
-                        color: rgb(184, 50, 50);
-                        letter-spacing: 0.02em;
-                    "
-                    >delete</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: rgba(251, 188, 4, 0.15);
-                        color: rgb(138, 98, 0);
-                        letter-spacing: 0.02em;
-                    "
-                    >disable</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >access-mailbox</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >list-pending-mailboxes</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >list-mailboxes</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >list-child-mailboxes</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >delete-staged-mailbox</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >stage-mailbox</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >delete-any-staged-mailbox</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >modify-staged-mailbox</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >modify-any-staged-mailbox</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >recover-any-staged-mailbox</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >recover-staged-mailbox</span
-                ><span
-                    style="
-                        font-size: 10px;
-                        padding: 2px 7px;
-                        border-radius: 20px;
-                        font-weight: 600;
-                        background: var(--border);
-                        color: var(--muted);
-                        letter-spacing: 0.02em;
-                    "
-                    >access-any-mailbox</span
-                >
+                    ><?= trim($role) ?></span> 
+                <?php } ?>
+            
+                 
             </div>
             <div style="font-size: 11px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 14px">
-                <span>↳ parent: <strong>admin</strong></span
-                ><span>since 19/06/2026</span>
+                <span>↳ parent: <strong><?= empty($row['owner']) ? 'Admin':$row['owner'] ?></strong></span
+                ><span>since <?= date('d/m/Y', strtotime($row['user_created_at'])) ?></span>
             </div>
         </div>
     </div>
@@ -253,13 +102,16 @@
     <button  class="removeModal" style="background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 22px; cursor: pointer; color: var(--muted);">×</button>
 </div>
 
-<form id="addusers" style="padding: 24px 28px; display: flex; flex-direction: column; gap: 0px; flex: 1 1 0%;"><label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Username *</label>
+<form id="addusers" style="padding: 24px 28px; display: flex; flex-direction: column; gap: 0px; flex: 1 1 0%;">
+    <input type="hidden" name="user_id" value=""> 
+    
+<label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Username *</label>
 <input pattern="^\w+$" name="username" title="Letters, numbers and underscores only" required="" placeholder="e.g. alice" value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: white; color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;">
-<label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Password *</label>
+<label id="password-label" style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Password *</label>
 <input type="password" name="pass" required="" placeholder="••••••••" minlength="4" value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: white; color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;"><label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Parent account</label>
-<select style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;">
+<select name="parent" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;">
     <?php foreach($this->users as $row) { ?>
-    <option value="<?= $row['user_ID'] ?>"><?= $row['user_email'] ?></option>
+    <option value="<?= $row['user_code'] ?>"><?= $row['user_email'] ?></option>
     <?php } ?>
 </select>
 <label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 10px;">Roles</label>
@@ -296,19 +148,49 @@
         mastModal.classList.add('show');
         mastModal.classList.remove('hide'); 
     });
+
+    const editUser = document.querySelectorAll(".edit-user");
+    editUser.forEach( (element) => {
+        element.addEventListener('click',(e)=> {  
+            e.preventDefault();
+            const user = JSON.parse(element.getAttribute('user'));
+            console.log(user);
+            addusersbtn.click();
+            const form = document.querySelector("#addusers");
+            form.username.value = user.user_email;
+            form.pass.value = ''; document.querySelector("#password-label").innerText = 'New Password (leave blank to keep current)';
+            form.parent.value = user.referred_by;
+            form.user_id.value = user.user_ID;
+            form.pass.required = false;
+            form.querySelectorAll('input[type="checkbox"]').forEach( (checkbox) => {
+                checkbox.checked = false;
+            });
+            user.roles.split(',').forEach( (role) => {
+                const checkbox = form.querySelector(`input[type="checkbox"][value="${role}"]`);
+                if (checkbox) {
+                    checkbox.checked = true;
+                }
+            });
+
+            form.querySelector('button[type="submit"]').innerText = 'Update user';
+
+        });
+    });
+
+
     const addusers = document.querySelector('#addusers');
     addusers.addEventListener('submit', async (e)=> {
         e.preventDefault();
         const form = new FormData(addusers);
 
         try {
-            const response = await fetch('/myapp/addusers', {method:"POST", body:form});
+            const response = await fetch('/myapp/add-users', {method:"POST", body:form});
             const result = await response.json();
 
-            alert(result.msg);
+            alert(result.msg); 
 
             if (!result.error) {
-                removeModal.click();
+                document.querySelector(".removeModal").click();
             }
         } catch(e){}
     })

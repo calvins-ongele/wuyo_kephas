@@ -1040,6 +1040,20 @@ public static function Loading($height='25px', $loading = "Loading") {
     </center>
     ";
 }
+public static function color($color) {
+    switch ($color) {
+        case 'add':
+            return 'rgb(45, 125, 70)'; 
+        case 'modify':
+            return 'rgb(26, 92, 200)'; 
+        case 'disable':
+            return 'rgb(138, 98, 0)';  
+        case 'delete':
+            return 'rgb(184, 50, 50)';  
+        default:
+            return 'var(--muted)'; 
+    }
+} 
 
 
 
