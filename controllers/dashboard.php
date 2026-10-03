@@ -11,6 +11,7 @@ class Dashboard extends Controller {
     public function index() {     
         $this->view->pid = 'home'; 
         $this->view->title = ' Dashboard ' ;
+        $this->view->doIOwnIt = $this->model->doIOwnIt($_GET['email'] ?? '');
         $this->view->data = []; //empty($_GET['email']) ? [] :$this->model->getemails($_GET['email'] ?? '');
         $this->view->render(PROFILE_NAV.'/index2');
     } 

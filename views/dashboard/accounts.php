@@ -122,12 +122,21 @@
 
                   
                 $myRoles = explode(',', $this->_me['roles'] ?? '');
-              // can I modify this user?
-              if (($this->_me['user_role'] != 'Admin') || (!in_array('list-all-mailboxes', $myRoles))   ) {
-                if ( (!in_array('access-mailbox', $myRoles)) ) {
-                    continue; // can't access any mailboxes
+                
+                $allowableRoles = [];
+                if ($this->_me['user_role'] == 'Admin'){
+                  $allowableRoles = ['list-all-mailboxes'];
                 }
-              }
+                if (in_array('list-all-mailboxes', $myRoles)) {
+                  $allowableRoles[] = 'list-all-mailboxes';
+                }
+                if ( (in_array('list-child-mailboxes', $myRoles)) && ($row['owner'] == $this->_me['user_code']) ) {
+                  $allowableRoles[] = 'list-child-mailboxes';
+                }
+
+              // can I modify this user?
+              if ( (in_array('list-child-mailboxes', $allowableRoles)) || (in_array('list-all-mailboxes', $allowableRoles))   ) {
+               
                   
                   ?>
                     <div class="col-xl-4 col-sm-6 mb-3" onclick="location.href='/dashboard?email=<?= $row['user_email'] ?>'" >
@@ -192,7 +201,7 @@
                         </div>
                     </div>
                     
-                    <?php } ?>
+                    <?php }} ?>
 
 
                         <div class="col-12">

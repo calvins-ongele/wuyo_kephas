@@ -591,14 +591,51 @@ if (!empty($_GET['refresh']))
 
   </div>
   <!-- Page wrapper end -->
+   
+  <!-- *************
+			************ JavaScript Files *************
+		************* -->
+  <!-- Required jQuery first, then Bootstrap Bundle JS -->
+  <script src="/public/js/jquery-3.6.0.min.js"></script>
+  <script src="/public/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/moment.min.js"></script>
+
+  <!-- *************
+			************ Vendor Js Files *************
+		************* -->
+
+  <!-- Overlay Scroll JS -->
+  <script src="/assets/js/jquery.overlayScrollbars.min.js"></script>
+  <script src="/assets/js/custom-scrollbar.js"></script>
+
+  <!-- Apex Charts -->
+  <script src="assets/vendor/apex/apexcharts.min.js"></script>
+  <script src="assets/vendor/apex/custom/graphs/logistics/shipment.js"></script>
+  <script src="assets/vendor/apex/custom/graphs/logistics/avg-delivery-time.js"></script>
+
+  <!-- Custom JS files -->
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/current-date.js"></script>
+</body>
+
+</html>
   <?php  
     $myRoles = explode(',', $this->_me['roles'] ?? '');
- 
-  if (($this->_me['user_role'] != 'Admin') || (!in_array('access-any-mailbox', $myRoles))   ) {
-    if ( (!in_array('access-mailbox', $myRoles)) ) { 
-      echo "<p class='alert alert-danger'>You do not have permission to access this mailbox. Please contact your administrator.</p>";
+
+    $allowableRoles = [];
+    if ($this->_me['user_role'] == 'Admin'){
+      $allowableRoles = ['access-any-mailbox'];
     }
-    else { ?>
+    if (in_array('access-any-mailbox', $myRoles)) {
+      $allowableRoles[] = 'access-any-mailbox';
+    }
+    if ( (in_array('access-mailbox', $myRoles)) && $this->doIOwnIt ) {
+      $allowableRoles[] = 'access-mailbox';
+    }
+
+  if ( (in_array('access-any-mailbox', $allowableRoles)) || (in_array('access-mailbox', $allowableRoles))   ) {
+      
+      ?>
 
    
   <script>
@@ -965,31 +1002,9 @@ if (!empty($_GET['refresh']))
       // renderEmailList();
     };
   </script>
-  <?php  } } ?>
-  <!-- *************
-			************ JavaScript Files *************
-		************* -->
-  <!-- Required jQuery first, then Bootstrap Bundle JS -->
-  <script src="/public/js/jquery-3.6.0.min.js"></script>
-  <script src="/public/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/js/moment.min.js"></script>
-
-  <!-- *************
-			************ Vendor Js Files *************
-		************* -->
-
-  <!-- Overlay Scroll JS -->
-  <script src="/assets/js/jquery.overlayScrollbars.min.js"></script>
-  <script src="/assets/js/custom-scrollbar.js"></script>
-
-  <!-- Apex Charts -->
-  <script src="assets/vendor/apex/apexcharts.min.js"></script>
-  <script src="assets/vendor/apex/custom/graphs/logistics/shipment.js"></script>
-  <script src="assets/vendor/apex/custom/graphs/logistics/avg-delivery-time.js"></script>
-
-  <!-- Custom JS files -->
-  <script src="assets/js/custom.js"></script>
-  <script src="assets/js/current-date.js"></script>
-</body>
-
-</html>
+  <?php  } else { ?>
+  <script>
+    document.querySelector("#emailList").innerHTML = `<div style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px; color: var(--muted); margin-top:16%">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-open"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"></path><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path></svg><p style="margin: 0px; font-size: 15px;">No emails here or you cannot read it</p></div>`;
+  </script>
+  <?php } ?>

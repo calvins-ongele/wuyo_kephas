@@ -230,6 +230,14 @@ class MyApp_Model extends Model
         echo $this->_delete('users', 'user_email', [$_POST['email']]);
     }
     public function clear_entire_email() {  
+        $myRoles = explode(',', $this->me()['roles'] ?? '');
+         // can I delete this user?
+        if ($this->me()['user_role'] != 'Admin') {
+            if (!in_array('delete', $myRoles)) {
+                echo $this->_ms(1, "You don't have permission to delete users");
+                return;
+            }
+        }
         echo $this->_delete('users', 'user_email', [ $_POST['email'] ]);
     }
     public function delete_an_email() {
