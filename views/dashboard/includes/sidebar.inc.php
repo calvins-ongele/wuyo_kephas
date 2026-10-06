@@ -36,12 +36,21 @@
                   <span class="menu-text">Staged</span>
                 </a>
               </li>
+              <?php if (!isTutor) { ?>
+              <li class="<?= $this->pid=='sendemail' ? 'active current-page':'' ?>">
+                <a href="/dashboard/sendemail">
+                  <i class="bi bi-envelope"></i>
+                  <span class="menu-text">Send Email</span>
+                </a>
+                </li>
+                <?php } else { ?>
               <li class="<?= $this->pid=='automations' ? 'active current-page':'' ?>">
                 <a href="/dashboard/automations">
                   <i class="bi bi-lightning"></i>
                   <span class="menu-text">Automations</span>
                 </a>
               </li>
+              <?php } ?>
               <li class="<?= $this->pid=='settings' ? 'active current-page':'' ?>">
                 <a href="/dashboard/settings">
                   <i class="bi bi-gear"></i>

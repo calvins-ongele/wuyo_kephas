@@ -155,6 +155,10 @@ class Dashboard_Model extends Model {
 
         return $output;
     }
+
+    public function getTemplates() {
+        return $this->_get('email_templates')[1];
+    }
  
      
 

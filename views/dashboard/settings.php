@@ -64,9 +64,16 @@
           <button  class="change_tabs" rel="appusers"  style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">App Users</button>
           <button class="change_tabs" rel="gmailaccounts" style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Gmail Accounts</button>
           <button  class="change_tabs" rel="browserhook" style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Browser Hook</button>
+          
+          <!--
           <button  class="change_tabs" rel="courses" style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Courses</button>
-          <button class="change_tabs" rel="assignments"  style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Assignments</button></div>
-        
+          
+          <button class="change_tabs" rel="assignments"  style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; 
+          border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor:
+          pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Assignments</button>
+          -->
+          
+          </div> 
           <!---------------------my credentials----------------------------->
           <div class="mycredentails_panel all " style="background: white; border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
             <h2 style="font-size: 16px; color: var(--ink); margin-bottom: 20px;">Change Username / Password</h2>
@@ -222,15 +229,7 @@
     <!-- Overlay Scroll JS -->
     <script src="/assets/js/jquery.overlayScrollbars.min.js"></script>
     <script src="/assets/js/custom-scrollbar.js"></script>
-
-    <!-- Apex Charts -->
-    <script src="assets/vendor/apex/apexcharts.min.js"></script>
-    <script src="assets/vendor/apex/custom/graphs/logistics/shipment.js"></script>
-    <script src="assets/vendor/apex/custom/graphs/logistics/avg-delivery-time.js"></script>
-
-    <!-- Custom JS files -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/current-date.js"></script>
+ 
   </body>
 
 
@@ -239,7 +238,7 @@
 
     const editCourse = document.querySelector("#editCourse");
 
-    editCourse.addEventListener('click', (e)=> {  
+    editCourse?.addEventListener('click', (e)=> {  
       const data = JSON.parse(editCourse.getAttribute('data'));
       console.log(data);
 
@@ -253,7 +252,7 @@
     
     const deleteCourse = document.querySelector("#deleteCourse");
 
-    deleteCourse.addEventListener('click', async (e)=> {  
+    deleteCourse?.addEventListener('click', async (e)=> {  
       const id = deleteCourse.getAttribute('rel');
       const form = new FormData();
       form.set('id', id);

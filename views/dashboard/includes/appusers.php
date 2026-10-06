@@ -22,7 +22,7 @@
     </button>
 </div>
 
-<?php foreach($this->users as $row) { ?>
+<?php foreach($this->users as $row) { $row['user_emails_data'] = ''; ?> 
 <div
     style="
         background: var(--surface); 

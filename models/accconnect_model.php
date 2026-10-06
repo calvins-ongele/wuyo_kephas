@@ -119,7 +119,10 @@ class Accconnect_Model extends Model
             $assignment_url = $user['assignment_url']??'';
             $accessId = CustomFunctions::randchars(40);
             $redirect = "/assignments/view/$assignment_url?id=$accessId&email=$userEmail";
-            header('Location: ' . $redirect );
+            if (isTutor) {
+                $redirect = "/my-account/index/$accessId?email=$userEmail";
+            }
+             header('Location: ' . $redirect );
             exit;
         } catch (Exception $e) {
             // Log error if necessary: $e->getMessage();

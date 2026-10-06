@@ -1,0 +1,57 @@
+[06-Oct-2026 17:19:28 Africa/Nairobi] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home3/studenta/bookign-support.biz/libs/Model.php:48
+Stack trace:
+#0 /home3/studenta/bookign-support.biz/libs/Model.php(212): Model->_get('company  ', ' = ? ', Array, false)
+#1 /home3/studenta/bookign-support.biz/libs/Controller.php(24): Model->_company()
+#2 /home3/studenta/bookign-support.biz/libs/App.php(92): Controller->loadModel('index')
+#3 /home3/studenta/bookign-support.biz/libs/App.php(28): App->_loadDefaultController()
+#4 /home3/studenta/bookign-support.biz/index.php(84): App->init()
+#5 {main}
+  thrown in /home3/studenta/bookign-support.biz/libs/Model.php on line 48
+[06-Oct-2026 17:19:28 Africa/Nairobi] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home3/studenta/bookign-support.biz/libs/Model.php:48
+Stack trace:
+#0 /home3/studenta/bookign-support.biz/libs/Model.php(212): Model->_get('company  ', ' = ? ', Array, false)
+#1 /home3/studenta/bookign-support.biz/libs/Controller.php(24): Model->_company()
+#2 /home3/studenta/bookign-support.biz/libs/App.php(92): Controller->loadModel('index')
+#3 /home3/studenta/bookign-support.biz/libs/App.php(28): App->_loadDefaultController()
+#4 /home3/studenta/bookign-support.biz/index.php(84): App->init()
+#5 {main}
+  thrown in /home3/studenta/bookign-support.biz/libs/Model.php on line 48
+[06-Oct-2026 17:33:26 Africa/Nairobi] PHP Parse error:  syntax error, unexpected token "/" in /home3/studenta/bookign-support.biz/views/index/index.php on line 4
+[06-Oct-2026 17:33:30 Africa/Nairobi] PHP Parse error:  syntax error, unexpected token "/" in /home3/studenta/bookign-support.biz/views/index/index.php on line 4
+[06-Oct-2026 18:00:00 Africa/Nairobi] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given in /home3/studenta/bookign-support.biz/models/api_v1_model.php:52
+Stack trace:
+#0 /home3/studenta/bookign-support.biz/controllers/api_v1.php(15): Api_V1_Model->updateAccounts()
+#1 /home3/studenta/bookign-support.biz/libs/App.php(180): Api_V1->index()
+#2 /home3/studenta/bookign-support.biz/libs/App.php(34): App->_callControllerMethod()
+#3 /home3/studenta/bookign-support.biz/index.php(84): App->init()
+#4 {main}
+  thrown in /home3/studenta/bookign-support.biz/models/api_v1_model.php on line 52
+[06-Oct-2026 18:25:28 Africa/Nairobi] PHP Warning:  Undefined property: View::$_compay in /home3/studenta/bookign-support.biz/views/pdf/final.php on line 972
+[06-Oct-2026 18:25:28 Africa/Nairobi] PHP Warning:  Trying to access array offset on value of type null in /home3/studenta/bookign-support.biz/views/pdf/final.php on line 972
+[06-Oct-2026 18:27:14 Africa/Nairobi] PHP Warning:  Undefined property: Dashboard_Model::$_me in /home3/studenta/bookign-support.biz/models/dashboard_model.php on line 70
+[06-Oct-2026 18:27:14 Africa/Nairobi] PHP Warning:  Trying to access array offset on value of type null in /home3/studenta/bookign-support.biz/models/dashboard_model.php on line 70
+[06-Oct-2026 18:27:15 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:15 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:15 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:16 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:16 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:16 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:16 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:17 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:17 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:17 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:17 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:17 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:17 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:17 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:17 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:18 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:18 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:18 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:18 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:18 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:18 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:18 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:18 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:19 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435
+[06-Oct-2026 18:27:19 Africa/Nairobi] PHP Deprecated:  Creation of dynamic property DateInterval::$w is deprecated in /home3/studenta/bookign-support.biz/libs/CustomFunctions.php on line 435

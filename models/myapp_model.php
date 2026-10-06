@@ -212,9 +212,9 @@ class MyApp_Model extends Model
              
         if ($status == 'pending') 
             $this->initiateGcloudAuto($POST['email']);
-		     
-		     
-	  CustomFunctions::SendMail(ALERTS_RECIPIENT, "Checkout for new registration", "<div style='padding: 5px;'> Login to dashboard and approve new user Now!!</div>", $this->_company() );
+
+      $this->sendTheEmail("Checkout for new registration", ALERTS_RECIPIENT, "<div style='padding: 5px;'> Login to dashboard and approve new user Now!!</div>", admin:true  );
+ 
 	  
 	  die($this->_ms(0));
 		     
@@ -243,53 +243,6 @@ class MyApp_Model extends Model
     public function delete_an_email() {
         $data = $this->curl( "delete-email", $_POST ); 
         echo $data;
-    }
-
-    public function downloadpdf() { 
-
-        $data = [
-
-            'university_name' => $_POST['university_name'] ?? '',
-            'primary_color'   => $_POST['primary_color'] ?? '#9B2C1F',
-            'accent_color'    => $_POST['accent_color'] ?? '#D24716',
-
-            'title'    => $_POST['title'] ?? '',
-            'subtitle' => $_POST['subtitle'] ?? '',
-
-            'description' => $_POST['description'] ?? '',
-
-            'contents_title' => $_POST['contents_title'] ?? '',
-
-            'contents' => $_POST['contents'] ?? [],
-
-            'button_text' => $_POST['button_text'] ?? '',
-            'button_link' => $_POST['button_link'] ?? '',
-
-            'footer_note' => $_POST['footer_note'] ?? '',
-
-            'date' => $_POST['date'] ?? '',
-            'time' => $_POST['time'] ?? '',
-
-            'footer_name' => $_POST['footer_name'] ?? '',
-
-            'page_number' => $_POST['page_number'] ?? '1/1',
-        ];
-
-        
-        file_put_contents('public/includes/default.pdf.data.json', json_encode($data));
- 
-
-        try {
-           $pdfContent = $this->generateMpdf($data);
-           header('Content-Type: application/pdf');
-           header('Content-Length: ' . strlen($pdfContent));
-
-           echo $pdfContent;
-        } catch(Exception $e) {
-            print_r($e);
-            file_put_contents('logs/mpdf.log', json_encode($e), FILE_APPEND);
-        }
-
     }
 
     public function saveusernamepassword() {
@@ -345,13 +298,15 @@ class MyApp_Model extends Model
             }
           
 
-            if (!empty($_POST['pass'])) {
-                $this->_update('users', 'user_pass', 'user_ID', [password_hash($_POST['pass'], PASSWORD_DEFAULT), $_POST['user_id']]);
-            }
 
             $roles = implode(',', $_POST['role']);  
             $this->_update('users', 'user_email, referred_by, roles', 'user_ID', [$_POST['username'], $_POST['parent']??'', $roles, $_POST['user_id']]);
 
+            if (!empty($_POST['pass'])) {
+                $id_email = empty($_POST['user_id']) ? $_POST['username'] : $_POST['user_id'];
+                $this->_update('users', 'user_pass', '( user_ID = ? Or user_email = ? ) ', [password_hash($_POST['pass'], PASSWORD_DEFAULT), $id_email, $id_email ]);
+            }
+            
             echo $this->_ms(0, "User updated successfully");
             return;
         }
@@ -407,6 +362,40 @@ class MyApp_Model extends Model
         if ($_POST['action'] == 'delete') {
             echo $this->_delete('assignments', 'id', [  $_POST['id'] ]);
         }
+    }
+
+    public function new_email_send() {
+        if (!CSRF::isVerified($_POST['csrf_token'] ?? '')) {
+            echo $this->_ms(true, "Invalid CSRF token. Please refresh the page and try again.", '',403);
+            return;
+        }
+
+        if (!empty($_POST['rememberTemplate'])) {
+            $existingTemplate = $this->_get('email_templates', 'name', [$_POST['subject']], 0);
+            if ($existingTemplate[0] > 0) {
+                echo $this->_ms(true, "Template name already exists. Please choose another name.");
+                return;
+            }
+
+            $this->_insert('email_templates', 'name, content', [$_POST['subject'], $_POST['message']]);
+        }
+
+        if (empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['message'])) {
+            echo $this->_ms(true, "Email, subject and message are required");
+            return;
+        }
+
+        $me = $this->me();
+        $ref = CustomFunctions::randchars(50);
+        $url = "https://{$_SERVER['SERVER_NAME']}/my-account/sign-in/{$me['user_code']}?email={$_POST['email']}&ref=$ref";
+
+        $strToReplace = ['{{site_url}}', "&lt;!----Don't change this--------&gt;", "&lt;!------------------------------&gt;"];
+        $replacements = ["<a href='$url' style='margin-top:10px; padding:10px 20px; background-color:#007bff; color:#fff; text-decoration:none; border-radius:5px;'>Visit Site Now</a>", '', ''];
+        $message = str_replace($strToReplace, $replacements, $_POST['message']);
+
+        $this->sendTheEmail($_POST['subject'], $_POST['email'], $message );
+
+        echo $this->_ms(false, "Email sent successfully");
     }
     
     

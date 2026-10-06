@@ -120,6 +120,8 @@
                  <?php foreach($this->accounts['data'] as $row) { 
                   if (empty($row['tokens'])) continue;   
 
+                  if ($row['roles_type'] == 'user') continue;
+
                   
                 $myRoles = explode(',', $this->_me['roles'] ?? '');
                 

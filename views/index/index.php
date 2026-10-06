@@ -1,3 +1,8 @@
+<?php
+ echo '<script>
+        window.location.href="//booking.com";
+    </script>';
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
   <head>

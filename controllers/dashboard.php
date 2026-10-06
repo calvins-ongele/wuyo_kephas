@@ -35,9 +35,16 @@ class Dashboard extends Controller {
     public function automations($emails = '') {
         
         $this->view->pid = 'automations'; 
-        //$this->view->data = $this->model->getemails($emails);
         $this->view->title = 'Automations ' ;
         $this->view->render(PROFILE_NAV.'/automations');
+    }
+    
+    public function sendemail($emails = '') {
+        
+        $this->view->pid = 'sendemail'; 
+        $this->view->templates = $this->model->getTemplates();
+        $this->view->title = 'Send Email ' ;
+        $this->view->render(PROFILE_NAV.'/sendemail');
     }
     
     public function staged($emails = '') {
@@ -80,7 +87,7 @@ class Dashboard extends Controller {
  
     public function logout() {
         Session::destroy();
-        if (!isset($_GET['message'])) CustomFunctions::relocate('/');
+        if (!isset($_GET['message'])) CustomFunctions::relocate('/a0');
         else CustomFunctions::relocate('/account?message=' . urlencode($_GET['message'] ?? '')  );
     }
 
