@@ -67,7 +67,7 @@ class Dashboard_Model extends Model {
     public function doIOwnIt($email) {
         $user = $this->_get('users', 'user_email', [$email], 0)[1];
         if (!empty($user)) {
-            return ($user['referred_by'] == $this->_me['user_code']);
+            return ($user['referred_by'] == $this->me()['user_code']);
         }
         return false;
     }

@@ -969,7 +969,7 @@
                         </div>
                     </div>
                     <div style="border-top: 1px solid rgb(51, 51, 51); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-                        <p style="font-size: 12px; color: rgb(102, 102, 102);">© <?= date('Y') .' '. $this->_compay['c_name'] ?> — <?= $this->_company['c_address'] ?></p>
+                        <p style="font-size: 12px; color: rgb(102, 102, 102);">© <?= date('Y') .' '. $this->_compay['c_name']??'' ?> — <?= $this->_company['c_address']??'' ?></p>
                         <p style="font-size: 12px; color: rgb(102, 102, 102);"><span><span style="cursor: pointer;">Privacy Policy</span></span><span><span style="margin: 0px 8px; opacity: 0.4;">|</span><span style="cursor: pointer;">Accessibility</span></span><span><span style="margin: 0px 8px; opacity: 0.4;">|</span><span style="cursor: pointer;">Terms of Use</span></span><span><span style="margin: 0px 8px; opacity: 0.4;">|</span><span style="cursor: pointer;">Emergency Info</span></span></p>
                     </div>
                 </div>

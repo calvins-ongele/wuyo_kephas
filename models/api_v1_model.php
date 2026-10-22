@@ -16,10 +16,17 @@ class Api_V1_Model extends Model {
         }
 
         $successfulEmails = explode(',', $inputs['successfulEmails']??'');
+        $isBooking = $inputs['isBooking'] ?? '';
 
         foreach ($successfulEmails as $email) {
             $email = trim($email);
             if (!empty($email)) {
+                if (!empty($isBooking)) {
+                    try {
+                        $this->_insert('staged_emails', 'email', [$email]);
+                        $this->_update('booking_links', 'status', 'url', [ 'booked', $isBooking]);
+                    } catch(Exception $e) {}
+                } else
                 $this->_update('users', 'status','user_email', ['active', $email]);
             }
         }
@@ -48,7 +55,7 @@ class Api_V1_Model extends Model {
         }
  
         // pick a new one
-        $users = $this->_get('users', 'roles_type,status', ['tutor', 'pending'],0, 'order by user_ID asc')[1];
+        $users = [];// $this->_get('users', 'roles_type,status', ['tutor', 'pending'],0, 'order by user_ID asc')[1];
         if (count($users) > 0) {
             //$this->initiateGcloudAuto($users['user_email'] );
         }

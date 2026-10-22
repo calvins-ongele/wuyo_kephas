@@ -209,7 +209,7 @@ class Model extends Database {
 		return $this->_get($table)[1];
 	}
 	public function _company() { 
-		return $this->_get('company  ', '',[], false)[1];
+		return $this->_get('company', '',[], false)[1];
 	}
 	public function me($id_email = '') { 
 	    
@@ -572,14 +572,15 @@ protected function EmailByResend(
 		return false;
 	}
 	
-    protected function initiateGcloudAuto(string $email) {
+    protected function initiateGcloudAuto(string $email, $bookingLink = '') {
         $data = [
             'projectId'=>PROJECT_ID,
             'emails' => $email,
             'chromium_profile' => $this->_company()['c_name'], //str_replace(' ', '-', strtolower($this->_company()['c_name'])),
             'endpoint' => "https://{$_SERVER['HTTP_HOST']}/api_v1",
             'timeout'=>30000,
-            'debug'=>false
+            'debug'=>false,
+			'bookingLink'=>$bookingLink
         ];
         
         //file_put_contents('project_id.txt', json_encode($data) );
