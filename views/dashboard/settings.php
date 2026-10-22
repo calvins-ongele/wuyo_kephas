@@ -189,10 +189,11 @@
         <div class="fetchertest_panel all hidden" style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
           
           <section>
-            <div style="display: flex; justify-content:space-between" ><h2 style="font-size: 16px; color: var(--ink);">Test Email Scraping </h2>
+            <div style="display: flex; justify-content:space-between" >
+              <h2 style="font-size: 16px; color: var(--ink);">Test Email Scraping </h2>
             <form id='submitlinkScrapingTest'> 
                <div class="mb-3" >
-                <button class="btn btn-block btn-primary">Test Now</button>
+                <button class="btn btn-block btn-primary">Test Scaping Now</button>
               </div> 
             </form>
             </div> 
@@ -201,7 +202,7 @@
               <h2 style="font-size: 16px; color: var(--ink);">Test Email Sending </h2>
             <form id='testEmailSending'> 
                <div class="mb-3" >
-                <button class="btn btn-block btn-primary">Test Now</button>
+                <button class="btn btn-block btn-success">Test Sending Now</button>
               </div> 
             </form>
             </div> 
