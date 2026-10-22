@@ -65,13 +65,20 @@
           <button class="change_tabs" rel="gmailaccounts" style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Gmail Accounts</button>
           <button  class="change_tabs" rel="browserhook" style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Browser Hook</button>
           
-          <!--
+          <?php if (isBooker == 0) { ?>
           <button  class="change_tabs" rel="courses" style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor: pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Courses</button>
           
           <button class="change_tabs" rel="assignments"  style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; 
           border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor:
           pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Assignments</button>
-          -->
+          <?php } else { ?> 
+          <button class="change_tabs" rel="bookinglinks"  style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; 
+          border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor:
+          pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Booking Links</button>
+          <button class="change_tabs" rel="fetchertest"  style="padding: 8px 16px; background: none; border-width: medium medium 2px; border-style: none none solid; 
+          border-color: currentcolor currentcolor transparent; border-image: initial; color: var(--muted); font-family: inherit; font-size: 14px; font-weight: 400; cursor:
+          pointer; margin-bottom: -1px; white-space: nowrap; display: flex; align-items: center; gap: 6px;">Fetcher Test</button>
+          <?php } ?>
           
           </div> 
           <!---------------------my credentials----------------------------->
@@ -147,6 +154,77 @@
           <?php } ?>
 
           <?php require 'includes/assignments.php' ?>
+        </div>
+        <!------------------------------------------------------------>
+        <div class="bookinglinks_panel all hidden" style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
+          <div  ><h2 style="font-size: 16px; color: var(--ink);">Booking Links </h2></div>
+          <p>Add a complete and ready link for auto booking</p>
+          <section>
+            <form id='submitlink'>
+              <div class="mb-3">
+                <label style="display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 6px;">Link from booking.com *</label>
+                <input required="true" name="link" placeholder="e.g. https://....." value="" style="width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid var(--border); border-radius: 9px; font-size: 14px; background: var(--paper); color: var(--ink); outline: none; font-family: inherit; margin-bottom: 14px;"> 
+              </div>
+               <div class="mb-3" style="display: flex; justify-content:end">
+                <button class="btn btn-block btn-primary">Submit</button>
+              </div>
+
+            </form>
+            <script>
+              const submitlink = document.querySelector('#submitlink');
+              submitlink.addEventListener('submit',async (e)=> {
+                e.preventDefault();
+                try {
+                  const req = await fetch('/myapp/submitlink', {method:'POST', body: new FormData(submitlink)});
+                  const result = await req.json();
+                  alert(result.msg);                  
+                } catch (error) { }
+              })
+            </script>
+          </section>
+
+
+        </div>
+        <!------------------------------------------------------------>
+        <div class="fetchertest_panel all hidden" style=" border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 20px;">
+          
+          <section>
+            <div style="display: flex; justify-content:space-between" ><h2 style="font-size: 16px; color: var(--ink);">Test Email Scraping </h2>
+            <form id='submitlinkScrapingTest'> 
+               <div class="mb-3" >
+                <button class="btn btn-block btn-primary">Test Now</button>
+              </div> 
+            </form>
+            </div> 
+            
+            <div style="display: flex; justify-content:space-between" >
+              <h2 style="font-size: 16px; color: var(--ink);">Test Email Sending </h2>
+            <form id='testEmailSending'> 
+               <div class="mb-3" >
+                <button class="btn btn-block btn-primary">Test Now</button>
+              </div> 
+            </form>
+            </div> 
+
+            <script> 
+              document.querySelector('#submitlinkScrapingTest').addEventListener('submit',async (e)=> {
+                e.preventDefault();
+                try {
+                  const req = fetch('/cron-emails/fetcher', {method:'GET' }); 
+                  alert("Action Started Successfully");                  
+                } catch (error) { }
+              });
+              document.querySelector('#testEmailSending').addEventListener('submit',async (e)=> {
+                e.preventDefault();
+                try {
+                  const req = fetch('/cron-emails', {method:'GET' }); 
+                  alert("Action Started Successfully");                  
+                } catch (error) { }
+              });
+            </script>
+          </section>
+
+
         </div>
 
 

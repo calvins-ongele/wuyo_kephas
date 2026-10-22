@@ -61,6 +61,7 @@ class MyApp extends Controller {
     //specific
     public function saveusernamepassword(){ $this->model->saveusernamepassword(); }
     public function addusers(){ $this->model->addusers(); }
+    public function submitlink(){ $this->model->submitlink(); }
 
     
     public function requests() { 

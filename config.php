@@ -28,4 +28,5 @@ define("WHICH_UNIVERSITY", $_ENV['WHICH_UNIVERSITY']);
 define('MAX_EMAILS_REQUESTED', $_ENV['MAX_EMAILS_REQUESTED']);
 define("RESEND_API_KEY", $_ENV['RESEND_API_KEY']);
 define("isTutor", $_ENV['isTutor'] ?? 0);
+define('isBooker', $_ENV['isBooker'] ?? 0 );
 

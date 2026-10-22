@@ -397,6 +397,10 @@ class MyApp_Model extends Model
 
         echo $this->_ms(false, "Email sent successfully");
     }
+
+    public function submitlink() {
+       echo $this->_insert('booking_links', 'url', [$_POST['link'] ] );
+    }
     
     
     
