@@ -1,7 +1,10 @@
 <?php
- echo '<script>
-        window.location.href="//booking.com";
-    </script>';
+ echo json_encode([
+     'error'=>true,
+     "message"=>"Nothing here..."
+     ]);
+     
+     die;
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">

@@ -187,7 +187,8 @@
                                 <form id="send-email">
                                     <div class="form-group">
                                         <label for="email">Write as many comma separated email addresses as you want</label>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter email address"
+                                        value="<?= $_GET['email'] ?? '' ?>">
                                     </div>
 
                                     <div class="form-group mt-3">

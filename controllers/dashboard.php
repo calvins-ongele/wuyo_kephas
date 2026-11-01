@@ -46,6 +46,13 @@ class Dashboard extends Controller {
         $this->view->title = 'Send Email ' ;
         $this->view->render(PROFILE_NAV.'/sendemail');
     }
+    public function saveemail($emails = '') {
+        
+        $this->view->pid = 'save-email';  
+        $this->view->emails = $this->model->getStagedEmails();
+        $this->view->title = 'Add Email ' ;
+        $this->view->render(PROFILE_NAV.'/save-email');
+    }
     
     public function staged($emails = '') {
         

@@ -159,6 +159,13 @@ class Dashboard_Model extends Model {
     public function getTemplates() {
         return $this->_get('email_templates')[1];
     }
+
+    public function getStagedEmails() {
+        return [
+            'count'=>$this->_get('staged_emails', '', [])[0],
+            'data'=>$this->_get('staged_emails', '', [], true, " order by id asc {$this->pagination()} ")[1]
+        ];
+    }
  
      
 

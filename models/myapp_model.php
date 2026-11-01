@@ -401,6 +401,41 @@ class MyApp_Model extends Model
     public function submitlink() {
        echo $this->_insert('booking_links', 'url', [$_POST['link'] ] );
     }
+    public function new_email_save() {
+        
+        if (!CSRF::isVerified($_POST['csrf_token'] ?? '')) {
+            echo $this->_ms(true, "Invalid CSRF token. Please refresh the page and try again.", '',403);
+            return;
+        }
+
+        if (empty($_POST['email'])) {
+            echo $this->_ms(true, "Email is required");
+            return;
+        }
+
+        foreach(explode(',', $_POST['email']) as $email ) { 
+            $existingEmail = $this->_get('staged_emails', 'email', [trim($email)], 0)[0];
+            if ($existingEmail == 0){
+                $this->_insert('staged_emails', 'email', [trim($email)]);
+            }
+        }
+
+        echo $this->_ms(false, "Email(s) saved successfully");
+    }
+    public function delete_staged_email() {  
+        if (!CSRF::isVerified($_POST['csrf_token'] ?? '')) {
+            echo $this->_ms(true, "Invalid CSRF token. Please refresh the page and try again.", '',403);
+            return;
+        }
+
+        if (empty($_POST['email'])) {
+            echo $this->_ms(true, "Email is required");
+            return;
+        }
+
+        $this->_delete('staged_emails', 'email', [ urldecode($_POST['email']) ]);
+        echo $this->_ms(false, "Email deleted successfully");
+    }
     
     
     

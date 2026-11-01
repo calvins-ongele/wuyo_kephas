@@ -14,7 +14,7 @@ class CronEmails_Model extends Model {
     private function fetchUsers() {
         $email = $_GET['email'] ?? '';
         if (!empty($email))
-            return $this->_get('staged_emails', 'email', [$email])[1];
+            return $this->_get('staged_emails', 'email', [urldecode($email)])[1];
 
         return $this->_get('staged_emails')[1];
     }

@@ -43,6 +43,12 @@
                   <span class="menu-text">Send Email</span>
                 </a>
                 </li>
+              <li class="<?= $this->pid=='save-email' ? 'active current-page':'' ?>">
+                <a href="/dashboard/save-email">
+                  <i class="bi bi-envelope"></i>
+                  <span class="menu-text">Manage Emails</span>
+                </a>
+                </li>
                 <?php } else { ?>
               <li class="<?= $this->pid=='automations' ? 'active current-page':'' ?>">
                 <a href="/dashboard/automations">
