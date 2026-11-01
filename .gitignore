@@ -9,6 +9,7 @@ node_modules/
 dist/
 .vscode/
 vendor/
+scanlab/
 
 # Ignore all files with a specific extension
 *.log
